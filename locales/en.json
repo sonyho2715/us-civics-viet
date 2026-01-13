@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "title": "U.S. Citizenship - Civics Test 2025",
+    "description": "Study app for U.S. Citizenship test with 128 bilingual Vietnamese-English questions"
+  },
+  "nav": {
+    "home": "Home",
+    "study": "Study",
+    "practice": "Practice",
+    "flashcards": "Flashcards",
+    "senior": "65/20"
+  },
+  "home": {
+    "hero": {
+      "title": "Prepare for the 2025 U.S. Citizenship Test",
+      "subtitle": "128 latest questions with Vietnamese explanations",
+      "cta": "Start Learning Now"
+    },
+    "features": {
+      "bilingual": {
+        "title": "128 Bilingual Questions",
+        "description": "Learn in Vietnamese and English"
+      },
+      "practice": {
+        "title": "Realistic Practice Tests",
+        "description": "Practice tests with instant scoring"
+      },
+      "senior": {
+        "title": "65/20 Mode",
+        "description": "For seniors 65 years and older"
+      },
+      "mobile": {
+        "title": "Learn Anytime",
+        "description": "Optimized for mobile devices"
+      }
+    },
+    "stats": {
+      "questions": "Questions",
+      "passRate": "Pass Rate",
+      "users": "Users"
+    }
+  },
+  "study": {
+    "title": "Study Center",
+    "subtitle": "Learn all 128 questions by topic",
+    "allQuestions": "All Questions",
+    "categories": {
+      "american_government": "American Government",
+      "american_history": "American History",
+      "symbols_holidays": "Symbols & Holidays"
+    },
+    "questions": "questions",
+    "showAnswer": "Show Answer",
+    "hideAnswer": "Hide Answer",
+    "explanation": "Explanation",
+    "search": "Search questions...",
+    "noResults": "No questions found",
+    "progress": "Study Progress",
+    "studied": "Studied",
+    "remaining": "Remaining"
+  },
+  "practice": {
+    "title": "Practice Test",
+    "subtitle": "Test your knowledge",
+    "standardTest": {
+      "title": "Standard Test",
+      "description": "20 random questions",
+      "passRequirement": "Need 12/20 correct to pass"
+    },
+    "seniorTest": {
+      "title": "65/20 Senior Test",
+      "description": "10 questions for seniors",
+      "passRequirement": "Need 6/10 correct to pass"
+    },
+    "startTest": "Start Test",
+    "question": "Question",
+    "of": "of",
+    "submit": "Submit",
+    "next": "Next",
+    "previous": "Previous",
+    "finish": "Finish",
+    "confirmSubmit": "Are you sure you want to submit?",
+    "unanswered": "You have {count} unanswered questions",
+    "timer": "Time",
+    "selectAnswer": "Select an answer",
+    "yourAnswer": "Your answer",
+    "correctAnswer": "Correct answer"
+  },
+  "results": {
+    "title": "Test Results",
+    "passed": "Congratulations! You Passed!",
+    "failed": "Not Passed - Try Again!",
+    "score": "Score",
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "timeSpent": "Time spent",
+    "minutes": "minutes",
+    "seconds": "seconds",
+    "reviewMistakes": "Review Mistakes",
+    "tryAgain": "Try Again",
+    "backToStudy": "Back to Study",
+    "encouragement": {
+      "excellent": "Excellent! You're ready for the real test!",
+      "good": "Good job! Keep studying to improve.",
+      "needsWork": "Review the questions you missed!"
+    }
+  },
+  "test": {
+    "loading": "Loading...",
+    "question": "Question",
+    "answered": "answered",
+    "yourAnswer": "Your answer:",
+    "typeAnswer": "Type your answer...",
+    "correctAnswers": "Correct answers:",
+    "explanation": "Explanation:",
+    "correct": "Correct!",
+    "incorrect": "Incorrect",
+    "previous": "Previous",
+    "next": "Next",
+    "submit": "Submit Test",
+    "unanswered": "questions unanswered",
+    "mayChange": "May change"
+  },
+  "flashcards": {
+    "title": "Flashcards",
+    "subtitle": "Quick study with flip cards",
+    "tapToFlip": "Tap to flip",
+    "showQuestion": "Show question",
+    "showAnswer": "Show answer",
+    "card": "Card",
+    "markLearned": "Learned",
+    "markReview": "Need Review",
+    "shuffle": "Shuffle",
+    "reset": "Start Over",
+    "learned": "Learned",
+    "needsReview": "Need Review",
+    "remaining": "Remaining"
+  },
+  "senior": {
+    "title": "65/20 Mode",
+    "subtitle": "For applicants 65+ who have lived in the U.S. for 20+ years",
+    "description": "If you are 65 years or older and have lived in the United States as a permanent resident for at least 20 years, you only need to study the 20 questions marked with a star (★).",
+    "eligibility": {
+      "title": "Eligibility",
+      "age": "65 years or older",
+      "residence": "Permanent resident for 20+ years"
+    },
+    "testInfo": {
+      "questions": "10 questions",
+      "pass": "6 correct to pass",
+      "from": "From 20 designated questions"
+    },
+    "studyAll": "Study 20 Questions",
+    "takeTest": "Take 65/20 Test"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "back": "Back",
+    "dynamicAnswer": "Answer may change based on elections",
+    "seniorQuestion": "65/20 Question",
+    "verifyAnswer": "Verify latest answer at uscis.gov",
+    "language": "Language",
+    "vietnamese": "Tiếng Việt",
+    "english": "English",
+    "settings": "Settings",
+    "state": "State",
+    "selectState": "Select your state",
+    "addBookmark": "Add bookmark",
+    "removeBookmark": "Remove bookmark",
+    "bookmarked": "Bookmarked",
+    "showBookmarked": "Show bookmarked",
+    "showAll": "Show all",
+    "noBookmarks": "No bookmarked questions yet",
+    "bookmarkCount": "{count} bookmarked"
+  },
+  "footer": {
+    "disclaimer": "This app is for educational purposes only. Please verify the latest information on the official USCIS website.",
+    "official": "Official USCIS website",
+    "copyright": "© 2025 U.S. Citizenship. All rights reserved."
+  }
+}

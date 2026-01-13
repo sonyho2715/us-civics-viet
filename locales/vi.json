@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "title": "Công Dân Mỹ - Thi Quốc Tịch 2025",
+    "description": "Ứng dụng học thi quốc tịch Mỹ với 128 câu hỏi song ngữ Việt-Anh"
+  },
+  "nav": {
+    "home": "Trang Chủ",
+    "study": "Học Tập",
+    "practice": "Thi Thử",
+    "flashcards": "Thẻ Ghi Nhớ",
+    "senior": "65/20"
+  },
+  "home": {
+    "hero": {
+      "title": "Chuẩn Bị Cho Bài Thi Công Dân Mỹ 2025",
+      "subtitle": "128 câu hỏi mới nhất với giải thích tiếng Việt",
+      "cta": "Bắt Đầu Học Ngay"
+    },
+    "features": {
+      "bilingual": {
+        "title": "128 Câu Hỏi Song Ngữ",
+        "description": "Học bằng tiếng Việt và tiếng Anh"
+      },
+      "practice": {
+        "title": "Thi Thử Thực Tế",
+        "description": "Bài thi thử với điểm số tức thì"
+      },
+      "senior": {
+        "title": "Chế Độ 65/20",
+        "description": "Dành cho người cao tuổi 65 tuổi trở lên"
+      },
+      "mobile": {
+        "title": "Học Mọi Lúc",
+        "description": "Tối ưu cho điện thoại di động"
+      }
+    },
+    "stats": {
+      "questions": "Câu hỏi",
+      "passRate": "Tỷ lệ đậu",
+      "users": "Người dùng"
+    }
+  },
+  "study": {
+    "title": "Trung Tâm Học Tập",
+    "subtitle": "Học 128 câu hỏi theo từng chủ đề",
+    "allQuestions": "Tất Cả Câu Hỏi",
+    "categories": {
+      "american_government": "Chính Phủ Hoa Kỳ",
+      "american_history": "Lịch Sử Hoa Kỳ",
+      "symbols_holidays": "Biểu Tượng & Ngày Lễ"
+    },
+    "questions": "câu hỏi",
+    "showAnswer": "Xem đáp án",
+    "hideAnswer": "Ẩn đáp án",
+    "explanation": "Giải thích",
+    "search": "Tìm kiếm câu hỏi...",
+    "noResults": "Không tìm thấy câu hỏi nào",
+    "progress": "Tiến độ học",
+    "studied": "Đã học",
+    "remaining": "Còn lại"
+  },
+  "practice": {
+    "title": "Thi Thử",
+    "subtitle": "Kiểm tra kiến thức của bạn",
+    "standardTest": {
+      "title": "Bài Thi Tiêu Chuẩn",
+      "description": "20 câu hỏi ngẫu nhiên",
+      "passRequirement": "Cần đúng 12/20 câu để đậu"
+    },
+    "seniorTest": {
+      "title": "Bài Thi 65/20",
+      "description": "10 câu hỏi dành cho người cao tuổi",
+      "passRequirement": "Cần đúng 6/10 câu để đậu"
+    },
+    "startTest": "Bắt Đầu Thi",
+    "question": "Câu",
+    "of": "của",
+    "submit": "Nộp Bài",
+    "next": "Tiếp",
+    "previous": "Trước",
+    "finish": "Hoàn Thành",
+    "confirmSubmit": "Bạn có chắc muốn nộp bài?",
+    "unanswered": "Bạn còn {count} câu chưa trả lời",
+    "timer": "Thời gian",
+    "selectAnswer": "Chọn đáp án",
+    "yourAnswer": "Đáp án của bạn",
+    "correctAnswer": "Đáp án đúng"
+  },
+  "results": {
+    "title": "Kết Quả Bài Thi",
+    "passed": "Chúc Mừng! Bạn Đã Đậu!",
+    "failed": "Chưa Đậu - Hãy Cố Gắng Lần Sau!",
+    "score": "Điểm số",
+    "correct": "Đúng",
+    "incorrect": "Sai",
+    "timeSpent": "Thời gian làm bài",
+    "minutes": "phút",
+    "seconds": "giây",
+    "reviewMistakes": "Xem Lại Câu Sai",
+    "tryAgain": "Thi Lại",
+    "backToStudy": "Về Học Tập",
+    "encouragement": {
+      "excellent": "Xuất sắc! Bạn đã sẵn sàng cho bài thi thật!",
+      "good": "Tốt lắm! Tiếp tục ôn tập để hoàn thiện hơn.",
+      "needsWork": "Hãy ôn tập thêm các câu hỏi sai nhé!"
+    }
+  },
+  "test": {
+    "loading": "Đang tải...",
+    "question": "Câu hỏi",
+    "answered": "đã trả lời",
+    "yourAnswer": "Câu trả lời của bạn:",
+    "typeAnswer": "Nhập câu trả lời...",
+    "correctAnswers": "Đáp án đúng:",
+    "explanation": "Giải thích:",
+    "correct": "Chính xác!",
+    "incorrect": "Chưa đúng",
+    "previous": "Câu trước",
+    "next": "Câu sau",
+    "submit": "Nộp bài",
+    "unanswered": "câu chưa trả lời",
+    "mayChange": "Có thể thay đổi"
+  },
+  "flashcards": {
+    "title": "Thẻ Ghi Nhớ",
+    "subtitle": "Học nhanh với thẻ lật",
+    "tapToFlip": "Nhấn để lật thẻ",
+    "showQuestion": "Xem câu hỏi",
+    "showAnswer": "Xem đáp án",
+    "card": "Thẻ",
+    "markLearned": "Đã thuộc",
+    "markReview": "Cần ôn",
+    "shuffle": "Xáo thẻ",
+    "reset": "Bắt đầu lại",
+    "learned": "Đã thuộc",
+    "needsReview": "Cần ôn",
+    "remaining": "Còn lại"
+  },
+  "senior": {
+    "title": "Chế Độ 65/20",
+    "subtitle": "Dành cho người 65 tuổi trở lên, sống tại Mỹ 20 năm",
+    "description": "Nếu bạn từ 65 tuổi trở lên và đã sống tại Mỹ ít nhất 20 năm với tư cách thường trú nhân, bạn chỉ cần học 20 câu hỏi được đánh dấu sao (★).",
+    "eligibility": {
+      "title": "Điều kiện",
+      "age": "65 tuổi trở lên",
+      "residence": "Thường trú nhân 20 năm trở lên"
+    },
+    "testInfo": {
+      "questions": "10 câu hỏi",
+      "pass": "6 câu đúng để đậu",
+      "from": "Từ 20 câu hỏi 65/20"
+    },
+    "studyAll": "Học 20 Câu Hỏi",
+    "takeTest": "Thi Thử 65/20"
+  },
+  "common": {
+    "loading": "Đang tải...",
+    "error": "Có lỗi xảy ra",
+    "retry": "Thử lại",
+    "close": "Đóng",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "continue": "Tiếp tục",
+    "back": "Quay lại",
+    "dynamicAnswer": "Câu trả lời có thể thay đổi theo bầu cử",
+    "seniorQuestion": "Câu hỏi 65/20",
+    "verifyAnswer": "Xác minh đáp án mới nhất tại uscis.gov",
+    "language": "Ngôn ngữ",
+    "vietnamese": "Tiếng Việt",
+    "english": "English",
+    "settings": "Cài đặt",
+    "state": "Tiểu bang",
+    "selectState": "Chọn tiểu bang của bạn",
+    "addBookmark": "Đánh dấu",
+    "removeBookmark": "Bỏ đánh dấu",
+    "bookmarked": "Đã đánh dấu",
+    "showBookmarked": "Xem đã đánh dấu",
+    "showAll": "Xem tất cả",
+    "noBookmarks": "Chưa có câu hỏi đánh dấu",
+    "bookmarkCount": "{count} đã đánh dấu"
+  },
+  "footer": {
+    "disclaimer": "Ứng dụng này chỉ dành cho mục đích học tập. Vui lòng xác minh thông tin mới nhất tại trang web chính thức của USCIS.",
+    "official": "Trang USCIS chính thức",
+    "copyright": "© 2025 Công Dân Mỹ. Mọi quyền được bảo lưu."
+  }
+}
