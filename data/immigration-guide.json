@@ -1,0 +1,951 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-01-13",
+    "totalQuestions": 180,
+    "categories": 6
+  },
+  "greenCardTypes": {
+    "conditional": {
+      "code": "CR1",
+      "nameEn": "Conditional Green Card",
+      "nameVi": "Thẻ Xanh Có Điều Kiện",
+      "duration": 2,
+      "requirements": [
+        {
+          "vi": "Kết hôn dưới 2 năm tại thời điểm cấp thẻ",
+          "en": "Married less than 2 years at time of approval"
+        },
+        {
+          "vi": "Phải nộp I-751 trong 90 ngày trước khi hết hạn",
+          "en": "Must file I-751 within 90 days before expiration"
+        },
+        {
+          "vi": "Chứng minh hôn nhân thật sự",
+          "en": "Prove bona fide marriage"
+        }
+      ],
+      "nextSteps": ["I-751", "N-400"]
+    },
+    "permanent": {
+      "code": "IR1",
+      "nameEn": "Permanent Green Card",
+      "nameVi": "Thẻ Xanh Thường Trú",
+      "duration": 10,
+      "requirements": [
+        {
+          "vi": "Kết hôn trên 2 năm tại thời điểm cấp thẻ",
+          "en": "Married over 2 years at time of approval"
+        },
+        {
+          "vi": "Hoặc đã gỡ điều kiện thành công",
+          "en": "Or successfully removed conditions"
+        }
+      ],
+      "nextSteps": ["I-90", "N-400"]
+    }
+  },
+  "sponsorshipCategories": {
+    "immediate": [
+      {
+        "code": "IR1",
+        "nameEn": "Spouse of US Citizen",
+        "nameVi": "Vợ/Chồng Công Dân Mỹ",
+        "sponsor": { "en": "US Citizen", "vi": "Công dân Mỹ" },
+        "beneficiary": { "en": "Spouse (married >2 years)", "vi": "Vợ/chồng (kết hôn >2 năm)" },
+        "waitTime": "12-18 tháng",
+        "unlimited": true
+      },
+      {
+        "code": "CR1",
+        "nameEn": "Spouse of US Citizen (Conditional)",
+        "nameVi": "Vợ/Chồng Công Dân Mỹ (Có Điều Kiện)",
+        "sponsor": { "en": "US Citizen", "vi": "Công dân Mỹ" },
+        "beneficiary": { "en": "Spouse (married <2 years)", "vi": "Vợ/chồng (kết hôn <2 năm)" },
+        "waitTime": "12-18 tháng",
+        "unlimited": true
+      },
+      {
+        "code": "IR2",
+        "nameEn": "Child of US Citizen",
+        "nameVi": "Con Công Dân Mỹ",
+        "sponsor": { "en": "US Citizen", "vi": "Công dân Mỹ" },
+        "beneficiary": { "en": "Unmarried child under 21", "vi": "Con dưới 21 tuổi, chưa kết hôn" },
+        "waitTime": "12-18 tháng",
+        "unlimited": true
+      },
+      {
+        "code": "CR2",
+        "nameEn": "Child of US Citizen (Conditional)",
+        "nameVi": "Con Công Dân Mỹ (Có Điều Kiện)",
+        "sponsor": { "en": "US Citizen", "vi": "Công dân Mỹ" },
+        "beneficiary": { "en": "Child under 21 (parent married <2 years)", "vi": "Con dưới 21 tuổi (cha/mẹ kết hôn <2 năm)" },
+        "waitTime": "12-18 tháng",
+        "unlimited": true
+      },
+      {
+        "code": "IR5",
+        "nameEn": "Parent of US Citizen",
+        "nameVi": "Cha/Mẹ Công Dân Mỹ",
+        "sponsor": { "en": "US Citizen (21+)", "vi": "Công dân Mỹ (≥21 tuổi)" },
+        "beneficiary": { "en": "Parent", "vi": "Cha hoặc Mẹ" },
+        "waitTime": "12-24 tháng",
+        "unlimited": true
+      }
+    ],
+    "preference": [
+      {
+        "code": "F1",
+        "nameEn": "First Preference",
+        "nameVi": "Diện Ưu Tiên 1",
+        "sponsor": { "en": "US Citizen", "vi": "Công dân Mỹ" },
+        "beneficiary": { "en": "Unmarried adult children (21+)", "vi": "Con trên 21 tuổi, chưa kết hôn" },
+        "waitTime": "8-12 năm",
+        "unlimited": false
+      },
+      {
+        "code": "F2A",
+        "nameEn": "Second Preference A",
+        "nameVi": "Diện Ưu Tiên 2A",
+        "sponsor": { "en": "Permanent Resident", "vi": "Thường trú nhân" },
+        "beneficiary": { "en": "Spouse & unmarried children under 21", "vi": "Vợ/chồng + con dưới 21 tuổi" },
+        "waitTime": "2-4 năm",
+        "unlimited": false
+      },
+      {
+        "code": "F2B",
+        "nameEn": "Second Preference B",
+        "nameVi": "Diện Ưu Tiên 2B",
+        "sponsor": { "en": "Permanent Resident", "vi": "Thường trú nhân" },
+        "beneficiary": { "en": "Unmarried adult children (21+)", "vi": "Con trên 21 tuổi, chưa kết hôn" },
+        "waitTime": "8-12 năm",
+        "unlimited": false
+      },
+      {
+        "code": "F3",
+        "nameEn": "Third Preference",
+        "nameVi": "Diện Ưu Tiên 3",
+        "sponsor": { "en": "US Citizen", "vi": "Công dân Mỹ" },
+        "beneficiary": { "en": "Married children (any age)", "vi": "Con đã kết hôn (mọi tuổi)" },
+        "waitTime": "12-15 năm",
+        "unlimited": false
+      },
+      {
+        "code": "F4",
+        "nameEn": "Fourth Preference",
+        "nameVi": "Diện Ưu Tiên 4",
+        "sponsor": { "en": "US Citizen (21+)", "vi": "Công dân Mỹ (≥21 tuổi)" },
+        "beneficiary": { "en": "Brothers and sisters", "vi": "Anh chị em ruột" },
+        "waitTime": "15-20+ năm",
+        "unlimited": false
+      }
+    ]
+  },
+  "interviewQuestions": {
+    "marriageGreenCard": {
+      "categoryNameVi": "Phỏng Vấn Green Card Hôn Nhân",
+      "categoryNameEn": "Marriage Green Card Interview",
+      "subcategories": [
+        {
+          "id": "relationship_history",
+          "nameVi": "Lịch Sử Mối Quan Hệ",
+          "nameEn": "Relationship History",
+          "icon": "heart",
+          "questions": [
+            {
+              "id": "mq001",
+              "questionEn": "How did you meet your spouse?",
+              "questionVi": "Bạn gặp vợ/chồng như thế nào?",
+              "tips": { "vi": "Nói chi tiết: ngày, địa điểm, ai giới thiệu", "en": "Be specific: date, location, who introduced you" },
+              "importance": "high"
+            },
+            {
+              "id": "mq002",
+              "questionEn": "When did you first meet?",
+              "questionVi": "Lần đầu gặp nhau là khi nào?",
+              "tips": { "vi": "Nhớ ngày tháng năm cụ thể", "en": "Remember the exact date" },
+              "importance": "high"
+            },
+            {
+              "id": "mq003",
+              "questionEn": "Where did you first meet?",
+              "questionVi": "Gặp nhau lần đầu ở đâu?",
+              "tips": { "vi": "Địa điểm cụ thể: thành phố, quán, nhà ai", "en": "Specific location: city, restaurant, whose house" },
+              "importance": "high"
+            },
+            {
+              "id": "mq004",
+              "questionEn": "What was your first date like?",
+              "questionVi": "Buổi hẹn đầu tiên như thế nào?",
+              "tips": { "vi": "Mô tả chi tiết: đi đâu, làm gì, ăn gì", "en": "Describe: where you went, what you did, what you ate" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq005",
+              "questionEn": "When did you start dating exclusively?",
+              "questionVi": "Khi nào bắt đầu hẹn hò chính thức?",
+              "tips": { "vi": "Phân biệt với lần gặp đầu", "en": "Distinguish from first meeting" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq006",
+              "questionEn": "Who proposed? When and where?",
+              "questionVi": "Ai cầu hôn? Khi nào và ở đâu?",
+              "tips": { "vi": "Chi tiết về lời cầu hôn", "en": "Details about the proposal" },
+              "importance": "high"
+            },
+            {
+              "id": "mq007",
+              "questionEn": "Did you have an engagement party?",
+              "questionVi": "Có tiệc đính hôn không?",
+              "tips": { "vi": "Nếu có: ở đâu, bao nhiêu khách", "en": "If yes: where, how many guests" },
+              "importance": "low"
+            },
+            {
+              "id": "mq008",
+              "questionEn": "When did you meet each other's parents?",
+              "questionVi": "Khi nào ra mắt gia đình hai bên?",
+              "tips": { "vi": "Nhớ thời gian và hoàn cảnh", "en": "Remember the time and circumstances" },
+              "importance": "medium"
+            }
+          ]
+        },
+        {
+          "id": "wedding",
+          "nameVi": "Đám Cưới",
+          "nameEn": "Wedding",
+          "icon": "cake",
+          "questions": [
+            {
+              "id": "mq009",
+              "questionEn": "When did you get married?",
+              "questionVi": "Kết hôn ngày nào?",
+              "tips": { "vi": "Ngày tháng năm chính xác", "en": "Exact date" },
+              "importance": "high"
+            },
+            {
+              "id": "mq010",
+              "questionEn": "Where was your wedding ceremony?",
+              "questionVi": "Đám cưới tổ chức ở đâu?",
+              "tips": { "vi": "Địa điểm cụ thể", "en": "Specific venue" },
+              "importance": "high"
+            },
+            {
+              "id": "mq011",
+              "questionEn": "How many guests attended?",
+              "questionVi": "Có bao nhiêu khách mời?",
+              "tips": { "vi": "Số lượng ước tính", "en": "Approximate number" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq012",
+              "questionEn": "Who was your best man/maid of honor?",
+              "questionVi": "Ai là phù rể/phù dâu?",
+              "tips": { "vi": "Tên và quan hệ với họ", "en": "Name and relationship to them" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq013",
+              "questionEn": "What did your spouse wear?",
+              "questionVi": "Vợ/chồng mặc gì trong đám cưới?",
+              "tips": { "vi": "Mô tả váy cưới/vest", "en": "Describe the wedding dress/suit" },
+              "importance": "low"
+            },
+            {
+              "id": "mq014",
+              "questionEn": "Did you have a honeymoon? Where?",
+              "questionVi": "Có đi tuần trăng mật không? Ở đâu?",
+              "tips": { "vi": "Địa điểm và thời gian", "en": "Location and duration" },
+              "importance": "medium"
+            }
+          ]
+        },
+        {
+          "id": "daily_life",
+          "nameVi": "Cuộc Sống Hàng Ngày",
+          "nameEn": "Daily Life",
+          "icon": "home",
+          "questions": [
+            {
+              "id": "mq015",
+              "questionEn": "What is your current address?",
+              "questionVi": "Địa chỉ hiện tại của bạn?",
+              "tips": { "vi": "Địa chỉ đầy đủ, giống giấy tờ", "en": "Full address, matching documents" },
+              "importance": "high"
+            },
+            {
+              "id": "mq016",
+              "questionEn": "Do you rent or own your home?",
+              "questionVi": "Nhà thuê hay nhà mua?",
+              "tips": { "vi": "Ai đứng tên", "en": "Whose name is on the title/lease" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq017",
+              "questionEn": "How many bedrooms and bathrooms?",
+              "questionVi": "Có mấy phòng ngủ, phòng tắm?",
+              "tips": { "vi": "Số lượng chính xác", "en": "Exact number" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq018",
+              "questionEn": "Describe your bedroom.",
+              "questionVi": "Mô tả phòng ngủ của bạn?",
+              "tips": { "vi": "Màu sắc, đồ đạc, cửa sổ", "en": "Colors, furniture, windows" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq019",
+              "questionEn": "Which side of the bed do you sleep on?",
+              "questionVi": "Bạn nằm bên nào của giường?",
+              "tips": { "vi": "Trái/phải khi nhìn từ cuối giường", "en": "Left/right when looking from foot of bed" },
+              "importance": "high"
+            },
+            {
+              "id": "mq020",
+              "questionEn": "What time do you wake up?",
+              "questionVi": "Bạn thức dậy lúc mấy giờ?",
+              "tips": { "vi": "Giờ thường ngày", "en": "Typical weekday time" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq021",
+              "questionEn": "Who wakes up first?",
+              "questionVi": "Ai thức dậy trước?",
+              "tips": { "vi": "Thói quen hàng ngày", "en": "Daily routine" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq022",
+              "questionEn": "Who cooks in your household?",
+              "questionVi": "Ai nấu ăn trong nhà?",
+              "tips": { "vi": "Ai nấu, món gì hay nấu", "en": "Who cooks, what dishes" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq023",
+              "questionEn": "What did you have for dinner last night?",
+              "questionVi": "Tối qua ăn gì?",
+              "tips": { "vi": "Nhớ bữa ăn gần đây", "en": "Remember recent meals" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq024",
+              "questionEn": "What do you do on weekends?",
+              "questionVi": "Cuối tuần hay làm gì?",
+              "tips": { "vi": "Hoạt động chung thường xuyên", "en": "Regular activities together" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq025",
+              "questionEn": "What TV shows do you watch together?",
+              "questionVi": "Hay xem chương trình TV gì cùng nhau?",
+              "tips": { "vi": "Tên phim/show cụ thể", "en": "Specific shows/movies" },
+              "importance": "low"
+            }
+          ]
+        },
+        {
+          "id": "finances",
+          "nameVi": "Tài Chính",
+          "nameEn": "Finances",
+          "icon": "wallet",
+          "questions": [
+            {
+              "id": "mq026",
+              "questionEn": "Do you have a joint bank account?",
+              "questionVi": "Có tài khoản ngân hàng chung không?",
+              "tips": { "vi": "Ngân hàng nào", "en": "Which bank" },
+              "importance": "high"
+            },
+            {
+              "id": "mq027",
+              "questionEn": "Who pays the rent/mortgage?",
+              "questionVi": "Ai trả tiền nhà?",
+              "tips": { "vi": "Cách phân chia chi phí", "en": "How expenses are split" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq028",
+              "questionEn": "Who pays the utility bills?",
+              "questionVi": "Ai trả các hóa đơn điện, nước?",
+              "tips": { "vi": "Cách quản lý tiền", "en": "How money is managed" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq029",
+              "questionEn": "Where does your spouse work?",
+              "questionVi": "Vợ/chồng làm việc ở đâu?",
+              "tips": { "vi": "Tên công ty, địa chỉ", "en": "Company name, address" },
+              "importance": "high"
+            },
+            {
+              "id": "mq030",
+              "questionEn": "What is your spouse's job title?",
+              "questionVi": "Vợ/chồng làm chức vụ gì?",
+              "tips": { "vi": "Công việc cụ thể", "en": "Specific job title" },
+              "importance": "high"
+            },
+            {
+              "id": "mq031",
+              "questionEn": "How much does your spouse earn?",
+              "questionVi": "Thu nhập của vợ/chồng bao nhiêu?",
+              "tips": { "vi": "Ước tính nếu không biết chính xác", "en": "Estimate if unsure" },
+              "importance": "medium"
+            }
+          ]
+        },
+        {
+          "id": "family",
+          "nameVi": "Gia Đình",
+          "nameEn": "Family",
+          "icon": "users",
+          "questions": [
+            {
+              "id": "mq032",
+              "questionEn": "What are your in-laws' names?",
+              "questionVi": "Bố mẹ vợ/chồng tên gì?",
+              "tips": { "vi": "Họ tên đầy đủ", "en": "Full names" },
+              "importance": "high"
+            },
+            {
+              "id": "mq033",
+              "questionEn": "Where do your in-laws live?",
+              "questionVi": "Bố mẹ vợ/chồng sống ở đâu?",
+              "tips": { "vi": "Thành phố/bang", "en": "City/state" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq034",
+              "questionEn": "How many siblings does your spouse have?",
+              "questionVi": "Vợ/chồng có mấy anh chị em?",
+              "tips": { "vi": "Số lượng và tên", "en": "Number and names" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq035",
+              "questionEn": "Do you have children together?",
+              "questionVi": "Có con chung không?",
+              "tips": { "vi": "Số con, tên, tuổi", "en": "Number, names, ages" },
+              "importance": "high"
+            },
+            {
+              "id": "mq036",
+              "questionEn": "Are you planning to have children?",
+              "questionVi": "Có dự định có con không?",
+              "tips": { "vi": "Kế hoạch gia đình", "en": "Family planning" },
+              "importance": "low"
+            },
+            {
+              "id": "mq037",
+              "questionEn": "When did you last see your in-laws?",
+              "questionVi": "Lần cuối gặp bố mẹ vợ/chồng khi nào?",
+              "tips": { "vi": "Dịp gì, ở đâu", "en": "What occasion, where" },
+              "importance": "medium"
+            }
+          ]
+        },
+        {
+          "id": "personal_details",
+          "nameVi": "Chi Tiết Cá Nhân",
+          "nameEn": "Personal Details",
+          "icon": "user",
+          "questions": [
+            {
+              "id": "mq038",
+              "questionEn": "What is your spouse's birthday?",
+              "questionVi": "Sinh nhật vợ/chồng ngày nào?",
+              "tips": { "vi": "Ngày tháng năm chính xác", "en": "Exact date" },
+              "importance": "high"
+            },
+            {
+              "id": "mq039",
+              "questionEn": "What is your spouse's favorite food?",
+              "questionVi": "Vợ/chồng thích ăn món gì?",
+              "tips": { "vi": "Món ăn cụ thể", "en": "Specific dish" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq040",
+              "questionEn": "What are your spouse's hobbies?",
+              "questionVi": "Sở thích của vợ/chồng là gì?",
+              "tips": { "vi": "Hoạt động thường xuyên", "en": "Regular activities" },
+              "importance": "medium"
+            },
+            {
+              "id": "mq041",
+              "questionEn": "Does your spouse have any allergies?",
+              "questionVi": "Vợ/chồng có bị dị ứng gì không?",
+              "tips": { "vi": "Thực phẩm, thuốc, v.v.", "en": "Food, medicine, etc." },
+              "importance": "medium"
+            },
+            {
+              "id": "mq042",
+              "questionEn": "What is your wedding anniversary?",
+              "questionVi": "Ngày kỷ niệm cưới là ngày nào?",
+              "tips": { "vi": "Phải nhớ chính xác", "en": "Must remember exactly" },
+              "importance": "high"
+            }
+          ]
+        }
+      ]
+    },
+    "i751RemovalOfConditions": {
+      "categoryNameVi": "Phỏng Vấn Gỡ Điều Kiện I-751",
+      "categoryNameEn": "I-751 Removal of Conditions Interview",
+      "icon": "file-check",
+      "questions": [
+        {
+          "id": "i751_001",
+          "questionEn": "Are you still living with your spouse?",
+          "questionVi": "Bạn vẫn đang sống cùng vợ/chồng?",
+          "tips": { "vi": "Trả lời thật", "en": "Answer honestly" },
+          "importance": "high"
+        },
+        {
+          "id": "i751_002",
+          "questionEn": "Is your marriage still intact?",
+          "questionVi": "Hôn nhân của bạn vẫn còn tốt đẹp?",
+          "tips": { "vi": "Tình trạng hôn nhân hiện tại", "en": "Current marriage status" },
+          "importance": "high"
+        },
+        {
+          "id": "i751_003",
+          "questionEn": "Have there been any changes since you received your green card?",
+          "questionVi": "Có thay đổi gì từ khi nhận thẻ xanh không?",
+          "tips": { "vi": "Thay đổi địa chỉ, công việc, v.v.", "en": "Address, job changes, etc." },
+          "importance": "medium"
+        },
+        {
+          "id": "i751_004",
+          "questionEn": "Do you have children together now?",
+          "questionVi": "Bây giờ có con chung chưa?",
+          "tips": { "vi": "Cập nhật về gia đình", "en": "Family updates" },
+          "importance": "medium"
+        },
+        {
+          "id": "i751_005",
+          "questionEn": "What evidence do you have that your marriage is genuine?",
+          "questionVi": "Có bằng chứng gì chứng minh hôn nhân thật?",
+          "tips": { "vi": "Tài khoản chung, tài sản chung, v.v.", "en": "Joint accounts, property, etc." },
+          "importance": "high"
+        }
+      ]
+    },
+    "consularInterview": {
+      "categoryNameVi": "Phỏng Vấn Lãnh Sự",
+      "categoryNameEn": "Consular Interview",
+      "subcategories": [
+        {
+          "id": "general",
+          "nameVi": "Câu Hỏi Chung",
+          "nameEn": "General Questions",
+          "icon": "clipboard-list",
+          "questions": [
+            {
+              "id": "ci001",
+              "questionEn": "What is your full name?",
+              "questionVi": "Tên đầy đủ của bạn là gì?",
+              "tips": { "vi": "Như trong hộ chiếu", "en": "As shown in passport" },
+              "importance": "high"
+            },
+            {
+              "id": "ci002",
+              "questionEn": "What is your date of birth?",
+              "questionVi": "Bạn sinh ngày nào?",
+              "tips": { "vi": "Ngày/tháng/năm", "en": "Day/month/year" },
+              "importance": "high"
+            },
+            {
+              "id": "ci003",
+              "questionEn": "Where were you born?",
+              "questionVi": "Bạn sinh ở đâu?",
+              "tips": { "vi": "Thành phố, tỉnh, quốc gia", "en": "City, province, country" },
+              "importance": "high"
+            },
+            {
+              "id": "ci004",
+              "questionEn": "What is your current address?",
+              "questionVi": "Địa chỉ hiện tại của bạn?",
+              "tips": { "vi": "Địa chỉ đầy đủ", "en": "Full address" },
+              "importance": "high"
+            },
+            {
+              "id": "ci005",
+              "questionEn": "Who is your petitioner?",
+              "questionVi": "Ai là người bảo lãnh bạn?",
+              "tips": { "vi": "Tên đầy đủ của người bảo lãnh", "en": "Full name of petitioner" },
+              "importance": "high"
+            },
+            {
+              "id": "ci006",
+              "questionEn": "What is your relationship to the petitioner?",
+              "questionVi": "Quan hệ của bạn với người bảo lãnh?",
+              "tips": { "vi": "Vợ/chồng, con, anh/chị/em", "en": "Spouse, child, sibling" },
+              "importance": "high"
+            }
+          ]
+        },
+        {
+          "id": "spouse_category",
+          "nameVi": "Diện Vợ/Chồng",
+          "nameEn": "Spouse Category (IR1/CR1/F2A)",
+          "icon": "heart",
+          "questions": [
+            {
+              "id": "ci007",
+              "questionEn": "How did you meet your spouse?",
+              "questionVi": "Bạn gặp vợ/chồng như thế nào?",
+              "tips": { "vi": "Chi tiết về cách gặp nhau", "en": "Details about how you met" },
+              "importance": "high"
+            },
+            {
+              "id": "ci008",
+              "questionEn": "When and where did you get married?",
+              "questionVi": "Kết hôn khi nào và ở đâu?",
+              "tips": { "vi": "Ngày và địa điểm", "en": "Date and location" },
+              "importance": "high"
+            },
+            {
+              "id": "ci009",
+              "questionEn": "Do you have children together?",
+              "questionVi": "Có con chung không?",
+              "tips": { "vi": "Số con, tên, tuổi", "en": "Number, names, ages" },
+              "importance": "high"
+            },
+            {
+              "id": "ci010",
+              "questionEn": "What does your spouse do in the US?",
+              "questionVi": "Vợ/chồng làm nghề gì ở Mỹ?",
+              "tips": { "vi": "Công việc cụ thể", "en": "Specific job" },
+              "importance": "medium"
+            },
+            {
+              "id": "ci011",
+              "questionEn": "Where will you live in the US?",
+              "questionVi": "Sẽ sống ở đâu tại Mỹ?",
+              "tips": { "vi": "Địa chỉ dự kiến", "en": "Planned address" },
+              "importance": "medium"
+            },
+            {
+              "id": "ci012",
+              "questionEn": "How often do you communicate with your spouse?",
+              "questionVi": "Liên lạc với vợ/chồng thường xuyên như thế nào?",
+              "tips": { "vi": "Gọi điện, video call, v.v.", "en": "Calls, video chat, etc." },
+              "importance": "medium"
+            }
+          ]
+        },
+        {
+          "id": "child_category",
+          "nameVi": "Diện Con Cái",
+          "nameEn": "Child Category (IR2/F1/F2B)",
+          "icon": "baby",
+          "questions": [
+            {
+              "id": "ci013",
+              "questionEn": "What is your parent's name?",
+              "questionVi": "Cha/mẹ bảo lãnh tên gì?",
+              "tips": { "vi": "Họ tên đầy đủ", "en": "Full name" },
+              "importance": "high"
+            },
+            {
+              "id": "ci014",
+              "questionEn": "How long has your parent been in the US?",
+              "questionVi": "Cha/mẹ ở Mỹ bao lâu rồi?",
+              "tips": { "vi": "Số năm", "en": "Number of years" },
+              "importance": "medium"
+            },
+            {
+              "id": "ci015",
+              "questionEn": "Do you have siblings in the US?",
+              "questionVi": "Có anh chị em nào ở Mỹ không?",
+              "tips": { "vi": "Ai đã ở Mỹ", "en": "Who is already in the US" },
+              "importance": "medium"
+            },
+            {
+              "id": "ci016",
+              "questionEn": "What is your education/job?",
+              "questionVi": "Học hành/công việc hiện tại?",
+              "tips": { "vi": "Trình độ và công việc", "en": "Education and job" },
+              "importance": "medium"
+            },
+            {
+              "id": "ci017",
+              "questionEn": "What do you plan to do in the US?",
+              "questionVi": "Dự định làm gì ở Mỹ?",
+              "tips": { "vi": "Kế hoạch học tập/làm việc", "en": "Study/work plans" },
+              "importance": "medium"
+            }
+          ]
+        },
+        {
+          "id": "parent_category",
+          "nameVi": "Diện Cha/Mẹ",
+          "nameEn": "Parent Category (IR5)",
+          "icon": "user-plus",
+          "questions": [
+            {
+              "id": "ci018",
+              "questionEn": "How long has your child been in the US?",
+              "questionVi": "Con bạn ở Mỹ bao lâu rồi?",
+              "tips": { "vi": "Số năm", "en": "Number of years" },
+              "importance": "medium"
+            },
+            {
+              "id": "ci019",
+              "questionEn": "What does your child do?",
+              "questionVi": "Con bạn làm nghề gì?",
+              "tips": { "vi": "Công việc của con", "en": "Child's job" },
+              "importance": "medium"
+            },
+            {
+              "id": "ci020",
+              "questionEn": "Do you have other relatives in the US?",
+              "questionVi": "Có người thân nào khác ở Mỹ không?",
+              "tips": { "vi": "Liệt kê nếu có", "en": "List if any" },
+              "importance": "medium"
+            },
+            {
+              "id": "ci021",
+              "questionEn": "Where will you live?",
+              "questionVi": "Sẽ sống ở đâu?",
+              "tips": { "vi": "Địa chỉ con", "en": "Child's address" },
+              "importance": "medium"
+            }
+          ]
+        },
+        {
+          "id": "sibling_category",
+          "nameVi": "Diện Anh Chị Em",
+          "nameEn": "Sibling Category (F4)",
+          "icon": "users",
+          "questions": [
+            {
+              "id": "ci022",
+              "questionEn": "How many siblings do you have?",
+              "questionVi": "Bạn có bao nhiêu anh chị em?",
+              "tips": { "vi": "Tổng số", "en": "Total number" },
+              "importance": "medium"
+            },
+            {
+              "id": "ci023",
+              "questionEn": "Which siblings are in the US?",
+              "questionVi": "Anh chị em nào ở Mỹ?",
+              "tips": { "vi": "Ai ở Mỹ, ai ở VN", "en": "Who is in US, who is in VN" },
+              "importance": "medium"
+            },
+            {
+              "id": "ci024",
+              "questionEn": "What does your petitioner sibling do?",
+              "questionVi": "Anh/chị/em bảo lãnh làm nghề gì?",
+              "tips": { "vi": "Công việc cụ thể", "en": "Specific job" },
+              "importance": "medium"
+            },
+            {
+              "id": "ci025",
+              "questionEn": "Do you have your own family?",
+              "questionVi": "Bạn có gia đình riêng không?",
+              "tips": { "vi": "Vợ/chồng, con cái", "en": "Spouse, children" },
+              "importance": "medium"
+            }
+          ]
+        },
+        {
+          "id": "immigration_history",
+          "nameVi": "Lịch Sử Di Trú",
+          "nameEn": "Immigration History",
+          "icon": "plane",
+          "questions": [
+            {
+              "id": "ci026",
+              "questionEn": "Have you ever been to the US before?",
+              "questionVi": "Đã từng đến Mỹ chưa?",
+              "tips": { "vi": "Visa gì, năm nào", "en": "What visa, what year" },
+              "importance": "high"
+            },
+            {
+              "id": "ci027",
+              "questionEn": "Have you ever been denied a US visa?",
+              "questionVi": "Đã từng bị từ chối visa Mỹ chưa?",
+              "tips": { "vi": "Khai thật, giải thích lý do", "en": "Be honest, explain reason" },
+              "importance": "high"
+            },
+            {
+              "id": "ci028",
+              "questionEn": "Have you ever overstayed a visa?",
+              "questionVi": "Đã từng ở quá hạn visa chưa?",
+              "tips": { "vi": "Khai thật", "en": "Be honest" },
+              "importance": "high"
+            },
+            {
+              "id": "ci029",
+              "questionEn": "Have you ever been deported?",
+              "questionVi": "Đã từng bị trục xuất chưa?",
+              "tips": { "vi": "Khai thật", "en": "Be honest" },
+              "importance": "high"
+            }
+          ]
+        },
+        {
+          "id": "security",
+          "nameVi": "Câu Hỏi An Ninh",
+          "nameEn": "Security Questions",
+          "icon": "shield",
+          "questions": [
+            {
+              "id": "ci030",
+              "questionEn": "Have you ever been arrested or convicted?",
+              "questionVi": "Đã từng bị bắt hoặc kết án chưa?",
+              "tips": { "vi": "Kể cả vi phạm nhỏ", "en": "Including minor offenses" },
+              "importance": "high"
+            },
+            {
+              "id": "ci031",
+              "questionEn": "Have you served in the military?",
+              "questionVi": "Đã từng phục vụ quân đội chưa?",
+              "tips": { "vi": "Nước nào, thời gian", "en": "Which country, when" },
+              "importance": "medium"
+            },
+            {
+              "id": "ci032",
+              "questionEn": "Have you ever been a member of any organization?",
+              "questionVi": "Đã từng là thành viên tổ chức nào chưa?",
+              "tips": { "vi": "Chính trị, xã hội", "en": "Political, social" },
+              "importance": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "requiredDocuments": {
+    "marriageInterview": {
+      "nameVi": "Phỏng Vấn Green Card Hôn Nhân",
+      "nameEn": "Marriage Green Card Interview",
+      "required": [
+        { "vi": "Thư mời phỏng vấn (I-797C)", "en": "Interview Notice (I-797C)" },
+        { "vi": "Hộ chiếu còn hạn", "en": "Valid Passport" },
+        { "vi": "Bằng lái xe hoặc ID", "en": "Driver's License or State ID" },
+        { "vi": "Giấy kết hôn gốc", "en": "Original Marriage Certificate" },
+        { "vi": "Giấy khai sinh", "en": "Birth Certificate" },
+        { "vi": "Giấy ly hôn (nếu từng kết hôn trước)", "en": "Divorce Decree (if previously married)" },
+        { "vi": "Form I-94 (lịch sử nhập cảnh)", "en": "Form I-94 (Entry Records)" }
+      ],
+      "evidence": [
+        { "vi": "Tài khoản ngân hàng chung", "en": "Joint Bank Account Statements" },
+        { "vi": "Hợp đồng thuê nhà/mortgage chung", "en": "Joint Lease or Mortgage" },
+        { "vi": "Hóa đơn điện nước chung", "en": "Joint Utility Bills" },
+        { "vi": "Bảo hiểm chung", "en": "Joint Insurance Policies" },
+        { "vi": "Khai thuế chung", "en": "Joint Tax Returns" },
+        { "vi": "Ảnh cưới và ảnh sinh hoạt", "en": "Wedding and Life Photos" },
+        { "vi": "Giấy khai sinh con (nếu có)", "en": "Children's Birth Certificates" },
+        { "vi": "Thư từ gửi chung địa chỉ", "en": "Mail addressed to both" }
+      ]
+    },
+    "consularInterview": {
+      "nameVi": "Phỏng Vấn Lãnh Sự",
+      "nameEn": "Consular Interview",
+      "required": [
+        { "vi": "Thư hẹn phỏng vấn", "en": "Interview Appointment Letter" },
+        { "vi": "Hộ chiếu (còn hạn ít nhất 8 tháng)", "en": "Passport (valid 8+ months)" },
+        { "vi": "Trang xác nhận DS-260", "en": "DS-260 Confirmation Page" },
+        { "vi": "2 ảnh passport (5x5cm)", "en": "2 Passport Photos (2x2 inches)" },
+        { "vi": "Kết quả khám sức khỏe di trú", "en": "Medical Examination Results" },
+        { "vi": "Lý lịch tư pháp", "en": "Police Clearance Certificate" }
+      ],
+      "financial": [
+        { "vi": "Form I-864 Affidavit of Support", "en": "Form I-864 Affidavit of Support" },
+        { "vi": "Tax returns 3 năm gần nhất", "en": "Tax Returns (last 3 years)" },
+        { "vi": "W-2 hoặc 1099", "en": "W-2 or 1099 Forms" },
+        { "vi": "Thư xác nhận việc làm", "en": "Employment Verification Letter" },
+        { "vi": "Sao kê ngân hàng", "en": "Bank Statements" }
+      ]
+    }
+  },
+  "tips": {
+    "do": [
+      { "vi": "Đến sớm 15-30 phút", "en": "Arrive 15-30 minutes early" },
+      { "vi": "Ăn mặc lịch sự, chuyên nghiệp", "en": "Dress professionally" },
+      { "vi": "Trả lời ngắn gọn, đúng trọng tâm", "en": "Answer briefly and to the point" },
+      { "vi": "Thật thà - Không nói dối", "en": "Be honest - Never lie" },
+      { "vi": "Bình tĩnh - Đây là quy trình bình thường", "en": "Stay calm - This is a normal process" },
+      { "vi": "Nhìn vào mắt nhân viên phỏng vấn", "en": "Make eye contact with the officer" },
+      { "vi": "Mang theo bản gốc tất cả giấy tờ", "en": "Bring originals of all documents" },
+      { "vi": "Chuẩn bị sẵn câu trả lời cho các câu hỏi phổ biến", "en": "Prepare answers for common questions" }
+    ],
+    "dont": [
+      { "vi": "Không nói dối - Dễ bị phát hiện, hậu quả nghiêm trọng", "en": "Don't lie - Easy to detect, serious consequences" },
+      { "vi": "Không đoán mò - Nói 'Tôi không nhớ' nếu không chắc", "en": "Don't guess - Say 'I don't remember' if unsure" },
+      { "vi": "Không trả lời dài dòng - Chỉ trả lời những gì được hỏi", "en": "Don't give lengthy answers - Only answer what's asked" },
+      { "vi": "Không mang điện thoại vào phòng phỏng vấn", "en": "Don't bring phone into interview room" },
+      { "vi": "Không tranh cãi với nhân viên", "en": "Don't argue with the officer" },
+      { "vi": "Không tình nguyện thông tin không được hỏi", "en": "Don't volunteer information not asked" }
+    ]
+  },
+  "redFlags": [
+    { "vi": "Sống riêng không lý do", "en": "Living separately without reason", "explanation": { "vi": "Phải giải thích rõ (công việc, v.v.)", "en": "Must explain clearly (work, etc.)" } },
+    { "vi": "Câu trả lời không khớp", "en": "Inconsistent answers", "explanation": { "vi": "Hai vợ chồng nói khác nhau", "en": "Spouses give different answers" } },
+    { "vi": "Ít tài khoản/tài sản chung", "en": "Few joint accounts/assets", "explanation": { "vi": "Thiếu bằng chứng cuộc sống chung", "en": "Lack of evidence of shared life" } },
+    { "vi": "Chênh lệch tuổi lớn", "en": "Large age difference", "explanation": { "vi": "Cần giải thích thêm", "en": "May require explanation" } },
+    { "vi": "Không cùng ngôn ngữ", "en": "No common language", "explanation": { "vi": "Giao tiếp bằng cách nào?", "en": "How do you communicate?" } },
+    { "vi": "Kết hôn sau vấn đề di trú", "en": "Marriage after immigration issues", "explanation": { "vi": "Timing đáng ngờ", "en": "Suspicious timing" } }
+  ],
+  "processingTimes": [
+    { "type": "I-130 (IR)", "nameVi": "Người thân trực tiếp", "nameEn": "Immediate Relatives", "time": "12-18 tháng" },
+    { "type": "I-130 (F2A)", "nameVi": "Diện F2A", "nameEn": "F2A Category", "time": "24-36 tháng" },
+    { "type": "I-485", "nameVi": "Điều chỉnh tình trạng", "nameEn": "Adjustment of Status", "time": "12-24 tháng" },
+    { "type": "I-751", "nameVi": "Gỡ điều kiện", "nameEn": "Removal of Conditions", "time": "12-24 tháng" },
+    { "type": "Consular", "nameVi": "Phỏng vấn Lãnh sự (sau I-130)", "nameEn": "Consular Processing", "time": "6-12 tháng" }
+  ],
+  "faq": [
+    {
+      "questionVi": "Thẻ xanh 2 năm khác gì 10 năm?",
+      "questionEn": "What's the difference between 2-year and 10-year green cards?",
+      "answerVi": "Chỉ khác thời hạn và yêu cầu nộp I-751. Quyền lợi như nhau.",
+      "answerEn": "Only differs in validity and I-751 requirement. Same benefits."
+    },
+    {
+      "questionVi": "Nếu ly hôn khi đang có thẻ 2 năm thì sao?",
+      "questionEn": "What if I divorce while having a 2-year card?",
+      "answerVi": "Vẫn có thể nộp I-751 với waiver, cần chứng minh hôn nhân ban đầu là thật.",
+      "answerEn": "Can still file I-751 with waiver, must prove original marriage was genuine."
+    },
+    {
+      "questionVi": "Có cần luật sư đi phỏng vấn không?",
+      "questionEn": "Do I need a lawyer for the interview?",
+      "answerVi": "Không bắt buộc, nhưng nên có nếu hồ sơ phức tạp.",
+      "answerEn": "Not required, but recommended for complex cases."
+    },
+    {
+      "questionVi": "Phỏng vấn bao lâu?",
+      "questionEn": "How long is the interview?",
+      "answerVi": "Thường 15-30 phút, có thể lâu hơn nếu có vấn đề.",
+      "answerEn": "Usually 15-30 minutes, may be longer if issues arise."
+    },
+    {
+      "questionVi": "Nếu bị từ chối thì sao?",
+      "questionEn": "What if I'm denied?",
+      "answerVi": "Tùy lý do, có thể nộp lại, khiếu nại, hoặc cần luật sư tư vấn.",
+      "answerEn": "Depends on reason, may reapply, appeal, or consult attorney."
+    },
+    {
+      "questionVi": "F2A nhanh hơn F2B bao nhiêu?",
+      "questionEn": "How much faster is F2A than F2B?",
+      "answerVi": "F2A thường nhanh hơn 4-8 năm tùy thời điểm.",
+      "answerEn": "F2A is typically 4-8 years faster depending on timing."
+    },
+    {
+      "questionVi": "Thường trú nhân có thể bảo lãnh cha mẹ không?",
+      "questionEn": "Can permanent residents sponsor parents?",
+      "answerVi": "Không. Chỉ công dân Mỹ mới bảo lãnh được cha mẹ.",
+      "answerEn": "No. Only US citizens can sponsor parents."
+    }
+  ],
+  "resources": [
+    { "name": "USCIS", "url": "https://www.uscis.gov" },
+    { "name": "Visa Bulletin", "url": "https://travel.state.gov/visa-bulletin" },
+    { "name": "US Embassy Vietnam", "url": "https://vn.usembassy.gov" },
+    { "name": "NVC", "url": "https://ceac.state.gov" }
+  ]
+}

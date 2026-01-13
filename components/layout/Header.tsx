@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
-import { Menu, X, BookOpen, FileQuestion, Layers, Star } from 'lucide-react';
+import { Menu, X, BookOpen, FileQuestion, Layers, Star, Plane } from 'lucide-react';
 import { LanguageToggle } from './LanguageToggle';
 import { ThemeToggle } from './ThemeToggle';
 import { cn } from '@/lib/utils';
@@ -20,6 +20,7 @@ export function Header() {
     { href: `/${locale}/practice`, label: t('practice'), icon: FileQuestion },
     { href: `/${locale}/flashcards`, label: t('flashcards'), icon: Layers },
     { href: `/${locale}/65-20`, label: t('senior'), icon: Star },
+    { href: `/${locale}/immigration`, label: t('immigration'), icon: Plane },
   ];
 
   return (
