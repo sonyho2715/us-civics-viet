@@ -114,7 +114,7 @@ export function CategoryMastery({ locale, compact = false }: CategoryMasteryProp
                 style={{ width: `${cat.percentage}%` }}
               />
             </div>
-            <span className="text-xs text-gray-500 dark:text-slate-400 mt-1">
+            <span className="text-xs text-gray-500 dark:text-gray-400 mt-1">
               {cat.percentage}%
             </span>
           </div>
@@ -141,7 +141,7 @@ export function CategoryMastery({ locale, compact = false }: CategoryMasteryProp
                 ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300'
                 : overallStats.level === 'learning'
                   ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300'
-                  : 'bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-slate-400'
+                  : 'bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-gray-400'
           }`}>
             {overallStats.percentage}% {locale === 'vi' ? 'Tổng' : 'Overall'}
           </span>
@@ -160,7 +160,7 @@ export function CategoryMastery({ locale, compact = false }: CategoryMasteryProp
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-xs text-gray-500 dark:text-slate-400">
+                <span className="text-xs text-gray-500 dark:text-gray-400">
                   {cat.studied}/{cat.total}
                 </span>
                 <span className={`px-2 py-0.5 text-xs font-medium rounded-full ${
@@ -170,7 +170,7 @@ export function CategoryMastery({ locale, compact = false }: CategoryMasteryProp
                       ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300'
                       : cat.level === 'learning'
                         ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300'
-                        : 'bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-slate-400'
+                        : 'bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-gray-400'
                 }`}>
                   {getMasteryLabel(cat.level, locale)}
                 </span>
@@ -188,19 +188,19 @@ export function CategoryMastery({ locale, compact = false }: CategoryMasteryProp
       {/* Legend */}
       <div className="mt-4 pt-4 border-t border-gray-100 dark:border-slate-700">
         <div className="flex flex-wrap gap-2 text-xs">
-          <span className="flex items-center gap-1 text-gray-500 dark:text-slate-400">
+          <span className="flex items-center gap-1 text-gray-500 dark:text-gray-400">
             <span className="w-2 h-2 rounded-full bg-gray-400" />
             {locale === 'vi' ? '0-29%' : '0-29%'}
           </span>
-          <span className="flex items-center gap-1 text-gray-500 dark:text-slate-400">
+          <span className="flex items-center gap-1 text-gray-500 dark:text-gray-400">
             <span className="w-2 h-2 rounded-full bg-blue-500" />
             {locale === 'vi' ? '30-69%' : '30-69%'}
           </span>
-          <span className="flex items-center gap-1 text-gray-500 dark:text-slate-400">
+          <span className="flex items-center gap-1 text-gray-500 dark:text-gray-400">
             <span className="w-2 h-2 rounded-full bg-green-500" />
             {locale === 'vi' ? '70-89%' : '70-89%'}
           </span>
-          <span className="flex items-center gap-1 text-gray-500 dark:text-slate-400">
+          <span className="flex items-center gap-1 text-gray-500 dark:text-gray-400">
             <span className="w-2 h-2 rounded-full bg-amber-500" />
             {locale === 'vi' ? '90-100%' : '90-100%'}
           </span>

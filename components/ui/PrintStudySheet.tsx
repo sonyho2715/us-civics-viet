@@ -67,7 +67,7 @@ export function PrintStudySheet({ locale, onClose }: PrintStudySheetProps) {
               onClick={onClose}
               className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors"
             >
-              <X className="w-5 h-5 text-gray-500 dark:text-slate-400" />
+              <X className="w-5 h-5 text-gray-500 dark:text-gray-400" />
             </button>
           </div>
 
@@ -91,7 +91,7 @@ export function PrintStudySheet({ locale, onClose }: PrintStudySheetProps) {
             </div>
 
             <div className="flex flex-wrap items-center gap-4">
-              <label className="flex items-center gap-2 text-sm text-gray-600 dark:text-slate-400">
+              <label className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
                 <input
                   type="checkbox"
                   checked={showAnswers}
@@ -113,7 +113,7 @@ export function PrintStudySheet({ locale, onClose }: PrintStudySheetProps) {
               </select>
             </div>
 
-            <p className="text-sm text-gray-500 dark:text-slate-400">
+            <p className="text-sm text-gray-500 dark:text-gray-400">
               {locale === 'vi'
                 ? `${filteredQuestions.length} câu hỏi sẽ được in`
                 : `${filteredQuestions.length} questions will be printed`}
@@ -201,7 +201,7 @@ function QuestionPrintItem({
           <p className="font-medium text-gray-900 dark:text-white print:text-black">
             {locale === 'vi' ? question.question_vi : question.question_en}
           </p>
-          <p className="text-sm text-gray-500 dark:text-slate-400 print:text-gray-600">
+          <p className="text-sm text-gray-500 dark:text-gray-400 print:text-gray-600">
             {locale === 'vi' ? question.question_en : question.question_vi}
           </p>
           {question.is_65_20 && (

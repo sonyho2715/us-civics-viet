@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "1.0.0",
+    "version": "2.0.0",
     "lastUpdated": "2026-01-13",
-    "totalQuestions": 180,
-    "categories": 6
+    "totalQuestions": 280,
+    "categories": 9
   },
   "greenCardTypes": {
     "conditional": {
@@ -494,41 +494,221 @@
       "categoryNameVi": "Phỏng Vấn Gỡ Điều Kiện I-751",
       "categoryNameEn": "I-751 Removal of Conditions Interview",
       "icon": "file-check",
-      "questions": [
+      "subcategories": [
         {
-          "id": "i751_001",
-          "questionEn": "Are you still living with your spouse?",
-          "questionVi": "Bạn vẫn đang sống cùng vợ/chồng?",
-          "tips": { "vi": "Trả lời thật", "en": "Answer honestly" },
-          "importance": "high"
+          "id": "i751_current_status",
+          "nameVi": "Tình Trạng Hiện Tại",
+          "nameEn": "Current Status",
+          "icon": "home",
+          "questions": [
+            {
+              "id": "i751_001",
+              "questionEn": "Are you still living with your spouse?",
+              "questionVi": "Bạn vẫn đang sống cùng vợ/chồng?",
+              "tips": { "vi": "Trả lời thật, nếu sống riêng phải giải thích lý do", "en": "Answer honestly, explain if living apart" },
+              "importance": "high"
+            },
+            {
+              "id": "i751_002",
+              "questionEn": "Is your marriage still intact?",
+              "questionVi": "Hôn nhân của bạn vẫn còn tốt đẹp?",
+              "tips": { "vi": "Tình trạng hôn nhân hiện tại", "en": "Current marriage status" },
+              "importance": "high"
+            },
+            {
+              "id": "i751_003",
+              "questionEn": "What is your current address?",
+              "questionVi": "Địa chỉ hiện tại của bạn là gì?",
+              "tips": { "vi": "Phải khớp với giấy tờ", "en": "Must match documents" },
+              "importance": "high"
+            },
+            {
+              "id": "i751_004",
+              "questionEn": "How long have you lived at this address?",
+              "questionVi": "Sống tại địa chỉ này bao lâu rồi?",
+              "tips": { "vi": "Nhớ chính xác", "en": "Remember accurately" },
+              "importance": "medium"
+            },
+            {
+              "id": "i751_005",
+              "questionEn": "Have you moved since receiving your green card?",
+              "questionVi": "Có chuyển nhà từ khi nhận thẻ xanh không?",
+              "tips": { "vi": "Liệt kê tất cả địa chỉ", "en": "List all addresses" },
+              "importance": "medium"
+            }
+          ]
         },
         {
-          "id": "i751_002",
-          "questionEn": "Is your marriage still intact?",
-          "questionVi": "Hôn nhân của bạn vẫn còn tốt đẹp?",
-          "tips": { "vi": "Tình trạng hôn nhân hiện tại", "en": "Current marriage status" },
-          "importance": "high"
+          "id": "i751_evidence",
+          "nameVi": "Bằng Chứng Hôn Nhân",
+          "nameEn": "Marriage Evidence",
+          "icon": "heart",
+          "questions": [
+            {
+              "id": "i751_006",
+              "questionEn": "What evidence do you have that your marriage is genuine?",
+              "questionVi": "Có bằng chứng gì chứng minh hôn nhân thật?",
+              "tips": { "vi": "Tài khoản chung, tài sản chung, bảo hiểm chung", "en": "Joint accounts, property, insurance" },
+              "importance": "high"
+            },
+            {
+              "id": "i751_007",
+              "questionEn": "Do you have joint bank accounts?",
+              "questionVi": "Có tài khoản ngân hàng chung không?",
+              "tips": { "vi": "Ngân hàng nào, bao lâu", "en": "Which bank, how long" },
+              "importance": "high"
+            },
+            {
+              "id": "i751_008",
+              "questionEn": "Do you file taxes jointly?",
+              "questionVi": "Có khai thuế chung không?",
+              "tips": { "vi": "Mang theo bản copy thuế", "en": "Bring tax return copies" },
+              "importance": "high"
+            },
+            {
+              "id": "i751_009",
+              "questionEn": "Do you have health insurance together?",
+              "questionVi": "Có bảo hiểm sức khỏe chung không?",
+              "tips": { "vi": "Ai là người chính, ai phụ thuộc", "en": "Primary vs dependent" },
+              "importance": "medium"
+            },
+            {
+              "id": "i751_010",
+              "questionEn": "Is your spouse's name on your car title/registration?",
+              "questionVi": "Tên vợ/chồng có trên đăng ký xe không?",
+              "tips": { "vi": "Xe chung hoặc riêng", "en": "Joint or separate" },
+              "importance": "medium"
+            },
+            {
+              "id": "i751_011",
+              "questionEn": "Do you have a joint lease or mortgage?",
+              "questionVi": "Có hợp đồng thuê nhà/mortgage chung không?",
+              "tips": { "vi": "Ai đứng tên", "en": "Whose name is on it" },
+              "importance": "high"
+            }
+          ]
         },
         {
-          "id": "i751_003",
-          "questionEn": "Have there been any changes since you received your green card?",
-          "questionVi": "Có thay đổi gì từ khi nhận thẻ xanh không?",
-          "tips": { "vi": "Thay đổi địa chỉ, công việc, v.v.", "en": "Address, job changes, etc." },
-          "importance": "medium"
+          "id": "i751_family",
+          "nameVi": "Gia Đình & Con Cái",
+          "nameEn": "Family & Children",
+          "icon": "users",
+          "questions": [
+            {
+              "id": "i751_012",
+              "questionEn": "Do you have children together?",
+              "questionVi": "Có con chung không?",
+              "tips": { "vi": "Tên, tuổi con", "en": "Names, ages" },
+              "importance": "high"
+            },
+            {
+              "id": "i751_013",
+              "questionEn": "When was your child born?",
+              "questionVi": "Con sinh ngày nào?",
+              "tips": { "vi": "Mang giấy khai sinh", "en": "Bring birth certificate" },
+              "importance": "high"
+            },
+            {
+              "id": "i751_014",
+              "questionEn": "Are you expecting a child?",
+              "questionVi": "Đang mang thai không?",
+              "tips": { "vi": "Nếu có, mang bằng chứng", "en": "If yes, bring proof" },
+              "importance": "medium"
+            },
+            {
+              "id": "i751_015",
+              "questionEn": "Does your spouse have children from previous relationships?",
+              "questionVi": "Vợ/chồng có con riêng không?",
+              "tips": { "vi": "Quan hệ với con riêng", "en": "Relationship with stepchildren" },
+              "importance": "medium"
+            },
+            {
+              "id": "i751_016",
+              "questionEn": "Do you have step-children living with you?",
+              "questionVi": "Có con riêng sống cùng không?",
+              "tips": { "vi": "Mô tả gia đình", "en": "Describe household" },
+              "importance": "medium"
+            }
+          ]
         },
         {
-          "id": "i751_004",
-          "questionEn": "Do you have children together now?",
-          "questionVi": "Bây giờ có con chung chưa?",
-          "tips": { "vi": "Cập nhật về gia đình", "en": "Family updates" },
-          "importance": "medium"
+          "id": "i751_changes",
+          "nameVi": "Thay Đổi Từ Khi Nhận Thẻ Xanh",
+          "nameEn": "Changes Since Green Card",
+          "icon": "clock",
+          "questions": [
+            {
+              "id": "i751_017",
+              "questionEn": "Have there been any changes since you received your green card?",
+              "questionVi": "Có thay đổi gì từ khi nhận thẻ xanh không?",
+              "tips": { "vi": "Địa chỉ, công việc, tài chính", "en": "Address, job, finances" },
+              "importance": "high"
+            },
+            {
+              "id": "i751_018",
+              "questionEn": "Has your spouse's employment changed?",
+              "questionVi": "Công việc của vợ/chồng có thay đổi không?",
+              "tips": { "vi": "Công ty mới, chức vụ mới", "en": "New company, new position" },
+              "importance": "medium"
+            },
+            {
+              "id": "i751_019",
+              "questionEn": "Have you traveled outside the US since receiving your green card?",
+              "questionVi": "Đã đi nước ngoài từ khi nhận thẻ xanh chưa?",
+              "tips": { "vi": "Liệt kê chuyến đi", "en": "List all trips" },
+              "importance": "medium"
+            },
+            {
+              "id": "i751_020",
+              "questionEn": "Have you been arrested or convicted of any crime?",
+              "questionVi": "Có bị bắt hoặc kết án không?",
+              "tips": { "vi": "Khai thật, kể cả vi phạm nhỏ", "en": "Be honest, include minor offenses" },
+              "importance": "high"
+            }
+          ]
         },
         {
-          "id": "i751_005",
-          "questionEn": "What evidence do you have that your marriage is genuine?",
-          "questionVi": "Có bằng chứng gì chứng minh hôn nhân thật?",
-          "tips": { "vi": "Tài khoản chung, tài sản chung, v.v.", "en": "Joint accounts, property, etc." },
-          "importance": "high"
+          "id": "i751_waiver",
+          "nameVi": "Waiver (Miễn Trừ)",
+          "nameEn": "Waiver Cases",
+          "icon": "shield",
+          "questions": [
+            {
+              "id": "i751_021",
+              "questionEn": "Why are you filing with a waiver?",
+              "questionVi": "Tại sao nộp với waiver?",
+              "tips": { "vi": "Giải thích hoàn cảnh ly hôn/ly thân", "en": "Explain divorce/separation circumstances" },
+              "importance": "high"
+            },
+            {
+              "id": "i751_022",
+              "questionEn": "When did you separate from your spouse?",
+              "questionVi": "Ly thân từ khi nào?",
+              "tips": { "vi": "Ngày chính xác", "en": "Exact date" },
+              "importance": "high"
+            },
+            {
+              "id": "i751_023",
+              "questionEn": "When was your divorce finalized?",
+              "questionVi": "Ly hôn hoàn tất ngày nào?",
+              "tips": { "vi": "Mang giấy ly hôn", "en": "Bring divorce decree" },
+              "importance": "high"
+            },
+            {
+              "id": "i751_024",
+              "questionEn": "Was your marriage entered into in good faith?",
+              "questionVi": "Hôn nhân có thật lòng từ đầu không?",
+              "tips": { "vi": "Chứng minh ý định tốt ban đầu", "en": "Prove good faith intent" },
+              "importance": "high"
+            },
+            {
+              "id": "i751_025",
+              "questionEn": "Did you experience abuse during your marriage?",
+              "questionVi": "Có bị bạo hành trong hôn nhân không?",
+              "tips": { "vi": "Cung cấp bằng chứng nếu có", "en": "Provide evidence if applicable" },
+              "importance": "high"
+            }
+          ]
         }
       ]
     },
@@ -947,5 +1127,502 @@
     { "name": "Visa Bulletin", "url": "https://travel.state.gov/visa-bulletin" },
     { "name": "US Embassy Vietnam", "url": "https://vn.usembassy.gov" },
     { "name": "NVC", "url": "https://ceac.state.gov" }
+  ],
+  "n400CitizenshipInterview": {
+    "categoryNameVi": "Phỏng Vấn Nhập Quốc Tịch N-400",
+    "categoryNameEn": "N-400 Citizenship Interview",
+    "description": {
+      "vi": "Phỏng vấn quốc tịch bao gồm kiểm tra tiếng Anh, câu hỏi công dân, và xác minh đơn N-400",
+      "en": "Citizenship interview includes English test, civics questions, and N-400 application verification"
+    },
+    "subcategories": [
+      {
+        "id": "n400_identity",
+        "nameVi": "Xác Minh Danh Tính",
+        "nameEn": "Identity Verification",
+        "icon": "user",
+        "questions": [
+          {
+            "id": "n400_001",
+            "questionEn": "What is your full name?",
+            "questionVi": "Tên đầy đủ của bạn là gì?",
+            "tips": { "vi": "Như trong thẻ xanh", "en": "As shown on green card" },
+            "importance": "high"
+          },
+          {
+            "id": "n400_002",
+            "questionEn": "What is your date of birth?",
+            "questionVi": "Bạn sinh ngày nào?",
+            "tips": { "vi": "Ngày tháng năm", "en": "Month/day/year" },
+            "importance": "high"
+          },
+          {
+            "id": "n400_003",
+            "questionEn": "What is your country of birth?",
+            "questionVi": "Bạn sinh ở nước nào?",
+            "tips": { "vi": "Tên quốc gia", "en": "Country name" },
+            "importance": "high"
+          },
+          {
+            "id": "n400_004",
+            "questionEn": "What is your current address?",
+            "questionVi": "Địa chỉ hiện tại của bạn?",
+            "tips": { "vi": "Phải khớp đơn N-400", "en": "Must match N-400" },
+            "importance": "high"
+          },
+          {
+            "id": "n400_005",
+            "questionEn": "What is your A-Number?",
+            "questionVi": "Số A-Number của bạn?",
+            "tips": { "vi": "Trên thẻ xanh", "en": "On green card" },
+            "importance": "high"
+          }
+        ]
+      },
+      {
+        "id": "n400_eligibility",
+        "nameVi": "Điều Kiện Đủ Tiêu Chuẩn",
+        "nameEn": "Eligibility Questions",
+        "icon": "check-circle",
+        "questions": [
+          {
+            "id": "n400_006",
+            "questionEn": "How long have you been a permanent resident?",
+            "questionVi": "Bạn là thường trú nhân bao lâu rồi?",
+            "tips": { "vi": "Ít nhất 5 năm (3 năm nếu kết hôn với công dân)", "en": "At least 5 years (3 if married to citizen)" },
+            "importance": "high"
+          },
+          {
+            "id": "n400_007",
+            "questionEn": "How long have you lived in your current state?",
+            "questionVi": "Bạn sống ở tiểu bang hiện tại bao lâu?",
+            "tips": { "vi": "Ít nhất 3 tháng", "en": "At least 3 months" },
+            "importance": "medium"
+          },
+          {
+            "id": "n400_008",
+            "questionEn": "Have you taken any trips outside the US?",
+            "questionVi": "Bạn có đi nước ngoài không?",
+            "tips": { "vi": "Liệt kê tất cả chuyến đi", "en": "List all trips" },
+            "importance": "high"
+          },
+          {
+            "id": "n400_009",
+            "questionEn": "What was your longest trip outside the US?",
+            "questionVi": "Chuyến đi dài nhất là bao lâu?",
+            "tips": { "vi": "Không quá 6 tháng liên tục", "en": "Cannot exceed 6 continuous months" },
+            "importance": "high"
+          },
+          {
+            "id": "n400_010",
+            "questionEn": "How many total days were you outside the US in the last 5 years?",
+            "questionVi": "Tổng số ngày ở nước ngoài trong 5 năm qua?",
+            "tips": { "vi": "Không quá 30 tháng tổng cộng", "en": "Cannot exceed 30 months total" },
+            "importance": "high"
+          }
+        ]
+      },
+      {
+        "id": "n400_good_moral",
+        "nameVi": "Đạo Đức Tốt",
+        "nameEn": "Good Moral Character",
+        "icon": "shield",
+        "questions": [
+          {
+            "id": "n400_011",
+            "questionEn": "Have you ever been arrested, cited, or detained?",
+            "questionVi": "Bạn có từng bị bắt, phạt, hoặc tạm giữ không?",
+            "tips": { "vi": "Khai thật, kể cả vi phạm giao thông", "en": "Be honest, include traffic violations" },
+            "importance": "high"
+          },
+          {
+            "id": "n400_012",
+            "questionEn": "Have you ever committed a crime you were not arrested for?",
+            "questionVi": "Có phạm tội mà không bị bắt không?",
+            "tips": { "vi": "Trả lời thật", "en": "Answer honestly" },
+            "importance": "high"
+          },
+          {
+            "id": "n400_013",
+            "questionEn": "Have you ever failed to file taxes?",
+            "questionVi": "Có năm nào không khai thuế không?",
+            "tips": { "vi": "Phải khai thuế đầy đủ", "en": "Must file all required taxes" },
+            "importance": "high"
+          },
+          {
+            "id": "n400_014",
+            "questionEn": "Do you owe any overdue taxes?",
+            "questionVi": "Có nợ thuế quá hạn không?",
+            "tips": { "vi": "Thanh toán hoặc có kế hoạch trả", "en": "Pay or have payment plan" },
+            "importance": "high"
+          },
+          {
+            "id": "n400_015",
+            "questionEn": "Have you ever been a habitual drunkard?",
+            "questionVi": "Có từng nghiện rượu không?",
+            "tips": { "vi": "Các vấn đề về rượu/ma túy", "en": "Alcohol/drug issues" },
+            "importance": "medium"
+          },
+          {
+            "id": "n400_016",
+            "questionEn": "Have you ever been involved in prostitution or gambling?",
+            "questionVi": "Có liên quan đến mại dâm hoặc cờ bạc không?",
+            "tips": { "vi": "Trả lời thật", "en": "Answer honestly" },
+            "importance": "medium"
+          }
+        ]
+      },
+      {
+        "id": "n400_marriage",
+        "nameVi": "Hôn Nhân (Nếu Dựa Trên Hôn Nhân)",
+        "nameEn": "Marriage (If Based on Marriage)",
+        "icon": "heart",
+        "questions": [
+          {
+            "id": "n400_017",
+            "questionEn": "Are you still married to your US citizen spouse?",
+            "questionVi": "Vẫn còn kết hôn với vợ/chồng công dân Mỹ?",
+            "tips": { "vi": "Cần cho đơn 3 năm", "en": "Required for 3-year application" },
+            "importance": "high"
+          },
+          {
+            "id": "n400_018",
+            "questionEn": "How long have you been married?",
+            "questionVi": "Kết hôn được bao lâu rồi?",
+            "tips": { "vi": "Ít nhất 3 năm", "en": "At least 3 years" },
+            "importance": "high"
+          },
+          {
+            "id": "n400_019",
+            "questionEn": "How did you meet your spouse?",
+            "questionVi": "Gặp vợ/chồng như thế nào?",
+            "tips": { "vi": "Câu chuyện nhất quán", "en": "Consistent story" },
+            "importance": "medium"
+          },
+          {
+            "id": "n400_020",
+            "questionEn": "Are you currently living with your spouse?",
+            "questionVi": "Hiện đang sống cùng vợ/chồng?",
+            "tips": { "vi": "Nếu sống riêng, giải thích", "en": "If apart, explain why" },
+            "importance": "high"
+          }
+        ]
+      },
+      {
+        "id": "n400_allegiance",
+        "nameVi": "Trung Thành Với Hoa Kỳ",
+        "nameEn": "Allegiance to US",
+        "icon": "flag",
+        "questions": [
+          {
+            "id": "n400_021",
+            "questionEn": "Are you willing to take the Oath of Allegiance?",
+            "questionVi": "Bạn sẵn sàng tuyên thệ trung thành?",
+            "tips": { "vi": "Phải trả lời Có", "en": "Must answer Yes" },
+            "importance": "high"
+          },
+          {
+            "id": "n400_022",
+            "questionEn": "Are you willing to bear arms for the United States?",
+            "questionVi": "Sẵn sàng cầm súng bảo vệ nước Mỹ?",
+            "tips": { "vi": "Có thể xin miễn vì tôn giáo", "en": "Can request religious exemption" },
+            "importance": "high"
+          },
+          {
+            "id": "n400_023",
+            "questionEn": "Are you willing to perform noncombatant services?",
+            "questionVi": "Sẵn sàng phục vụ không chiến đấu?",
+            "tips": { "vi": "Công việc phi chiến đấu", "en": "Non-combat work" },
+            "importance": "high"
+          },
+          {
+            "id": "n400_024",
+            "questionEn": "Have you ever been a member of the Communist Party?",
+            "questionVi": "Có từng là đảng viên Cộng Sản không?",
+            "tips": { "vi": "Giải thích nếu bắt buộc", "en": "Explain if required" },
+            "importance": "high"
+          },
+          {
+            "id": "n400_025",
+            "questionEn": "Have you ever been a member of a terrorist organization?",
+            "questionVi": "Có từng là thành viên tổ chức khủng bố không?",
+            "tips": { "vi": "Phải trả lời Không", "en": "Must answer No" },
+            "importance": "high"
+          }
+        ]
+      }
+    ]
+  },
+  "stokesInterview": {
+    "nameVi": "Phỏng Vấn Stokes (Điều Tra Gian Lận)",
+    "nameEn": "Stokes Interview (Fraud Investigation)",
+    "description": {
+      "vi": "Phỏng vấn riêng từng người khi USCIS nghi ngờ hôn nhân giả. Rất nghiêm ngặt.",
+      "en": "Separate interviews when USCIS suspects marriage fraud. Very strict."
+    },
+    "whenTriggered": [
+      { "vi": "Câu trả lời hai vợ chồng không khớp", "en": "Inconsistent answers between spouses" },
+      { "vi": "Ít bằng chứng cuộc sống chung", "en": "Lack of evidence of shared life" },
+      { "vi": "Chênh lệch tuổi lớn", "en": "Large age difference" },
+      { "vi": "Lịch sử di trú đáng ngờ", "en": "Suspicious immigration history" },
+      { "vi": "Nhân viên phỏng vấn nghi ngờ", "en": "Officer's suspicion" }
+    ],
+    "howItWorks": [
+      { "vi": "Hai vợ chồng được phỏng vấn riêng", "en": "Spouses interviewed separately" },
+      { "vi": "Cùng một bộ câu hỏi chi tiết", "en": "Same set of detailed questions" },
+      { "vi": "So sánh câu trả lời sau đó", "en": "Answers compared afterward" },
+      { "vi": "Không được liên lạc trong khi phỏng vấn", "en": "No contact during interviews" }
+    ],
+    "typicalQuestions": [
+      { "vi": "Tối qua ai nấu ăn?", "en": "Who cooked dinner last night?" },
+      { "vi": "Màu bàn chải đánh răng của vợ/chồng?", "en": "What color is your spouse's toothbrush?" },
+      { "vi": "Trong tủ lạnh có gì?", "en": "What's in your refrigerator?" },
+      { "vi": "Lần cuối quan hệ vợ chồng khi nào?", "en": "When did you last have intimate relations?" },
+      { "vi": "Vợ/chồng uống cà phê hay trà?", "en": "Does your spouse drink coffee or tea?" },
+      { "vi": "Bên nào của tủ treo quần áo vợ/chồng?", "en": "Which side of closet are spouse's clothes?" },
+      { "vi": "Ai thức dậy trước sáng nay?", "en": "Who woke up first this morning?" },
+      { "vi": "Có thú nuôi không? Tên gì?", "en": "Do you have pets? Names?" }
+    ],
+    "tips": [
+      { "vi": "Trả lời thật, chi tiết giống nhau", "en": "Answer honestly, same details" },
+      { "vi": "Nếu không nhớ, nói 'Tôi không nhớ'", "en": "If unsure, say 'I don't remember'" },
+      { "vi": "Đừng đoán mò", "en": "Don't guess" },
+      { "vi": "Bình tĩnh, không hoảng sợ", "en": "Stay calm, don't panic" }
+    ]
+  },
+  "formFees": {
+    "nameVi": "Lệ Phí Các Form",
+    "nameEn": "Form Fees",
+    "lastUpdated": "2026-01",
+    "forms": [
+      {
+        "form": "I-130",
+        "nameVi": "Đơn bảo lãnh người thân",
+        "nameEn": "Petition for Alien Relative",
+        "fee": "$675",
+        "notes": { "vi": "Không hoàn lại", "en": "Non-refundable" }
+      },
+      {
+        "form": "I-485",
+        "nameVi": "Điều chỉnh tình trạng",
+        "nameEn": "Adjustment of Status",
+        "fee": "$1,440",
+        "notes": { "vi": "Bao gồm biometrics", "en": "Includes biometrics" }
+      },
+      {
+        "form": "I-751",
+        "nameVi": "Gỡ điều kiện",
+        "nameEn": "Remove Conditions",
+        "fee": "$810",
+        "notes": { "vi": "Cộng thêm biometrics $85", "en": "Plus $85 biometrics" }
+      },
+      {
+        "form": "N-400",
+        "nameVi": "Đơn nhập quốc tịch",
+        "nameEn": "Citizenship Application",
+        "fee": "$760",
+        "notes": { "vi": "Miễn phí cho 75+", "en": "Fee waiver for 75+" }
+      },
+      {
+        "form": "I-864",
+        "nameVi": "Bảo lãnh tài chính",
+        "nameEn": "Affidavit of Support",
+        "fee": "$0",
+        "notes": { "vi": "Miễn phí", "en": "No fee" }
+      },
+      {
+        "form": "DS-260",
+        "nameVi": "Đơn visa di dân",
+        "nameEn": "Immigrant Visa Application",
+        "fee": "$345",
+        "notes": { "vi": "Trả cho Bộ Ngoại Giao", "en": "Paid to Dept of State" }
+      },
+      {
+        "form": "I-90",
+        "nameVi": "Gia hạn/thay thẻ xanh",
+        "nameEn": "Green Card Renewal",
+        "fee": "$540",
+        "notes": { "vi": "Cộng biometrics $85", "en": "Plus $85 biometrics" }
+      }
+    ],
+    "additionalCosts": [
+      { "vi": "Khám sức khỏe: $200-$500", "en": "Medical exam: $200-$500" },
+      { "vi": "Dịch thuật công chứng: $20-$50/trang", "en": "Certified translation: $20-$50/page" },
+      { "vi": "Ảnh hộ chiếu: $15-$20", "en": "Passport photos: $15-$20" },
+      { "vi": "Lý lịch tư pháp: $50-$100", "en": "Police clearance: $50-$100" },
+      { "vi": "Luật sư (nếu thuê): $3,000-$10,000", "en": "Attorney (if hired): $3,000-$10,000" }
+    ]
+  },
+  "commonConcerns": {
+    "nameVi": "Lo Lắng Thường Gặp",
+    "nameEn": "Common Concerns",
+    "concerns": [
+      {
+        "concernVi": "Sợ bị từ chối vì thiếu bằng chứng hôn nhân",
+        "concernEn": "Fear of denial due to lack of marriage evidence",
+        "adviceVi": "Thu thập càng nhiều bằng chứng càng tốt: tài khoản chung, hóa đơn, ảnh, thuế chung. Chất lượng quan trọng hơn số lượng.",
+        "adviceEn": "Gather as much evidence as possible: joint accounts, bills, photos, taxes. Quality matters more than quantity."
+      },
+      {
+        "concernVi": "Lo lắng về việc không nói tiếng Anh giỏi",
+        "concernEn": "Worried about not speaking English well",
+        "adviceVi": "Có thể xin phiên dịch nếu cần. Đối với N-400, chuẩn bị trước các câu đơn giản. Miễn tiếng Anh cho 65/20.",
+        "adviceEn": "Can request interpreter if needed. For N-400, practice simple sentences. 65/20 exemption available."
+      },
+      {
+        "concernVi": "Sợ hai vợ chồng trả lời khác nhau",
+        "concernEn": "Fear of giving different answers than spouse",
+        "adviceVi": "Ôn tập cùng nhau, nhưng không học thuộc. Trả lời thật - sẽ tự nhiên giống nhau.",
+        "adviceEn": "Review together but don't memorize. Answer honestly - answers will naturally match."
+      },
+      {
+        "concernVi": "Lo về chênh lệch tuổi tác",
+        "concernEn": "Worried about age difference",
+        "adviceVi": "Chuẩn bị giải thích mối quan hệ. Mang nhiều bằng chứng tình yêu thật sự.",
+        "adviceEn": "Prepare to explain the relationship. Bring lots of genuine love evidence."
+      },
+      {
+        "concernVi": "Sợ vì từng bị từ chối visa",
+        "concernEn": "Fear due to previous visa denial",
+        "adviceVi": "Khai thật trong đơn. Giải thích hoàn cảnh đã thay đổi. Không nói dối về lịch sử.",
+        "adviceEn": "Disclose in application. Explain changed circumstances. Never lie about history."
+      },
+      {
+        "concernVi": "Lo lắng về việc sống riêng tạm thời",
+        "concernEn": "Worried about temporary separation",
+        "adviceVi": "Chuẩn bị tài liệu chứng minh lý do (công việc, gia đình). Mang vé máy bay, lịch sử liên lạc.",
+        "adviceEn": "Prepare documents proving reason (work, family). Bring flight records, communication history."
+      },
+      {
+        "concernVi": "Sợ phỏng vấn Stokes",
+        "concernEn": "Fear of Stokes interview",
+        "adviceVi": "Nếu hôn nhân thật, không cần lo. Biết chi tiết cuộc sống hàng ngày. Trả lời thật.",
+        "adviceEn": "If marriage is real, don't worry. Know daily life details. Answer honestly."
+      },
+      {
+        "concernVi": "Lo về tiền án tiền sự nhỏ",
+        "concernEn": "Worried about minor criminal history",
+        "adviceVi": "Vi phạm giao thông nhỏ thường không ảnh hưởng. Mang giấy tờ tòa án. Nên hỏi luật sư nếu lo.",
+        "adviceEn": "Minor traffic violations usually don't affect. Bring court documents. Consult attorney if worried."
+      },
+      {
+        "concernVi": "Sợ vì không có việc làm",
+        "concernEn": "Fear due to unemployment",
+        "adviceVi": "Người bảo lãnh phải đáp ứng yêu cầu tài chính. Có thể dùng co-sponsor. Tài sản cũng được tính.",
+        "adviceEn": "Sponsor must meet financial requirement. Can use co-sponsor. Assets count too."
+      },
+      {
+        "concernVi": "Lo về thời gian xử lý lâu",
+        "concernEn": "Worried about long processing times",
+        "adviceVi": "Thời gian xử lý thay đổi. Kiểm tra uscis.gov/processing-times. Nộp đơn đầy đủ để tránh RFE.",
+        "adviceEn": "Processing times vary. Check uscis.gov/processing-times. Complete applications avoid RFEs."
+      }
+    ]
+  },
+  "redFlags": [
+    { "vi": "Sống riêng không lý do", "en": "Living separately without reason", "explanation": { "vi": "Phải giải thích rõ (công việc, v.v.)", "en": "Must explain clearly (work, etc.)" } },
+    { "vi": "Câu trả lời không khớp", "en": "Inconsistent answers", "explanation": { "vi": "Hai vợ chồng nói khác nhau", "en": "Spouses give different answers" } },
+    { "vi": "Ít tài khoản/tài sản chung", "en": "Few joint accounts/assets", "explanation": { "vi": "Thiếu bằng chứng cuộc sống chung", "en": "Lack of evidence of shared life" } },
+    { "vi": "Chênh lệch tuổi lớn", "en": "Large age difference", "explanation": { "vi": "Cần giải thích thêm", "en": "May require explanation" } },
+    { "vi": "Không cùng ngôn ngữ", "en": "No common language", "explanation": { "vi": "Giao tiếp bằng cách nào?", "en": "How do you communicate?" } },
+    { "vi": "Kết hôn sau vấn đề di trú", "en": "Marriage after immigration issues", "explanation": { "vi": "Timing đáng ngờ", "en": "Suspicious timing" } },
+    { "vi": "Không biết thông tin cơ bản của nhau", "en": "Don't know basic info about each other", "explanation": { "vi": "Sinh nhật, công việc, sở thích", "en": "Birthday, job, hobbies" } },
+    { "vi": "Lịch sử hôn nhân phức tạp", "en": "Complex marriage history", "explanation": { "vi": "Nhiều lần kết hôn trước", "en": "Multiple previous marriages" } },
+    { "vi": "Gặp nhau qua môi giới hôn nhân", "en": "Met through marriage broker", "explanation": { "vi": "Không tự động bị từ chối, nhưng cần bằng chứng tình yêu", "en": "Not automatic denial, but need love evidence" } },
+    { "vi": "Không có ảnh cưới/ảnh chung", "en": "No wedding/couple photos", "explanation": { "vi": "Thiếu bằng chứng trực quan", "en": "Lack of visual evidence" } },
+    { "vi": "Gia đình không biết về hôn nhân", "en": "Family doesn't know about marriage", "explanation": { "vi": "Tại sao giấu gia đình?", "en": "Why hide from family?" } },
+    { "vi": "Không có nhẫn cưới", "en": "No wedding rings", "explanation": { "vi": "Không bắt buộc, nhưng đáng ngờ", "en": "Not required, but suspicious" } }
+  ],
+  "faq": [
+    {
+      "questionVi": "Thẻ xanh 2 năm khác gì 10 năm?",
+      "questionEn": "What's the difference between 2-year and 10-year green cards?",
+      "answerVi": "Chỉ khác thời hạn và yêu cầu nộp I-751. Quyền lợi như nhau.",
+      "answerEn": "Only differs in validity and I-751 requirement. Same benefits."
+    },
+    {
+      "questionVi": "Nếu ly hôn khi đang có thẻ 2 năm thì sao?",
+      "questionEn": "What if I divorce while having a 2-year card?",
+      "answerVi": "Vẫn có thể nộp I-751 với waiver, cần chứng minh hôn nhân ban đầu là thật.",
+      "answerEn": "Can still file I-751 with waiver, must prove original marriage was genuine."
+    },
+    {
+      "questionVi": "Có cần luật sư đi phỏng vấn không?",
+      "questionEn": "Do I need a lawyer for the interview?",
+      "answerVi": "Không bắt buộc, nhưng nên có nếu hồ sơ phức tạp.",
+      "answerEn": "Not required, but recommended for complex cases."
+    },
+    {
+      "questionVi": "Phỏng vấn bao lâu?",
+      "questionEn": "How long is the interview?",
+      "answerVi": "Thường 15-30 phút, có thể lâu hơn nếu có vấn đề.",
+      "answerEn": "Usually 15-30 minutes, may be longer if issues arise."
+    },
+    {
+      "questionVi": "Nếu bị từ chối thì sao?",
+      "questionEn": "What if I'm denied?",
+      "answerVi": "Tùy lý do, có thể nộp lại, khiếu nại, hoặc cần luật sư tư vấn.",
+      "answerEn": "Depends on reason, may reapply, appeal, or consult attorney."
+    },
+    {
+      "questionVi": "F2A nhanh hơn F2B bao nhiêu?",
+      "questionEn": "How much faster is F2A than F2B?",
+      "answerVi": "F2A thường nhanh hơn 4-8 năm tùy thời điểm.",
+      "answerEn": "F2A is typically 4-8 years faster depending on timing."
+    },
+    {
+      "questionVi": "Thường trú nhân có thể bảo lãnh cha mẹ không?",
+      "questionEn": "Can permanent residents sponsor parents?",
+      "answerVi": "Không. Chỉ công dân Mỹ mới bảo lãnh được cha mẹ.",
+      "answerEn": "No. Only US citizens can sponsor parents."
+    },
+    {
+      "questionVi": "Bao lâu sau khi có thẻ xanh có thể xin quốc tịch?",
+      "questionEn": "How long after green card can I apply for citizenship?",
+      "answerVi": "5 năm (3 năm nếu kết hôn với công dân Mỹ). Có thể nộp sớm 90 ngày.",
+      "answerEn": "5 years (3 if married to US citizen). Can file 90 days early."
+    },
+    {
+      "questionVi": "Đi nước ngoài lâu có ảnh hưởng đơn quốc tịch không?",
+      "questionEn": "Does travel abroad affect citizenship application?",
+      "answerVi": "Nếu đi quá 6 tháng liên tục, có thể mất liên tục cư trú. Cần giải thích.",
+      "answerEn": "Trips over 6 months may break continuous residence. Need explanation."
+    },
+    {
+      "questionVi": "Có cần từ bỏ quốc tịch gốc không?",
+      "questionEn": "Do I need to give up my original citizenship?",
+      "answerVi": "Mỹ không yêu cầu. Tùy nước gốc có cho phép song tịch không.",
+      "answerEn": "US doesn't require it. Depends if original country allows dual citizenship."
+    },
+    {
+      "questionVi": "Thi quốc tịch có khó không?",
+      "questionEn": "Is the citizenship test hard?",
+      "answerVi": "Có 128 câu hỏi, chỉ được hỏi 10, cần đúng 6. Học kỹ là đậu.",
+      "answerEn": "128 questions, asked 10, need 6 correct. Study well and you'll pass."
+    },
+    {
+      "questionVi": "Miễn thi tiếng Anh khi nào?",
+      "questionEn": "When is English test waived?",
+      "answerVi": "50 tuổi + 20 năm thẻ xanh, hoặc 55 tuổi + 15 năm, hoặc 65 tuổi + 20 năm (câu hỏi dễ hơn).",
+      "answerEn": "50+ with 20 years as resident, 55+ with 15 years, or 65+ with 20 years (easier questions)."
+    },
+    {
+      "questionVi": "Nếu trượt thi quốc tịch thì sao?",
+      "questionEn": "What if I fail the citizenship test?",
+      "answerVi": "Được thi lại lần 2 trong vòng 60-90 ngày. Chỉ thi phần trượt.",
+      "answerEn": "Can retake within 60-90 days. Only retest failed parts."
+    },
+    {
+      "questionVi": "I-751 phỏng vấn có bắt buộc không?",
+      "questionEn": "Is I-751 interview required?",
+      "answerVi": "Không phải lúc nào. Nhiều case được duyệt không phỏng vấn nếu hồ sơ đầy đủ.",
+      "answerEn": "Not always. Many cases approved without interview if application is complete."
+    },
+    {
+      "questionVi": "Vợ/chồng có cần đi phỏng vấn I-751 không?",
+      "questionEn": "Does spouse need to attend I-751 interview?",
+      "answerVi": "Có, nếu nộp chung. Không cần nếu nộp waiver vì ly hôn/bạo hành.",
+      "answerEn": "Yes, if filing jointly. Not needed if filing waiver due to divorce/abuse."
+    }
   ]
 }

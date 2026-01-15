@@ -47,7 +47,7 @@ export function AudioButton({
 
   const variants = {
     default: 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800/50',
-    ghost: 'text-gray-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700',
+    ghost: 'text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700',
   };
 
   return (
@@ -115,14 +115,6 @@ export function BilingualAudio({
       >
         <Volume2 className={iconSizes[size]} />
         <span>EN</span>
-      </button>
-      <button
-        onClick={() => handleSpeak(textVi, 'vi')}
-        className="flex items-center gap-1 px-2 py-1 rounded text-xs font-medium bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-slate-300 hover:bg-amber-100 dark:hover:bg-amber-900/50 hover:text-amber-700 dark:hover:text-amber-300 transition-colors"
-        title="Phát tiếng Việt"
-      >
-        <Volume2 className={iconSizes[size]} />
-        <span>VI</span>
       </button>
     </div>
   );

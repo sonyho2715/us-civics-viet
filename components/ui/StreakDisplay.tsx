@@ -68,7 +68,7 @@ export function StreakDisplay({ locale, compact = false }: StreakDisplayProps) {
             <Flame className={`w-6 h-6 ${streakColor}`} />
           </div>
           <div>
-            <p className="text-sm text-gray-500 dark:text-slate-400">
+            <p className="text-sm text-gray-500 dark:text-gray-400">
               {locale === 'vi' ? 'Chuỗi ngày' : 'Day Streak'}
             </p>
             <p className={`text-2xl font-bold ${streakColor}`}>
@@ -92,7 +92,7 @@ export function StreakDisplay({ locale, compact = false }: StreakDisplayProps) {
       {/* Daily Progress */}
       <div className="mb-3">
         <div className="flex items-center justify-between text-sm mb-1">
-          <span className="text-gray-600 dark:text-slate-400 flex items-center gap-1">
+          <span className="text-gray-600 dark:text-gray-400 flex items-center gap-1">
             <Target className="w-4 h-4" />
             {locale === 'vi' ? 'Mục tiêu hôm nay' : "Today's Goal"}
           </span>
@@ -114,7 +114,7 @@ export function StreakDisplay({ locale, compact = false }: StreakDisplayProps) {
             <p className="font-bold text-blue-700 dark:text-blue-300">
               {todayProgress.questionsStudied}
             </p>
-            <p className="text-gray-500 dark:text-slate-400">
+            <p className="text-gray-500 dark:text-gray-400">
               {locale === 'vi' ? 'Đã học' : 'Studied'}
             </p>
           </div>
@@ -122,7 +122,7 @@ export function StreakDisplay({ locale, compact = false }: StreakDisplayProps) {
             <p className="font-bold text-green-700 dark:text-green-300">
               {todayProgress.testsCompleted}
             </p>
-            <p className="text-gray-500 dark:text-slate-400">
+            <p className="text-gray-500 dark:text-gray-400">
               {locale === 'vi' ? 'Bài thi' : 'Tests'}
             </p>
           </div>
@@ -130,7 +130,7 @@ export function StreakDisplay({ locale, compact = false }: StreakDisplayProps) {
             <p className="font-bold text-purple-700 dark:text-purple-300">
               {todayProgress.flashcardsReviewed}
             </p>
-            <p className="text-gray-500 dark:text-slate-400">
+            <p className="text-gray-500 dark:text-gray-400">
               {locale === 'vi' ? 'Thẻ ôn' : 'Cards'}
             </p>
           </div>

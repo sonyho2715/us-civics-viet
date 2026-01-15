@@ -189,7 +189,7 @@ export function MultipleChoiceAnswer({
         >
           <span className="flex-shrink-0">{getIcon(choice)}</span>
           <span className="flex-1 text-left text-gray-900 dark:text-white">
-            <span className="font-medium text-gray-500 dark:text-slate-400 mr-2">
+            <span className="font-medium text-gray-500 dark:text-gray-400 mr-2">
               {String.fromCharCode(65 + index)}.
             </span>
             {choice}

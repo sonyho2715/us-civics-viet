@@ -83,7 +83,7 @@ export function FontSizeControl({ locale, compact = false }: FontSizeControlProp
             {locale === 'vi' ? 'Cỡ Chữ' : 'Font Size'}
           </span>
         </div>
-        <span className="text-sm text-gray-500 dark:text-slate-400">
+        <span className="text-sm text-gray-500 dark:text-gray-400">
           {FONT_SIZE_VALUES[fontSize].label[locale]}
         </span>
       </div>
@@ -107,7 +107,7 @@ export function FontSizeControl({ locale, compact = false }: FontSizeControlProp
               className={`flex-1 py-2 px-1 rounded-lg text-xs font-medium transition-all ${
                 fontSize === size
                   ? 'bg-blue-600 text-white'
-                  : 'bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-slate-400 hover:bg-gray-200 dark:hover:bg-slate-600'
+                  : 'bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-slate-600'
               }`}
             >
               <span

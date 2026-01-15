@@ -9,7 +9,12 @@
     "practice": "Thi Thử",
     "flashcards": "Thẻ Ghi Nhớ",
     "senior": "65/20",
-    "immigration": "Di Trú"
+    "immigration": "Di Trú",
+    "resources": "Tài Nguyên",
+    "stories": "Kinh Nghiệm Thi",
+    "n400": "Hướng Dẫn N-400",
+    "interview": "Mẹo Phỏng Vấn",
+    "community": "Cộng Đồng"
   },
   "home": {
     "hero": {
@@ -181,8 +186,14 @@
     "bookmarkCount": "{count} đã đánh dấu"
   },
   "footer": {
-    "disclaimer": "Ứng dụng này chỉ dành cho mục đích học tập. Vui lòng xác minh thông tin mới nhất tại trang web chính thức của USCIS.",
+    "disclaimer": "Ứng dụng này chỉ dành cho mục đích học tập và không liên kết với USCIS hoặc chính phủ Hoa Kỳ. Thông tin có thể thay đổi. Vui lòng xác minh thông tin mới nhất tại trang web chính thức của USCIS trước khi phỏng vấn.",
     "official": "Trang USCIS chính thức",
-    "copyright": "© 2025 Công Dân Mỹ. Mọi quyền được bảo lưu."
+    "copyright": "© 2026 Công Dân Mỹ. Mọi quyền được bảo lưu.",
+    "links": {
+      "about": "Về Chúng Tôi",
+      "contact": "Liên Hệ",
+      "privacy": "Bảo Mật",
+      "terms": "Điều Khoản"
+    }
   }
 }

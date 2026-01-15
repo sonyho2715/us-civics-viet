@@ -70,7 +70,7 @@ export default function ResultsPage() {
     return (
       <div className="container mx-auto px-4 py-8">
         <Card className="text-center py-12">
-          <p className="text-gray-500 dark:text-slate-400">
+          <p className="text-gray-500 dark:text-gray-400">
             {locale === 'vi' ? 'Đang tải kết quả...' : 'Loading results...'}
           </p>
         </Card>
@@ -144,7 +144,7 @@ export default function ResultsPage() {
       <h4 className="font-medium text-gray-900 dark:text-white mb-1">
         {locale === 'vi' ? question.question_vi : question.question_en}
       </h4>
-      <p className="text-sm text-gray-500 dark:text-slate-400 mb-3">
+      <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
         {locale === 'vi' ? question.question_en : question.question_vi}
       </p>
 
@@ -165,7 +165,7 @@ export default function ResultsPage() {
         <span className="text-sm font-medium text-gray-700 dark:text-slate-300">
           {locale === 'vi' ? 'Đáp án đúng: ' : 'Correct answers: '}
         </span>
-        <ul className="list-disc list-inside text-sm text-gray-600 dark:text-slate-400 mt-1">
+        <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 mt-1">
           {(locale === 'vi' ? question.answers_vi : question.answers_en).map(
             (answer, idx) => (
               <li key={idx}>{answer}</li>
@@ -175,7 +175,7 @@ export default function ResultsPage() {
       </div>
 
       {question.explanation_vi && locale === 'vi' && (
-        <p className="text-sm text-gray-600 dark:text-slate-400 mt-2 pt-2 border-t border-gray-200 dark:border-slate-700">
+        <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 pt-2 border-t border-gray-200 dark:border-slate-700">
           <span className="font-medium">Giải thích: </span>
           {question.explanation_vi}
         </p>
@@ -239,7 +239,7 @@ export default function ResultsPage() {
             size="lg"
             showPercentage
           />
-          <p className="text-sm text-gray-600 dark:text-slate-400 mt-2">
+          <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
             {locale === 'vi' ? 'Điểm số' : 'Score'}
           </p>
         </Card>
@@ -248,7 +248,7 @@ export default function ResultsPage() {
           <div className="text-4xl font-bold text-gray-900 dark:text-white">
             {result.correct}/{result.total}
           </div>
-          <p className="text-sm text-gray-600 dark:text-slate-400 mt-2">
+          <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
             {locale === 'vi' ? 'Câu đúng' : 'Correct'}
           </p>
           <p className="text-xs text-gray-400 dark:text-slate-500 mt-1">
@@ -265,7 +265,7 @@ export default function ResultsPage() {
           <p className="text-lg font-semibold text-gray-900 dark:text-white">
             {formatTime(result.timeSpent)}
           </p>
-          <p className="text-sm text-gray-600 dark:text-slate-400">
+          <p className="text-sm text-gray-600 dark:text-gray-400">
             {locale === 'vi' ? 'Thời gian' : 'Time'}
           </p>
         </Card>

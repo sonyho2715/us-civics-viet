@@ -9,7 +9,12 @@
     "practice": "Practice",
     "flashcards": "Flashcards",
     "senior": "65/20",
-    "immigration": "Immigration"
+    "immigration": "Immigration",
+    "resources": "Resources",
+    "stories": "Success Stories",
+    "n400": "N-400 Guide",
+    "interview": "Interview Tips",
+    "community": "Community"
   },
   "home": {
     "hero": {
@@ -181,8 +186,14 @@
     "bookmarkCount": "{count} bookmarked"
   },
   "footer": {
-    "disclaimer": "This app is for educational purposes only. Please verify the latest information on the official USCIS website.",
+    "disclaimer": "This app is for educational purposes only and is not affiliated with USCIS or the U.S. government. Information may change. Please verify the latest information on the official USCIS website before your interview.",
     "official": "Official USCIS website",
-    "copyright": "© 2025 U.S. Citizenship. All rights reserved."
+    "copyright": "© 2026 U.S. Citizenship. All rights reserved.",
+    "links": {
+      "about": "About Us",
+      "contact": "Contact",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
   }
 }

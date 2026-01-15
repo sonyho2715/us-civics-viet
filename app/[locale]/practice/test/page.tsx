@@ -170,7 +170,7 @@ export default function TestSessionPage() {
     return (
       <div className="container mx-auto px-4 py-8">
         <Card className="text-center py-12">
-          <p className="text-gray-500 dark:text-slate-400">
+          <p className="text-gray-500 dark:text-gray-400">
             {locale === 'vi' ? 'Đang tải...' : 'Loading...'}
           </p>
         </Card>
@@ -191,7 +191,7 @@ export default function TestSessionPage() {
       <div className="mb-6 space-y-4">
         <div className="flex items-center justify-between">
           <div>
-            <span className="text-sm text-gray-500 dark:text-slate-400">
+            <span className="text-sm text-gray-500 dark:text-gray-400">
               {locale === 'vi' ? 'Câu hỏi' : 'Question'} {questionIndex + 1}/
               {totalQuestions}
             </span>
@@ -202,7 +202,7 @@ export default function TestSessionPage() {
             )}
           </div>
           {timerEnabled && (
-            <div className="flex items-center gap-2 text-gray-600 dark:text-slate-400">
+            <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
               <Clock className="w-4 h-4" />
               <span className="font-mono">{formatTime(elapsedTime)}</span>
             </div>
@@ -267,7 +267,7 @@ export default function TestSessionPage() {
         </h2>
 
         {/* Secondary language */}
-        <p className="text-gray-500 dark:text-slate-400 text-sm mb-4">
+        <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">
           {locale === 'vi'
             ? currentQuestion.question_en
             : currentQuestion.question_vi}
@@ -284,20 +284,12 @@ export default function TestSessionPage() {
               <Volume2 className="w-3.5 h-3.5" />
               <span>EN</span>
             </button>
-            <button
-              onClick={() => handleSpeak(currentQuestion.question_vi, 'vi')}
-              className="flex items-center gap-1 px-3 py-1.5 rounded text-xs font-medium bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-slate-300 hover:bg-amber-100 dark:hover:bg-amber-900/50 hover:text-amber-700 dark:hover:text-amber-300 transition-colors"
-              title="Phát tiếng Việt"
-            >
-              <Volume2 className="w-3.5 h-3.5" />
-              <span>VI</span>
-            </button>
           </div>
         )}
 
         {/* Answer Mode Toggle */}
         <div className="flex items-center justify-between mb-4 pb-4 border-b border-gray-200 dark:border-slate-700">
-          <span className="text-sm text-gray-600 dark:text-slate-400">
+          <span className="text-sm text-gray-600 dark:text-gray-400">
             {locale === 'vi' ? 'Chế độ trả lời:' : 'Answer mode:'}
           </span>
           <button
@@ -392,7 +384,7 @@ export default function TestSessionPage() {
                 <p className="text-sm font-medium text-gray-700 dark:text-slate-300 mb-1">
                   {locale === 'vi' ? 'Đáp án đúng:' : 'Correct answers:'}
                 </p>
-                <ul className="list-disc list-inside text-sm text-gray-600 dark:text-slate-400 space-y-1">
+                <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 space-y-1">
                   {(locale === 'vi'
                     ? currentQuestion.answers_vi
                     : currentQuestion.answers_en
