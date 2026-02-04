@@ -546,6 +546,26 @@ export default async function InterviewPage({ params }: InterviewPageProps) {
           </h1>
         </div>
         <p className="text-gray-600 dark:text-gray-400">{t.subtitle}</p>
+
+        {/* Interview Simulation CTA */}
+        <Link
+          href={`/${locale}/interview`}
+          className="mt-6 flex items-center justify-between p-4 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-700 dark:to-blue-800 rounded-xl text-white hover:from-blue-700 hover:to-blue-800 dark:hover:from-blue-800 dark:hover:to-blue-900 transition-all hover:shadow-lg group"
+        >
+          <div>
+            <h3 className="font-semibold text-lg mb-1">
+              {locale === 'vi' ? '🎯 Luyện Tập Mô Phỏng Phỏng Vấn' : '🎯 Practice Interview Simulation'}
+            </h3>
+            <p className="text-blue-100 text-sm">
+              {locale === 'vi'
+                ? 'Trải nghiệm phỏng vấn thực tế với viên chức USCIS'
+                : 'Experience a realistic USCIS officer interview'}
+            </p>
+          </div>
+          <div className="text-white opacity-75 group-hover:opacity-100 group-hover:translate-x-1 transition-all">
+            →
+          </div>
+        </Link>
       </div>
 
       {/* Interview Process */}

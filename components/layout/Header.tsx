@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
+import Image from 'next/image';
 import {
   Menu,
   X,
@@ -18,6 +19,8 @@ import {
   FileText,
   MessageSquare,
   Users,
+  BarChart3,
+  Award,
 } from 'lucide-react';
 import { LanguageToggle } from './LanguageToggle';
 import { ThemeToggle } from './ThemeToggle';
@@ -30,6 +33,8 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
   const resourcesRef = useRef<HTMLDivElement>(null);
+  const resourcesButtonRef = useRef<HTMLButtonElement>(null);
+  const firstResourceRef = useRef<HTMLAnchorElement>(null);
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -42,18 +47,42 @@ export function Header() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  // Keyboard navigation for dropdown
+  useEffect(() => {
+    function handleKeyDown(event: KeyboardEvent) {
+      if (!isResourcesOpen) return;
+
+      if (event.key === 'Escape') {
+        setIsResourcesOpen(false);
+        resourcesButtonRef.current?.focus();
+      }
+    }
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [isResourcesOpen]);
+
+  // Focus first item when dropdown opens
+  useEffect(() => {
+    if (isResourcesOpen && firstResourceRef.current) {
+      firstResourceRef.current.focus();
+    }
+  }, [isResourcesOpen]);
+
   const navItems = [
+    { href: `/${locale}/dashboard`, label: t('dashboard'), icon: BarChart3 },
     { href: `/${locale}/study`, label: t('study'), icon: BookOpen },
     { href: `/${locale}/practice`, label: t('practice'), icon: FileQuestion },
     { href: `/${locale}/flashcards`, label: t('flashcards'), icon: Layers },
+    { href: `/${locale}/achievements`, label: t('achievements'), icon: Award },
     { href: `/${locale}/65-20`, label: t('senior'), icon: Star },
     { href: `/${locale}/immigration`, label: t('immigration'), icon: Plane },
   ];
 
   const resourceItems = [
+    { href: `/${locale}/interview`, label: locale === 'vi' ? 'Mô phỏng phỏng vấn' : 'Interview Simulation', icon: MessageSquare },
     { href: `/${locale}/resources/stories`, label: t('stories'), icon: Trophy },
     { href: `/${locale}/resources/n400`, label: t('n400'), icon: FileText },
-    { href: `/${locale}/resources/interview`, label: t('interview'), icon: MessageSquare },
+    { href: `/${locale}/resources/interview`, label: t('interview'), icon: FileText },
     { href: `/${locale}/resources/community`, label: t('community'), icon: Users },
   ];
 
@@ -63,16 +92,25 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-blue-800 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">C</span>
-            </div>
+            <Image
+              src="/logo.png"
+              alt={locale === 'vi' ? 'Công Dân Mỹ' : 'U.S. Citizenship'}
+              width={40}
+              height={40}
+              className="w-10 h-10 object-contain"
+              priority
+            />
             <span className="font-bold text-gray-900 dark:text-white hidden sm:inline-block">
               {locale === 'vi' ? 'Công Dân Mỹ' : 'U.S. Citizenship'}
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1">
+          <nav
+            id="navigation"
+            className="hidden md:flex items-center gap-1"
+            aria-label={locale === 'vi' ? 'Điều hướng chính' : 'Main navigation'}
+          >
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -80,10 +118,11 @@ export function Header() {
                 className={cn(
                   'flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors',
                   'text-gray-600 hover:text-gray-900 hover:bg-gray-100',
-                  'dark:text-slate-300 dark:hover:text-white dark:hover:bg-slate-800'
+                  'dark:text-slate-300 dark:hover:text-white dark:hover:bg-slate-800',
+                  'focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900'
                 )}
               >
-                <item.icon className="w-4 h-4" />
+                <item.icon className="w-4 h-4" aria-hidden="true" />
                 {item.label}
               </Link>
             ))}
@@ -91,33 +130,48 @@ export function Header() {
             {/* Resources Dropdown */}
             <div ref={resourcesRef} className="relative">
               <button
+                ref={resourcesButtonRef}
                 onClick={() => setIsResourcesOpen(!isResourcesOpen)}
+                aria-expanded={isResourcesOpen}
+                aria-haspopup="true"
+                aria-controls="resources-menu"
                 className={cn(
                   'flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors',
                   'text-gray-600 hover:text-gray-900 hover:bg-gray-100',
                   'dark:text-slate-300 dark:hover:text-white dark:hover:bg-slate-800',
+                  'focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900',
                   isResourcesOpen && 'bg-gray-100 dark:bg-slate-800'
                 )}
               >
-                <FolderOpen className="w-4 h-4" />
+                <FolderOpen className="w-4 h-4" aria-hidden="true" />
                 {t('resources')}
-                <ChevronDown className={cn('w-3 h-3 transition-transform', isResourcesOpen && 'rotate-180')} />
+                <ChevronDown className={cn('w-3 h-3 transition-transform', isResourcesOpen && 'rotate-180')} aria-hidden="true" />
               </button>
 
               {isResourcesOpen && (
-                <div className="absolute top-full left-0 mt-1 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-gray-200 dark:border-slate-700 py-1 animate-in fade-in slide-in-from-top-2 duration-200">
-                  {resourceItems.map((item) => (
+                <div
+                  id="resources-menu"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="resources-button"
+                  className="absolute top-full left-0 mt-1 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-gray-200 dark:border-slate-700 py-1 animate-in fade-in slide-in-from-top-2 duration-200"
+                >
+                  {resourceItems.map((item, index) => (
                     <Link
                       key={item.href}
+                      ref={index === 0 ? firstResourceRef : undefined}
                       href={item.href}
+                      role="menuitem"
+                      tabIndex={0}
                       onClick={() => setIsResourcesOpen(false)}
                       className={cn(
                         'flex items-center gap-3 px-4 py-2 text-sm transition-colors',
                         'text-gray-600 hover:text-gray-900 hover:bg-gray-100',
-                        'dark:text-slate-300 dark:hover:text-white dark:hover:bg-slate-700'
+                        'dark:text-slate-300 dark:hover:text-white dark:hover:bg-slate-700',
+                        'focus:outline-none focus:bg-gray-100 dark:focus:bg-slate-700'
                       )}
                     >
-                      <item.icon className="w-4 h-4" />
+                      <item.icon className="w-4 h-4" aria-hidden="true" />
                       {item.label}
                     </Link>
                   ))}

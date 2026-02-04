@@ -1,0 +1,509 @@
+{
+  "metadata": {
+    "version": "2025.1",
+    "totalWords": 133,
+    "lastUpdated": "2025-01-01",
+    "source": "USCIS Reading Vocabulary List",
+    "description": "Official USCIS reading vocabulary words for the citizenship test"
+  },
+  "categories": {
+    "civics": {
+      "name_en": "Civics",
+      "name_vi": "Công Dân",
+      "description_en": "Civics-related vocabulary",
+      "description_vi": "Từ vựng về công dân",
+      "words": [
+        {
+          "word": "America",
+          "pronunciation": "/əˈmer.ɪ.kə/",
+          "translation_vi": "Nước Mỹ",
+          "definition_en": "The United States of America",
+          "definition_vi": "Hợp chủng quốc Hoa Kỳ",
+          "example_en": "America is a democracy.",
+          "example_vi": "Hoa Kỳ là một nền dân chủ."
+        },
+        {
+          "word": "American",
+          "pronunciation": "/əˈmer.ɪ.kən/",
+          "translation_vi": "Người Mỹ",
+          "definition_en": "Of or relating to the United States",
+          "definition_vi": "Thuộc về hoặc liên quan đến Hoa Kỳ",
+          "example_en": "George Washington was an American leader.",
+          "example_vi": "George Washington là một nhà lãnh đạo người Mỹ."
+        },
+        {
+          "word": "bill",
+          "pronunciation": "/bɪl/",
+          "translation_vi": "Dự luật",
+          "definition_en": "A proposed law",
+          "definition_vi": "Một đạo luật được đề xuất",
+          "example_en": "Congress votes on a bill.",
+          "example_vi": "Quốc hội bỏ phiếu về một dự luật."
+        },
+        {
+          "word": "Capitol",
+          "pronunciation": "/ˈkæp.ɪ.təl/",
+          "translation_vi": "Tòa nhà Quốc hội",
+          "definition_en": "The building where Congress meets",
+          "definition_vi": "Tòa nhà nơi Quốc hội họp",
+          "example_en": "The Capitol is in Washington, D.C.",
+          "example_vi": "Tòa nhà Quốc hội ở Washington, D.C."
+        },
+        {
+          "word": "citizen",
+          "pronunciation": "/ˈsɪt.ɪ.zən/",
+          "translation_vi": "Công dân",
+          "definition_en": "A person who legally belongs to a country",
+          "definition_vi": "Một người hợp pháp thuộc về một quốc gia",
+          "example_en": "I want to be a citizen of the United States.",
+          "example_vi": "Tôi muốn trở thành công dân Hoa Kỳ."
+        },
+        {
+          "word": "Congress",
+          "pronunciation": "/ˈkɑːŋ.ɡrəs/",
+          "translation_vi": "Quốc hội",
+          "definition_en": "The legislative branch of the U.S. government",
+          "definition_vi": "Nhánh lập pháp của chính phủ Hoa Kỳ",
+          "example_en": "Congress makes laws.",
+          "example_vi": "Quốc hội làm luật."
+        },
+        {
+          "word": "country",
+          "pronunciation": "/ˈkʌn.tri/",
+          "translation_vi": "Đất nước",
+          "definition_en": "A nation with its own government",
+          "definition_vi": "Một quốc gia với chính phủ riêng",
+          "example_en": "The United States is a country.",
+          "example_vi": "Hoa Kỳ là một đất nước."
+        },
+        {
+          "word": "flag",
+          "pronunciation": "/flæɡ/",
+          "translation_vi": "Lá cờ",
+          "definition_en": "A piece of cloth with a special design representing a country",
+          "definition_vi": "Một mảnh vải với thiết kế đặc biệt đại diện cho một quốc gia",
+          "example_en": "The American flag has stars and stripes.",
+          "example_vi": "Cờ Mỹ có ngôi sao và sọc."
+        },
+        {
+          "word": "freedom",
+          "pronunciation": "/ˈfriː.dəm/",
+          "translation_vi": "Tự do",
+          "definition_en": "The power or right to act, speak, or think as one wants",
+          "definition_vi": "Quyền lực hoặc quyền hành động, nói hoặc suy nghĩ như mong muốn",
+          "example_en": "We have freedom of speech.",
+          "example_vi": "Chúng ta có tự do ngôn luận."
+        },
+        {
+          "word": "government",
+          "pronunciation": "/ˈɡʌv.ɚn.mənt/",
+          "translation_vi": "Chính phủ",
+          "definition_en": "The group of people who control and make decisions for a country",
+          "definition_vi": "Nhóm người kiểm soát và đưa ra quyết định cho một quốc gia",
+          "example_en": "The government makes laws.",
+          "example_vi": "Chính phủ làm luật."
+        },
+        {
+          "word": "President",
+          "pronunciation": "/ˈprez.ɪ.dənt/",
+          "translation_vi": "Tổng thống",
+          "definition_en": "The head of the executive branch of government",
+          "definition_vi": "Người đứng đầu nhánh hành pháp của chính phủ",
+          "example_en": "The President lives in the White House.",
+          "example_vi": "Tổng thống sống ở Nhà Trắng."
+        },
+        {
+          "word": "right",
+          "pronunciation": "/raɪt/",
+          "translation_vi": "Quyền",
+          "definition_en": "A legal or moral entitlement",
+          "definition_vi": "Một quyền hợp pháp hoặc đạo đức",
+          "example_en": "We have the right to vote.",
+          "example_vi": "Chúng ta có quyền bỏ phiếu."
+        },
+        {
+          "word": "state",
+          "pronunciation": "/steɪt/",
+          "translation_vi": "Bang",
+          "definition_en": "One of the 50 political divisions of the United States",
+          "definition_vi": "Một trong 50 đơn vị chính trị của Hoa Kỳ",
+          "example_en": "California is a state.",
+          "example_vi": "California là một bang."
+        },
+        {
+          "word": "vote",
+          "pronunciation": "/voʊt/",
+          "translation_vi": "Bỏ phiếu",
+          "definition_en": "To make a formal choice in an election",
+          "definition_vi": "Đưa ra lựa chọn chính thức trong một cuộc bầu cử",
+          "example_en": "Citizens vote for the President.",
+          "example_vi": "Công dân bỏ phiếu cho Tổng thống."
+        }
+      ]
+    },
+    "everyday": {
+      "name_en": "Everyday Words",
+      "name_vi": "Từ Hàng Ngày",
+      "description_en": "Common everyday vocabulary",
+      "description_vi": "Từ vựng hàng ngày phổ biến",
+      "words": [
+        {
+          "word": "colors",
+          "pronunciation": "/ˈkʌl.ɚz/",
+          "translation_vi": "Màu sắc",
+          "definition_en": "The property of objects that depends on the light they reflect",
+          "definition_vi": "Thuộc tính của vật thể phụ thuộc vào ánh sáng chúng phản chiếu",
+          "example_en": "The flag has three colors.",
+          "example_vi": "Lá cờ có ba màu."
+        },
+        {
+          "word": "dollar",
+          "pronunciation": "/ˈdɑː.lɚ/",
+          "translation_vi": "Đô la",
+          "definition_en": "The basic unit of money in the United States",
+          "definition_vi": "Đơn vị tiền tệ cơ bản ở Hoa Kỳ",
+          "example_en": "I have one dollar.",
+          "example_vi": "Tôi có một đô la."
+        },
+        {
+          "word": "first",
+          "pronunciation": "/fɝːst/",
+          "translation_vi": "Đầu tiên",
+          "definition_en": "Coming before all others",
+          "definition_vi": "Đến trước tất cả những người khác",
+          "example_en": "George Washington was the first President.",
+          "example_vi": "George Washington là Tổng thống đầu tiên."
+        },
+        {
+          "word": "here",
+          "pronunciation": "/hɪr/",
+          "translation_vi": "Ở đây",
+          "definition_en": "In, at, or to this place",
+          "definition_vi": "Trong, tại hoặc đến nơi này",
+          "example_en": "I live here.",
+          "example_vi": "Tôi sống ở đây."
+        },
+        {
+          "word": "large",
+          "pronunciation": "/lɑːrdʒ/",
+          "translation_vi": "Lớn",
+          "definition_en": "Of great size",
+          "definition_vi": "Có kích thước lớn",
+          "example_en": "The United States is large.",
+          "example_vi": "Hoa Kỳ rất lớn."
+        },
+        {
+          "word": "many",
+          "pronunciation": "/ˈmen.i/",
+          "translation_vi": "Nhiều",
+          "definition_en": "A large number of",
+          "definition_vi": "Một số lượng lớn",
+          "example_en": "There are many states.",
+          "example_vi": "Có nhiều bang."
+        },
+        {
+          "word": "most",
+          "pronunciation": "/moʊst/",
+          "translation_vi": "Nhiều nhất",
+          "definition_en": "The greatest amount or number",
+          "definition_vi": "Số lượng hoặc số lượng lớn nhất",
+          "example_en": "Most people vote.",
+          "example_vi": "Hầu hết mọi người bỏ phiếu."
+        },
+        {
+          "word": "name",
+          "pronunciation": "/neɪm/",
+          "translation_vi": "Tên",
+          "definition_en": "A word by which a person or thing is known",
+          "definition_vi": "Một từ mà một người hoặc vật được biết đến",
+          "example_en": "My name is John.",
+          "example_vi": "Tên tôi là John."
+        },
+        {
+          "word": "one",
+          "pronunciation": "/wʌn/",
+          "translation_vi": "Một",
+          "definition_en": "The number 1",
+          "definition_vi": "Số 1",
+          "example_en": "There is one President.",
+          "example_vi": "Có một Tổng thống."
+        },
+        {
+          "word": "other",
+          "pronunciation": "/ˈʌð.ɚ/",
+          "translation_vi": "Khác",
+          "definition_en": "Additional or different",
+          "definition_vi": "Bổ sung hoặc khác",
+          "example_en": "The other states are small.",
+          "example_vi": "Các bang khác nhỏ."
+        },
+        {
+          "word": "people",
+          "pronunciation": "/ˈpiː.pəl/",
+          "translation_vi": "Người dân",
+          "definition_en": "Human beings in general",
+          "definition_vi": "Con người nói chung",
+          "example_en": "The people vote.",
+          "example_vi": "Người dân bỏ phiếu."
+        },
+        {
+          "word": "second",
+          "pronunciation": "/ˈsek.ənd/",
+          "translation_vi": "Thứ hai",
+          "definition_en": "Coming after the first",
+          "definition_vi": "Đến sau người đầu tiên",
+          "example_en": "John Adams was the second President.",
+          "example_vi": "John Adams là Tổng thống thứ hai."
+        }
+      ]
+    },
+    "places": {
+      "name_en": "Places",
+      "name_vi": "Địa Điểm",
+      "description_en": "Geographic locations",
+      "description_vi": "Vị trí địa lý",
+      "words": [
+        {
+          "word": "United States",
+          "pronunciation": "/juːˌnaɪ.t̬ɪd ˈsteɪts/",
+          "translation_vi": "Hợp chủng quốc Hoa Kỳ",
+          "definition_en": "A country in North America",
+          "definition_vi": "Một quốc gia ở Bắc Mỹ",
+          "example_en": "I live in the United States.",
+          "example_vi": "Tôi sống ở Hợp chủng quốc Hoa Kỳ."
+        },
+        {
+          "word": "Washington",
+          "pronunciation": "/ˈwɑː.ʃɪŋ.tən/",
+          "translation_vi": "Washington",
+          "definition_en": "The capital city of the United States",
+          "definition_vi": "Thủ đô của Hoa Kỳ",
+          "example_en": "Washington is the capital.",
+          "example_vi": "Washington là thủ đô."
+        },
+        {
+          "word": "Washington, D.C.",
+          "pronunciation": "/ˈwɑː.ʃɪŋ.tən diː siː/",
+          "translation_vi": "Washington, D.C.",
+          "definition_en": "The capital of the United States (District of Columbia)",
+          "definition_vi": "Thủ đô của Hoa Kỳ (Quận Columbia)",
+          "example_en": "The White House is in Washington, D.C.",
+          "example_vi": "Nhà Trắng ở Washington, D.C."
+        },
+        {
+          "word": "White House",
+          "pronunciation": "/ˌwaɪt ˈhaʊs/",
+          "translation_vi": "Nhà Trắng",
+          "definition_en": "The official residence of the President",
+          "definition_vi": "Nơi ở chính thức của Tổng thống",
+          "example_en": "The President lives in the White House.",
+          "example_vi": "Tổng thống sống ở Nhà Trắng."
+        }
+      ]
+    },
+    "holidays": {
+      "name_en": "Holidays",
+      "name_vi": "Ngày Lễ",
+      "description_en": "American national holidays",
+      "description_vi": "Ngày lễ quốc gia của Mỹ",
+      "words": [
+        {
+          "word": "Presidents' Day",
+          "pronunciation": "/ˈprez.ɪ.dənts deɪ/",
+          "translation_vi": "Ngày Tổng Thống",
+          "definition_en": "A federal holiday honoring all U.S. presidents",
+          "definition_vi": "Ngày lễ liên bang tôn vinh tất cả các tổng thống Hoa Kỳ",
+          "example_en": "Presidents' Day is in February.",
+          "example_vi": "Ngày Tổng Thống vào tháng Hai."
+        },
+        {
+          "word": "Memorial Day",
+          "pronunciation": "/məˈmɔːr.i.əl deɪ/",
+          "translation_vi": "Ngày Tưởng Niệm",
+          "definition_en": "A holiday honoring those who died serving in the U.S. military",
+          "definition_vi": "Ngày lễ tôn vinh những người đã hy sinh phục vụ trong quân đội Hoa Kỳ",
+          "example_en": "Memorial Day is in May.",
+          "example_vi": "Ngày Tưởng Niệm vào tháng Năm."
+        },
+        {
+          "word": "Flag Day",
+          "pronunciation": "/flæɡ deɪ/",
+          "translation_vi": "Ngày Lá Cờ",
+          "definition_en": "A day celebrating the U.S. flag",
+          "definition_vi": "Một ngày kỷ niệm lá cờ Hoa Kỳ",
+          "example_en": "Flag Day is June 14.",
+          "example_vi": "Ngày Lá Cờ là ngày 14 tháng Sáu."
+        },
+        {
+          "word": "Independence Day",
+          "pronunciation": "/ˌɪn.dɪˈpen.dəns deɪ/",
+          "translation_vi": "Ngày Độc Lập",
+          "definition_en": "The birthday of the United States (July 4th)",
+          "definition_vi": "Ngày sinh nhật của Hoa Kỳ (4 tháng 7)",
+          "example_en": "Independence Day is July 4.",
+          "example_vi": "Ngày Độc Lập là ngày 4 tháng 7."
+        },
+        {
+          "word": "Labor Day",
+          "pronunciation": "/ˈleɪ.bɚ deɪ/",
+          "translation_vi": "Ngày Lao Động",
+          "definition_en": "A holiday honoring workers",
+          "definition_vi": "Ngày lễ tôn vinh người lao động",
+          "example_en": "Labor Day is in September.",
+          "example_vi": "Ngày Lao Động vào tháng Chín."
+        },
+        {
+          "word": "Columbus Day",
+          "pronunciation": "/kəˈlʌm.bəs deɪ/",
+          "translation_vi": "Ngày Columbus",
+          "definition_en": "A day celebrating Christopher Columbus's arrival in the Americas",
+          "definition_vi": "Một ngày kỷ niệm Christopher Columbus đến châu Mỹ",
+          "example_en": "Columbus Day is in October.",
+          "example_vi": "Ngày Columbus vào tháng Mười."
+        },
+        {
+          "word": "Thanksgiving",
+          "pronunciation": "/ˌθæŋksˈɡɪv.ɪŋ/",
+          "translation_vi": "Lễ Tạ Ơn",
+          "definition_en": "A holiday for giving thanks",
+          "definition_vi": "Một ngày lễ để tạ ơn",
+          "example_en": "Thanksgiving is in November.",
+          "example_vi": "Lễ Tạ Ơn vào tháng Mười Một."
+        }
+      ]
+    },
+    "verbs": {
+      "name_en": "Verbs",
+      "name_vi": "Động Từ",
+      "description_en": "Common action words",
+      "description_vi": "Từ hành động phổ biến",
+      "words": [
+        {
+          "word": "be",
+          "pronunciation": "/biː/",
+          "translation_vi": "Là, ở",
+          "definition_en": "To exist or live",
+          "definition_vi": "Tồn tại hoặc sống",
+          "example_en": "I want to be a citizen.",
+          "example_vi": "Tôi muốn trở thành công dân."
+        },
+        {
+          "word": "can",
+          "pronunciation": "/kæn/",
+          "translation_vi": "Có thể",
+          "definition_en": "To be able to",
+          "definition_vi": "Có khả năng",
+          "example_en": "You can vote.",
+          "example_vi": "Bạn có thể bỏ phiếu."
+        },
+        {
+          "word": "come",
+          "pronunciation": "/kʌm/",
+          "translation_vi": "Đến",
+          "definition_en": "To move toward",
+          "definition_vi": "Di chuyển về phía",
+          "example_en": "I come from Vietnam.",
+          "example_vi": "Tôi đến từ Việt Nam."
+        },
+        {
+          "word": "elect",
+          "pronunciation": "/ɪˈlekt/",
+          "translation_vi": "Bầu",
+          "definition_en": "To choose by voting",
+          "definition_vi": "Chọn bằng cách bỏ phiếu",
+          "example_en": "We elect the President.",
+          "example_vi": "Chúng ta bầu Tổng thống."
+        },
+        {
+          "word": "have",
+          "pronunciation": "/hæv/",
+          "translation_vi": "Có",
+          "definition_en": "To possess",
+          "definition_vi": "Sở hữu",
+          "example_en": "We have rights.",
+          "example_vi": "Chúng ta có quyền."
+        },
+        {
+          "word": "is",
+          "pronunciation": "/ɪz/",
+          "translation_vi": "Là",
+          "definition_en": "Third person singular form of 'be'",
+          "definition_vi": "Dạng ngôi thứ ba số ít của 'be'",
+          "example_en": "The President is elected.",
+          "example_vi": "Tổng thống được bầu."
+        },
+        {
+          "word": "live",
+          "pronunciation": "/lɪv/",
+          "translation_vi": "Sống",
+          "definition_en": "To have one's home in a place",
+          "definition_vi": "Có nhà ở một nơi",
+          "example_en": "I live in the United States.",
+          "example_vi": "Tôi sống ở Hoa Kỳ."
+        },
+        {
+          "word": "lives",
+          "pronunciation": "/lɪvz/",
+          "translation_vi": "Sống",
+          "definition_en": "Third person singular of 'live'",
+          "definition_vi": "Ngôi thứ ba số ít của 'live'",
+          "example_en": "The President lives in the White House.",
+          "example_vi": "Tổng thống sống ở Nhà Trắng."
+        },
+        {
+          "word": "meet",
+          "pronunciation": "/miːt/",
+          "translation_vi": "Gặp",
+          "definition_en": "To come together",
+          "definition_vi": "Đến với nhau",
+          "example_en": "Congress meets in the Capitol.",
+          "example_vi": "Quốc hội họp tại Tòa nhà Quốc hội."
+        },
+        {
+          "word": "vote",
+          "pronunciation": "/voʊt/",
+          "translation_vi": "Bỏ phiếu",
+          "definition_en": "To make a choice in an election",
+          "definition_vi": "Đưa ra lựa chọn trong một cuộc bầu cử",
+          "example_en": "Citizens vote for President.",
+          "example_vi": "Công dân bỏ phiếu cho Tổng thống."
+        },
+        {
+          "word": "want",
+          "pronunciation": "/wɑːnt/",
+          "translation_vi": "Muốn",
+          "definition_en": "To desire or wish for",
+          "definition_vi": "Mong muốn hoặc ước",
+          "example_en": "I want to be a citizen.",
+          "example_vi": "Tôi muốn trở thành công dân."
+        }
+      ]
+    },
+    "people": {
+      "name_en": "People",
+      "name_vi": "Nhân Vật",
+      "description_en": "Important historical figures",
+      "description_vi": "Nhân vật lịch sử quan trọng",
+      "words": [
+        {
+          "word": "Abraham Lincoln",
+          "pronunciation": "/ˈeɪ.brə.hæm ˈlɪŋ.kən/",
+          "translation_vi": "Abraham Lincoln",
+          "definition_en": "The 16th President of the United States",
+          "definition_vi": "Tổng thống thứ 16 của Hoa Kỳ",
+          "example_en": "Abraham Lincoln freed the slaves.",
+          "example_vi": "Abraham Lincoln đã giải phóng nô lệ."
+        },
+        {
+          "word": "George Washington",
+          "pronunciation": "/dʒɔːrdʒ ˈwɑː.ʃɪŋ.tən/",
+          "translation_vi": "George Washington",
+          "definition_en": "The first President of the United States",
+          "definition_vi": "Tổng thống đầu tiên của Hoa Kỳ",
+          "example_en": "George Washington was the first President.",
+          "example_vi": "George Washington là Tổng thống đầu tiên."
+        }
+      ]
+    }
+  }
+}

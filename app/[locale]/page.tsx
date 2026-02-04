@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   BookOpen,
   FileQuestion,
@@ -72,11 +73,16 @@ function HomeContent({ locale }: { locale: string }) {
 
         <div className="container mx-auto px-4 py-16 md:py-24 relative">
           <div className="max-w-3xl mx-auto text-center">
-            {/* Flag Icon */}
+            {/* Logo */}
             <div className="flex justify-center mb-6">
-              <div className="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-sm">
-                <span className="text-4xl">🇺🇸</span>
-              </div>
+              <Image
+                src="/logo.png"
+                alt={locale === 'vi' ? 'Công Dân Mỹ' : 'U.S. Citizenship'}
+                width={120}
+                height={120}
+                className="w-28 h-28 md:w-32 md:h-32 object-contain drop-shadow-lg"
+                priority
+              />
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">

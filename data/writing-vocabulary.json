@@ -1,0 +1,491 @@
+{
+  "metadata": {
+    "version": "2025.1",
+    "totalWords": 90,
+    "lastUpdated": "2025-01-01",
+    "source": "USCIS Writing Vocabulary List",
+    "description": "Official USCIS writing vocabulary words for the citizenship test"
+  },
+  "categories": {
+    "civics": {
+      "name_en": "Civics",
+      "name_vi": "Công Dân",
+      "description_en": "Civics-related vocabulary",
+      "description_vi": "Từ vựng về công dân",
+      "words": [
+        {
+          "word": "American",
+          "translation_vi": "Người Mỹ",
+          "definition_en": "Of or relating to the United States",
+          "definition_vi": "Thuộc về hoặc liên quan đến Hoa Kỳ",
+          "example_en": "Write: The American flag is red, white, and blue.",
+          "example_vi": "Viết: Cờ Mỹ có màu đỏ, trắng và xanh."
+        },
+        {
+          "word": "Congress",
+          "translation_vi": "Quốc hội",
+          "definition_en": "The legislative branch",
+          "definition_vi": "Nhánh lập pháp",
+          "example_en": "Write: Congress meets in Washington, D.C.",
+          "example_vi": "Viết: Quốc hội họp tại Washington, D.C."
+        },
+        {
+          "word": "President",
+          "translation_vi": "Tổng thống",
+          "definition_en": "The head of the executive branch",
+          "definition_vi": "Người đứng đầu nhánh hành pháp",
+          "example_en": "Write: The President lives in the White House.",
+          "example_vi": "Viết: Tổng thống sống ở Nhà Trắng."
+        },
+        {
+          "word": "United States",
+          "translation_vi": "Hợp chủng quốc Hoa Kỳ",
+          "definition_en": "A country in North America",
+          "definition_vi": "Một quốc gia ở Bắc Mỹ",
+          "example_en": "Write: I live in the United States.",
+          "example_vi": "Viết: Tôi sống ở Hợp chủng quốc Hoa Kỳ."
+        },
+        {
+          "word": "Washington",
+          "translation_vi": "Washington",
+          "definition_en": "The capital of the United States",
+          "definition_vi": "Thủ đô của Hoa Kỳ",
+          "example_en": "Write: Washington is the capital.",
+          "example_vi": "Viết: Washington là thủ đô."
+        },
+        {
+          "word": "citizen",
+          "translation_vi": "Công dân",
+          "definition_en": "A person who legally belongs to a country",
+          "definition_vi": "Một người hợp pháp thuộc về một quốc gia",
+          "example_en": "Write: I want to be a citizen.",
+          "example_vi": "Viết: Tôi muốn trở thành công dân."
+        },
+        {
+          "word": "flag",
+          "translation_vi": "Lá cờ",
+          "definition_en": "National symbol",
+          "definition_vi": "Biểu tượng quốc gia",
+          "example_en": "Write: The flag has stars and stripes.",
+          "example_vi": "Viết: Lá cờ có ngôi sao và sọc."
+        },
+        {
+          "word": "freedom",
+          "translation_vi": "Tự do",
+          "definition_en": "The right to act and speak freely",
+          "definition_vi": "Quyền hành động và nói tự do",
+          "example_en": "Write: We have freedom of speech.",
+          "example_vi": "Viết: Chúng ta có tự do ngôn luận."
+        },
+        {
+          "word": "right",
+          "translation_vi": "Quyền",
+          "definition_en": "A legal entitlement",
+          "definition_vi": "Một quyền hợp pháp",
+          "example_en": "Write: We have the right to vote.",
+          "example_vi": "Viết: Chúng ta có quyền bỏ phiếu."
+        },
+        {
+          "word": "state",
+          "translation_vi": "Bang",
+          "definition_en": "A political division of the United States",
+          "definition_vi": "Một đơn vị chính trị của Hoa Kỳ",
+          "example_en": "Write: California is a state.",
+          "example_vi": "Viết: California là một bang."
+        },
+        {
+          "word": "White House",
+          "translation_vi": "Nhà Trắng",
+          "definition_en": "Where the President lives",
+          "definition_vi": "Nơi Tổng thống sống",
+          "example_en": "Write: The White House is in Washington, D.C.",
+          "example_vi": "Viết: Nhà Trắng ở Washington, D.C."
+        }
+      ]
+    },
+    "verbs": {
+      "name_en": "Verbs",
+      "name_vi": "Động Từ",
+      "description_en": "Common action words",
+      "description_vi": "Từ hành động phổ biến",
+      "words": [
+        {
+          "word": "be",
+          "translation_vi": "Là, ở",
+          "definition_en": "To exist",
+          "definition_vi": "Tồn tại",
+          "example_en": "Write: I want to be a citizen.",
+          "example_vi": "Viết: Tôi muốn trở thành công dân."
+        },
+        {
+          "word": "can",
+          "translation_vi": "Có thể",
+          "definition_en": "To be able to",
+          "definition_vi": "Có khả năng",
+          "example_en": "Write: Citizens can vote.",
+          "example_vi": "Viết: Công dân có thể bỏ phiếu."
+        },
+        {
+          "word": "come",
+          "translation_vi": "Đến",
+          "definition_en": "To move toward",
+          "definition_vi": "Di chuyển về phía",
+          "example_en": "Write: I come from Vietnam.",
+          "example_vi": "Viết: Tôi đến từ Việt Nam."
+        },
+        {
+          "word": "elect",
+          "translation_vi": "Bầu",
+          "definition_en": "To choose by voting",
+          "definition_vi": "Chọn bằng cách bỏ phiếu",
+          "example_en": "Write: We elect the President.",
+          "example_vi": "Viết: Chúng ta bầu Tổng thống."
+        },
+        {
+          "word": "have",
+          "translation_vi": "Có",
+          "definition_en": "To possess",
+          "definition_vi": "Sở hữu",
+          "example_en": "Write: We have rights.",
+          "example_vi": "Viết: Chúng ta có quyền."
+        },
+        {
+          "word": "is",
+          "translation_vi": "Là",
+          "definition_en": "Form of 'be'",
+          "definition_vi": "Dạng của 'be'",
+          "example_en": "Write: The President is elected.",
+          "example_vi": "Viết: Tổng thống được bầu."
+        },
+        {
+          "word": "live",
+          "translation_vi": "Sống",
+          "definition_en": "To reside",
+          "definition_vi": "Cư trú",
+          "example_en": "Write: I live in California.",
+          "example_vi": "Viết: Tôi sống ở California."
+        },
+        {
+          "word": "lives",
+          "translation_vi": "Sống",
+          "definition_en": "Third person form of 'live'",
+          "definition_vi": "Ngôi thứ ba của 'live'",
+          "example_en": "Write: The President lives in the White House.",
+          "example_vi": "Viết: Tổng thống sống ở Nhà Trắng."
+        },
+        {
+          "word": "meet",
+          "translation_vi": "Gặp",
+          "definition_en": "To come together",
+          "definition_vi": "Đến với nhau",
+          "example_en": "Write: Congress meets in Washington.",
+          "example_vi": "Viết: Quốc hội họp tại Washington."
+        },
+        {
+          "word": "vote",
+          "translation_vi": "Bỏ phiếu",
+          "definition_en": "To make a choice",
+          "definition_vi": "Đưa ra lựa chọn",
+          "example_en": "Write: I vote for the President.",
+          "example_vi": "Viết: Tôi bỏ phiếu cho Tổng thống."
+        },
+        {
+          "word": "want",
+          "translation_vi": "Muốn",
+          "definition_en": "To desire",
+          "definition_vi": "Mong muốn",
+          "example_en": "Write: I want to be a citizen.",
+          "example_vi": "Viết: Tôi muốn trở thành công dân."
+        }
+      ]
+    },
+    "people": {
+      "name_en": "People",
+      "name_vi": "Nhân Vật",
+      "description_en": "Important historical figures",
+      "description_vi": "Nhân vật lịch sử quan trọng",
+      "words": [
+        {
+          "word": "Abraham Lincoln",
+          "translation_vi": "Abraham Lincoln",
+          "definition_en": "The 16th President",
+          "definition_vi": "Tổng thống thứ 16",
+          "example_en": "Write: Abraham Lincoln was President.",
+          "example_vi": "Viết: Abraham Lincoln là Tổng thống."
+        },
+        {
+          "word": "George Washington",
+          "translation_vi": "George Washington",
+          "definition_en": "The first President",
+          "definition_vi": "Tổng thống đầu tiên",
+          "example_en": "Write: George Washington was the first President.",
+          "example_vi": "Viết: George Washington là Tổng thống đầu tiên."
+        }
+      ]
+    },
+    "holidays": {
+      "name_en": "Holidays",
+      "name_vi": "Ngày Lễ",
+      "description_en": "American holidays",
+      "description_vi": "Ngày lễ Mỹ",
+      "words": [
+        {
+          "word": "Columbus Day",
+          "translation_vi": "Ngày Columbus",
+          "definition_en": "October holiday",
+          "definition_vi": "Ngày lễ tháng Mười",
+          "example_en": "Write: Columbus Day is in October.",
+          "example_vi": "Viết: Ngày Columbus vào tháng Mười."
+        },
+        {
+          "word": "Flag Day",
+          "translation_vi": "Ngày Lá Cờ",
+          "definition_en": "June 14",
+          "definition_vi": "14 tháng Sáu",
+          "example_en": "Write: Flag Day is in June.",
+          "example_vi": "Viết: Ngày Lá Cờ vào tháng Sáu."
+        },
+        {
+          "word": "Independence Day",
+          "translation_vi": "Ngày Độc Lập",
+          "definition_en": "July 4th",
+          "definition_vi": "4 tháng 7",
+          "example_en": "Write: Independence Day is in July.",
+          "example_vi": "Viết: Ngày Độc Lập vào tháng Bảy."
+        },
+        {
+          "word": "Labor Day",
+          "translation_vi": "Ngày Lao Động",
+          "definition_en": "September holiday",
+          "definition_vi": "Ngày lễ tháng Chín",
+          "example_en": "Write: Labor Day is in September.",
+          "example_vi": "Viết: Ngày Lao Động vào tháng Chín."
+        },
+        {
+          "word": "Memorial Day",
+          "translation_vi": "Ngày Tưởng Niệm",
+          "definition_en": "May holiday",
+          "definition_vi": "Ngày lễ tháng Năm",
+          "example_en": "Write: Memorial Day is in May.",
+          "example_vi": "Viết: Ngày Tưởng Niệm vào tháng Năm."
+        },
+        {
+          "word": "Presidents' Day",
+          "translation_vi": "Ngày Tổng Thống",
+          "definition_en": "February holiday",
+          "definition_vi": "Ngày lễ tháng Hai",
+          "example_en": "Write: Presidents' Day is in February.",
+          "example_vi": "Viết: Ngày Tổng Thống vào tháng Hai."
+        },
+        {
+          "word": "Thanksgiving",
+          "translation_vi": "Lễ Tạ Ơn",
+          "definition_en": "November holiday",
+          "definition_vi": "Ngày lễ tháng Mười Một",
+          "example_en": "Write: Thanksgiving is in November.",
+          "example_vi": "Viết: Lễ Tạ Ơn vào tháng Mười Một."
+        }
+      ]
+    },
+    "everyday": {
+      "name_en": "Everyday Words",
+      "name_vi": "Từ Hàng Ngày",
+      "description_en": "Common words",
+      "description_vi": "Từ phổ biến",
+      "words": [
+        {
+          "word": "blue",
+          "translation_vi": "Xanh dương",
+          "definition_en": "A color",
+          "definition_vi": "Một màu",
+          "example_en": "Write: The flag is blue.",
+          "example_vi": "Viết: Lá cờ có màu xanh."
+        },
+        {
+          "word": "colors",
+          "translation_vi": "Màu sắc",
+          "definition_en": "Different shades",
+          "definition_vi": "Các sắc độ khác nhau",
+          "example_en": "Write: The flag has three colors.",
+          "example_vi": "Viết: Lá cờ có ba màu."
+        },
+        {
+          "word": "dollar",
+          "translation_vi": "Đô la",
+          "definition_en": "U.S. currency",
+          "definition_vi": "Tiền tệ Mỹ",
+          "example_en": "Write: I have one dollar.",
+          "example_vi": "Viết: Tôi có một đô la."
+        },
+        {
+          "word": "first",
+          "translation_vi": "Đầu tiên",
+          "definition_en": "Before all others",
+          "definition_vi": "Trước tất cả những người khác",
+          "example_en": "Write: Washington was the first President.",
+          "example_vi": "Viết: Washington là Tổng thống đầu tiên."
+        },
+        {
+          "word": "here",
+          "translation_vi": "Ở đây",
+          "definition_en": "In this place",
+          "definition_vi": "Trong nơi này",
+          "example_en": "Write: I live here.",
+          "example_vi": "Viết: Tôi sống ở đây."
+        },
+        {
+          "word": "large",
+          "translation_vi": "Lớn",
+          "definition_en": "Big in size",
+          "definition_vi": "Lớn về kích thước",
+          "example_en": "Write: The United States is large.",
+          "example_vi": "Viết: Hoa Kỳ rất lớn."
+        },
+        {
+          "word": "many",
+          "translation_vi": "Nhiều",
+          "definition_en": "A large number",
+          "definition_vi": "Một số lượng lớn",
+          "example_en": "Write: There are many states.",
+          "example_vi": "Viết: Có nhiều bang."
+        },
+        {
+          "word": "most",
+          "translation_vi": "Nhiều nhất",
+          "definition_en": "The greatest amount",
+          "definition_vi": "Số lượng lớn nhất",
+          "example_en": "Write: Most people vote.",
+          "example_vi": "Viết: Hầu hết mọi người bỏ phiếu."
+        },
+        {
+          "word": "name",
+          "translation_vi": "Tên",
+          "definition_en": "What something is called",
+          "definition_vi": "Cái gì được gọi",
+          "example_en": "Write: My name is John.",
+          "example_vi": "Viết: Tên tôi là John."
+        },
+        {
+          "word": "north",
+          "translation_vi": "Phía bắc",
+          "definition_en": "A direction",
+          "definition_vi": "Một hướng",
+          "example_en": "Write: Canada is north.",
+          "example_vi": "Viết: Canada ở phía bắc."
+        },
+        {
+          "word": "one",
+          "translation_vi": "Một",
+          "definition_en": "The number 1",
+          "definition_vi": "Số 1",
+          "example_en": "Write: We have one President.",
+          "example_vi": "Viết: Chúng ta có một Tổng thống."
+        },
+        {
+          "word": "people",
+          "translation_vi": "Người dân",
+          "definition_en": "Human beings",
+          "definition_vi": "Con người",
+          "example_en": "Write: The people vote.",
+          "example_vi": "Viết: Người dân bỏ phiếu."
+        },
+        {
+          "word": "red",
+          "translation_vi": "Đỏ",
+          "definition_en": "A color",
+          "definition_vi": "Một màu",
+          "example_en": "Write: The flag is red.",
+          "example_vi": "Viết: Lá cờ có màu đỏ."
+        },
+        {
+          "word": "second",
+          "translation_vi": "Thứ hai",
+          "definition_en": "After the first",
+          "definition_vi": "Sau người đầu tiên",
+          "example_en": "Write: John Adams was the second President.",
+          "example_vi": "Viết: John Adams là Tổng thống thứ hai."
+        },
+        {
+          "word": "south",
+          "translation_vi": "Phía nam",
+          "definition_en": "A direction",
+          "definition_vi": "Một hướng",
+          "example_en": "Write: Mexico is south.",
+          "example_vi": "Viết: Mexico ở phía nam."
+        },
+        {
+          "word": "white",
+          "translation_vi": "Trắng",
+          "definition_en": "A color",
+          "definition_vi": "Một màu",
+          "example_en": "Write: The flag is white.",
+          "example_vi": "Viết: Lá cờ có màu trắng."
+        }
+      ]
+    },
+    "months": {
+      "name_en": "Months",
+      "name_vi": "Tháng",
+      "description_en": "Months of the year",
+      "description_vi": "Các tháng trong năm",
+      "words": [
+        {
+          "word": "February",
+          "translation_vi": "Tháng Hai",
+          "definition_en": "The second month",
+          "definition_vi": "Tháng thứ hai",
+          "example_en": "Write: Presidents' Day is in February.",
+          "example_vi": "Viết: Ngày Tổng Thống vào tháng Hai."
+        },
+        {
+          "word": "May",
+          "translation_vi": "Tháng Năm",
+          "definition_en": "The fifth month",
+          "definition_vi": "Tháng thứ năm",
+          "example_en": "Write: Memorial Day is in May.",
+          "example_vi": "Viết: Ngày Tưởng Niệm vào tháng Năm."
+        },
+        {
+          "word": "June",
+          "translation_vi": "Tháng Sáu",
+          "definition_en": "The sixth month",
+          "definition_vi": "Tháng thứ sáu",
+          "example_en": "Write: Flag Day is in June.",
+          "example_vi": "Viết: Ngày Lá Cờ vào tháng Sáu."
+        },
+        {
+          "word": "July",
+          "translation_vi": "Tháng Bảy",
+          "definition_en": "The seventh month",
+          "definition_vi": "Tháng thứ bảy",
+          "example_en": "Write: Independence Day is in July.",
+          "example_vi": "Viết: Ngày Độc Lập vào tháng Bảy."
+        },
+        {
+          "word": "September",
+          "translation_vi": "Tháng Chín",
+          "definition_en": "The ninth month",
+          "definition_vi": "Tháng thứ chín",
+          "example_en": "Write: Labor Day is in September.",
+          "example_vi": "Viết: Ngày Lao Động vào tháng Chín."
+        },
+        {
+          "word": "October",
+          "translation_vi": "Tháng Mười",
+          "definition_en": "The tenth month",
+          "definition_vi": "Tháng thứ mười",
+          "example_en": "Write: Columbus Day is in October.",
+          "example_vi": "Viết: Ngày Columbus vào tháng Mười."
+        },
+        {
+          "word": "November",
+          "translation_vi": "Tháng Mười Một",
+          "definition_en": "The eleventh month",
+          "definition_vi": "Tháng thứ mười một",
+          "example_en": "Write: Thanksgiving is in November.",
+          "example_vi": "Viết: Lễ Tạ Ơn vào tháng Mười Một."
+        }
+      ]
+    }
+  }
+}

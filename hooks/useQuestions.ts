@@ -8,10 +8,28 @@ import {
   searchQuestions,
   getCategoryStats,
 } from '@/lib/questions';
-import type { Question, Category, Locale } from '@/types';
+import { useDynamicOfficials } from './useDynamicOfficials';
+import type { Question, Category, Locale, StateCode } from '@/types';
 
 export function useQuestions() {
   const questions = useMemo(() => getAllQuestions(), []);
+
+  return {
+    questions,
+    total: questions.length,
+  };
+}
+
+/**
+ * Get questions with dynamic data enriched (current officials, state-specific data)
+ */
+export function useQuestionsWithDynamicData(locale: Locale, userState?: StateCode) {
+  const { enrichQuestion } = useDynamicOfficials(userState);
+  const baseQuestions = useMemo(() => getAllQuestions(), []);
+
+  const questions = useMemo(() => {
+    return baseQuestions.map((q) => enrichQuestion(q, locale));
+  }, [baseQuestions, enrichQuestion, locale]);
 
   return {
     questions,

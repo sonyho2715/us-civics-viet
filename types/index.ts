@@ -8,6 +8,7 @@ export type DynamicType =
   | 'vice_president'
   | 'speaker_of_house'
   | 'chief_justice'
+  | 'president_party'
   | 'state_senator'
   | 'representative'
   | 'governor'
@@ -22,11 +23,183 @@ export interface Question {
   question_vi: string;
   answers_en: string[];
   answers_vi: string[];
+  explanation_en?: string;
   explanation_vi: string;
   is_65_20: boolean;
   is_dynamic: boolean;
   dynamic_type?: DynamicType;
 }
+
+// Achievement system types
+export type AchievementId =
+  | 'first_question'
+  | 'first_test'
+  | 'first_pass'
+  | 'streak_7'
+  | 'streak_30'
+  | 'category_master_gov'
+  | 'category_master_history'
+  | 'category_master_symbols'
+  | 'all_questions'
+  | 'perfect_test'
+  | 'senior_ready'
+  | 'speed_demon'
+  | 'bookworm'
+  | 'flashcard_pro';
+
+export interface Achievement {
+  id: AchievementId;
+  name_en: string;
+  name_vi: string;
+  description_en: string;
+  description_vi: string;
+  icon: string;
+  xp: number;
+  requirement: string;
+}
+
+export const ACHIEVEMENTS: Achievement[] = [
+  {
+    id: 'first_question',
+    name_en: 'First Step',
+    name_vi: 'Bước Đầu Tiên',
+    description_en: 'Study your first question',
+    description_vi: 'Học câu hỏi đầu tiên',
+    icon: '🎯',
+    xp: 10,
+    requirement: 'study_1_question',
+  },
+  {
+    id: 'first_test',
+    name_en: 'Test Taker',
+    name_vi: 'Người Thi',
+    description_en: 'Complete your first practice test',
+    description_vi: 'Hoàn thành bài thi thử đầu tiên',
+    icon: '📝',
+    xp: 25,
+    requirement: 'complete_1_test',
+  },
+  {
+    id: 'first_pass',
+    name_en: 'Victory!',
+    name_vi: 'Chiến Thắng!',
+    description_en: 'Pass your first practice test',
+    description_vi: 'Đậu bài thi thử đầu tiên',
+    icon: '🏆',
+    xp: 50,
+    requirement: 'pass_1_test',
+  },
+  {
+    id: 'streak_7',
+    name_en: 'Week Warrior',
+    name_vi: 'Chiến Binh Tuần',
+    description_en: 'Maintain a 7-day study streak',
+    description_vi: 'Duy trì chuỗi học 7 ngày',
+    icon: '🔥',
+    xp: 100,
+    requirement: 'streak_7_days',
+  },
+  {
+    id: 'streak_30',
+    name_en: 'Monthly Master',
+    name_vi: 'Bậc Thầy Tháng',
+    description_en: 'Maintain a 30-day study streak',
+    description_vi: 'Duy trì chuỗi học 30 ngày',
+    icon: '⭐',
+    xp: 500,
+    requirement: 'streak_30_days',
+  },
+  {
+    id: 'category_master_gov',
+    name_en: 'Government Expert',
+    name_vi: 'Chuyên Gia Chính Phủ',
+    description_en: 'Master all American Government questions',
+    description_vi: 'Thành thạo tất cả câu hỏi Chính Phủ',
+    icon: '🏛️',
+    xp: 200,
+    requirement: 'master_category_government',
+  },
+  {
+    id: 'category_master_history',
+    name_en: 'History Buff',
+    name_vi: 'Chuyên Gia Lịch Sử',
+    description_en: 'Master all American History questions',
+    description_vi: 'Thành thạo tất cả câu hỏi Lịch Sử',
+    icon: '📜',
+    xp: 200,
+    requirement: 'master_category_history',
+  },
+  {
+    id: 'category_master_symbols',
+    name_en: 'Symbol Scholar',
+    name_vi: 'Học Giả Biểu Tượng',
+    description_en: 'Master all Symbols & Holidays questions',
+    description_vi: 'Thành thạo tất cả câu hỏi Biểu Tượng',
+    icon: '🗽',
+    xp: 100,
+    requirement: 'master_category_symbols',
+  },
+  {
+    id: 'all_questions',
+    name_en: 'Scholar',
+    name_vi: 'Học Giả',
+    description_en: 'Study all 128 questions',
+    description_vi: 'Học hết 128 câu hỏi',
+    icon: '🎓',
+    xp: 300,
+    requirement: 'study_all_questions',
+  },
+  {
+    id: 'perfect_test',
+    name_en: 'Perfect Score',
+    name_vi: 'Điểm Hoàn Hảo',
+    description_en: 'Get 100% on a practice test',
+    description_vi: 'Đạt 100% trong bài thi thử',
+    icon: '💯',
+    xp: 150,
+    requirement: 'perfect_test_score',
+  },
+  {
+    id: 'senior_ready',
+    name_en: '65/20 Ready',
+    name_vi: 'Sẵn Sàng 65/20',
+    description_en: 'Master all 20 senior questions',
+    description_vi: 'Thành thạo 20 câu hỏi 65/20',
+    icon: '👴',
+    xp: 150,
+    requirement: 'master_senior_questions',
+  },
+  {
+    id: 'speed_demon',
+    name_en: 'Speed Demon',
+    name_vi: 'Tốc Độ',
+    description_en: 'Complete a test in under 5 minutes',
+    description_vi: 'Hoàn thành bài thi trong 5 phút',
+    icon: '⚡',
+    xp: 75,
+    requirement: 'fast_test_completion',
+  },
+  {
+    id: 'bookworm',
+    name_en: 'Bookworm',
+    name_vi: 'Mọt Sách',
+    description_en: 'Bookmark 20 questions',
+    description_vi: 'Đánh dấu 20 câu hỏi',
+    icon: '🔖',
+    xp: 50,
+    requirement: 'bookmark_20_questions',
+  },
+  {
+    id: 'flashcard_pro',
+    name_en: 'Flashcard Pro',
+    name_vi: 'Chuyên Gia Thẻ',
+    description_en: 'Review 100 flashcards',
+    description_vi: 'Ôn tập 100 thẻ ghi nhớ',
+    icon: '🃏',
+    xp: 100,
+    requirement: 'review_100_flashcards',
+  },
+];
 
 export interface TestSession {
   id: string;

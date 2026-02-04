@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "lastUpdated": "2025-01-15",
+    "source": "Official government records",
+    "note": "These answers may change after elections. Check USCIS website for current answers."
+  },
+  "officials": {
+    "president": {
+      "name_en": "Donald J. Trump",
+      "name_vi": "Donald J. Trump",
+      "party_en": "Republican",
+      "party_vi": "Cộng hòa",
+      "since": "2025-01-20"
+    },
+    "vice_president": {
+      "name_en": "JD Vance",
+      "name_vi": "JD Vance",
+      "party_en": "Republican",
+      "party_vi": "Cộng hòa",
+      "since": "2025-01-20"
+    },
+    "speaker_of_house": {
+      "name_en": "Mike Johnson",
+      "name_vi": "Mike Johnson",
+      "party_en": "Republican",
+      "party_vi": "Cộng hòa",
+      "since": "2023-10-25"
+    },
+    "chief_justice": {
+      "name_en": "John G. Roberts, Jr.",
+      "name_vi": "John G. Roberts, Jr.",
+      "since": "2005-09-29"
+    }
+  },
+  "dynamic_questions": {
+    "23": {
+      "question_number": 23,
+      "type": "representative",
+      "note_en": "The answer depends on where you live. Visit house.gov to find your representative.",
+      "note_vi": "Câu trả lời phụ thuộc vào nơi bạn sống. Truy cập house.gov để tìm dân biểu của bạn."
+    },
+    "29": {
+      "question_number": 29,
+      "type": "president",
+      "current_answer_en": "Donald J. Trump",
+      "current_answer_vi": "Donald J. Trump"
+    },
+    "30": {
+      "question_number": 30,
+      "type": "vice_president",
+      "current_answer_en": "JD Vance",
+      "current_answer_vi": "JD Vance"
+    },
+    "38": {
+      "question_number": 38,
+      "type": "speaker_of_house",
+      "current_answer_en": "Mike Johnson",
+      "current_answer_vi": "Mike Johnson"
+    },
+    "39": {
+      "question_number": 39,
+      "type": "president_party",
+      "current_answer_en": "Republican Party",
+      "current_answer_vi": "Đảng Cộng hòa"
+    },
+    "57": {
+      "question_number": 57,
+      "type": "state_senator",
+      "note_en": "The answer depends on your state. Visit senate.gov to find your senators.",
+      "note_vi": "Câu trả lời phụ thuộc vào tiểu bang của bạn. Truy cập senate.gov để tìm thượng nghị sĩ của bạn."
+    },
+    "61": {
+      "question_number": 61,
+      "type": "governor",
+      "note_en": "The answer depends on your state. Search for '[your state] governor' to find the answer.",
+      "note_vi": "Câu trả lời phụ thuộc vào tiểu bang của bạn. Tìm kiếm 'thống đốc [tiểu bang của bạn]'."
+    },
+    "62": {
+      "question_number": 62,
+      "type": "state_capital",
+      "note_en": "The answer depends on your state.",
+      "note_vi": "Câu trả lời phụ thuộc vào tiểu bang của bạn."
+    }
+  },
+  "state_data": {
+    "AL": { "capital": "Montgomery", "governor": "Kay Ivey" },
+    "AK": { "capital": "Juneau", "governor": "Mike Dunleavy" },
+    "AZ": { "capital": "Phoenix", "governor": "Katie Hobbs" },
+    "AR": { "capital": "Little Rock", "governor": "Sarah Huckabee Sanders" },
+    "CA": { "capital": "Sacramento", "governor": "Gavin Newsom" },
+    "CO": { "capital": "Denver", "governor": "Jared Polis" },
+    "CT": { "capital": "Hartford", "governor": "Ned Lamont" },
+    "DE": { "capital": "Dover", "governor": "Matt Meyer" },
+    "FL": { "capital": "Tallahassee", "governor": "Ron DeSantis" },
+    "GA": { "capital": "Atlanta", "governor": "Brian Kemp" },
+    "HI": { "capital": "Honolulu", "governor": "Josh Green" },
+    "ID": { "capital": "Boise", "governor": "Brad Little" },
+    "IL": { "capital": "Springfield", "governor": "JB Pritzker" },
+    "IN": { "capital": "Indianapolis", "governor": "Mike Braun" },
+    "IA": { "capital": "Des Moines", "governor": "Kim Reynolds" },
+    "KS": { "capital": "Topeka", "governor": "Laura Kelly" },
+    "KY": { "capital": "Frankfort", "governor": "Andy Beshear" },
+    "LA": { "capital": "Baton Rouge", "governor": "Jeff Landry" },
+    "ME": { "capital": "Augusta", "governor": "Janet Mills" },
+    "MD": { "capital": "Annapolis", "governor": "Wes Moore" },
+    "MA": { "capital": "Boston", "governor": "Maura Healey" },
+    "MI": { "capital": "Lansing", "governor": "Gretchen Whitmer" },
+    "MN": { "capital": "Saint Paul", "governor": "Tim Walz" },
+    "MS": { "capital": "Jackson", "governor": "Tate Reeves" },
+    "MO": { "capital": "Jefferson City", "governor": "Mike Kehoe" },
+    "MT": { "capital": "Helena", "governor": "Greg Gianforte" },
+    "NE": { "capital": "Lincoln", "governor": "Jim Pillen" },
+    "NV": { "capital": "Carson City", "governor": "Joe Lombardo" },
+    "NH": { "capital": "Concord", "governor": "Kelly Ayotte" },
+    "NJ": { "capital": "Trenton", "governor": "Phil Murphy" },
+    "NM": { "capital": "Santa Fe", "governor": "Michelle Lujan Grisham" },
+    "NY": { "capital": "Albany", "governor": "Kathy Hochul" },
+    "NC": { "capital": "Raleigh", "governor": "Josh Stein" },
+    "ND": { "capital": "Bismarck", "governor": "Kelly Armstrong" },
+    "OH": { "capital": "Columbus", "governor": "Mike DeWine" },
+    "OK": { "capital": "Oklahoma City", "governor": "Kevin Stitt" },
+    "OR": { "capital": "Salem", "governor": "Tina Kotek" },
+    "PA": { "capital": "Harrisburg", "governor": "Josh Shapiro" },
+    "RI": { "capital": "Providence", "governor": "Dan McKee" },
+    "SC": { "capital": "Columbia", "governor": "Henry McMaster" },
+    "SD": { "capital": "Pierre", "governor": "Kristi Noem" },
+    "TN": { "capital": "Nashville", "governor": "Bill Lee" },
+    "TX": { "capital": "Austin", "governor": "Greg Abbott" },
+    "UT": { "capital": "Salt Lake City", "governor": "Spencer Cox" },
+    "VT": { "capital": "Montpelier", "governor": "Phil Scott" },
+    "VA": { "capital": "Richmond", "governor": "Glenn Youngkin" },
+    "WA": { "capital": "Olympia", "governor": "Bob Ferguson" },
+    "WV": { "capital": "Charleston", "governor": "Patrick Morrisey" },
+    "WI": { "capital": "Madison", "governor": "Tony Evers" },
+    "WY": { "capital": "Cheyenne", "governor": "Mark Gordon" },
+    "DC": { "capital": "N/A", "governor": "N/A (Mayor: Muriel Bowser)" }
+  }
+}

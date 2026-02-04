@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 interface ProgressBarProps {
   progress: number; // 0-100
   className?: string;
-  color?: 'blue' | 'green' | 'amber' | 'red';
+  color?: 'blue' | 'green' | 'amber' | 'red' | 'purple';
   size?: 'sm' | 'md' | 'lg';
   showLabel?: boolean;
   label?: string;
@@ -24,6 +24,7 @@ export function ProgressBar({
     green: 'bg-green-500',
     amber: 'bg-amber-500',
     red: 'bg-red-500',
+    purple: 'bg-purple-500',
   };
 
   const sizes = {

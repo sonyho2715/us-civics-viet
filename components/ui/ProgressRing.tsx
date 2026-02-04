@@ -4,11 +4,12 @@ import { cn } from '@/lib/utils';
 
 interface ProgressRingProps {
   progress: number; // 0-100
-  size?: 'sm' | 'md' | 'lg';
+  size?: 'sm' | 'md' | 'lg' | 'xl';
   strokeWidth?: number;
   showPercentage?: boolean;
   className?: string;
   color?: 'blue' | 'green' | 'amber' | 'red';
+  children?: React.ReactNode;
 }
 
 export function ProgressRing({
@@ -18,17 +19,20 @@ export function ProgressRing({
   showPercentage = true,
   className,
   color = 'blue',
+  children,
 }: ProgressRingProps) {
   const sizes = {
     sm: 48,
     md: 64,
     lg: 96,
+    xl: 140,
   };
 
   const textSizes = {
     sm: 'text-xs',
     md: 'text-sm',
     lg: 'text-lg',
+    xl: 'text-2xl',
   };
 
   const colors = {
@@ -84,16 +88,20 @@ export function ProgressRing({
           }}
         />
       </svg>
-      {showPercentage && (
-        <span
-          className={cn(
-            'absolute font-semibold',
-            textSizes[size],
-            colors[color]
-          )}
-        >
-          {Math.round(progress)}%
-        </span>
+      {children ? (
+        <div className="absolute">{children}</div>
+      ) : (
+        showPercentage && (
+          <span
+            className={cn(
+              'absolute font-semibold',
+              textSizes[size],
+              colors[color]
+            )}
+          >
+            {Math.round(progress)}%
+          </span>
+        )
       )}
     </div>
   );

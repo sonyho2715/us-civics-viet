@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google';
 import { locales } from '@/lib/i18n';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { SkipLinks } from '@/components/accessibility/SkipLinks';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
 import { PWAProvider } from '@/components/providers/PWAProvider';
 import '../globals.css';
@@ -45,8 +46,8 @@ export async function generateMetadata({
       telephone: false,
     },
     icons: {
-      icon: '/icons/icon.svg',
-      apple: '/icons/icon.svg',
+      icon: '/logo.png',
+      apple: '/logo.png',
     },
   };
 }
@@ -90,8 +91,11 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
             <PWAProvider>
+              <SkipLinks />
               <Header />
-              <main className="flex-1">{children}</main>
+              <main id="main-content" className="flex-1" tabIndex={-1}>
+                {children}
+              </main>
               <Footer />
             </PWAProvider>
           </ThemeProvider>

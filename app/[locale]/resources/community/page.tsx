@@ -16,6 +16,8 @@ import {
   Trophy,
   Clock,
   MapPin,
+  Phone,
+  Building2,
 } from 'lucide-react';
 import { Card } from '@/components/ui/Card';
 import type { Locale } from '@/types';
@@ -127,27 +129,73 @@ const content = {
       resources: [
         {
           name: 'Boat People SOS (BPSOS)',
-          description: 'Tổ chức phi lợi nhuận hỗ trợ người Việt tị nạn và nhập cư',
+          description: 'Tổ chức phi lợi nhuận hỗ trợ người Việt tị nạn và nhập cư. Có văn phòng tại CA, TX, VA với dịch vụ tư vấn miễn phí.',
           url: 'https://www.bpsos.org',
           type: 'Tổ chức',
+          location: 'CA, TX, VA',
         },
         {
-          name: 'Vietnamese American Community of USA',
-          description: 'Nhóm Facebook lớn nhất cho người Việt tại Mỹ',
-          url: 'https://facebook.com/groups/vietnameseamerican',
-          type: 'Facebook',
-        },
-        {
-          name: 'USCIS Resources',
-          description: 'Tài liệu chính thức từ Cơ quan Di trú và Nhập tịch Hoa Kỳ',
+          name: 'USCIS - Tài Liệu Chính Thức',
+          description: 'Website chính thức với tài liệu học thi, đơn N-400, và thông tin mới nhất về quy trình nhập tịch.',
           url: 'https://www.uscis.gov/citizenship',
           type: 'Chính phủ',
+          location: 'Toàn quốc',
         },
         {
-          name: 'Cộng Đồng Thi Quốc Tịch',
-          description: 'Nhóm Facebook chia sẻ kinh nghiệm thi quốc tịch',
-          url: 'https://facebook.com/groups/thiquoctich',
-          type: 'Facebook',
+          name: 'Catholic Charities',
+          description: 'Dịch vụ di trú và nhập tịch miễn phí hoặc giá thấp. Hỗ trợ điền đơn N-400 và chuẩn bị phỏng vấn.',
+          url: 'https://www.catholiccharitiesusa.org',
+          type: 'Tổ chức',
+          location: 'Toàn quốc',
+        },
+        {
+          name: 'Asian Americans Advancing Justice',
+          description: 'Tổ chức bảo vệ quyền lợi người Á châu với dịch vụ pháp lý di trú miễn phí.',
+          url: 'https://www.advancingjustice-aajc.org',
+          type: 'Tổ chức',
+          location: 'CA, DC',
+        },
+        {
+          name: 'USCIS - Tìm Lớp Học Gần Bạn',
+          description: 'Công cụ tìm kiếm các lớp học công dân và tiếng Anh miễn phí trong khu vực của bạn.',
+          url: 'https://www.uscis.gov/citizenship/find-study-materials-and-resources/find-a-prep-class',
+          type: 'Chính phủ',
+          location: 'Toàn quốc',
+        },
+        {
+          name: 'ImmigraHelpline (Línea de Ayuda)',
+          description: 'Đường dây nóng miễn phí để hỏi về di trú và nhập tịch. Có phiên dịch viên.',
+          url: 'tel:1-800-375-5283',
+          type: 'Dịch vụ',
+          location: '1-800-375-5283',
+        },
+        {
+          name: 'Vietnamese Community Center (San Jose)',
+          description: 'Lớp học quốc tịch miễn phí bằng tiếng Việt. Thứ Bảy hàng tuần.',
+          url: 'https://www.vcc-sj.org',
+          type: 'Trung tâm',
+          location: 'San Jose, CA',
+        },
+        {
+          name: 'VietAID (Boston)',
+          description: 'Dịch vụ cộng đồng cho người Việt tại vùng Boston, bao gồm hỗ trợ nhập tịch.',
+          url: 'https://www.vietaid.org',
+          type: 'Tổ chức',
+          location: 'Boston, MA',
+        },
+        {
+          name: 'UNAVSA - Citizenship Resources',
+          description: 'Liên minh sinh viên Việt Mỹ với nguồn tài liệu và tình nguyện viên hỗ trợ nhập tịch.',
+          url: 'https://www.unavsa.org',
+          type: 'Tổ chức',
+          location: 'Toàn quốc',
+        },
+        {
+          name: 'Trung Tâm Cộng Đồng Người Việt (Houston)',
+          description: 'Lớp học quốc tịch, dịch vụ phiên dịch, và hỗ trợ cộng đồng người Việt tại Houston.',
+          url: 'https://www.viet-hou.org',
+          type: 'Trung tâm',
+          location: 'Houston, TX',
         },
       ],
     },
@@ -163,6 +211,50 @@ const content = {
         { name: 'Florida', cities: ['Orlando', 'Tampa', 'Miami'], count: '35K+' },
         { name: 'Louisiana', cities: ['New Orleans', 'Baton Rouge'], count: '30K+' },
       ],
+    },
+
+    uscisOffices: {
+      title: 'Văn Phòng USCIS Phục Vụ Cộng Đồng Người Việt',
+      description: 'Địa chỉ văn phòng USCIS chính ở các thành phố có đông người Việt',
+      offices: [
+        {
+          city: 'San Jose, CA',
+          address: '1887 Monterey Rd, San Jose, CA 95112',
+          phone: '1-800-375-5283',
+          services: 'Phỏng vấn quốc tịch, sinh trắc học, dịch vụ nhập cư',
+        },
+        {
+          city: 'Los Angeles, CA',
+          address: '300 N Los Angeles St, Los Angeles, CA 90012',
+          phone: '1-800-375-5283',
+          services: 'Phỏng vấn quốc tịch, sinh trắc học, dịch vụ nhập cư',
+        },
+        {
+          city: 'Houston, TX',
+          address: '126 Northpoint Dr, Houston, TX 77060',
+          phone: '1-800-375-5283',
+          services: 'Phỏng vấn quốc tịch, sinh trắc học, dịch vụ nhập cư',
+        },
+        {
+          city: 'Seattle, WA',
+          address: '12500 Tukwila International Blvd, Seattle, WA 98168',
+          phone: '1-800-375-5283',
+          services: 'Phỏng vấn quốc tịch, sinh trắc học, dịch vụ nhập cư',
+        },
+        {
+          city: 'New Orleans, LA',
+          address: '701 Loyola Ave, Suite 1501, New Orleans, LA 70113',
+          phone: '1-800-375-5283',
+          services: 'Phỏng vấn quốc tịch, sinh trắc học, dịch vụ nhập cư',
+        },
+        {
+          city: 'Boston, MA',
+          address: 'John F. Kennedy Federal Building, 15 New Sudbury St, Boston, MA 02203',
+          phone: '1-800-375-5283',
+          services: 'Phỏng vấn quốc tịch, sinh trắc học, dịch vụ nhập cư',
+        },
+      ],
+      note: 'Lưu ý: Luôn đặt lịch hẹn trước. Không nhận khách không hẹn. Số điện thoại là đường dây USCIS toàn quốc.',
     },
 
     shareStory: {
@@ -290,27 +382,73 @@ const content = {
       resources: [
         {
           name: 'Boat People SOS (BPSOS)',
-          description: 'Non-profit organization supporting Vietnamese refugees and immigrants',
+          description: 'Non-profit organization supporting Vietnamese refugees and immigrants. Offices in CA, TX, VA with free consultation services.',
           url: 'https://www.bpsos.org',
           type: 'Organization',
+          location: 'CA, TX, VA',
         },
         {
-          name: 'Vietnamese American Community of USA',
-          description: 'Largest Facebook group for Vietnamese in America',
-          url: 'https://facebook.com/groups/vietnameseamerican',
-          type: 'Facebook',
-        },
-        {
-          name: 'USCIS Resources',
-          description: 'Official materials from U.S. Citizenship and Immigration Services',
+          name: 'USCIS - Official Resources',
+          description: 'Official website with study materials, N-400 form, and latest information on naturalization process.',
           url: 'https://www.uscis.gov/citizenship',
           type: 'Government',
+          location: 'Nationwide',
         },
         {
-          name: 'Citizenship Test Community',
-          description: 'Facebook group sharing citizenship test experiences',
-          url: 'https://facebook.com/groups/thiquoctich',
-          type: 'Facebook',
+          name: 'Catholic Charities',
+          description: 'Free or low-cost immigration and citizenship services. Helps with N-400 form and interview preparation.',
+          url: 'https://www.catholiccharitiesusa.org',
+          type: 'Organization',
+          location: 'Nationwide',
+        },
+        {
+          name: 'Asian Americans Advancing Justice',
+          description: 'Asian American civil rights organization with free immigration legal services.',
+          url: 'https://www.advancingjustice-aajc.org',
+          type: 'Organization',
+          location: 'CA, DC',
+        },
+        {
+          name: 'USCIS - Find a Prep Class',
+          description: 'Tool to find free citizenship and English classes in your area.',
+          url: 'https://www.uscis.gov/citizenship/find-study-materials-and-resources/find-a-prep-class',
+          type: 'Government',
+          location: 'Nationwide',
+        },
+        {
+          name: 'ImmigraHelpline (Línea de Ayuda)',
+          description: 'Free helpline for immigration and citizenship questions. Interpreters available.',
+          url: 'tel:1-800-375-5283',
+          type: 'Service',
+          location: '1-800-375-5283',
+        },
+        {
+          name: 'Vietnamese Community Center (San Jose)',
+          description: 'Free citizenship classes in Vietnamese. Every Saturday.',
+          url: 'https://www.vcc-sj.org',
+          type: 'Center',
+          location: 'San Jose, CA',
+        },
+        {
+          name: 'VietAID (Boston)',
+          description: 'Community services for Vietnamese in Boston area, including citizenship support.',
+          url: 'https://www.vietaid.org',
+          type: 'Organization',
+          location: 'Boston, MA',
+        },
+        {
+          name: 'UNAVSA - Citizenship Resources',
+          description: 'Union of North American Vietnamese Student Associations with resources and volunteers supporting citizenship.',
+          url: 'https://www.unavsa.org',
+          type: 'Organization',
+          location: 'Nationwide',
+        },
+        {
+          name: 'Vietnamese Community Center (Houston)',
+          description: 'Citizenship classes, interpretation services, and community support for Vietnamese in Houston.',
+          url: 'https://www.viet-hou.org',
+          type: 'Center',
+          location: 'Houston, TX',
         },
       ],
     },
@@ -326,6 +464,50 @@ const content = {
         { name: 'Florida', cities: ['Orlando', 'Tampa', 'Miami'], count: '35K+' },
         { name: 'Louisiana', cities: ['New Orleans', 'Baton Rouge'], count: '30K+' },
       ],
+    },
+
+    uscisOffices: {
+      title: 'USCIS Offices Serving Vietnamese Communities',
+      description: 'Main USCIS office addresses in cities with large Vietnamese populations',
+      offices: [
+        {
+          city: 'San Jose, CA',
+          address: '1887 Monterey Rd, San Jose, CA 95112',
+          phone: '1-800-375-5283',
+          services: 'Citizenship interviews, biometrics, immigration services',
+        },
+        {
+          city: 'Los Angeles, CA',
+          address: '300 N Los Angeles St, Los Angeles, CA 90012',
+          phone: '1-800-375-5283',
+          services: 'Citizenship interviews, biometrics, immigration services',
+        },
+        {
+          city: 'Houston, TX',
+          address: '126 Northpoint Dr, Houston, TX 77060',
+          phone: '1-800-375-5283',
+          services: 'Citizenship interviews, biometrics, immigration services',
+        },
+        {
+          city: 'Seattle, WA',
+          address: '12500 Tukwila International Blvd, Seattle, WA 98168',
+          phone: '1-800-375-5283',
+          services: 'Citizenship interviews, biometrics, immigration services',
+        },
+        {
+          city: 'New Orleans, LA',
+          address: '701 Loyola Ave, Suite 1501, New Orleans, LA 70113',
+          phone: '1-800-375-5283',
+          services: 'Citizenship interviews, biometrics, immigration services',
+        },
+        {
+          city: 'Boston, MA',
+          address: 'John F. Kennedy Federal Building, 15 New Sudbury St, Boston, MA 02203',
+          phone: '1-800-375-5283',
+          services: 'Citizenship interviews, biometrics, immigration services',
+        },
+      ],
+      note: 'Note: Always schedule an appointment in advance. Walk-ins not accepted. Phone number is the nationwide USCIS contact center.',
     },
 
     shareStory: {
@@ -542,15 +724,21 @@ export default async function CommunityPage({ params }: CommunityPageProps) {
                 )}
               </div>
               <div className="flex-1">
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 flex-wrap">
                   <h3 className="font-medium text-gray-900 dark:text-white">
                     {resource.name}
                   </h3>
                   <span className="text-xs px-2 py-0.5 bg-gray-200 dark:bg-slate-600 text-gray-600 dark:text-gray-300 rounded">
                     {resource.type}
                   </span>
+                  {resource.location && (
+                    <span className="text-xs px-2 py-0.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded flex items-center gap-1">
+                      <MapPin className="w-3 h-3" aria-hidden="true" />
+                      {resource.location}
+                    </span>
+                  )}
                 </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
+                <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
                   {resource.description}
                 </p>
               </div>
@@ -589,6 +777,48 @@ export default async function CommunityPage({ params }: CommunityPageProps) {
               </div>
             </div>
           ))}
+        </div>
+      </Card>
+
+      {/* USCIS Offices */}
+      <Card className="mb-8 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-blue-200 dark:border-blue-800">
+        <div className="flex items-center gap-2 mb-2">
+          <Building2 className="w-6 h-6 text-blue-600 dark:text-blue-400" aria-hidden="true" />
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+            {t.uscisOffices.title}
+          </h2>
+        </div>
+        <p className="text-gray-600 dark:text-gray-400 mb-4">
+          {t.uscisOffices.description}
+        </p>
+        <div className="grid md:grid-cols-2 gap-4 mb-4">
+          {t.uscisOffices.offices.map((office, idx) => (
+            <div key={idx} className="p-4 bg-white dark:bg-slate-700/50 rounded-lg">
+              <div className="flex items-center gap-2 mb-2">
+                <MapPin className="w-4 h-4 text-blue-600 dark:text-blue-400" aria-hidden="true" />
+                <h3 className="font-medium text-gray-900 dark:text-white">
+                  {office.city}
+                </h3>
+              </div>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                {office.address}
+              </p>
+              <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mb-2">
+                <Phone className="w-3 h-3" aria-hidden="true" />
+                <a href={`tel:${office.phone}`} className="hover:text-blue-600 dark:hover:text-blue-400">
+                  {office.phone}
+                </a>
+              </div>
+              <p className="text-xs text-gray-500 dark:text-gray-500 italic">
+                {office.services}
+              </p>
+            </div>
+          ))}
+        </div>
+        <div className="p-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg">
+          <p className="text-sm text-amber-800 dark:text-amber-300">
+            ℹ️ {t.uscisOffices.note}
+          </p>
         </div>
       </Card>
 
