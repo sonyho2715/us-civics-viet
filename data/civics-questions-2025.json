@@ -16,6 +16,7 @@
       "question_vi": "Hình thức chính phủ của Hoa Kỳ là gì?",
       "answers_en": ["Republic", "Constitution-based federal republic", "Representative democracy"],
       "answers_vi": ["Cộng hòa", "Cộng hòa liên bang dựa trên Hiến pháp", "Dân chủ đại diện"],
+      "explanation_en": "The United States is a republic, meaning power belongs to the people through elected representatives. It is not a direct democracy but a representative democracy where citizens vote for leaders who make decisions on their behalf.",
       "explanation_vi": "Hoa Kỳ là một nước cộng hòa, nghĩa là quyền lực thuộc về nhân dân thông qua các đại diện được bầu. Đây không phải là nền dân chủ trực tiếp mà là dân chủ đại diện.",
       "is_65_20": false,
       "is_dynamic": false
@@ -29,6 +30,7 @@
       "question_vi": "Luật tối cao của đất nước là gì?",
       "answers_en": ["The Constitution"],
       "answers_vi": ["Hiến pháp"],
+      "explanation_en": "The U.S. Constitution is the supreme law of the land. All other laws must follow the Constitution. Ratified in 1788, it is the oldest written constitution still in effect in the world.",
       "explanation_vi": "Hiến pháp Hoa Kỳ là luật tối cao. Tất cả các luật khác phải tuân theo Hiến pháp. Được thông qua năm 1788, đây là hiến pháp thành văn lâu đời nhất còn có hiệu lực trên thế giới.",
       "is_65_20": true,
       "is_dynamic": false
@@ -42,6 +44,7 @@
       "question_vi": "Ý tưởng về tự quản nằm trong ba từ đầu tiên của Hiến pháp. Ba từ đó là gì?",
       "answers_en": ["We the People"],
       "answers_vi": ["We the People (Chúng tôi, Nhân dân)"],
+      "explanation_en": "\"We the People\" opens the Constitution, establishing that the government's power comes from the people, not from a king or nobles. This phrase embodies the principle of popular sovereignty.",
       "explanation_vi": "\"We the People\" (Chúng tôi, Nhân dân) mở đầu Hiến pháp, khẳng định rằng quyền lực của chính phủ đến từ nhân dân, không phải từ vua hay quý tộc.",
       "is_65_20": false,
       "is_dynamic": false
@@ -55,6 +58,7 @@
       "question_vi": "Tu chính án (amendment) là gì?",
       "answers_en": ["A change to the Constitution", "An addition to the Constitution"],
       "answers_vi": ["Sự thay đổi Hiến pháp", "Sự bổ sung vào Hiến pháp"],
+      "explanation_en": "An amendment is a way to change or add to the Constitution. The process is intentionally difficult, requiring 2/3 of Congress to propose and 3/4 of states to ratify. There are currently 27 amendments.",
       "explanation_vi": "Tu chính án là cách thay đổi hoặc bổ sung Hiến pháp. Quá trình này rất khó, cần 2/3 Quốc hội đề xuất và 3/4 tiểu bang phê chuẩn. Hiện có 27 tu chính án.",
       "is_65_20": false,
       "is_dynamic": false
@@ -68,6 +72,7 @@
       "question_vi": "Mười tu chính án đầu tiên của Hiến pháp được gọi là gì?",
       "answers_en": ["The Bill of Rights"],
       "answers_vi": ["Tuyên ngôn Nhân quyền (Bill of Rights)"],
+      "explanation_en": "The Bill of Rights protects fundamental citizen rights including freedom of speech, religion, and the right to bear arms. It was ratified in 1791 to address concerns about individual liberties.",
       "explanation_vi": "Bill of Rights (Tuyên ngôn Nhân quyền) bảo vệ các quyền cơ bản của công dân như tự do ngôn luận, tự do tôn giáo, quyền mang vũ khí. Được thông qua năm 1791.",
       "is_65_20": false,
       "is_dynamic": false
@@ -81,6 +86,7 @@
       "question_vi": "Hiến pháp có chức năng gì?",
       "answers_en": ["Sets up the government", "Defines the government", "Protects basic rights of Americans"],
       "answers_vi": ["Thiết lập chính phủ", "Định nghĩa chính phủ", "Bảo vệ các quyền cơ bản của người Mỹ"],
+      "explanation_en": "The Constitution has three main functions: it establishes the structure of government, defines the powers and limits of government, and protects the rights of the people.",
       "explanation_vi": "Hiến pháp có ba chức năng chính: thiết lập cấu trúc chính phủ, định nghĩa quyền hạn của chính phủ, và bảo vệ quyền của người dân.",
       "is_65_20": false,
       "is_dynamic": false
@@ -94,6 +100,7 @@
       "question_vi": "Hai quyền được nêu trong Tuyên ngôn Độc lập là gì?",
       "answers_en": ["Life", "Liberty", "Pursuit of happiness"],
       "answers_vi": ["Sống (Life)", "Tự do (Liberty)", "Mưu cầu hạnh phúc (Pursuit of happiness)"],
+      "explanation_en": "The Declaration of Independence (1776) states three unalienable rights: life, liberty, and the pursuit of happiness. These form the philosophical foundation of America.",
       "explanation_vi": "Tuyên ngôn Độc lập (1776) nêu ba quyền bất khả xâm phạm: sống, tự do, và mưu cầu hạnh phúc. Đây là nền tảng triết học của nước Mỹ.",
       "is_65_20": true,
       "is_dynamic": false
@@ -107,6 +114,7 @@
       "question_vi": "Tự do tôn giáo là gì?",
       "answers_en": ["You can practice any religion, or not practice a religion"],
       "answers_vi": ["Bạn có thể theo bất kỳ tôn giáo nào, hoặc không theo tôn giáo nào"],
+      "explanation_en": "Freedom of religion is protected by the First Amendment. The government cannot force you to follow or prohibit you from following any religion. You are also free to have no religion.",
       "explanation_vi": "Tự do tôn giáo được bảo vệ bởi Tu chính án thứ nhất. Chính phủ không thể ép buộc hoặc cấm bạn theo bất kỳ tôn giáo nào.",
       "is_65_20": false,
       "is_dynamic": false
@@ -120,6 +128,7 @@
       "question_vi": "Hệ thống kinh tế của Hoa Kỳ là gì?",
       "answers_en": ["Capitalist economy", "Market economy"],
       "answers_vi": ["Kinh tế tư bản", "Kinh tế thị trường"],
+      "explanation_en": "The United States has a capitalist/market economy. Businesses and individuals are free to own property and conduct business with minimal government interference. Supply and demand determine prices.",
       "explanation_vi": "Hoa Kỳ theo hệ thống kinh tế thị trường/tư bản. Các doanh nghiệp và cá nhân được tự do sở hữu tài sản và kinh doanh với sự can thiệp tối thiểu của chính phủ.",
       "is_65_20": false,
       "is_dynamic": false
@@ -133,6 +142,7 @@
       "question_vi": "Pháp quyền (rule of law) là gì?",
       "answers_en": ["Everyone must follow the law", "Leaders must obey the law", "Government must obey the law", "No one is above the law"],
       "answers_vi": ["Mọi người phải tuân theo pháp luật", "Các nhà lãnh đạo phải tuân theo pháp luật", "Chính phủ phải tuân theo pháp luật", "Không ai đứng trên pháp luật"],
+      "explanation_en": "The rule of law means laws apply equally to everyone, including the president and government officials. No one is above the law, and everyone must follow the same rules.",
       "explanation_vi": "Pháp quyền có nghĩa là luật pháp áp dụng cho tất cả mọi người như nhau, kể cả tổng thống và các quan chức chính phủ. Không ai đứng trên pháp luật.",
       "is_65_20": false,
       "is_dynamic": false
@@ -146,6 +156,7 @@
       "question_vi": "Kể tên một quyền chỉ dành cho công dân Hoa Kỳ.",
       "answers_en": ["Vote in a federal election", "Run for federal office"],
       "answers_vi": ["Bầu cử trong cuộc bầu cử liên bang", "Ứng cử vào chức vụ liên bang"],
+      "explanation_en": "Only U.S. citizens can vote in federal elections and run for federal office. Permanent residents (green card holders) do not have these rights until they become citizens.",
       "explanation_vi": "Chỉ công dân Hoa Kỳ mới có quyền bầu cử trong các cuộc bầu cử liên bang và ứng cử vào các chức vụ liên bang. Thường trú nhân không có các quyền này.",
       "is_65_20": false,
       "is_dynamic": false
@@ -159,6 +170,7 @@
       "question_vi": "Kể tên một quyền cho tất cả mọi người sống tại Hoa Kỳ.",
       "answers_en": ["Freedom of expression", "Freedom of speech", "Freedom of assembly", "Freedom to petition the government", "Freedom of religion", "The right to bear arms"],
       "answers_vi": ["Tự do biểu đạt", "Tự do ngôn luận", "Tự do hội họp", "Tự do kiến nghị chính phủ", "Tự do tôn giáo", "Quyền mang vũ khí"],
+      "explanation_en": "These rights are protected for everyone living in the U.S., not just citizens. The Constitution protects the rights of \"persons,\" not just \"citizens.\"",
       "explanation_vi": "Các quyền này được bảo vệ cho tất cả mọi người sống tại Hoa Kỳ, không chỉ công dân. Hiến pháp bảo vệ quyền của \"người\" (persons), không chỉ \"công dân\" (citizens).",
       "is_65_20": true,
       "is_dynamic": false
@@ -172,6 +184,7 @@
       "question_vi": "Tu chính án thứ nhất quy định điều gì?",
       "answers_en": ["Protects freedom of religion", "Protects freedom of speech", "Protects freedom of the press", "Protects freedom of assembly", "Protects the right to petition the government"],
       "answers_vi": ["Bảo vệ tự do tôn giáo", "Bảo vệ tự do ngôn luận", "Bảo vệ tự do báo chí", "Bảo vệ tự do hội họp", "Bảo vệ quyền kiến nghị chính phủ"],
+      "explanation_en": "The First Amendment protects five fundamental freedoms: religion, speech, press, assembly, and the right to petition the government. These form the foundation of American democracy.",
       "explanation_vi": "Tu chính án thứ nhất bảo vệ năm quyền tự do cơ bản: tôn giáo, ngôn luận, báo chí, hội họp, và kiến nghị. Đây là nền tảng của dân chủ Mỹ.",
       "is_65_20": false,
       "is_dynamic": false
@@ -185,6 +198,7 @@
       "question_vi": "Tu chính án thứ hai quy định điều gì?",
       "answers_en": ["Protects the right to bear arms", "Gives the right to have a gun"],
       "answers_vi": ["Bảo vệ quyền mang vũ khí", "Cho quyền sở hữu súng"],
+      "explanation_en": "The Second Amendment protects the right of people to own and carry weapons. This is one of the most debated amendments in modern America.",
       "explanation_vi": "Tu chính án thứ hai bảo vệ quyền của người dân được sở hữu và mang vũ khí. Đây là một trong những tu chính án được tranh luận nhiều nhất.",
       "is_65_20": false,
       "is_dynamic": false
@@ -198,6 +212,7 @@
       "question_vi": "Kể tên một nhánh của chính phủ.",
       "answers_en": ["Legislative", "Executive", "Judicial", "Congress", "President", "The courts"],
       "answers_vi": ["Lập pháp", "Hành pháp", "Tư pháp", "Quốc hội", "Tổng thống", "Tòa án"],
+      "explanation_en": "The U.S. government has three branches: Legislative (Congress), Executive (President), and Judicial (Courts). This system creates a balance of power.",
       "explanation_vi": "Chính phủ Hoa Kỳ có ba nhánh: Lập pháp (Quốc hội), Hành pháp (Tổng thống), và Tư pháp (Tòa án). Hệ thống này tạo ra cân bằng quyền lực.",
       "is_65_20": false,
       "is_dynamic": false
@@ -211,6 +226,7 @@
       "question_vi": "Điều gì ngăn một nhánh chính phủ trở nên quá mạnh?",
       "answers_en": ["Checks and balances", "Separation of powers"],
       "answers_vi": ["Kiểm soát và cân bằng (Checks and balances)", "Phân chia quyền lực (Separation of powers)"],
+      "explanation_en": "The system of checks and balances allows each branch to limit the powers of the other branches. For example, the President can veto laws, but Congress can override the veto.",
       "explanation_vi": "Hệ thống kiểm soát và cân bằng cho phép mỗi nhánh giới hạn quyền lực của các nhánh khác. Ví dụ: Tổng thống có thể phủ quyết luật, nhưng Quốc hội có thể vượt qua phủ quyết.",
       "is_65_20": false,
       "is_dynamic": false
@@ -224,6 +240,7 @@
       "question_vi": "Ai đứng đầu nhánh hành pháp?",
       "answers_en": ["The President"],
       "answers_vi": ["Tổng thống"],
+      "explanation_en": "The President heads the executive branch and is responsible for enforcing laws. The President also serves as Commander in Chief of the military.",
       "explanation_vi": "Tổng thống là người đứng đầu nhánh hành pháp, chịu trách nhiệm thực thi luật pháp. Tổng thống cũng là Tổng tư lệnh quân đội.",
       "is_65_20": false,
       "is_dynamic": false
@@ -237,6 +254,7 @@
       "question_vi": "Ai làm luật liên bang?",
       "answers_en": ["Congress", "Senate and House of Representatives", "U.S. Legislature"],
       "answers_vi": ["Quốc hội", "Thượng viện và Hạ viện", "Cơ quan lập pháp Hoa Kỳ"],
+      "explanation_en": "Congress makes federal laws. Congress consists of two chambers: the Senate with 100 senators and the House of Representatives with 435 members.",
       "explanation_vi": "Quốc hội (Congress) làm luật liên bang. Quốc hội gồm hai viện: Thượng viện (Senate) với 100 thượng nghị sĩ và Hạ viện (House) với 435 dân biểu.",
       "is_65_20": false,
       "is_dynamic": false
@@ -250,6 +268,7 @@
       "question_vi": "Hai phần của Quốc hội Hoa Kỳ là gì?",
       "answers_en": ["The Senate and House of Representatives"],
       "answers_vi": ["Thượng viện và Hạ viện"],
+      "explanation_en": "The U.S. Congress has two chambers: the Senate represents states equally, and the House of Representatives represents states by population.",
       "explanation_vi": "Quốc hội Hoa Kỳ gồm hai viện: Thượng viện (Senate) đại diện các tiểu bang bình đẳng, và Hạ viện (House of Representatives) đại diện theo dân số.",
       "is_65_20": false,
       "is_dynamic": false
@@ -263,6 +282,7 @@
       "question_vi": "Có bao nhiêu thượng nghị sĩ Hoa Kỳ?",
       "answers_en": ["100", "One hundred"],
       "answers_vi": ["100", "Một trăm"],
+      "explanation_en": "There are 100 senators, with each state having 2 senators regardless of population. This ensures smaller states have equal representation in the Senate.",
       "explanation_vi": "Có 100 thượng nghị sĩ, mỗi tiểu bang có 2 thượng nghị sĩ bất kể dân số. Điều này đảm bảo các tiểu bang nhỏ có tiếng nói bình đẳng trong Thượng viện.",
       "is_65_20": true,
       "is_dynamic": false
@@ -276,6 +296,7 @@
       "question_vi": "Chúng ta bầu thượng nghị sĩ Hoa Kỳ cho bao nhiêu năm?",
       "answers_en": ["6", "Six"],
       "answers_vi": ["6", "Sáu"],
+      "explanation_en": "Senators serve 6-year terms. Every 2 years, about one-third of the Senate is up for re-election, creating continuity in the Senate.",
       "explanation_vi": "Thượng nghị sĩ phục vụ nhiệm kỳ 6 năm. Cứ 2 năm lại có khoảng 1/3 Thượng viện được bầu lại, tạo sự liên tục trong Thượng viện.",
       "is_65_20": false,
       "is_dynamic": false
@@ -289,6 +310,7 @@
       "question_vi": "Có bao nhiêu thành viên có quyền bỏ phiếu trong Hạ viện?",
       "answers_en": ["435", "Four hundred thirty-five"],
       "answers_vi": ["435", "Bốn trăm ba mươi lăm"],
+      "explanation_en": "The House has 435 voting members. Each state's number of representatives depends on population. California has the most (52), while some states have only 1.",
       "explanation_vi": "Hạ viện có 435 dân biểu có quyền bỏ phiếu. Số dân biểu mỗi tiểu bang phụ thuộc vào dân số. California có nhiều nhất (52), một số tiểu bang chỉ có 1.",
       "is_65_20": false,
       "is_dynamic": false
@@ -302,6 +324,7 @@
       "question_vi": "Kể tên dân biểu Hoa Kỳ của bạn.",
       "answers_en": ["Answers will vary by state/district"],
       "answers_vi": ["Câu trả lời thay đổi theo tiểu bang/khu vực"],
+      "explanation_en": "Each congressional district has one representative. You need to know the name of the representative for your district. Look up at house.gov or by your address.",
       "explanation_vi": "Mỗi khu vực bầu cử có một dân biểu. Bạn cần biết tên dân biểu đại diện cho khu vực của mình. Tra cứu tại house.gov hoặc hỏi theo địa chỉ của bạn.",
       "is_65_20": false,
       "is_dynamic": true,
@@ -316,6 +339,7 @@
       "question_vi": "Chúng ta bầu dân biểu Hoa Kỳ cho bao nhiêu năm?",
       "answers_en": ["2", "Two"],
       "answers_vi": ["2", "Hai"],
+      "explanation_en": "Representatives serve 2-year terms. This shorter term ensures the House reflects voters' opinions more quickly than the Senate.",
       "explanation_vi": "Dân biểu phục vụ nhiệm kỳ 2 năm. Nhiệm kỳ ngắn này đảm bảo Hạ viện phản ánh ý kiến cử tri kịp thời hơn.",
       "is_65_20": false,
       "is_dynamic": false
@@ -329,6 +353,7 @@
       "question_vi": "Thượng nghị sĩ Hoa Kỳ đại diện cho ai?",
       "answers_en": ["All people of the state", "Citizens of their state"],
       "answers_vi": ["Tất cả người dân của tiểu bang", "Công dân của tiểu bang họ"],
+      "explanation_en": "Senators represent their entire state, not just a specific district. Each state has 2 senators who represent all the people of that state.",
       "explanation_vi": "Thượng nghị sĩ đại diện cho toàn bộ tiểu bang của họ, không chỉ một khu vực. Mỗi tiểu bang có 2 thượng nghị sĩ.",
       "is_65_20": false,
       "is_dynamic": false
@@ -342,6 +367,7 @@
       "question_vi": "Tại sao một số tiểu bang có nhiều dân biểu hơn các tiểu bang khác?",
       "answers_en": ["Because of the state's population", "Because they have more people", "Because some states have more people"],
       "answers_vi": ["Vì dân số của tiểu bang", "Vì họ có nhiều người hơn", "Vì một số tiểu bang có nhiều người hơn"],
+      "explanation_en": "The number of representatives is based on population. States with more people have more representatives. This is adjusted after each census every 10 years.",
       "explanation_vi": "Số dân biểu dựa trên dân số. Tiểu bang đông dân có nhiều dân biểu hơn. Điều chỉnh sau mỗi cuộc điều tra dân số 10 năm.",
       "is_65_20": false,
       "is_dynamic": false
@@ -355,6 +381,7 @@
       "question_vi": "Chúng ta bầu tổng thống cho bao nhiêu năm?",
       "answers_en": ["4", "Four"],
       "answers_vi": ["4", "Bốn"],
+      "explanation_en": "The President serves a 4-year term. According to the 22nd Amendment, a person can only serve as president for a maximum of 2 terms (8 years).",
       "explanation_vi": "Tổng thống phục vụ nhiệm kỳ 4 năm. Theo Tu chính án 22, một người chỉ có thể làm tổng thống tối đa 2 nhiệm kỳ (8 năm).",
       "is_65_20": false,
       "is_dynamic": false
@@ -368,6 +395,7 @@
       "question_vi": "Chúng ta bầu tổng thống vào tháng nào?",
       "answers_en": ["November"],
       "answers_vi": ["Tháng 11 (November)"],
+      "explanation_en": "Presidential elections are held on the first Tuesday after the first Monday in November, every 4 years.",
       "explanation_vi": "Cuộc bầu cử tổng thống diễn ra vào ngày Thứ Ba đầu tiên sau ngày Thứ Hai đầu tiên của tháng 11, cứ 4 năm một lần.",
       "is_65_20": false,
       "is_dynamic": false
@@ -381,6 +409,7 @@
       "question_vi": "Kể tên một trong hai thượng nghị sĩ Hoa Kỳ của tiểu bang bạn hiện tại.",
       "answers_en": ["Answers will vary by state"],
       "answers_vi": ["Câu trả lời thay đổi theo tiểu bang"],
+      "explanation_en": "Each state has 2 senators. You need to know the name of at least one. Look up at senate.gov or search by your state.",
       "explanation_vi": "Mỗi tiểu bang có 2 thượng nghị sĩ. Bạn cần biết tên ít nhất một người. Tra cứu tại senate.gov hoặc tìm theo tiểu bang của bạn.",
       "is_65_20": false,
       "is_dynamic": true,
@@ -395,6 +424,7 @@
       "question_vi": "Tên của Tổng thống Hoa Kỳ hiện tại là gì?",
       "answers_en": ["Donald Trump", "Trump"],
       "answers_vi": ["Donald Trump", "Trump"],
+      "explanation_en": "You need to know the name of the current president. The President is the head of the executive branch and commander in chief of the military.",
       "explanation_vi": "Bạn cần biết tên tổng thống đương nhiệm. Tổng thống là người đứng đầu nhánh hành pháp và là tổng tư lệnh quân đội.",
       "is_65_20": true,
       "is_dynamic": true,
@@ -409,6 +439,7 @@
       "question_vi": "Tên của Phó Tổng thống Hoa Kỳ hiện tại là gì?",
       "answers_en": ["J.D. Vance", "Vance"],
       "answers_vi": ["J.D. Vance", "Vance"],
+      "explanation_en": "The Vice President is second in command and becomes President if the President cannot continue. The VP also serves as President of the Senate.",
       "explanation_vi": "Phó Tổng thống là người thứ hai trong chính phủ, sẽ trở thành Tổng thống nếu Tổng thống không thể tiếp tục nhiệm vụ. Cũng là Chủ tịch Thượng viện.",
       "is_65_20": false,
       "is_dynamic": true,
@@ -423,6 +454,7 @@
       "question_vi": "Nếu tổng thống không thể tiếp tục phục vụ, ai sẽ trở thành tổng thống?",
       "answers_en": ["The Vice President"],
       "answers_vi": ["Phó Tổng thống"],
+      "explanation_en": "According to the 25th Amendment, the Vice President is first in the line of succession. This has happened 9 times in U.S. history.",
       "explanation_vi": "Theo Tu chính án 25, Phó Tổng thống là người kế nhiệm đầu tiên. Điều này đã xảy ra 9 lần trong lịch sử Hoa Kỳ.",
       "is_65_20": false,
       "is_dynamic": false
@@ -436,6 +468,7 @@
       "question_vi": "Nếu cả tổng thống và phó tổng thống đều không thể phục vụ, ai sẽ trở thành tổng thống?",
       "answers_en": ["The Speaker of the House"],
       "answers_vi": ["Chủ tịch Hạ viện (Speaker of the House)"],
+      "explanation_en": "In the line of succession, the Speaker of the House is third after the President and Vice President. Next is the President Pro Tempore of the Senate.",
       "explanation_vi": "Theo thứ tự kế nhiệm, Chủ tịch Hạ viện đứng thứ ba sau Tổng thống và Phó Tổng thống. Tiếp theo là Chủ tịch Thượng viện tạm quyền.",
       "is_65_20": false,
       "is_dynamic": false
@@ -449,6 +482,7 @@
       "question_vi": "Ai là tổng tư lệnh quân đội?",
       "answers_en": ["The President"],
       "answers_vi": ["Tổng thống"],
+      "explanation_en": "The President is the Commander in Chief of the armed forces. This ensures civilian control of the military.",
       "explanation_vi": "Tổng thống là Tổng tư lệnh các lực lượng vũ trang. Điều này đảm bảo quyền kiểm soát dân sự đối với quân đội.",
       "is_65_20": false,
       "is_dynamic": false
@@ -462,6 +496,7 @@
       "question_vi": "Ai ký các dự luật để thành luật?",
       "answers_en": ["The President"],
       "answers_vi": ["Tổng thống"],
+      "explanation_en": "After Congress passes a bill, the President signs it to make it law. The President can also veto (reject) a bill.",
       "explanation_vi": "Sau khi Quốc hội thông qua dự luật, Tổng thống ký để thành luật. Tổng thống cũng có quyền phủ quyết (veto) dự luật.",
       "is_65_20": false,
       "is_dynamic": false
@@ -475,6 +510,7 @@
       "question_vi": "Ai phủ quyết các dự luật?",
       "answers_en": ["The President"],
       "answers_vi": ["Tổng thống"],
+      "explanation_en": "The President can veto (reject) a bill passed by Congress. Congress can override the veto with a 2/3 vote in both chambers.",
       "explanation_vi": "Tổng thống có quyền phủ quyết (veto) dự luật đã được Quốc hội thông qua. Quốc hội có thể vượt qua phủ quyết với 2/3 số phiếu của cả hai viện.",
       "is_65_20": true,
       "is_dynamic": false
@@ -488,6 +524,7 @@
       "question_vi": "Nội các của tổng thống làm gì?",
       "answers_en": ["Advises the President"],
       "answers_vi": ["Cố vấn cho Tổng thống"],
+      "explanation_en": "The Cabinet consists of secretaries who head federal departments and advise the President on areas like defense, finance, and foreign policy.",
       "explanation_vi": "Nội các gồm các bộ trưởng đứng đầu các bộ, cố vấn cho Tổng thống về các lĩnh vực chuyên môn như quốc phòng, tài chính, ngoại giao...",
       "is_65_20": false,
       "is_dynamic": false
@@ -501,6 +538,7 @@
       "question_vi": "Hai chức vụ cấp nội các là gì?",
       "answers_en": ["Secretary of State", "Secretary of the Treasury", "Secretary of Defense", "Attorney General", "Secretary of Commerce", "Secretary of Labor", "Secretary of Health and Human Services", "Secretary of Homeland Security", "Secretary of Education", "Secretary of Energy", "Secretary of the Interior", "Secretary of Agriculture", "Secretary of Housing and Urban Development", "Secretary of Transportation", "Secretary of Veterans Affairs"],
       "answers_vi": ["Bộ trưởng Ngoại giao", "Bộ trưởng Tài chính", "Bộ trưởng Quốc phòng", "Bộ trưởng Tư pháp", "Bộ trưởng Thương mại", "Bộ trưởng Lao động", "Bộ trưởng Y tế", "Bộ trưởng An ninh Nội địa", "Bộ trưởng Giáo dục", "Bộ trưởng Năng lượng", "Bộ trưởng Nội vụ", "Bộ trưởng Nông nghiệp", "Bộ trưởng Nhà ở và Phát triển Đô thị", "Bộ trưởng Giao thông", "Bộ trưởng Cựu chiến binh"],
+      "explanation_en": "The Cabinet has 15 secretaries, each heading a department in the federal government. They are appointed by the President and confirmed by the Senate.",
       "explanation_vi": "Nội các có 15 bộ trưởng, mỗi người đứng đầu một bộ trong chính phủ liên bang. Họ được Tổng thống bổ nhiệm và Thượng viện phê chuẩn.",
       "is_65_20": true,
       "is_dynamic": true,
@@ -515,6 +553,7 @@
       "question_vi": "Nhánh tư pháp làm gì?",
       "answers_en": ["Reviews laws", "Explains laws", "Resolves disputes", "Decides if a law goes against the Constitution"],
       "answers_vi": ["Xem xét luật", "Giải thích luật", "Giải quyết tranh chấp", "Quyết định nếu một luật vi phạm Hiến pháp"],
+      "explanation_en": "The judicial branch (courts) interprets laws and decides if laws violate the Constitution. The Supreme Court is the highest court.",
       "explanation_vi": "Nhánh tư pháp (tòa án) giải thích luật và quyết định xem luật có vi phạm Hiến pháp không. Tòa Án Tối Cao là tòa cao nhất.",
       "is_65_20": true,
       "is_dynamic": false
@@ -528,6 +567,7 @@
       "question_vi": "Tòa án cao nhất tại Hoa Kỳ là gì?",
       "answers_en": ["The Supreme Court"],
       "answers_vi": ["Tòa Án Tối Cao (Supreme Court)"],
+      "explanation_en": "The Supreme Court is the highest court in the federal judicial system. Its decisions are final and cannot be appealed.",
       "explanation_vi": "Tòa Án Tối Cao là tòa cao nhất trong hệ thống tư pháp liên bang. Các quyết định của Tòa là cuối cùng và không thể kháng cáo.",
       "is_65_20": false,
       "is_dynamic": false
@@ -541,6 +581,7 @@
       "question_vi": "Có bao nhiêu thẩm phán trong Tòa Án Tối Cao?",
       "answers_en": ["9", "Nine"],
       "answers_vi": ["9", "Chín"],
+      "explanation_en": "The Supreme Court has 9 justices: 1 Chief Justice and 8 Associate Justices. They serve for life or until they resign.",
       "explanation_vi": "Tòa Án Tối Cao có 9 thẩm phán: 1 Chánh án (Chief Justice) và 8 Thẩm phán phụ tá (Associate Justices). Họ phục vụ suốt đời hoặc đến khi từ chức.",
       "is_65_20": false,
       "is_dynamic": false
@@ -554,6 +595,7 @@
       "question_vi": "Ai là Chánh án Tòa Án Tối Cao Hoa Kỳ hiện tại?",
       "answers_en": ["John Roberts", "John G. Roberts Jr."],
       "answers_vi": ["John Roberts", "John G. Roberts Jr."],
+      "explanation_en": "The Chief Justice heads the Supreme Court and presides over presidential impeachment trials. John Roberts was appointed in 2005.",
       "explanation_vi": "Chánh án đứng đầu Tòa Án Tối Cao và chủ trì các phiên xét xử luận tội tổng thống. John Roberts được bổ nhiệm năm 2005.",
       "is_65_20": false,
       "is_dynamic": true,
@@ -568,6 +610,7 @@
       "question_vi": "Theo Hiến pháp, một số quyền thuộc về chính phủ liên bang. Một quyền của chính phủ liên bang là gì?",
       "answers_en": ["To print money", "To declare war", "To create an army", "To make treaties"],
       "answers_vi": ["In tiền", "Tuyên bố chiến tranh", "Thành lập quân đội", "Ký kết hiệp ước"],
+      "explanation_en": "The federal government has exclusive powers including printing money, declaring war, managing the military, and signing treaties with foreign countries.",
       "explanation_vi": "Chính phủ liên bang có các quyền độc quyền như in tiền, tuyên chiến, quản lý quân đội, và ký hiệp ước với nước ngoài.",
       "is_65_20": false,
       "is_dynamic": false
@@ -581,6 +624,7 @@
       "question_vi": "Theo Hiến pháp, một số quyền thuộc về các tiểu bang. Một quyền của tiểu bang là gì?",
       "answers_en": ["Provide schooling and education", "Provide protection (police)", "Provide safety (fire departments)", "Give a driver's license", "Approve zoning and land use"],
       "answers_vi": ["Cung cấp giáo dục", "Cung cấp bảo vệ (cảnh sát)", "Cung cấp an toàn (cứu hỏa)", "Cấp bằng lái xe", "Phê duyệt quy hoạch và sử dụng đất"],
+      "explanation_en": "States retain powers not given to the federal government. This is the principle of federalism, where power is shared between federal and state governments.",
       "explanation_vi": "Các tiểu bang giữ các quyền không được giao cho chính phủ liên bang. Đây là nguyên tắc của chủ nghĩa liên bang (federalism).",
       "is_65_20": true,
       "is_dynamic": false
@@ -594,6 +638,7 @@
       "question_vi": "Thủ đô của Hoa Kỳ là gì?",
       "answers_en": ["Washington, D.C."],
       "answers_vi": ["Washington, D.C."],
+      "explanation_en": "Washington, D.C. has been the capital since 1800. D.C. stands for District of Columbia and is not part of any state.",
       "explanation_vi": "Washington, D.C. là thủ đô từ năm 1800. D.C. nghĩa là District of Columbia, không thuộc tiểu bang nào.",
       "is_65_20": false,
       "is_dynamic": false
@@ -607,6 +652,7 @@
       "question_vi": "Tượng Nữ thần Tự do ở đâu?",
       "answers_en": ["New York Harbor", "Liberty Island", "New Jersey", "Near New York City", "On the Hudson River"],
       "answers_vi": ["Cảng New York", "Đảo Liberty", "New Jersey", "Gần thành phố New York", "Trên sông Hudson"],
+      "explanation_en": "The Statue of Liberty is located on Liberty Island in New York Harbor. It was a gift from France in 1886 and symbolizes freedom and democracy.",
       "explanation_vi": "Tượng Nữ thần Tự do nằm trên đảo Liberty trong cảng New York. Là quà tặng từ Pháp năm 1886, biểu tượng của tự do và dân chủ.",
       "is_65_20": false,
       "is_dynamic": false
@@ -620,6 +666,7 @@
       "question_vi": "Tại sao lá cờ có 50 ngôi sao?",
       "answers_en": ["Because there is one star for each state", "Because each star represents a state", "Because there are 50 states"],
       "answers_vi": ["Vì có một ngôi sao cho mỗi tiểu bang", "Vì mỗi ngôi sao đại diện cho một tiểu bang", "Vì có 50 tiểu bang"],
+      "explanation_en": "The 50 stars represent the 50 current states. The number of stars has increased from 13 (originally) as new states joined the Union.",
       "explanation_vi": "50 ngôi sao đại diện cho 50 tiểu bang hiện tại. Số sao đã tăng từ 13 (ban đầu) khi các tiểu bang mới gia nhập.",
       "is_65_20": false,
       "is_dynamic": false
@@ -633,6 +680,7 @@
       "question_vi": "Tên của quốc ca là gì?",
       "answers_en": ["The Star-Spangled Banner"],
       "answers_vi": ["The Star-Spangled Banner (Lá cờ đầy sao)"],
+      "explanation_en": "\"The Star-Spangled Banner\" was written by Francis Scott Key in 1814 and became the official national anthem in 1931.",
       "explanation_vi": "\"The Star-Spangled Banner\" được viết bởi Francis Scott Key năm 1814 và trở thành quốc ca chính thức năm 1931.",
       "is_65_20": false,
       "is_dynamic": false
@@ -646,6 +694,7 @@
       "question_vi": "Một lời hứa bạn đưa ra khi trở thành công dân Hoa Kỳ là gì?",
       "answers_en": ["Give up loyalty to other countries", "Defend the Constitution and laws of the United States", "Obey the laws of the United States", "Serve in the U.S. military if needed", "Serve the nation if needed", "Be loyal to the United States"],
       "answers_vi": ["Từ bỏ trung thành với các quốc gia khác", "Bảo vệ Hiến pháp và luật pháp Hoa Kỳ", "Tuân theo luật pháp Hoa Kỳ", "Phục vụ trong quân đội Hoa Kỳ nếu cần", "Phục vụ quốc gia nếu cần", "Trung thành với Hoa Kỳ"],
+      "explanation_en": "The Oath of Allegiance includes promises to give up loyalty to other countries, defend the Constitution, and serve the nation if needed.",
       "explanation_vi": "Lời tuyên thệ nhập tịch bao gồm cam kết từ bỏ trung thành với quốc gia khác, bảo vệ Hiến pháp, và phục vụ đất nước.",
       "is_65_20": false,
       "is_dynamic": false
@@ -659,6 +708,7 @@
       "question_vi": "Công dân phải bao nhiêu tuổi để bầu tổng thống?",
       "answers_en": ["18", "Eighteen"],
       "answers_vi": ["18", "Mười tám"],
+      "explanation_en": "The 26th Amendment (1971) lowered the voting age from 21 to 18. All citizens 18 and older have the right to vote.",
       "explanation_vi": "Tu chính án 26 (1971) hạ tuổi bầu cử từ 21 xuống 18. Mọi công dân từ 18 tuổi có quyền bầu cử.",
       "is_65_20": false,
       "is_dynamic": false
@@ -672,6 +722,7 @@
       "question_vi": "Hai cách người Mỹ có thể tham gia vào nền dân chủ là gì?",
       "answers_en": ["Vote", "Join a political party", "Help with a campaign", "Join a civic group", "Join a community group", "Give an elected official your opinion", "Call senators and representatives", "Publicly support or oppose an issue or policy", "Run for office", "Write to a newspaper"],
       "answers_vi": ["Bầu cử", "Tham gia đảng chính trị", "Giúp chiến dịch tranh cử", "Tham gia nhóm công dân", "Tham gia nhóm cộng đồng", "Đưa ý kiến cho quan chức", "Gọi điện cho nghị sĩ", "Công khai ủng hộ hoặc phản đối vấn đề", "Ứng cử", "Viết thư cho báo"],
+      "explanation_en": "Democracy works when citizens participate. You can vote, contact your representatives, or get involved in your community.",
       "explanation_vi": "Dân chủ hoạt động khi công dân tham gia. Bạn có thể bầu cử, liên lạc với đại diện, hoặc hoạt động trong cộng đồng.",
       "is_65_20": false,
       "is_dynamic": false
@@ -685,6 +736,7 @@
       "question_vi": "Ngày cuối cùng bạn có thể nộp đơn thuế thu nhập liên bang là khi nào?",
       "answers_en": ["April 15"],
       "answers_vi": ["15 tháng 4 (April 15)"],
+      "explanation_en": "The tax filing deadline is usually April 15 each year. If this falls on a weekend or holiday, the deadline moves to the next business day.",
       "explanation_vi": "Hạn chót nộp thuế thường là 15 tháng 4 hàng năm. Nếu ngày này rơi vào cuối tuần hoặc ngày lễ, hạn chót sẽ được dời sang ngày làm việc tiếp theo.",
       "is_65_20": true,
       "is_dynamic": false
@@ -698,6 +750,7 @@
       "question_vi": "Khi nào tất cả nam giới phải đăng ký Nghĩa vụ Quân sự?",
       "answers_en": ["At age 18", "Between 18 and 26"],
       "answers_vi": ["Lúc 18 tuổi", "Từ 18 đến 26 tuổi"],
+      "explanation_en": "Men ages 18-26 must register with Selective Service. This is a legal requirement but does not mean you will be drafted into the military.",
       "explanation_vi": "Nam giới từ 18-26 tuổi phải đăng ký Selective Service. Đây là yêu cầu pháp lý, không có nghĩa sẽ bị gọi nhập ngũ.",
       "is_65_20": false,
       "is_dynamic": false
@@ -711,6 +764,7 @@
       "question_vi": "Một lý do những người thuộc địa đến Mỹ là gì?",
       "answers_en": ["Freedom", "Political liberty", "Religious freedom", "Economic opportunity", "Practice their religion", "Escape persecution"],
       "answers_vi": ["Tự do", "Tự do chính trị", "Tự do tôn giáo", "Cơ hội kinh tế", "Thực hành tôn giáo", "Thoát khỏi sự bức hại"],
+      "explanation_en": "Europeans came to America for many reasons: religious freedom (Pilgrims), economic opportunity, or to escape political persecution.",
       "explanation_vi": "Người châu Âu đến Mỹ vì nhiều lý do: tự do tôn giáo (Pilgrims), cơ hội kinh tế, hoặc thoát khỏi bức hại chính trị.",
       "is_65_20": false,
       "is_dynamic": false
@@ -724,6 +778,7 @@
       "question_vi": "Ai sống ở Mỹ trước khi người châu Âu đến?",
       "answers_en": ["American Indians", "Native Americans"],
       "answers_vi": ["Người da đỏ Mỹ (American Indians)", "Người Mỹ bản địa (Native Americans)"],
+      "explanation_en": "Native Americans had lived in the Americas for thousands of years before Europeans arrived. They had many diverse tribes and cultures.",
       "explanation_vi": "Người Mỹ bản địa đã sống ở châu Mỹ hàng nghìn năm trước khi người châu Âu đến. Họ có nhiều bộ tộc và văn hóa đa dạng.",
       "is_65_20": false,
       "is_dynamic": false
@@ -737,6 +792,7 @@
       "question_vi": "Nhóm người nào bị đưa đến Mỹ và bán làm nô lệ?",
       "answers_en": ["Africans", "People from Africa"],
       "answers_vi": ["Người châu Phi", "Người từ châu Phi"],
+      "explanation_en": "From the 17th century, millions of Africans were captured and sold as slaves in America. Slavery lasted until 1865.",
       "explanation_vi": "Từ thế kỷ 17, hàng triệu người châu Phi bị bắt và bán làm nô lệ ở Mỹ. Chế độ nô lệ kéo dài đến năm 1865.",
       "is_65_20": false,
       "is_dynamic": false
@@ -750,6 +806,7 @@
       "question_vi": "Ai là thống đốc tiểu bang của bạn hiện tại?",
       "answers_en": ["Answers will vary by state"],
       "answers_vi": ["Câu trả lời thay đổi theo tiểu bang"],
+      "explanation_en": "The governor is the head of the state's executive branch, similar to the President at the federal level. You need to know your state's governor.",
       "explanation_vi": "Thống đốc là người đứng đầu nhánh hành pháp của tiểu bang, tương tự như Tổng thống ở cấp liên bang. Bạn cần biết tên thống đốc tiểu bang mình.",
       "is_65_20": false,
       "is_dynamic": true,
@@ -764,6 +821,7 @@
       "question_vi": "Thủ phủ của tiểu bang bạn là gì?",
       "answers_en": ["Answers will vary by state"],
       "answers_vi": ["Câu trả lời thay đổi theo tiểu bang"],
+      "explanation_en": "Each state has a capital where the state government is located. The capital is not necessarily the largest city in the state.",
       "explanation_vi": "Mỗi tiểu bang có một thủ phủ, nơi đặt chính quyền tiểu bang. Thủ phủ không nhất thiết là thành phố lớn nhất.",
       "is_65_20": false,
       "is_dynamic": true,
@@ -778,6 +836,7 @@
       "question_vi": "Hai đảng chính trị lớn tại Hoa Kỳ là gì?",
       "answers_en": ["Democratic and Republican"],
       "answers_vi": ["Đảng Dân chủ và Đảng Cộng hòa"],
+      "explanation_en": "The U.S. has a two-party system with the Democratic and Republican parties. Other parties exist but have less influence.",
       "explanation_vi": "Hoa Kỳ có hệ thống hai đảng chính: Đảng Dân chủ (Democratic) và Đảng Cộng hòa (Republican). Các đảng khác tồn tại nhưng ít ảnh hưởng hơn.",
       "is_65_20": false,
       "is_dynamic": false
@@ -791,6 +850,7 @@
       "question_vi": "Đảng chính trị của tổng thống hiện tại là gì?",
       "answers_en": ["Republican", "Republican Party"],
       "answers_vi": ["Đảng Cộng hòa (Republican)"],
+      "explanation_en": "You need to know the current president's political party. This can change after each election.",
       "explanation_vi": "Bạn cần biết đảng của tổng thống đương nhiệm. Điều này có thể thay đổi sau mỗi cuộc bầu cử.",
       "is_65_20": false,
       "is_dynamic": true,
@@ -805,6 +865,7 @@
       "question_vi": "Tên của Chủ tịch Hạ viện hiện tại là gì?",
       "answers_en": ["Mike Johnson"],
       "answers_vi": ["Mike Johnson"],
+      "explanation_en": "The Speaker of the House leads the House of Representatives and is elected by the members. The Speaker is second in the presidential line of succession.",
       "explanation_vi": "Chủ tịch Hạ viện (Speaker) là người đứng đầu Hạ viện, được bầu bởi các dân biểu. Đứng thứ hai trong thứ tự kế nhiệm tổng thống.",
       "is_65_20": true,
       "is_dynamic": true,
@@ -819,6 +880,7 @@
       "question_vi": "Có bốn tu chính án về ai có thể bầu cử. Mô tả một trong số đó.",
       "answers_en": ["Citizens 18 and older can vote", "You don't have to pay to vote", "Any citizen can vote (women and men)", "A male citizen of any race can vote"],
       "answers_vi": ["Công dân từ 18 tuổi trở lên có thể bầu cử", "Bạn không phải trả tiền để bầu cử", "Bất kỳ công dân nào cũng có thể bầu cử (phụ nữ và nam giới)", "Công dân nam của bất kỳ chủng tộc nào cũng có thể bầu cử"],
+      "explanation_en": "Four amendments expanded voting rights: 15th (race), 19th (women), 24th (no poll tax), and 26th (age 18).",
       "explanation_vi": "Các tu chính án mở rộng quyền bầu cử: 15 (chủng tộc), 19 (phụ nữ), 24 (không thuế bầu cử), 26 (18 tuổi).",
       "is_65_20": false,
       "is_dynamic": false
@@ -832,6 +894,7 @@
       "question_vi": "Một trách nhiệm chỉ dành cho công dân Hoa Kỳ là gì?",
       "answers_en": ["Serve on a jury", "Vote in a federal election"],
       "answers_vi": ["Tham gia bồi thẩm đoàn", "Bầu cử trong cuộc bầu cử liên bang"],
+      "explanation_en": "Only citizens have the responsibility to serve on a jury and the right to vote in federal elections. These are both rights and responsibilities.",
       "explanation_vi": "Chỉ công dân mới có trách nhiệm tham gia bồi thẩm đoàn và quyền bầu cử liên bang. Đây vừa là quyền vừa là trách nhiệm.",
       "is_65_20": false,
       "is_dynamic": false
@@ -845,6 +908,7 @@
       "question_vi": "Kể tên hai quyền chỉ dành cho công dân Hoa Kỳ.",
       "answers_en": ["The right to vote in federal elections", "The right to run for federal office"],
       "answers_vi": ["Quyền bầu cử trong bầu cử liên bang", "Quyền ứng cử vào chức vụ liên bang"],
+      "explanation_en": "Voting in federal elections and running for federal office are rights reserved only for citizens. Permanent residents do not have these rights.",
       "explanation_vi": "Bầu cử liên bang và ứng cử chức vụ liên bang là quyền dành riêng cho công dân. Thường trú nhân không có các quyền này.",
       "is_65_20": false,
       "is_dynamic": false
@@ -858,6 +922,7 @@
       "question_vi": "Hai quyền của tất cả mọi người sống tại Hoa Kỳ là gì?",
       "answers_en": ["Freedom of speech", "Freedom of religion", "Freedom of assembly", "Freedom to petition the government", "The right to bear arms"],
       "answers_vi": ["Tự do ngôn luận", "Tự do tôn giáo", "Tự do hội họp", "Quyền kiến nghị chính phủ", "Quyền mang vũ khí"],
+      "explanation_en": "The Constitution protects rights for \"persons,\" not just citizens. Everyone living in the U.S. enjoys these basic rights.",
       "explanation_vi": "Hiến pháp bảo vệ quyền của \"người\" (persons), không chỉ công dân. Mọi người sống tại Mỹ đều được hưởng các quyền cơ bản này.",
       "is_65_20": false,
       "is_dynamic": false
@@ -871,6 +936,7 @@
       "question_vi": "Chúng ta thể hiện lòng trung thành với điều gì khi đọc Lời tuyên thệ trung thành?",
       "answers_en": ["The United States", "The flag"],
       "answers_vi": ["Hoa Kỳ", "Lá cờ"],
+      "explanation_en": "The Pledge of Allegiance is a promise of loyalty to the flag and the United States. It is commonly recited in schools and public events.",
       "explanation_vi": "Pledge of Allegiance (Lời tuyên thệ trung thành) là lời cam kết trung thành với lá cờ và nước Mỹ. Thường được đọc trong trường học và các sự kiện công cộng.",
       "is_65_20": true,
       "is_dynamic": false
@@ -884,6 +950,7 @@
       "question_vi": "Kể một lý do tại sao những người thuộc địa chiến đấu chống lại người Anh.",
       "answers_en": ["Because of high taxes", "Because of taxation without representation", "Because the British army stayed in their houses", "Because they didn't have self-government"],
       "answers_vi": ["Vì thuế cao", "Vì đánh thuế mà không có đại diện", "Vì quân Anh ở trong nhà họ", "Vì họ không có quyền tự quản"],
+      "explanation_en": "\"No taxation without representation\" was a famous slogan of the American Revolution. Colonists objected to British taxes without having representation in Parliament.",
       "explanation_vi": "\"No taxation without representation\" (Không đánh thuế mà không có đại diện) là khẩu hiệu nổi tiếng của cuộc cách mạng Mỹ.",
       "is_65_20": false,
       "is_dynamic": false
@@ -897,6 +964,7 @@
       "question_vi": "Tuyên ngôn Độc lập làm gì?",
       "answers_en": ["Announced our independence from Great Britain", "Declared our independence from Great Britain", "Said that the United States is free from Great Britain"],
       "answers_vi": ["Công bố độc lập khỏi Vương quốc Anh", "Tuyên bố độc lập khỏi Vương quốc Anh", "Nói rằng Hoa Kỳ tự do khỏi Vương quốc Anh"],
+      "explanation_en": "The Declaration of Independence (July 4, 1776) declared the colonies' separation from Britain and established a new nation. It was written primarily by Thomas Jefferson.",
       "explanation_vi": "Tuyên ngôn Độc lập (4/7/1776) tuyên bố các thuộc địa tách khỏi Anh và thành lập quốc gia mới. Được viết chủ yếu bởi Thomas Jefferson.",
       "is_65_20": false,
       "is_dynamic": false
@@ -910,6 +978,7 @@
       "question_vi": "Kể tên hai ngày lễ quốc gia Hoa Kỳ.",
       "answers_en": ["New Year's Day", "Martin Luther King Jr. Day", "Presidents' Day", "Memorial Day", "Independence Day", "Labor Day", "Columbus Day", "Veterans Day", "Thanksgiving", "Christmas"],
       "answers_vi": ["Ngày Năm mới", "Ngày Martin Luther King Jr.", "Ngày Tổng thống", "Ngày Tưởng niệm", "Ngày Độc lập", "Ngày Lao động", "Ngày Columbus", "Ngày Cựu chiến binh", "Lễ Tạ ơn", "Giáng sinh"],
+      "explanation_en": "The U.S. has 11 federal holidays. Federal offices are closed on these days.",
       "explanation_vi": "Hoa Kỳ có 11 ngày lễ liên bang. Các cơ quan liên bang đóng cửa vào những ngày này.",
       "is_65_20": false,
       "is_dynamic": false
@@ -923,6 +992,7 @@
       "question_vi": "Ngày Độc lập là ngày nào?",
       "answers_en": ["July 4"],
       "answers_vi": ["4 tháng 7 (July 4)"],
+      "explanation_en": "July 4, 1776 is when the Declaration of Independence was adopted. It is the most important national holiday in America.",
       "explanation_vi": "Ngày 4 tháng 7 năm 1776 là ngày Tuyên ngôn Độc lập được thông qua. Đây là ngày lễ quan trọng nhất của nước Mỹ.",
       "is_65_20": false,
       "is_dynamic": false
@@ -936,6 +1006,7 @@
       "question_vi": "Tại sao chúng ta có ba nhánh chính phủ?",
       "answers_en": ["So no branch is too powerful"],
       "answers_vi": ["Để không nhánh nào quá mạnh"],
+      "explanation_en": "The three-branch system ensures no one has too much power. Each branch can check the others through checks and balances.",
       "explanation_vi": "Hệ thống ba nhánh đảm bảo không ai có quá nhiều quyền lực. Mỗi nhánh có thể kiểm soát các nhánh khác thông qua hệ thống checks and balances.",
       "is_65_20": false,
       "is_dynamic": false
@@ -949,6 +1020,7 @@
       "question_vi": "Kể tên cuộc chiến tranh Hoa Kỳ giữa miền Bắc và miền Nam.",
       "answers_en": ["The Civil War", "The War between the States"],
       "answers_vi": ["Nội chiến (Civil War)", "Chiến tranh giữa các bang"],
+      "explanation_en": "The American Civil War (1861-1865) was fought between the North (Union) and the South (Confederacy), primarily over slavery.",
       "explanation_vi": "Nội chiến Mỹ (1861-1865) là cuộc chiến giữa miền Bắc (Union) và miền Nam (Confederacy), chủ yếu về vấn đề nô lệ.",
       "is_65_20": false,
       "is_dynamic": false
@@ -962,6 +1034,7 @@
       "question_vi": "Tại sao những người thuộc địa chiến đấu chống người Anh?",
       "answers_en": ["Because of high taxes", "Because of taxation without representation", "Because the British army stayed in their houses", "Because they didn't have self-government"],
       "answers_vi": ["Vì thuế cao", "Vì đánh thuế mà không có đại diện", "Vì quân Anh ở trong nhà họ", "Vì họ không có quyền tự quản"],
+      "explanation_en": "Colonists opposed taxes imposed by Britain without having representation in British Parliament. \"No taxation without representation!\"",
       "explanation_vi": "Người thuộc địa phản đối thuế do Anh áp đặt mà không có đại diện trong Quốc hội Anh. \"No taxation without representation!\"",
       "is_65_20": false,
       "is_dynamic": false
@@ -975,6 +1048,7 @@
       "question_vi": "Ai đã viết Tuyên ngôn Độc lập?",
       "answers_en": ["Thomas Jefferson"],
       "answers_vi": ["Thomas Jefferson"],
+      "explanation_en": "Thomas Jefferson was the primary author of the Declaration of Independence. He later became the 3rd President of the United States.",
       "explanation_vi": "Thomas Jefferson là tác giả chính của Tuyên ngôn Độc lập. Ông sau này trở thành Tổng thống thứ 3 của Hoa Kỳ.",
       "is_65_20": true,
       "is_dynamic": false
@@ -988,6 +1062,7 @@
       "question_vi": "Tuyên ngôn Độc lập được thông qua khi nào?",
       "answers_en": ["July 4, 1776"],
       "answers_vi": ["4 tháng 7 năm 1776"],
+      "explanation_en": "On July 4, 1776, the Continental Congress adopted the Declaration of Independence. This date became America's Independence Day.",
       "explanation_vi": "Ngày 4/7/1776, Đại hội Lục địa thông qua Tuyên ngôn Độc lập. Ngày này trở thành ngày Quốc khánh Hoa Kỳ.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1001,6 +1076,7 @@
       "question_vi": "Có 13 tiểu bang ban đầu. Kể tên năm tiểu bang.",
       "answers_en": ["New Hampshire", "Massachusetts", "Rhode Island", "Connecticut", "New York", "New Jersey", "Pennsylvania", "Delaware", "Maryland", "Virginia", "North Carolina", "South Carolina", "Georgia"],
       "answers_vi": ["New Hampshire", "Massachusetts", "Rhode Island", "Connecticut", "New York", "New Jersey", "Pennsylvania", "Delaware", "Maryland", "Virginia", "North Carolina", "South Carolina", "Georgia"],
+      "explanation_en": "The 13 original colonies were located along the East Coast. They became the first states of the United States after gaining independence.",
       "explanation_vi": "13 thuộc địa ban đầu nằm dọc bờ Đông. Họ là những tiểu bang đầu tiên của Hoa Kỳ sau khi giành độc lập.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1014,6 +1090,7 @@
       "question_vi": "Điều gì đã xảy ra tại Hội nghị Lập hiến?",
       "answers_en": ["The Constitution was written", "The Founding Fathers wrote the Constitution"],
       "answers_vi": ["Hiến pháp được viết", "Các Cha đẻ lập quốc đã viết Hiến pháp"],
+      "explanation_en": "The Constitutional Convention (1787) in Philadelphia drafted the U.S. Constitution, replacing the weak Articles of Confederation.",
       "explanation_vi": "Hội nghị Lập hiến (1787) tại Philadelphia đã soạn thảo Hiến pháp Hoa Kỳ, thay thế Các điều khoản Liên bang yếu kém.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1027,6 +1104,7 @@
       "question_vi": "Hiến pháp được viết khi nào?",
       "answers_en": ["1787"],
       "answers_vi": ["1787"],
+      "explanation_en": "The Constitution was written in 1787 and took effect in 1788 after being ratified by 9 states.",
       "explanation_vi": "Hiến pháp được viết năm 1787 và có hiệu lực năm 1788 sau khi được 9 tiểu bang phê chuẩn.",
       "is_65_20": true,
       "is_dynamic": false
@@ -1040,6 +1118,7 @@
       "question_vi": "Các bài Federalist Papers ủng hộ việc thông qua Hiến pháp. Kể tên một trong các tác giả.",
       "answers_en": ["James Madison", "Alexander Hamilton", "John Jay", "Publius"],
       "answers_vi": ["James Madison", "Alexander Hamilton", "John Jay", "Publius"],
+      "explanation_en": "The Federalist Papers were 85 essays persuading states to ratify the Constitution. The three authors wrote under the pen name \"Publius.\"",
       "explanation_vi": "Federalist Papers là 85 bài luận thuyết phục các tiểu bang phê chuẩn Hiến pháp. Ba tác giả viết dưới bút danh \"Publius\".",
       "is_65_20": false,
       "is_dynamic": false
@@ -1053,6 +1132,7 @@
       "question_vi": "Benjamin Franklin nổi tiếng về điều gì?",
       "answers_en": ["U.S. diplomat", "Oldest member of the Constitutional Convention", "First Postmaster General", "Writer of Poor Richard's Almanac", "Started the first free libraries"],
       "answers_vi": ["Nhà ngoại giao Hoa Kỳ", "Thành viên lớn tuổi nhất của Hội nghị Lập hiến", "Tổng Giám đốc Bưu điện đầu tiên", "Tác giả Poor Richard's Almanac", "Thành lập thư viện công cộng miễn phí đầu tiên"],
+      "explanation_en": "Benjamin Franklin was one of the greatest Founding Fathers. He was a famous scientist, diplomat, and inventor.",
       "explanation_vi": "Benjamin Franklin là một trong những Cha đẻ lập quốc vĩ đại nhất. Ông là nhà khoa học, nhà ngoại giao, và nhà phát minh nổi tiếng.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1066,6 +1146,7 @@
       "question_vi": "Ai là \"Cha đẻ của Đất nước chúng ta\"?",
       "answers_en": ["George Washington"],
       "answers_vi": ["George Washington"],
+      "explanation_en": "George Washington is called the \"Father of Our Country\" because he led the army during the Revolution and was the first President.",
       "explanation_vi": "George Washington được gọi là \"Cha đẻ của Đất nước\" vì lãnh đạo quân đội trong Cách mạng và là Tổng thống đầu tiên.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1079,6 +1160,7 @@
       "question_vi": "Ai là tổng thống đầu tiên?",
       "answers_en": ["George Washington"],
       "answers_vi": ["George Washington"],
+      "explanation_en": "George Washington was the first President (1789-1797). He declined a third term, establishing the tradition of two terms.",
       "explanation_vi": "George Washington là Tổng thống đầu tiên (1789-1797). Ông từ chối làm nhiệm kỳ thứ ba, thiết lập truyền thống hai nhiệm kỳ.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1092,6 +1174,7 @@
       "question_vi": "Hoa Kỳ đã mua lãnh thổ nào từ Pháp năm 1803?",
       "answers_en": ["The Louisiana Territory", "Louisiana"],
       "answers_vi": ["Lãnh thổ Louisiana", "Louisiana"],
+      "explanation_en": "The Louisiana Purchase (1803) doubled the size of the United States for $15 million. President Jefferson made this purchase.",
       "explanation_vi": "Louisiana Purchase (1803) gấp đôi diện tích Hoa Kỳ với giá 15 triệu đô la. Tổng thống Jefferson thực hiện thương vụ này.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1105,6 +1188,7 @@
       "question_vi": "Kể tên một cuộc chiến tranh Hoa Kỳ tham gia trong những năm 1800.",
       "answers_en": ["War of 1812", "Mexican-American War", "Civil War", "Spanish-American War"],
       "answers_vi": ["Chiến tranh 1812", "Chiến tranh Mỹ-Mexico", "Nội chiến", "Chiến tranh Tây Ban Nha-Mỹ"],
+      "explanation_en": "In the 19th century, the U.S. fought several wars: 1812 with Britain, Mexico (1846-48), Civil War (1861-65), and Spain (1898).",
       "explanation_vi": "Thế kỷ 19 Hoa Kỳ tham gia nhiều cuộc chiến: 1812 với Anh, Mexico (1846-48), Nội chiến (1861-65), và Tây Ban Nha (1898).",
       "is_65_20": false,
       "is_dynamic": false
@@ -1118,6 +1202,7 @@
       "question_vi": "Kể tên cuộc chiến tranh Hoa Kỳ giữa miền Bắc và miền Nam.",
       "answers_en": ["The Civil War", "The War between the States"],
       "answers_vi": ["Nội chiến", "Chiến tranh giữa các bang"],
+      "explanation_en": "The Civil War (1861-1865) was the bloodiest conflict in American history, with about 620,000 deaths.",
       "explanation_vi": "Nội chiến (1861-1865) là cuộc xung đột đẫm máu nhất trong lịch sử Mỹ, với khoảng 620,000 người chết.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1131,6 +1216,7 @@
       "question_vi": "Kể một vấn đề dẫn đến Nội chiến.",
       "answers_en": ["Slavery", "Economic reasons", "States' rights"],
       "answers_vi": ["Chế độ nô lệ", "Lý do kinh tế", "Quyền của các tiểu bang"],
+      "explanation_en": "The Civil War was mainly caused by disputes over slavery. The North wanted to limit it, while the South wanted to expand slavery to new states.",
       "explanation_vi": "Nội chiến chủ yếu do tranh cãi về chế độ nô lệ. Miền Bắc muốn giới hạn, miền Nam muốn mở rộng nô lệ sang các tiểu bang mới.",
       "is_65_20": true,
       "is_dynamic": false
@@ -1144,6 +1230,7 @@
       "question_vi": "Một điều quan trọng Abraham Lincoln đã làm là gì?",
       "answers_en": ["Freed the slaves", "Saved the Union", "Led the United States during the Civil War"],
       "answers_vi": ["Giải phóng nô lệ", "Cứu Liên bang", "Lãnh đạo Hoa Kỳ trong Nội chiến"],
+      "explanation_en": "Abraham Lincoln was the 16th President. He issued the Emancipation Proclamation (1863) and led the North to victory.",
       "explanation_vi": "Abraham Lincoln là Tổng thống thứ 16. Ông ban hành Tuyên ngôn Giải phóng Nô lệ (1863) và lãnh đạo miền Bắc chiến thắng.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1157,6 +1244,7 @@
       "question_vi": "Tuyên ngôn Giải phóng Nô lệ đã làm gì?",
       "answers_en": ["Freed the slaves", "Freed slaves in the Confederacy", "Freed slaves in the Confederate states", "Freed slaves in most Southern states"],
       "answers_vi": ["Giải phóng nô lệ", "Giải phóng nô lệ ở Liên minh miền Nam", "Giải phóng nô lệ ở các bang Liên minh", "Giải phóng nô lệ ở hầu hết các bang miền Nam"],
+      "explanation_en": "Lincoln's Emancipation Proclamation (1863) declared slaves in rebelling states to be free. The 13th Amendment later abolished slavery completely.",
       "explanation_vi": "Tuyên ngôn Giải phóng (1863) của Lincoln tuyên bố nô lệ ở các bang ly khai được tự do. Tu chính án 13 sau đó xóa bỏ hoàn toàn chế độ nô lệ.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1170,6 +1258,7 @@
       "question_vi": "Susan B. Anthony đã làm gì?",
       "answers_en": ["Fought for women's rights", "Fought for civil rights"],
       "answers_vi": ["Đấu tranh cho quyền phụ nữ", "Đấu tranh cho dân quyền"],
+      "explanation_en": "Susan B. Anthony was a leader in the women's suffrage movement. She was arrested in 1872 for voting. The 19th Amendment passed in 1920.",
       "explanation_vi": "Susan B. Anthony là lãnh đạo phong trào đòi quyền bầu cử cho phụ nữ. Bà bị bắt năm 1872 vì đi bỏ phiếu. Tu chính án 19 được thông qua năm 1920.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1183,6 +1272,7 @@
       "question_vi": "Kể tên một cuộc chiến tranh Hoa Kỳ tham gia trong những năm 1900.",
       "answers_en": ["World War I", "World War II", "Korean War", "Vietnam War", "Persian Gulf War"],
       "answers_vi": ["Thế chiến I", "Thế chiến II", "Chiến tranh Triều Tiên", "Chiến tranh Việt Nam", "Chiến tranh Vùng Vịnh"],
+      "explanation_en": "In the 20th century, the U.S. participated in many major wars around the world, becoming a military superpower.",
       "explanation_vi": "Thế kỷ 20 Hoa Kỳ tham gia nhiều cuộc chiến lớn trên khắp thế giới, trở thành siêu cường quân sự.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1196,6 +1286,7 @@
       "question_vi": "Ai là tổng thống trong Thế chiến I?",
       "answers_en": ["Woodrow Wilson"],
       "answers_vi": ["Woodrow Wilson"],
+      "explanation_en": "Woodrow Wilson was the 28th President. The U.S. entered the war in 1917, and Wilson proposed the League of Nations afterward.",
       "explanation_vi": "Woodrow Wilson là Tổng thống thứ 28. Hoa Kỳ tham chiến năm 1917 và Wilson đề xuất Hội Quốc Liên sau chiến tranh.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1209,6 +1300,7 @@
       "question_vi": "Ai là tổng thống trong Đại Khủng hoảng và Thế chiến II?",
       "answers_en": ["Franklin Roosevelt", "Franklin D. Roosevelt", "FDR"],
       "answers_vi": ["Franklin Roosevelt", "Franklin D. Roosevelt", "FDR"],
+      "explanation_en": "FDR was the only President to serve more than two terms (4 terms). He led through the Great Depression and most of World War II.",
       "explanation_vi": "FDR là Tổng thống duy nhất phục vụ hơn hai nhiệm kỳ (4 nhiệm kỳ). Ông lãnh đạo qua Đại Khủng hoảng và hầu hết Thế chiến II.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1222,6 +1314,7 @@
       "question_vi": "Hoa Kỳ đã chiến đấu chống ai trong Thế chiến II?",
       "answers_en": ["Japan, Germany, and Italy"],
       "answers_vi": ["Nhật Bản, Đức, và Ý"],
+      "explanation_en": "The U.S. fought against the Axis powers: Germany, Italy, and Japan. The war ended in 1945 with the surrender of Germany and Japan.",
       "explanation_vi": "Hoa Kỳ chiến đấu chống phe Trục (Axis): Đức, Ý, Nhật. Chiến tranh kết thúc năm 1945 với sự đầu hàng của Đức và Nhật.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1235,6 +1328,7 @@
       "question_vi": "Trước khi làm tổng thống, Eisenhower là tướng. Ông tham gia cuộc chiến nào?",
       "answers_en": ["World War II"],
       "answers_vi": ["Thế chiến II"],
+      "explanation_en": "Dwight D. Eisenhower was Supreme Commander of Allied forces in Europe during WWII. He commanded the D-Day invasion.",
       "explanation_vi": "Dwight D. Eisenhower là Tư lệnh Tối cao lực lượng Đồng minh ở châu Âu trong Thế chiến II. Ông chỉ huy cuộc đổ bộ D-Day.",
       "is_65_20": true,
       "is_dynamic": false
@@ -1248,6 +1342,7 @@
       "question_vi": "Trong Chiến tranh Lạnh, mối quan tâm chính của Hoa Kỳ là gì?",
       "answers_en": ["Communism"],
       "answers_vi": ["Chủ nghĩa cộng sản"],
+      "explanation_en": "The Cold War (1947-1991) was a confrontation between the U.S. and Soviet Union. The main concern was the spread of communism.",
       "explanation_vi": "Chiến tranh Lạnh (1947-1991) là cuộc đối đầu giữa Hoa Kỳ và Liên Xô. Mối lo ngại chính là sự lan rộng của chủ nghĩa cộng sản.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1261,6 +1356,7 @@
       "question_vi": "Phong trào nào cố gắng chấm dứt phân biệt chủng tộc?",
       "answers_en": ["Civil rights movement"],
       "answers_vi": ["Phong trào dân quyền"],
+      "explanation_en": "The civil rights movement (1950s-1960s) fought for racial equality. Martin Luther King Jr. was its most famous leader.",
       "explanation_vi": "Phong trào dân quyền (1950s-1960s) đấu tranh cho bình đẳng chủng tộc. Martin Luther King Jr. là lãnh đạo nổi tiếng nhất.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1274,6 +1370,7 @@
       "question_vi": "Martin Luther King Jr. đã làm gì?",
       "answers_en": ["Fought for civil rights", "Worked for equality for all Americans"],
       "answers_vi": ["Đấu tranh cho dân quyền", "Làm việc vì bình đẳng cho tất cả người Mỹ"],
+      "explanation_en": "MLK was a minister and civil rights leader. He is famous for his \"I Have a Dream\" speech and won the Nobel Peace Prize in 1964.",
       "explanation_vi": "MLK là mục sư và lãnh đạo phong trào dân quyền. Ông nổi tiếng với bài diễn văn \"I Have a Dream\" và đoạt giải Nobel Hòa bình 1964.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1287,6 +1384,7 @@
       "question_vi": "Sự kiện lớn nào đã xảy ra vào ngày 11 tháng 9 năm 2001 tại Hoa Kỳ?",
       "answers_en": ["Terrorists attacked the United States"],
       "answers_vi": ["Khủng bố tấn công Hoa Kỳ"],
+      "explanation_en": "The 9/11 attacks were carried out by al-Qaeda. Nearly 3,000 people died. It was the largest terrorist attack on American soil.",
       "explanation_vi": "Vụ tấn công 11/9 do al-Qaeda thực hiện. Gần 3,000 người thiệt mạng. Đây là vụ tấn công khủng bố lớn nhất trên đất Mỹ.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1300,6 +1398,7 @@
       "question_vi": "Kể tên một bộ tộc da đỏ ở Hoa Kỳ.",
       "answers_en": ["Cherokee", "Navajo", "Sioux", "Chippewa", "Choctaw", "Pueblo", "Apache", "Iroquois", "Creek", "Blackfeet", "Seminole", "Cheyenne", "Arawak", "Shawnee", "Mohegan", "Huron", "Oneida", "Lakota", "Crow", "Teton", "Hopi", "Inuit"],
       "answers_vi": ["Cherokee", "Navajo", "Sioux", "Chippewa", "Choctaw", "Pueblo", "Apache", "Iroquois", "Creek", "Blackfeet", "Seminole", "Cheyenne", "Arawak", "Shawnee", "Mohegan", "Huron", "Oneida", "Lakota", "Crow", "Teton", "Hopi", "Inuit"],
+      "explanation_en": "There are hundreds of Native American tribes. Each has its own culture, language, and traditions.",
       "explanation_vi": "Có hàng trăm bộ tộc người Mỹ bản địa. Mỗi bộ tộc có văn hóa, ngôn ngữ và truyền thống riêng.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1313,6 +1412,7 @@
       "question_vi": "Kể tên một trong hai con sông dài nhất ở Hoa Kỳ.",
       "answers_en": ["Missouri River", "Mississippi River"],
       "answers_vi": ["Sông Missouri", "Sông Mississippi"],
+      "explanation_en": "The Missouri River (2,341 miles) and Mississippi River (2,340 miles) are the two longest rivers. The Mississippi is important for transportation and commerce.",
       "explanation_vi": "Sông Missouri (2,341 miles) và Mississippi (2,340 miles) là hai con sông dài nhất. Mississippi quan trọng cho giao thông và thương mại.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1326,6 +1426,7 @@
       "question_vi": "Đại dương nào ở bờ Tây Hoa Kỳ?",
       "answers_en": ["Pacific Ocean"],
       "answers_vi": ["Thái Bình Dương"],
+      "explanation_en": "The Pacific Ocean is the world's largest ocean, located on the West Coast. States like California, Oregon, and Washington border it.",
       "explanation_vi": "Thái Bình Dương là đại dương lớn nhất thế giới, nằm ở bờ Tây Hoa Kỳ. Các tiểu bang như California, Oregon, Washington giáp biển này.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1339,6 +1440,7 @@
       "question_vi": "Đại dương nào ở bờ Đông Hoa Kỳ?",
       "answers_en": ["Atlantic Ocean"],
       "answers_vi": ["Đại Tây Dương"],
+      "explanation_en": "The Atlantic Ocean is on the East Coast of the U.S. States like New York, Florida, and Massachusetts border it.",
       "explanation_vi": "Đại Tây Dương nằm ở bờ Đông Hoa Kỳ. Các tiểu bang như New York, Florida, Massachusetts giáp biển này.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1352,6 +1454,7 @@
       "question_vi": "Kể tên một lãnh thổ Hoa Kỳ.",
       "answers_en": ["Puerto Rico", "U.S. Virgin Islands", "American Samoa", "Northern Mariana Islands", "Guam"],
       "answers_vi": ["Puerto Rico", "Quần đảo Virgin thuộc Hoa Kỳ", "American Samoa", "Quần đảo Bắc Mariana", "Guam"],
+      "explanation_en": "The U.S. has 5 main territories. Residents are U.S. citizens but cannot vote for president in federal elections.",
       "explanation_vi": "Hoa Kỳ có 5 lãnh thổ chính. Cư dân là công dân Mỹ nhưng không được bầu tổng thống trong bầu cử liên bang.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1365,6 +1468,7 @@
       "question_vi": "Kể tên một tiểu bang giáp Canada.",
       "answers_en": ["Maine", "New Hampshire", "Vermont", "New York", "Pennsylvania", "Ohio", "Michigan", "Minnesota", "North Dakota", "Montana", "Idaho", "Washington", "Alaska"],
       "answers_vi": ["Maine", "New Hampshire", "Vermont", "New York", "Pennsylvania", "Ohio", "Michigan", "Minnesota", "North Dakota", "Montana", "Idaho", "Washington", "Alaska"],
+      "explanation_en": "13 states border Canada. The U.S.-Canada border is about 5,525 miles, the longest undefended border in the world.",
       "explanation_vi": "13 tiểu bang giáp Canada. Biên giới Mỹ-Canada dài khoảng 5,525 miles, là biên giới không phòng thủ dài nhất thế giới.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1378,6 +1482,7 @@
       "question_vi": "Kể tên một tiểu bang giáp Mexico.",
       "answers_en": ["California", "Arizona", "New Mexico", "Texas"],
       "answers_vi": ["California", "Arizona", "New Mexico", "Texas"],
+      "explanation_en": "Four states border Mexico: California, Arizona, New Mexico, and Texas. The border is about 1,954 miles long.",
       "explanation_vi": "Bốn tiểu bang giáp Mexico: California, Arizona, New Mexico, và Texas. Biên giới dài khoảng 1,954 miles.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1391,6 +1496,7 @@
       "question_vi": "Nhóm người nào đã viết Hiến pháp?",
       "answers_en": ["The Founding Fathers", "The Framers"],
       "answers_vi": ["Các Cha đẻ lập quốc", "Những người soạn thảo"],
+      "explanation_en": "The Founding Fathers participated in founding America, including Washington, Jefferson, Franklin, and Madison.",
       "explanation_vi": "Founding Fathers (Cha đẻ lập quốc) là những người tham gia thành lập nước Mỹ, bao gồm Washington, Jefferson, Franklin, Madison.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1404,6 +1510,7 @@
       "question_vi": "Tại sao Hoa Kỳ tham gia Thế chiến I?",
       "answers_en": ["Because Germany attacked U.S. ships", "To support the Allied Powers"],
       "answers_vi": ["Vì Đức tấn công tàu Hoa Kỳ", "Để hỗ trợ các cường quốc Đồng minh"],
+      "explanation_en": "Germany attacked U.S. merchant ships with submarines and sent the Zimmermann Telegram inciting Mexico. The U.S. declared war in 1917.",
       "explanation_vi": "Đức tấn công tàu thương mại Mỹ bằng tàu ngầm và gửi điện tín Zimmermann kích động Mexico. Hoa Kỳ tuyên chiến năm 1917.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1417,6 +1524,7 @@
       "question_vi": "Tại sao Hoa Kỳ tham gia Thế chiến II?",
       "answers_en": ["Because of the bombing of Pearl Harbor", "The Japanese attacked Pearl Harbor", "Japan attacked the United States"],
       "answers_vi": ["Vì vụ đánh bom Trân Châu Cảng", "Nhật Bản tấn công Trân Châu Cảng", "Nhật Bản tấn công Hoa Kỳ"],
+      "explanation_en": "On December 7, 1941, Japan attacked the Pearl Harbor naval base in Hawaii. The U.S. declared war the next day.",
       "explanation_vi": "Ngày 7/12/1941, Nhật Bản tấn công căn cứ hải quân Pearl Harbor ở Hawaii. Hoa Kỳ tuyên chiến ngày hôm sau.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1430,6 +1538,7 @@
       "question_vi": "Kể tên một cuộc chiến tranh Hoa Kỳ tham gia trong những năm 2000.",
       "answers_en": ["War in Afghanistan", "War in Iraq"],
       "answers_vi": ["Chiến tranh Afghanistan", "Chiến tranh Iraq"],
+      "explanation_en": "After 9/11, the U.S. launched the War on Terror in Afghanistan (2001-2021) and Iraq (2003-2011).",
       "explanation_vi": "Sau 11/9, Hoa Kỳ phát động chiến tranh chống khủng bố ở Afghanistan (2001-2021) và Iraq (2003-2011).",
       "is_65_20": false,
       "is_dynamic": false
@@ -1443,6 +1552,7 @@
       "question_vi": "Một lý do Hoa Kỳ tham gia Chiến tranh Triều Tiên là gì?",
       "answers_en": ["To stop the spread of communism"],
       "answers_vi": ["Để ngăn chặn sự lan rộng của chủ nghĩa cộng sản"],
+      "explanation_en": "The Korean War (1950-1953) broke out when communist North Korea invaded South Korea. The U.S. intervened to stop the spread of communism.",
       "explanation_vi": "Chiến tranh Triều Tiên (1950-1953) nổ ra khi Bắc Triều Tiên cộng sản xâm lược Nam Triều Tiên. Hoa Kỳ can thiệp để ngăn chặn chủ nghĩa cộng sản.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1456,6 +1566,7 @@
       "question_vi": "Một lý do Hoa Kỳ tham gia Chiến tranh Việt Nam là gì?",
       "answers_en": ["To stop the spread of communism"],
       "answers_vi": ["Để ngăn chặn sự lan rộng của chủ nghĩa cộng sản"],
+      "explanation_en": "The Vietnam War (1955-1975) was part of the Cold War. The U.S. wanted to prevent Vietnam from becoming communist.",
       "explanation_vi": "Chiến tranh Việt Nam (1955-1975) là một phần của Chiến tranh Lạnh. Hoa Kỳ muốn ngăn Việt Nam trở thành nước cộng sản.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1469,6 +1580,7 @@
       "question_vi": "Các Cha đẻ lập quốc đã làm gì?",
       "answers_en": ["Wrote the Constitution", "Founded the country", "Fought for independence"],
       "answers_vi": ["Viết Hiến pháp", "Thành lập đất nước", "Chiến đấu vì độc lập"],
+      "explanation_en": "The Founding Fathers led the American Revolution, wrote the Declaration of Independence and Constitution, and established the foundation for America today.",
       "explanation_vi": "Founding Fathers lãnh đạo Cách mạng Mỹ, viết Tuyên ngôn Độc lập và Hiến pháp, thiết lập nền tảng cho nước Mỹ ngày nay.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1482,6 +1594,7 @@
       "question_vi": "Ai được gọi là \"Cha đẻ của Hiến pháp\"?",
       "answers_en": ["James Madison"],
       "answers_vi": ["James Madison"],
+      "explanation_en": "James Madison is called the \"Father of the Constitution\" for his primary role in drafting it. He later became the 4th President.",
       "explanation_vi": "James Madison được gọi là \"Cha đẻ của Hiến pháp\" vì vai trò chính trong việc soạn thảo. Ông sau này trở thành Tổng thống thứ 4.",
       "is_65_20": true,
       "is_dynamic": false
@@ -1495,6 +1608,7 @@
       "question_vi": "Tên con tàu đã đưa người Pilgrims đến Mỹ là gì?",
       "answers_en": ["Mayflower"],
       "answers_vi": ["Mayflower"],
+      "explanation_en": "The Mayflower brought 102 Pilgrims from England to Plymouth (Massachusetts) in 1620. They came seeking religious freedom.",
       "explanation_vi": "Tàu Mayflower đưa 102 người Pilgrim từ Anh đến Plymouth (Massachusetts) năm 1620. Họ đến để được tự do thờ phượng.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1508,6 +1622,7 @@
       "question_vi": "Mayflower Compact là gì?",
       "answers_en": ["An agreement for self-government", "The first written form of self-government in America"],
       "answers_vi": ["Một thỏa thuận về tự quản", "Hình thức tự quản bằng văn bản đầu tiên ở Mỹ"],
+      "explanation_en": "The Mayflower Compact (1620) was the first self-government agreement in America. The Pilgrims signed it before landing.",
       "explanation_vi": "Mayflower Compact (1620) là thỏa thuận đầu tiên về tự quản ở Mỹ. Những người Pilgrim ký trước khi đổ bộ lên đất liền.",
       "is_65_20": true,
       "is_dynamic": false
@@ -1521,6 +1636,7 @@
       "question_vi": "Ai là tổng thống trong Thế chiến I?",
       "answers_en": ["Woodrow Wilson"],
       "answers_vi": ["Woodrow Wilson"],
+      "explanation_en": "Woodrow Wilson was the 28th President (1913-1921). He led the U.S. through WWI and proposed the League of Nations.",
       "explanation_vi": "Woodrow Wilson là Tổng thống thứ 28 (1913-1921). Ông dẫn dắt Hoa Kỳ trong Thế chiến I và đề xuất Hội Quốc Liên.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1534,6 +1650,7 @@
       "question_vi": "13 sọc trên lá cờ tượng trưng cho điều gì?",
       "answers_en": ["The 13 original colonies", "The first 13 states"],
       "answers_vi": ["13 thuộc địa ban đầu", "13 tiểu bang đầu tiên"],
+      "explanation_en": "The 13 red and white stripes represent the 13 original colonies that became the first 13 states of the United States.",
       "explanation_vi": "13 sọc đỏ và trắng đại diện cho 13 thuộc địa ban đầu đã trở thành 13 tiểu bang đầu tiên của Hoa Kỳ.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1547,6 +1664,7 @@
       "question_vi": "Kể tên ba Cha đẻ lập quốc.",
       "answers_en": ["George Washington", "Thomas Jefferson", "Benjamin Franklin", "John Adams", "Alexander Hamilton", "James Madison"],
       "answers_vi": ["George Washington", "Thomas Jefferson", "Benjamin Franklin", "John Adams", "Alexander Hamilton", "James Madison"],
+      "explanation_en": "Famous Founding Fathers include Washington, Jefferson, Franklin, Adams, Hamilton, and Madison. All played important roles in founding America.",
       "explanation_vi": "Các Cha đẻ lập quốc nổi tiếng bao gồm Washington, Jefferson, Franklin, Adams, Hamilton, và Madison. Họ đều đóng vai trò quan trọng trong việc thành lập nước Mỹ.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1560,6 +1678,7 @@
       "question_vi": "Tại sao lá cờ có 13 sọc?",
       "answers_en": ["Because there were 13 original colonies", "Because the stripes represent the original colonies"],
       "answers_vi": ["Vì có 13 thuộc địa ban đầu", "Vì các sọc đại diện cho các thuộc địa ban đầu"],
+      "explanation_en": "The 13 stripes represent the 13 original colonies that broke from Britain in 1776. The number of stripes does not change when new states join.",
       "explanation_vi": "13 sọc tượng trưng cho 13 thuộc địa ban đầu tách khỏi Anh năm 1776. Số sọc không thay đổi khi các tiểu bang mới gia nhập.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1573,6 +1692,7 @@
       "question_vi": "Tên của quốc ca là gì?",
       "answers_en": ["The Star-Spangled Banner"],
       "answers_vi": ["The Star-Spangled Banner"],
+      "explanation_en": "\"The Star-Spangled Banner\" was written by Francis Scott Key in 1814 during the Battle of Fort McHenry. It became the national anthem in 1931.",
       "explanation_vi": "\"The Star-Spangled Banner\" được viết bởi Francis Scott Key năm 1814 trong trận Fort McHenry. Trở thành quốc ca năm 1931.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1586,6 +1706,7 @@
       "question_vi": "Khi nào chúng ta kỷ niệm Ngày Độc lập?",
       "answers_en": ["July 4"],
       "answers_vi": ["4 tháng 7"],
+      "explanation_en": "July 4 commemorates the adoption of the Declaration of Independence in 1776. Americans celebrate with fireworks, BBQ, and parades.",
       "explanation_vi": "Ngày 4 tháng 7 kỷ niệm ngày thông qua Tuyên ngôn Độc lập năm 1776. Người Mỹ ăn mừng bằng pháo hoa, BBQ, và diễu hành.",
       "is_65_20": true,
       "is_dynamic": false
@@ -1599,6 +1720,7 @@
       "question_vi": "Những màu nào trên lá cờ Mỹ?",
       "answers_en": ["Red, white, and blue"],
       "answers_vi": ["Đỏ, trắng, và xanh"],
+      "explanation_en": "Red symbolizes bravery, white symbolizes purity, and blue symbolizes justice and perseverance.",
       "explanation_vi": "Đỏ tượng trưng cho dũng cảm, trắng cho tinh khiết, và xanh cho công lý và bền bỉ.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1612,6 +1734,7 @@
       "question_vi": "Ngày Tưởng niệm là gì?",
       "answers_en": ["A day to honor soldiers who died in military service"],
       "answers_vi": ["Một ngày để tưởng nhớ các quân nhân đã hy sinh trong quân đội"],
+      "explanation_en": "Memorial Day (last Monday in May) honors those who died while serving in the U.S. military.",
       "explanation_vi": "Memorial Day (cuối tháng 5) tưởng nhớ những người đã hy sinh trong khi phục vụ trong quân đội Hoa Kỳ.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1625,6 +1748,7 @@
       "question_vi": "Ngày Cựu chiến binh là gì?",
       "answers_en": ["A day to honor people who served in the military", "A day to honor people who have served in the U.S. military"],
       "answers_vi": ["Một ngày để vinh danh những người đã phục vụ trong quân đội", "Một ngày để vinh danh những người đã phục vụ trong quân đội Hoa Kỳ"],
+      "explanation_en": "Veterans Day (November 11) honors all who have served in the military, living or deceased.",
       "explanation_vi": "Veterans Day (11 tháng 11) vinh danh tất cả những người đã phục vụ trong quân đội, còn sống hoặc đã mất.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1638,6 +1762,7 @@
       "question_vi": "Lễ Tạ ơn là gì?",
       "answers_en": ["A holiday to give thanks", "A day to remember the first Thanksgiving feast between the Pilgrims and Native Americans"],
       "answers_vi": ["Một ngày lễ để bày tỏ lòng biết ơn", "Một ngày để nhớ bữa tiệc Tạ ơn đầu tiên giữa người Pilgrims và người Mỹ bản địa"],
+      "explanation_en": "Thanksgiving (4th Thursday of November) commemorates the 1621 feast between Pilgrims and Wampanoag. Families gather and eat turkey.",
       "explanation_vi": "Thanksgiving (Thứ Năm tuần 4 tháng 11) kỷ niệm bữa tiệc năm 1621 giữa người Pilgrim và người Wampanoag. Gia đình sum họp và ăn gà tây.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1651,6 +1776,7 @@
       "question_vi": "Tượng Nữ thần Tự do là gì?",
       "answers_en": ["A symbol of freedom", "A symbol of the United States", "A gift from France"],
       "answers_vi": ["Biểu tượng của tự do", "Biểu tượng của Hoa Kỳ", "Một món quà từ Pháp"],
+      "explanation_en": "The Statue of Liberty was a gift from France in 1886, symbolizing freedom and welcoming immigrants to America.",
       "explanation_vi": "Tượng Nữ thần Tự do là món quà từ Pháp năm 1886, tượng trưng cho tự do và chào đón người nhập cư đến Mỹ.",
       "is_65_20": true,
       "is_dynamic": false
@@ -1664,6 +1790,7 @@
       "question_vi": "Tại sao chúng ta treo cờ Mỹ?",
       "answers_en": ["To show patriotism", "To honor our country"],
       "answers_vi": ["Để thể hiện lòng yêu nước", "Để tôn vinh đất nước"],
+      "explanation_en": "The American flag is a national symbol. Flying it shows patriotism and respect for those who sacrificed for the country.",
       "explanation_vi": "Lá cờ Mỹ là biểu tượng quốc gia. Treo cờ thể hiện lòng yêu nước và tôn trọng những người đã hy sinh vì đất nước.",
       "is_65_20": false,
       "is_dynamic": false
@@ -1677,6 +1804,7 @@
       "question_vi": "Kể tên hai ngày lễ Mỹ.",
       "answers_en": ["New Year's Day", "Martin Luther King Jr. Day", "Presidents' Day", "Memorial Day", "Independence Day", "Labor Day", "Columbus Day", "Veterans Day", "Thanksgiving", "Christmas"],
       "answers_vi": ["Ngày Năm mới", "Ngày Martin Luther King Jr.", "Ngày Tổng thống", "Ngày Tưởng niệm", "Ngày Độc lập", "Ngày Lao động", "Ngày Columbus", "Ngày Cựu chiến binh", "Lễ Tạ ơn", "Giáng sinh"],
+      "explanation_en": "The U.S. has 11 federal holidays. The most important include Independence Day (July 4), Thanksgiving, and Christmas.",
       "explanation_vi": "Hoa Kỳ có 11 ngày lễ liên bang. Các ngày lễ quan trọng nhất bao gồm Ngày Độc lập (4/7), Lễ Tạ ơn, và Giáng sinh.",
       "is_65_20": false,
       "is_dynamic": false
