@@ -7,6 +7,7 @@ import { ExternalLink } from 'lucide-react';
 
 export function Footer() {
   const t = useTranslations('footer');
+  const tHeader = useTranslations('header');
   const locale = useLocale();
 
   const footerLinks = [
@@ -24,13 +25,13 @@ export function Footer() {
           <Link href={`/${locale}`} className="flex items-center gap-3 mb-4">
             <Image
               src="/logo.png"
-              alt={locale === 'vi' ? 'Công Dân Mỹ' : 'U.S. Citizenship'}
+              alt={t('links.about')}
               width={48}
               height={48}
               className="w-12 h-12 object-contain"
             />
             <span className="font-bold text-lg text-gray-900 dark:text-white">
-              {locale === 'vi' ? 'Công Dân Mỹ' : 'U.S. Citizenship'}
+              {tHeader('siteName')}
             </span>
           </Link>
         </div>
@@ -57,7 +58,7 @@ export function Footer() {
               href="https://www.uscis.gov/citizenship/testupdates"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`${t('official')} (${locale === 'vi' ? 'mở trong tab mới' : 'opens in new tab'})`}
+              aria-label={`${t('official')} (${t('opensNewTab')})`}
               className="inline-flex items-center gap-1 text-sm text-blue-800 dark:text-blue-400 hover:text-blue-900 dark:hover:text-blue-300 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-800 rounded"
             >
               {t('official')}

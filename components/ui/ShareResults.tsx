@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import { Share2, Copy, Check, Twitter, Facebook, Linkedin, Mail, MessageCircle, X } from 'lucide-react';
 import { Button } from './Button';
 import type { Locale } from '@/types';
@@ -15,6 +16,7 @@ interface ShareResultsProps {
 }
 
 export function ShareResults({ locale, score, total, passed, timeSpent, mode = 'standard' }: ShareResultsProps) {
+  const t = useTranslations('share');
   const [copied, setCopied] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -46,9 +48,7 @@ export function ShareResults({ locale, score, total, passed, timeSpent, mode = '
     return '📚';
   };
 
-  const shareText = locale === 'vi'
-    ? `${getEmoji()} Tôi vừa đạt ${score}/${total} (${percentage}%) trong bài thi quốc tịch Mỹ${mode === '65_20' ? ' (65/20)' : ''}! ${passed ? 'ĐẬU!' : 'Còn phải cố gắng thêm!'}${timeSpent ? ` ⏱️ ${formatTime(timeSpent)}` : ''} Học cùng tôi tại:`
-    : `${getEmoji()} I just scored ${score}/${total} (${percentage}%) on the U.S. Citizenship Practice Test${mode === '65_20' ? ' (65/20)' : ''}! ${passed ? 'PASSED!' : 'Still working on it!'}${timeSpent ? ` ⏱️ ${formatTime(timeSpent)}` : ''} Study with me at:`;
+  const shareText = t('shareText', { emoji: getEmoji(), score, total, percentage, mode: mode === '65_20' ? ' (65/20)' : '', status: passed ? t('passed') : t('stillWorking'), time: timeSpent ? ` ${formatTime(timeSpent)}` : '' });
 
   const shareUrl = typeof window !== 'undefined' ? window.location.origin : 'https://congdan.us';
 
@@ -56,7 +56,7 @@ export function ShareResults({ locale, score, total, passed, timeSpent, mode = '
     if (navigator.share) {
       try {
         await navigator.share({
-          title: locale === 'vi' ? 'Kết quả thi quốc tịch Mỹ' : 'U.S. Citizenship Test Results',
+          title: t('shareTitle'),
           text: shareText,
           url: shareUrl,
         });
@@ -114,11 +114,7 @@ export function ShareResults({ locale, score, total, passed, timeSpent, mode = '
   };
 
   const handleEmailShare = () => {
-    const subject = encodeURIComponent(
-      locale === 'vi'
-        ? `Kết quả thi quốc tịch Mỹ - ${score}/${total}`
-        : `U.S. Citizenship Test Results - ${score}/${total}`
-    );
+    const subject = encodeURIComponent(t('emailSubject', { score, total }));
     const body = encodeURIComponent(`${shareText}\n\n${shareUrl}`);
     window.location.href = `mailto:?subject=${subject}&body=${body}`;
     setShowOptions(false);
@@ -127,9 +123,7 @@ export function ShareResults({ locale, score, total, passed, timeSpent, mode = '
   const shareOptions = [
     {
       id: 'copy',
-      label: copied
-        ? locale === 'vi' ? 'Đã sao chép!' : 'Copied!'
-        : locale === 'vi' ? 'Sao chép liên kết' : 'Copy Link',
+      label: copied ? t('copied') : t('copyLink'),
       icon: copied ? Check : Copy,
       color: copied ? 'text-green-500' : 'text-gray-500',
       onClick: handleCopy,
@@ -164,7 +158,7 @@ export function ShareResults({ locale, score, total, passed, timeSpent, mode = '
     },
     {
       id: 'email',
-      label: locale === 'vi' ? 'Email' : 'Email',
+      label: 'Email',
       icon: Mail,
       color: 'text-gray-600 dark:text-gray-400',
       onClick: handleEmailShare,
@@ -181,7 +175,7 @@ export function ShareResults({ locale, score, total, passed, timeSpent, mode = '
         aria-haspopup="true"
       >
         <Share2 className="w-4 h-4 mr-2" />
-        {locale === 'vi' ? 'Chia sẻ' : 'Share'}
+        {t('share')}
       </Button>
 
       {/* Share options dropdown */}
@@ -189,13 +183,13 @@ export function ShareResults({ locale, score, total, passed, timeSpent, mode = '
         <div
           className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-gray-200 dark:border-slate-700 p-2 min-w-[220px] z-50"
           role="menu"
-          aria-label={locale === 'vi' ? 'Tùy chọn chia sẻ' : 'Share options'}
+          aria-label={t('shareOptions')}
         >
           {/* Close button for accessibility */}
           <button
             onClick={() => setShowOptions(false)}
             className="absolute top-2 right-2 p-1 rounded hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors"
-            aria-label={locale === 'vi' ? 'Đóng' : 'Close'}
+            aria-label={t('close')}
           >
             <X className="w-3 h-3 text-gray-400" />
           </button>
@@ -203,7 +197,7 @@ export function ShareResults({ locale, score, total, passed, timeSpent, mode = '
           {/* Preview of what will be shared */}
           <div className="px-3 py-2 mb-2 bg-gray-50 dark:bg-slate-900 rounded-lg">
             <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">
-              {locale === 'vi' ? 'Xem trước:' : 'Preview:'}
+              {t('preview')}
             </p>
             <p className="text-xs text-gray-700 dark:text-gray-300 line-clamp-2">
               {shareText}

@@ -171,7 +171,7 @@ export default function TestSessionPage() {
       <div className="container mx-auto px-4 py-8">
         <Card className="text-center py-12">
           <p className="text-gray-500 dark:text-gray-400">
-            {locale === 'vi' ? 'Đang tải...' : 'Loading...'}
+            {t('loading')}
           </p>
         </Card>
       </div>
@@ -192,7 +192,7 @@ export default function TestSessionPage() {
         <div className="flex items-center justify-between">
           <div>
             <span className="text-sm text-gray-500 dark:text-gray-400">
-              {locale === 'vi' ? 'Câu hỏi' : 'Question'} {questionIndex + 1}/
+              {t('question')} {questionIndex + 1}/
               {totalQuestions}
             </span>
             {session.mode === '65_20' && (
@@ -214,7 +214,7 @@ export default function TestSessionPage() {
           color="blue"
           size="sm"
           showLabel
-          label={`${answeredCount}/${totalQuestions} ${locale === 'vi' ? 'đã trả lời' : 'answered'}`}
+          label={`${answeredCount}/${totalQuestions} ${t('answered')}`}
         />
       </div>
 
@@ -254,7 +254,7 @@ export default function TestSessionPage() {
           {currentQuestion.is_dynamic && (
             <Badge variant="error" className="flex items-center gap-1">
               <AlertCircle className="w-3 h-3" />
-              {locale === 'vi' ? 'Có thể thay đổi' : 'May change'}
+              {t('mayChange')}
             </Badge>
           )}
         </div>
@@ -290,7 +290,7 @@ export default function TestSessionPage() {
         {/* Answer Mode Toggle */}
         <div className="flex items-center justify-between mb-4 pb-4 border-b border-gray-200 dark:border-slate-700">
           <span className="text-sm text-gray-600 dark:text-gray-400">
-            {locale === 'vi' ? 'Chế độ trả lời:' : 'Answer mode:'}
+            {t('answerMode')}
           </span>
           <button
             onClick={toggleAnswerMode}
@@ -299,12 +299,12 @@ export default function TestSessionPage() {
             {answerMode === 'text' ? (
               <>
                 <Type className="w-4 h-4" />
-                <span>{locale === 'vi' ? 'Tự nhập' : 'Text Input'}</span>
+                <span>{t('textInput')}</span>
               </>
             ) : (
               <>
                 <ListChecks className="w-4 h-4" />
-                <span>{locale === 'vi' ? 'Trắc nghiệm' : 'Multiple Choice'}</span>
+                <span>{t('multipleChoice')}</span>
               </>
             )}
           </button>
@@ -315,7 +315,7 @@ export default function TestSessionPage() {
           {answerMode === 'text' ? (
             <div>
               <label className="block text-sm font-medium text-gray-700 dark:text-slate-300 mb-2">
-                {locale === 'vi' ? 'Câu trả lời của bạn:' : 'Your answer:'}
+                {t('yourAnswer')}
               </label>
               <div className="flex gap-2">
                 <input
@@ -327,11 +327,7 @@ export default function TestSessionPage() {
                       handleSubmitAnswer();
                     }
                   }}
-                  placeholder={
-                    locale === 'vi'
-                      ? 'Nhập câu trả lời...'
-                      : 'Type your answer...'
-                  }
+                  placeholder={t('typeAnswer')}
                   className="flex-1 px-4 py-2 border border-gray-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-slate-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   disabled={showFeedback}
                 />
@@ -367,14 +363,14 @@ export default function TestSessionPage() {
                   <>
                     <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-400" />
                     <span className="font-semibold text-green-800 dark:text-green-300">
-                      {locale === 'vi' ? 'Chính xác!' : 'Correct!'}
+                      {t('correct')}
                     </span>
                   </>
                 ) : (
                   <>
                     <XCircle className="w-5 h-5 text-red-600 dark:text-red-400" />
                     <span className="font-semibold text-red-800 dark:text-red-300">
-                      {locale === 'vi' ? 'Chưa đúng' : 'Incorrect'}
+                      {t('incorrect')}
                     </span>
                   </>
                 )}
@@ -382,7 +378,7 @@ export default function TestSessionPage() {
 
               <div className="mt-3">
                 <p className="text-sm font-medium text-gray-700 dark:text-slate-300 mb-1">
-                  {locale === 'vi' ? 'Đáp án đúng:' : 'Correct answers:'}
+                  {t('correctAnswers')}
                 </p>
                 <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 space-y-1">
                   {(locale === 'vi'
@@ -397,7 +393,7 @@ export default function TestSessionPage() {
               {currentQuestion.explanation_vi && locale === 'vi' && (
                 <div className="mt-3 pt-3 border-t border-green-200 dark:border-green-700">
                   <p className="text-sm text-gray-700 dark:text-slate-300">
-                    <span className="font-medium">Giải thích: </span>
+                    <span className="font-medium">{t('explanation')} </span>
                     {currentQuestion.explanation_vi}
                   </p>
                 </div>
@@ -415,26 +411,26 @@ export default function TestSessionPage() {
           disabled={isFirstQuestion}
         >
           <ChevronLeft className="w-4 h-4 mr-1" />
-          {locale === 'vi' ? 'Câu trước' : 'Previous'}
+          {t('previous')}
         </Button>
 
         <div className="flex gap-2">
           {answeredCount === totalQuestions && (
             <Button variant="primary" onClick={handleFinishTest}>
-              {locale === 'vi' ? 'Nộp bài' : 'Submit Test'}
+              {t('submitTest')}
             </Button>
           )}
 
           {!isLastQuestion && (
             <Button onClick={handleNext}>
-              {locale === 'vi' ? 'Câu sau' : 'Next'}
+              {t('next')}
               <ChevronRight className="w-4 h-4 ml-1" />
             </Button>
           )}
 
           {isLastQuestion && answeredCount < totalQuestions && (
             <Button variant="secondary" onClick={handleFinishTest}>
-              {locale === 'vi' ? 'Nộp bài' : 'Submit Test'}
+              {t('submitTest')}
             </Button>
           )}
         </div>
@@ -443,9 +439,7 @@ export default function TestSessionPage() {
       {/* Unanswered warning */}
       {answeredCount < totalQuestions && (
         <p className="text-center text-sm text-amber-600 dark:text-amber-400 mt-4">
-          {locale === 'vi'
-            ? `Còn ${totalQuestions - answeredCount} câu chưa trả lời`
-            : `${totalQuestions - answeredCount} questions unanswered`}
+          {t('questionsUnanswered', { count: totalQuestions - answeredCount })}
         </p>
       )}
     </div>

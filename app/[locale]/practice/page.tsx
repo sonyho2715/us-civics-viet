@@ -65,21 +65,21 @@ export default function PracticePage() {
             <div>
               <div className="text-3xl font-bold text-blue-800 dark:text-blue-300">{testsCompleted}</div>
               <div className="text-sm text-blue-600 dark:text-blue-400">
-                {locale === 'vi' ? 'Bài đã thi' : 'Tests taken'}
+                {t('testsTaken')}
               </div>
             </div>
             <div className="w-px h-12 bg-blue-200 dark:bg-blue-700" />
             <div>
               <div className="text-3xl font-bold text-green-600 dark:text-green-400">{testsPassed}</div>
               <div className="text-sm text-green-600 dark:text-green-400">
-                {locale === 'vi' ? 'Đã đậu' : 'Passed'}
+                {t('passed')}
               </div>
             </div>
             <div className="w-px h-12 bg-blue-200 dark:bg-blue-700" />
             <div>
               <div className="text-3xl font-bold text-amber-600 dark:text-amber-400">{passRate}%</div>
               <div className="text-sm text-amber-600 dark:text-amber-400">
-                {locale === 'vi' ? 'Tỷ lệ đậu' : 'Pass rate'}
+                {t('passRate')}
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@ export default function PracticePage() {
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center gap-2 text-gray-600 dark:text-slate-400">
                     <FileQuestion className="w-4 h-4" />
-                    <span>{option.questions} {locale === 'vi' ? 'câu hỏi' : 'questions'}</span>
+                    <span>{option.questions} {t('questions')}</span>
                   </div>
                   <div className="flex items-center gap-2 text-gray-600 dark:text-slate-400">
                     <CheckCircle2 className="w-4 h-4 text-green-500" />
@@ -144,12 +144,12 @@ export default function PracticePage() {
       {/* Settings */}
       <Card>
         <h3 className="font-semibold text-gray-900 dark:text-white mb-4">
-          {locale === 'vi' ? 'Cài đặt bài thi' : 'Test Settings'}
+          {t('testSettings')}
         </h3>
         <div className="space-y-4">
           <label className="flex items-center justify-between cursor-pointer">
             <span className="text-gray-700 dark:text-slate-300">
-              {locale === 'vi' ? 'Hiện đáp án ngay sau mỗi câu' : 'Show answer after each question'}
+              {t('showAnswerAfterEach')}
             </span>
             <input
               type="checkbox"
@@ -160,7 +160,7 @@ export default function PracticePage() {
           </label>
           <label className="flex items-center justify-between cursor-pointer">
             <span className="text-gray-700 dark:text-slate-300">
-              {locale === 'vi' ? 'Bật đồng hồ đếm thời gian' : 'Enable timer'}
+              {t('enableTimer')}
             </span>
             <input
               type="checkbox"

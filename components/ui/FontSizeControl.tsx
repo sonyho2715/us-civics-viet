@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { Type, Minus, Plus } from 'lucide-react';
 import { useFontSizeStore, FONT_SIZE_VALUES, type FontSize } from '@/stores/fontSizeStore';
 import type { Locale } from '@/types';
@@ -13,6 +14,7 @@ interface FontSizeControlProps {
 const FONT_SIZES: FontSize[] = ['small', 'medium', 'large', 'xlarge'];
 
 export function FontSizeControl({ locale, compact = false }: FontSizeControlProps) {
+  const t = useTranslations('fontSize');
   const { fontSize, setFontSize } = useFontSizeStore();
   const [mounted, setMounted] = useState(false);
 
@@ -55,7 +57,7 @@ export function FontSizeControl({ locale, compact = false }: FontSizeControlProp
           onClick={handleDecrease}
           disabled={currentIndex === 0}
           className="p-1.5 rounded hover:bg-gray-200 dark:hover:bg-slate-600 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-          title={locale === 'vi' ? 'Giảm cỡ chữ' : 'Decrease font size'}
+          title={t('decrease')}
         >
           <Minus className="w-4 h-4 text-gray-600 dark:text-slate-300" />
         </button>
@@ -66,7 +68,7 @@ export function FontSizeControl({ locale, compact = false }: FontSizeControlProp
           onClick={handleIncrease}
           disabled={currentIndex === FONT_SIZES.length - 1}
           className="p-1.5 rounded hover:bg-gray-200 dark:hover:bg-slate-600 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-          title={locale === 'vi' ? 'Tăng cỡ chữ' : 'Increase font size'}
+          title={t('increase')}
         >
           <Plus className="w-4 h-4 text-gray-600 dark:text-slate-300" />
         </button>
@@ -80,7 +82,7 @@ export function FontSizeControl({ locale, compact = false }: FontSizeControlProp
         <div className="flex items-center gap-2">
           <Type className="w-5 h-5 text-blue-600 dark:text-blue-400" />
           <span className="font-medium text-gray-900 dark:text-white">
-            {locale === 'vi' ? 'Cỡ Chữ' : 'Font Size'}
+            {t('title')}
           </span>
         </div>
         <span className="text-sm text-gray-500 dark:text-gray-400">
@@ -94,7 +96,7 @@ export function FontSizeControl({ locale, compact = false }: FontSizeControlProp
           onClick={handleDecrease}
           disabled={currentIndex === 0}
           className="p-2 rounded-lg bg-gray-100 dark:bg-slate-700 hover:bg-gray-200 dark:hover:bg-slate-600 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-          title={locale === 'vi' ? 'Giảm cỡ chữ' : 'Decrease font size'}
+          title={t('decrease')}
         >
           <Minus className="w-5 h-5 text-gray-600 dark:text-slate-300" />
         </button>
@@ -124,7 +126,7 @@ export function FontSizeControl({ locale, compact = false }: FontSizeControlProp
           onClick={handleIncrease}
           disabled={currentIndex === FONT_SIZES.length - 1}
           className="p-2 rounded-lg bg-gray-100 dark:bg-slate-700 hover:bg-gray-200 dark:hover:bg-slate-600 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-          title={locale === 'vi' ? 'Tăng cỡ chữ' : 'Increase font size'}
+          title={t('increase')}
         >
           <Plus className="w-5 h-5 text-gray-600 dark:text-slate-300" />
         </button>
@@ -136,9 +138,7 @@ export function FontSizeControl({ locale, compact = false }: FontSizeControlProp
           className="text-gray-700 dark:text-slate-300 transition-all"
           style={{ fontSize: `calc(1rem * ${FONT_SIZE_VALUES[fontSize].scale})` }}
         >
-          {locale === 'vi'
-            ? 'Ví dụ: Bạn có thể điều chỉnh cỡ chữ để dễ đọc hơn.'
-            : 'Example: You can adjust the font size for easier reading.'}
+          {t('example')}
         </p>
       </div>
     </div>

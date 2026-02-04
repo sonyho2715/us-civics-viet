@@ -19,33 +19,26 @@
     "community": "Community"
   },
   "home": {
-    "hero": {
-      "title": "Prepare for the 2025 U.S. Citizenship Test",
-      "subtitle": "128 latest questions with Vietnamese explanations",
-      "cta": "Start Learning Now"
-    },
-    "features": {
-      "bilingual": {
-        "title": "128 Bilingual Questions",
-        "description": "Learn in Vietnamese and English"
+    "learningProgress": "Your Learning Progress",
+    "howItWorks": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Study 128 questions",
+        "desc": "Read and understand each question with Vietnamese explanations"
       },
-      "practice": {
-        "title": "Realistic Practice Tests",
-        "description": "Practice tests with instant scoring"
+      "step2": {
+        "title": "Practice test",
+        "desc": "Take a 20-question practice test to check your knowledge"
       },
-      "senior": {
-        "title": "65/20 Mode",
-        "description": "For seniors 65 years and older"
-      },
-      "mobile": {
-        "title": "Learn Anytime",
-        "description": "Optimized for mobile devices"
+      "step3": {
+        "title": "Review mistakes",
+        "desc": "Review incorrect answers and study again"
       }
     },
-    "stats": {
-      "questions": "Questions",
-      "passRate": "Pass Rate",
-      "users": "Users"
+    "cta": {
+      "title": "Ready to become a U.S. citizen?",
+      "subtitle": "Start studying today and prepare well for your citizenship test.",
+      "button": "Start Learning"
     }
   },
   "study": {
@@ -65,34 +58,18 @@
     "noResults": "No questions found",
     "progress": "Study Progress",
     "studied": "Studied",
-    "remaining": "Remaining"
+    "remaining": "Remaining",
+    "print": "Print",
+    "correctAnswers": "Correct answer(s):"
   },
   "practice": {
-    "title": "Practice Test",
-    "subtitle": "Test your knowledge",
-    "standardTest": {
-      "title": "Standard Test",
-      "description": "20 random questions",
-      "passRequirement": "Need 12/20 correct to pass"
-    },
-    "seniorTest": {
-      "title": "65/20 Senior Test",
-      "description": "10 questions for seniors",
-      "passRequirement": "Need 6/10 correct to pass"
-    },
-    "startTest": "Start Test",
-    "question": "Question",
-    "of": "of",
-    "submit": "Submit",
-    "next": "Next",
-    "previous": "Previous",
-    "finish": "Finish",
-    "confirmSubmit": "Are you sure you want to submit?",
-    "unanswered": "You have {count} unanswered questions",
-    "timer": "Time",
-    "selectAnswer": "Select an answer",
-    "yourAnswer": "Your answer",
-    "correctAnswer": "Correct answer"
+    "testsTaken": "Tests taken",
+    "passed": "Passed",
+    "passRate": "Pass rate",
+    "questions": "questions",
+    "testSettings": "Test Settings",
+    "showAnswerAfterEach": "Show answer after each question",
+    "enableTimer": "Enable timer"
   },
   "results": {
     "title": "Test Results",
@@ -111,9 +88,31 @@
       "excellent": "Excellent! You're ready for the real test!",
       "good": "Good job! Keep studying to improve.",
       "needsWork": "Review the questions you missed!"
-    }
+    },
+    "loading": "Loading results...",
+    "time": "Time",
+    "needToPass": "Need {count} to pass",
+    "retakeTest": "Retake Test",
+    "reviewWrong": "Review {count} Wrong",
+    "studyMore": "Study More",
+    "home": "Home",
+    "incorrectAnswers": "Incorrect Answers",
+    "correctAnswersReview": "Correct Answers",
+    "yourAnswer": "Your answer: ",
+    "noAnswer": "(No answer)",
+    "readyForTest": "You are ready for the actual test!",
+    "reviewAndTryAgain": "Review the incorrect questions and try again!",
+    "congratulations": "Congratulations! You Passed!",
+    "notPassed": "Not Passed",
+    "mayChange": "May change",
+    "explanation": "Explanation:"
   },
   "test": {
+    "answerMode": "Answer mode:",
+    "textInput": "Text Input",
+    "multipleChoice": "Multiple Choice",
+    "submitTest": "Submit Test",
+    "questionsUnanswered": "{count} questions unanswered",
     "loading": "Loading...",
     "question": "Question",
     "answered": "answered",
@@ -125,13 +124,11 @@
     "incorrect": "Incorrect",
     "previous": "Previous",
     "next": "Next",
-    "submit": "Submit Test",
-    "unanswered": "questions unanswered",
     "mayChange": "May change"
   },
   "flashcards": {
     "title": "Flashcards",
-    "subtitle": "Quick study with flip cards",
+    "subtitle": "Study with flashcards",
     "tapToFlip": "Tap to flip",
     "showQuestion": "Show question",
     "showAnswer": "Show answer",
@@ -139,27 +136,65 @@
     "markLearned": "Learned",
     "markReview": "Need Review",
     "shuffle": "Shuffle",
-    "reset": "Start Over",
+    "reset": "Reset",
     "learned": "Learned",
     "needsReview": "Need Review",
-    "remaining": "Remaining"
+    "remaining": "Remaining",
+    "allFilter": "All",
+    "unstudied": "Unstudied",
+    "bookmarkedFilter": "Bookmarked",
+    "wrong": "Wrong",
+    "due": "Due",
+    "americanGovernment": "American Government",
+    "americanHistory": "American History",
+    "symbolsHolidays": "Symbols & Holidays",
+    "noCardsMatch": "No cards match this filter",
+    "viewAll": "View All",
+    "viewedThisSession": "viewed this session",
+    "clickToFlip": "Click the card or press Space to flip",
+    "clickToFlipCard": "Click to flip card",
+    "filters": "Filters",
+    "categories": "Categories",
+    "answer": "Answer",
+    "didntKnow": "Didn't Know",
+    "knewIt": "Knew It",
+    "markDidntKnow": "Mark as didn't know",
+    "markKnewIt": "Mark as knew it",
+    "rateToContinue": "Rate to continue",
+    "clickToSeeQuestion": "Click to see question",
+    "clickToSeeAnswer": "Click to see answer",
+    "bookmark": "Bookmark",
+    "removeBookmark": "Remove bookmark",
+    "listenEnglish": "Listen in English",
+    "listenAnswerEnglish": "Listen to answer in English",
+    "explanation": "Explanation:",
+    "previous": "Previous",
+    "next": "Next",
+    "previousCard": "Previous card",
+    "nextCard": "Next card",
+    "shortcuts": "Shortcuts: Space (flip), ← → (navigate)"
   },
   "senior": {
-    "title": "65/20 Mode",
-    "subtitle": "For applicants 65+ who have lived in the U.S. for 20+ years",
-    "description": "If you are 65 years or older and have lived in the United States as a permanent resident for at least 20 years, you only need to study the 20 questions marked with a star (★).",
-    "eligibility": {
-      "title": "Eligibility",
-      "age": "65 years or older",
-      "residence": "Permanent resident for 20+ years"
-    },
-    "testInfo": {
-      "questions": "10 questions",
-      "pass": "6 correct to pass",
-      "from": "From 20 designated questions"
-    },
-    "studyAll": "Study 20 Questions",
-    "takeTest": "Take 65/20 Test"
+    "program": "65/20 Program",
+    "forApplicants": "For applicants 65 years or older who have been permanent residents for at least 20 years",
+    "exemption": "65/20 Exemption",
+    "onlyNeedStudy": "Only need to study 20 questions (instead of 128)",
+    "testRequirement": "Test on 10 questions, need 6 correct to pass",
+    "nativeLanguage": "Can take the test in your native language",
+    "studyProgress": "Study Progress",
+    "trackProgress": "Track your progress on the 20 designated questions",
+    "studied": "studied",
+    "allStudied": "Great! You have studied all 20 questions. Try a practice test!",
+    "remaining": "questions remaining to study",
+    "practiceTest": "65/20 Practice Test",
+    "randomQuestions": "10 random questions from the 20 designated questions",
+    "startPracticeTest": "Start Practice Test",
+    "designatedQuestions": "20 Designated Questions",
+    "hide": "Hide",
+    "view": "View",
+    "officialList": "Official 65/20 Question Numbers",
+    "questionsNumbered": "Questions numbered:",
+    "source": "Source: USCIS - These questions are selected from the standard 128 question list."
   },
   "common": {
     "loading": "Loading...",
@@ -297,45 +332,210 @@
         "mistake4": "Forgetting that you can ask for clarification",
         "mistake5": "Not reviewing your N-400 before the interview"
       }
-    }
+    },
+    "standardDescription": "Questions from all 128 civics questions",
+    "seniorDescription": "For seniors 65+ living in U.S. 20+ years"
   },
   "achievements": {
-    "title": "Achievements",
-    "subtitle": "Unlock achievements as you learn and progress",
+    "newAchievementBanner": "New Achievement!",
+    "justUnlockedOne": "You just unlocked {count} new achievement!",
+    "justUnlockedMultiple": "You just unlocked {count} new achievements!",
+    "levelAndXP": "Level & Experience",
+    "earnXPByUnlocking": "Earn XP by unlocking achievements",
     "level": "Level",
-    "totalXP": "total XP",
-    "progressToNextLevel": "Progress to next level",
-    "xpRemaining": "XP remaining",
-    "maxLevel": "Max level!",
+    "progressToNext": "Progress to next level",
+    "remaining": "remaining",
     "keepUnlocking": "Keep unlocking achievements to level up!",
     "statistics": "Statistics",
     "achievementsUnlocked": "Achievements Unlocked",
     "totalXPEarned": "Total XP Earned",
-    "newAchievement": "New Achievement!",
-    "justUnlocked": "You just unlocked {count} new achievement",
-    "justUnlockedPlural": "You just unlocked {count} new achievements",
-    "earnXP": "Earn XP by unlocking achievements",
-    "sections": {
-      "gettingStarted": "Getting Started",
-      "studyStreaks": "Study Streaks",
-      "categoryMastery": "Category Mastery",
-      "expertLevel": "Expert Level",
-      "special": "Special"
-    },
-    "status": {
-      "unlocked": "Unlocked",
-      "locked": "Locked"
-    }
+    "gettingStarted": "Getting Started",
+    "studyStreaks": "Study Streaks",
+    "categoryMastery": "Category Mastery",
+    "expertLevel": "Expert Level",
+    "special": "Special",
+    "unlocked": "Unlocked",
+    "locked": "Locked"
   },
   "footer": {
     "disclaimer": "This app is for educational purposes only and is not affiliated with USCIS or the U.S. government. Information may change. Please verify the latest information on the official USCIS website before your interview.",
     "official": "Official USCIS website",
     "copyright": "© 2026 U.S. Citizenship. All rights reserved.",
+    "opensNewTab": "opens in new tab",
     "links": {
       "about": "About Us",
       "contact": "Contact",
       "privacy": "Privacy",
       "terms": "Terms"
     }
+  },
+  "header": {
+    "siteName": "U.S. Citizenship",
+    "mainNavigation": "Main navigation",
+    "interviewSimulation": "Interview Simulation"
+  },
+  "streak": {
+    "dayStreak": "Day Streak",
+    "days": "days",
+    "best": "Best",
+    "todaysGoal": "Today's Goal",
+    "studied": "Studied",
+    "tests": "Tests",
+    "cards": "Cards",
+    "startStudying": "Start studying to begin your streak!",
+    "oneWeek": "1 Week",
+    "oneMonth": "1 Month",
+    "hundredDays": "100 Days"
+  },
+  "categoryMastery": {
+    "title": "Category Progress",
+    "overall": "Overall",
+    "master": "Master",
+    "proficient": "Proficient",
+    "learning": "Learning",
+    "beginner": "Beginner"
+  },
+  "fontSize": {
+    "title": "Font Size",
+    "decrease": "Decrease font size",
+    "increase": "Increase font size",
+    "example": "Example: You can adjust the font size for easier reading."
+  },
+  "dashboard": {
+    "title": "Progress Dashboard",
+    "subtitle": "Track your learning progress and get personalized recommendations",
+    "localStorageNotice": "Your progress is saved on this device only. If you use a different device, your progress will not sync.",
+    "questionsStudied": "Questions Studied",
+    "complete": "complete",
+    "accuracy": "Accuracy",
+    "correct": "correct",
+    "streak": "Streak",
+    "longest": "Longest",
+    "passRate": "Pass Rate",
+    "tests": "tests",
+    "readinessScore": "Readiness Score",
+    "readinessDescription": "Predicted test readiness based on your progress",
+    "score": "score",
+    "coverage": "Coverage",
+    "consistency": "Consistency",
+    "readyMessage": "You're ready! Try taking a full practice test.",
+    "almostMessage": "Almost there! Focus on your weak areas.",
+    "keepGoingMessage": "Keep going! Study consistently every day.",
+    "activityCalendar": "Activity Calendar (Last 30 Days)",
+    "darkerColors": "Darker colors = more activity",
+    "less": "Less",
+    "more": "More",
+    "currentStreak": "Current Streak",
+    "longestStreak": "Longest Streak",
+    "totalDays": "Total Days",
+    "activities": "activities",
+    "categoryMastery": "Category Mastery",
+    "masteryByCategory": "Mastery level by category",
+    "studyRecommendations": "Study Recommendations",
+    "aiSuggestions": "AI-driven suggestions for you",
+    "greatJob": "Great job!",
+    "noRecommendations": "No recommendations. You're doing great!",
+    "reviewWeakAreas": "Review Weak Areas",
+    "reviewWeakAreasDesc": "You have {count} questions to review. Focus on these to improve.",
+    "reviewNow": "Review Now",
+    "dueFlashcards": "Due Flashcards",
+    "dueFlashcardsDesc": "{count} flashcards are due for review. Review them to retain better!",
+    "reviewFlashcards": "Review Flashcards",
+    "balanceLearning": "Balance Your Learning",
+    "balanceLearningDesc": "Category \"{name}\" needs attention ({percent}%).",
+    "studyNow": "Study Now",
+    "exploreNewContent": "Explore New Content",
+    "exploreNewContentDesc": "{count} questions left to study. Explore new content!",
+    "explore": "Explore",
+    "recentActivity": "Recent Activity",
+    "studiedQuestions": "Studied Questions",
+    "questionsToday": "questions today",
+    "testsCompleted": "Tests Completed",
+    "testsToday": "tests today",
+    "flashcardsReviewed": "Flashcards Reviewed",
+    "cardsToday": "cards today",
+    "noActivityToday": "No activity today yet",
+    "startLearning": "Start Learning",
+    "quickStats": "Quick Stats",
+    "wrongAnswers": "Wrong Answers",
+    "dueFlashcardsCount": "Due Flashcards",
+    "totalFlashcards": "Total Flashcards",
+    "avgEaseFactor": "Avg. Ease Factor"
+  },
+  "share": {
+    "share": "Share",
+    "shareOptions": "Share options",
+    "close": "Close",
+    "preview": "Preview:",
+    "copyLink": "Copy Link",
+    "copied": "Copied!",
+    "shareTitle": "U.S. Citizenship Test Results",
+    "shareText": "{emoji} I just scored {score}/{total} ({percentage}%) on the U.S. Citizenship Practice Test{mode}! {status}{time} Study with me at:",
+    "emailSubject": "U.S. Citizenship Test Results - {score}/{total}",
+    "passed": "PASSED!",
+    "stillWorking": "Still working on it!"
+  },
+  "print": {
+    "title": "Print Study Sheet",
+    "selectFormat": "Select print format:",
+    "studySheet": "Study Sheet",
+    "studySheetDesc": "Questions and answers in list format",
+    "flashcards": "Flashcards",
+    "flashcardsDesc": "Print cards to cut and study",
+    "studyPlan": "Study Plan",
+    "studyPlanDesc": "4-week schedule with checklist",
+    "allQuestions": "All 128 Questions",
+    "bookmarked": "Bookmarked",
+    "needsReview": "Needs Review",
+    "americanGovernment": "American Government",
+    "americanHistory": "American History",
+    "symbolsHolidays": "Symbols & Holidays",
+    "showAnswers": "Show Answers",
+    "questionsCount": "10 questions",
+    "questions20": "20 questions",
+    "questions50": "50 questions",
+    "all": "All",
+    "willBePrinted": "{count} questions will be printed",
+    "citizenshipTest2025": "U.S. Citizenship Test 2025",
+    "flashcardsTitle": "Flashcards - U.S. Citizenship Test",
+    "cutAlongLines": "Cut along dashed lines",
+    "answer": "Answer",
+    "moreAnswers": "more",
+    "fourWeekPlan": "4-Week Study Plan",
+    "optimizedSchedule": "Optimized schedule to prepare for the citizenship test",
+    "start": "Start:",
+    "week": "Week",
+    "questions": "questions",
+    "govPart1": "American Government (Part 1)",
+    "govPart2": "American Government (Part 2)",
+    "historyTitle": "American History",
+    "symbolsReview": "Symbols & Review",
+    "goals": "Goals:",
+    "learnDaily56": "Learn 5-6 questions daily",
+    "makeFlashcards": "Make flashcards",
+    "weeklyQuiz": "Weekly quiz",
+    "reviewWeek1": "Review week 1",
+    "learnDaily67": "Learn 6-7 questions daily",
+    "reviewGovernment": "Review government",
+    "learnFinal10": "Learn final 10 questions",
+    "fullReview": "Full review",
+    "takePracticeTests": "Take practice tests",
+    "studyTips": "Study Tips",
+    "tipStudyDaily": "Study 20-30 minutes daily",
+    "tipUseFlashcards": "Use flashcards",
+    "tipWeeklyTests": "Take weekly practice tests",
+    "tipReviewMissed": "Review missed questions",
+    "cancel": "Cancel",
+    "printNow": "Print Now"
+  },
+  "multipleChoice": {
+    "selectAnswer": "Select your answer:"
+  },
+  "questionCard": {
+    "correctAnswers": "Correct answer(s):"
+  },
+  "skipLinks": {
+    "skipToMain": "Skip to main content",
+    "skipToNav": "Skip to navigation"
   }
 }

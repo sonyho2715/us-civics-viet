@@ -32,6 +32,7 @@ export default async function HomePage({ params }: HomePageProps) {
 function HomeContent({ locale }: { locale: string }) {
   const t = useTranslations('home');
   const tNav = useTranslations('nav');
+  const tHeader = useTranslations('header');
 
   const features = [
     {
@@ -77,7 +78,7 @@ function HomeContent({ locale }: { locale: string }) {
             <div className="flex justify-center mb-6">
               <Image
                 src="/logo.png"
-                alt={locale === 'vi' ? 'Công Dân Mỹ' : 'U.S. Citizenship'}
+                alt={tHeader('siteName')}
                 width={120}
                 height={120}
                 className="w-28 h-28 md:w-32 md:h-32 object-contain drop-shadow-lg"
@@ -164,9 +165,9 @@ function HomeContent({ locale }: { locale: string }) {
         <div className="container mx-auto px-4">
           <div className="max-w-md mx-auto space-y-6">
             <h2 className="text-xl font-bold text-center text-gray-900 dark:text-white">
-              {locale === 'vi' ? 'Tiến Độ Học Tập' : 'Your Learning Progress'}
+              {t('learningProgress')}
             </h2>
-            <StreakDisplay locale={locale as Locale} />
+            <StreakDisplay />
             <CategoryMastery locale={locale as Locale} />
             <FontSizeControl locale={locale as Locale} />
           </div>
@@ -177,7 +178,7 @@ function HomeContent({ locale }: { locale: string }) {
       <section className="py-16 bg-white dark:bg-slate-800 transition-colors">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
-            {locale === 'vi' ? 'Cách Sử Dụng' : 'How It Works'}
+            {t('howItWorks.title')}
           </h2>
 
           <div className="max-w-3xl mx-auto">
@@ -185,27 +186,18 @@ function HomeContent({ locale }: { locale: string }) {
               {[
                 {
                   step: 1,
-                  title: locale === 'vi' ? 'Học 128 câu hỏi' : 'Study 128 questions',
-                  desc:
-                    locale === 'vi'
-                      ? 'Đọc và hiểu từng câu hỏi với giải thích tiếng Việt'
-                      : 'Read and understand each question with Vietnamese explanations',
+                  title: t('howItWorks.step1.title'),
+                  desc: t('howItWorks.step1.desc'),
                 },
                 {
                   step: 2,
-                  title: locale === 'vi' ? 'Thi thử' : 'Practice test',
-                  desc:
-                    locale === 'vi'
-                      ? 'Làm bài thi thử 20 câu để kiểm tra kiến thức'
-                      : 'Take a 20-question practice test to check your knowledge',
+                  title: t('howItWorks.step2.title'),
+                  desc: t('howItWorks.step2.desc'),
                 },
                 {
                   step: 3,
-                  title: locale === 'vi' ? 'Ôn lại câu sai' : 'Review mistakes',
-                  desc:
-                    locale === 'vi'
-                      ? 'Xem lại các câu trả lời sai và học lại'
-                      : 'Review incorrect answers and study again',
+                  title: t('howItWorks.step3.title'),
+                  desc: t('howItWorks.step3.desc'),
                 },
               ].map((item) => (
                 <div key={item.step} className="flex items-start gap-4">
@@ -227,18 +219,14 @@ function HomeContent({ locale }: { locale: string }) {
       <section className="py-16 bg-amber-500">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            {locale === 'vi'
-              ? 'Sẵn sàng trở thành công dân Mỹ?'
-              : 'Ready to become a U.S. citizen?'}
+            {t('cta.title')}
           </h2>
           <p className="text-amber-100 mb-8 max-w-xl mx-auto">
-            {locale === 'vi'
-              ? 'Bắt đầu học ngay hôm nay và chuẩn bị tốt nhất cho bài thi quốc tịch.'
-              : 'Start studying today and prepare well for your citizenship test.'}
+            {t('cta.subtitle')}
           </p>
           <Link href={`/${locale}/study`}>
             <Button size="lg" className="bg-white text-amber-600 hover:bg-gray-100">
-              {locale === 'vi' ? 'Bắt Đầu Học' : 'Start Learning'}
+              {t('cta.button')}
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </Link>

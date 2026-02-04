@@ -166,7 +166,7 @@ export default function StudyPage() {
           >
             <Printer className="w-4 h-4" />
             <span className="hidden sm:inline">
-              {locale === 'vi' ? 'In' : 'Print'}
+              {t('print')}
             </span>
           </button>
         </div>

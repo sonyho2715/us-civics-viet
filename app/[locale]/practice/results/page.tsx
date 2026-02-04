@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
+import type { Question, Locale } from '@/types';
 import {
   Trophy,
   XCircle,
@@ -25,12 +26,12 @@ import { useTest } from '@/hooks/useTest';
 import { useWrongAnswerStore } from '@/stores/wrongAnswerStore';
 import { useStreakStore } from '@/stores/streakStore';
 import { useState, useRef } from 'react';
-import type { Locale, Question } from '@/types';
 
 export default function ResultsPage() {
   const params = useParams();
   const router = useRouter();
   const locale = params.locale as Locale;
+  const t = useTranslations('results');
 
   const { session, result, resetTest } = useTest();
   const { addWrongAnswer, wrongAnswers } = useWrongAnswerStore();
@@ -71,7 +72,7 @@ export default function ResultsPage() {
       <div className="container mx-auto px-4 py-8">
         <Card className="text-center py-12">
           <p className="text-gray-500 dark:text-gray-400">
-            {locale === 'vi' ? 'Đang tải kết quả...' : 'Loading results...'}
+            {t('loading')}
           </p>
         </Card>
       </div>
@@ -85,7 +86,7 @@ export default function ResultsPage() {
     const mins = Math.floor(seconds / 60);
     const secs = seconds % 60;
     if (mins === 0) {
-      return `${secs} ${locale === 'vi' ? 'giây' : 'seconds'}`;
+      return `${secs} ${t('seconds')}`;
     }
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
@@ -130,7 +131,7 @@ export default function ResultsPage() {
           {question.is_dynamic && (
             <Badge variant="error" className="flex items-center gap-1">
               <AlertCircle className="w-3 h-3" />
-              {locale === 'vi' ? 'Có thể thay đổi' : 'May change'}
+              {t('mayChange')}
             </Badge>
           )}
         </div>
@@ -152,10 +153,10 @@ export default function ResultsPage() {
         <>
           <div className="mb-2">
             <span className="text-sm font-medium text-red-700 dark:text-red-400">
-              {locale === 'vi' ? 'Câu trả lời của bạn: ' : 'Your answer: '}
+              {t('yourAnswer')}
             </span>
             <span className="text-sm text-red-600 dark:text-red-300">
-              {session.answers[question.id] || (locale === 'vi' ? '(Không trả lời)' : '(No answer)')}
+              {session.answers[question.id] || t('noAnswer')}
             </span>
           </div>
         </>
@@ -163,7 +164,7 @@ export default function ResultsPage() {
 
       <div>
         <span className="text-sm font-medium text-gray-700 dark:text-slate-300">
-          {locale === 'vi' ? 'Đáp án đúng: ' : 'Correct answers: '}
+          {t('correctAnswers')}
         </span>
         <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 mt-1">
           {(locale === 'vi' ? question.answers_vi : question.answers_en).map(
@@ -176,7 +177,7 @@ export default function ResultsPage() {
 
       {question.explanation_vi && locale === 'vi' && (
         <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 pt-2 border-t border-gray-200 dark:border-slate-700">
-          <span className="font-medium">Giải thích: </span>
+          <span className="font-medium">{t('explanation')} </span>
           {question.explanation_vi}
         </p>
       )}
@@ -210,23 +211,11 @@ export default function ResultsPage() {
             result.passed ? 'text-green-800' : 'text-red-800'
           }`}
         >
-          {result.passed
-            ? locale === 'vi'
-              ? 'Chúc mừng! Bạn đã đậu!'
-              : 'Congratulations! You Passed!'
-            : locale === 'vi'
-              ? 'Chưa đậu'
-              : 'Not Passed'}
+          {result.passed ? t('congratulations') : t('notPassed')}
         </h1>
 
         <p className={`${result.passed ? 'text-green-600' : 'text-red-600'}`}>
-          {result.passed
-            ? locale === 'vi'
-              ? 'Bạn đã sẵn sàng cho bài thi thật!'
-              : 'You are ready for the actual test!'
-            : locale === 'vi'
-              ? 'Hãy ôn lại các câu sai và thử lại nhé!'
-              : 'Review the incorrect questions and try again!'}
+          {result.passed ? t('readyForTest') : t('reviewAndTryAgain')}
         </p>
       </Card>
 
@@ -240,7 +229,7 @@ export default function ResultsPage() {
             showPercentage
           />
           <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
-            {locale === 'vi' ? 'Điểm số' : 'Score'}
+            {t('score')}
           </p>
         </Card>
 
@@ -249,12 +238,10 @@ export default function ResultsPage() {
             {result.correct}/{result.total}
           </div>
           <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
-            {locale === 'vi' ? 'Câu đúng' : 'Correct'}
+            {t('correct')}
           </p>
           <p className="text-xs text-gray-400 dark:text-slate-500 mt-1">
-            {locale === 'vi'
-              ? `Cần ${passThreshold} để đậu`
-              : `Need ${passThreshold} to pass`}
+            {t('needToPass', { count: passThreshold })}
           </p>
         </Card>
 
@@ -266,7 +253,7 @@ export default function ResultsPage() {
             {formatTime(result.timeSpent)}
           </p>
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            {locale === 'vi' ? 'Thời gian' : 'Time'}
+            {t('time')}
           </p>
         </Card>
       </div>
@@ -275,17 +262,17 @@ export default function ResultsPage() {
       <div className="flex flex-wrap justify-center gap-4 mb-8">
         <Button variant="primary" onClick={handleRetake}>
           <RefreshCw className="w-4 h-4 mr-2" />
-          {locale === 'vi' ? 'Thi lại' : 'Retake Test'}
+          {t('retakeTest')}
         </Button>
         {wrongAnswers.length > 0 && (
           <Button variant="secondary" onClick={handleReviewWrongAnswers} className="bg-amber-500 hover:bg-amber-600 text-white border-amber-500">
             <XCircle className="w-4 h-4 mr-2" />
-            {locale === 'vi' ? `Ôn ${wrongAnswers.length} câu sai` : `Review ${wrongAnswers.length} Wrong`}
+            {t('reviewWrong', { count: wrongAnswers.length })}
           </Button>
         )}
         <Button variant="secondary" onClick={handleStudy}>
           <BookOpen className="w-4 h-4 mr-2" />
-          {locale === 'vi' ? 'Học tiếp' : 'Study More'}
+          {t('studyMore')}
         </Button>
         <ShareResults
           locale={locale}
@@ -295,7 +282,7 @@ export default function ResultsPage() {
         />
         <Button variant="outline" onClick={handleHome}>
           <Home className="w-4 h-4 mr-2" />
-          {locale === 'vi' ? 'Trang chủ' : 'Home'}
+          {t('home')}
         </Button>
       </div>
 
@@ -309,7 +296,7 @@ export default function ResultsPage() {
             <div className="flex items-center gap-2">
               <XCircle className="w-5 h-5 text-red-600 dark:text-red-400" />
               <span className="font-semibold text-red-800 dark:text-red-300">
-                {locale === 'vi' ? 'Câu trả lời sai' : 'Incorrect Answers'} (
+                {t('incorrectAnswers')} (
                 {result.incorrectQuestions.length})
               </span>
             </div>
@@ -344,7 +331,7 @@ export default function ResultsPage() {
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-400" />
               <span className="font-semibold text-green-800 dark:text-green-300">
-                {locale === 'vi' ? 'Câu trả lời đúng' : 'Correct Answers'} (
+                {t('correctAnswersReview')} (
                 {result.correctQuestions.length})
               </span>
             </div>

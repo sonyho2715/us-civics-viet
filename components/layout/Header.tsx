@@ -78,8 +78,10 @@ export function Header() {
     { href: `/${locale}/immigration`, label: t('immigration'), icon: Plane },
   ];
 
+  const tHeader = useTranslations('header');
+
   const resourceItems = [
-    { href: `/${locale}/interview`, label: locale === 'vi' ? 'Mô phỏng phỏng vấn' : 'Interview Simulation', icon: MessageSquare },
+    { href: `/${locale}/interview`, label: tHeader('interviewSimulation'), icon: MessageSquare },
     { href: `/${locale}/resources/stories`, label: t('stories'), icon: Trophy },
     { href: `/${locale}/resources/n400`, label: t('n400'), icon: FileText },
     { href: `/${locale}/resources/interview`, label: t('interview'), icon: FileText },
@@ -94,14 +96,14 @@ export function Header() {
           <Link href={`/${locale}`} className="flex items-center gap-2">
             <Image
               src="/logo.png"
-              alt={locale === 'vi' ? 'Công Dân Mỹ' : 'U.S. Citizenship'}
+              alt={tHeader('siteName')}
               width={40}
               height={40}
               className="w-10 h-10 object-contain"
               priority
             />
             <span className="font-bold text-gray-900 dark:text-white hidden sm:inline-block">
-              {locale === 'vi' ? 'Công Dân Mỹ' : 'U.S. Citizenship'}
+              {tHeader('siteName')}
             </span>
           </Link>
 
@@ -109,7 +111,7 @@ export function Header() {
           <nav
             id="navigation"
             className="hidden md:flex items-center gap-1"
-            aria-label={locale === 'vi' ? 'Điều hướng chính' : 'Main navigation'}
+            aria-label={tHeader('mainNavigation')}
           >
             {navItems.map((item) => (
               <Link

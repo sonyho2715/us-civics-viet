@@ -19,33 +19,26 @@
     "community": "Cộng Đồng"
   },
   "home": {
-    "hero": {
-      "title": "Chuẩn Bị Cho Bài Thi Công Dân Mỹ 2025",
-      "subtitle": "128 câu hỏi mới nhất với giải thích tiếng Việt",
-      "cta": "Bắt Đầu Học Ngay"
-    },
-    "features": {
-      "bilingual": {
-        "title": "128 Câu Hỏi Song Ngữ",
-        "description": "Học bằng tiếng Việt và tiếng Anh"
+    "learningProgress": "Tiến Độ Học Tập",
+    "howItWorks": {
+      "title": "Cách Sử Dụng",
+      "step1": {
+        "title": "Học 128 câu hỏi",
+        "desc": "Đọc và hiểu từng câu hỏi với giải thích tiếng Việt"
       },
-      "practice": {
-        "title": "Thi Thử Thực Tế",
-        "description": "Bài thi thử với điểm số tức thì"
+      "step2": {
+        "title": "Thi thử",
+        "desc": "Làm bài thi thử 20 câu để kiểm tra kiến thức"
       },
-      "senior": {
-        "title": "Chế Độ 65/20",
-        "description": "Dành cho người cao tuổi 65 tuổi trở lên"
-      },
-      "mobile": {
-        "title": "Học Mọi Lúc",
-        "description": "Tối ưu cho điện thoại di động"
+      "step3": {
+        "title": "Ôn lại câu sai",
+        "desc": "Xem lại các câu trả lời sai và học lại"
       }
     },
-    "stats": {
-      "questions": "Câu hỏi",
-      "passRate": "Tỷ lệ đậu",
-      "users": "Người dùng"
+    "cta": {
+      "title": "Sẵn sàng trở thành công dân Mỹ?",
+      "subtitle": "Bắt đầu học ngay hôm nay và chuẩn bị tốt nhất cho bài thi quốc tịch.",
+      "button": "Bắt Đầu Học"
     }
   },
   "study": {
@@ -65,41 +58,25 @@
     "noResults": "Không tìm thấy câu hỏi nào",
     "progress": "Tiến độ học",
     "studied": "Đã học",
-    "remaining": "Còn lại"
+    "remaining": "Còn lại",
+    "print": "In",
+    "correctAnswers": "Đáp án đúng:"
   },
   "practice": {
-    "title": "Thi Thử",
-    "subtitle": "Kiểm tra kiến thức của bạn",
-    "standardTest": {
-      "title": "Bài Thi Tiêu Chuẩn",
-      "description": "20 câu hỏi ngẫu nhiên",
-      "passRequirement": "Cần đúng 12/20 câu để đậu"
-    },
-    "seniorTest": {
-      "title": "Bài Thi 65/20",
-      "description": "10 câu hỏi dành cho người cao tuổi",
-      "passRequirement": "Cần đúng 6/10 câu để đậu"
-    },
-    "startTest": "Bắt Đầu Thi",
-    "question": "Câu",
-    "of": "của",
-    "submit": "Nộp Bài",
-    "next": "Tiếp",
-    "previous": "Trước",
-    "finish": "Hoàn Thành",
-    "confirmSubmit": "Bạn có chắc muốn nộp bài?",
-    "unanswered": "Bạn còn {count} câu chưa trả lời",
-    "timer": "Thời gian",
-    "selectAnswer": "Chọn đáp án",
-    "yourAnswer": "Đáp án của bạn",
-    "correctAnswer": "Đáp án đúng"
+    "testsTaken": "Bài đã thi",
+    "passed": "Đã đậu",
+    "passRate": "Tỷ lệ đậu",
+    "questions": "câu hỏi",
+    "testSettings": "Cài đặt bài thi",
+    "showAnswerAfterEach": "Hiện đáp án ngay sau mỗi câu",
+    "enableTimer": "Bật đồng hồ đếm thời gian"
   },
   "results": {
     "title": "Kết Quả Bài Thi",
     "passed": "Chúc Mừng! Bạn Đã Đậu!",
     "failed": "Chưa Đậu - Hãy Cố Gắng Lần Sau!",
     "score": "Điểm số",
-    "correct": "Đúng",
+    "correct": "Câu đúng",
     "incorrect": "Sai",
     "timeSpent": "Thời gian làm bài",
     "minutes": "phút",
@@ -111,9 +88,31 @@
       "excellent": "Xuất sắc! Bạn đã sẵn sàng cho bài thi thật!",
       "good": "Tốt lắm! Tiếp tục ôn tập để hoàn thiện hơn.",
       "needsWork": "Hãy ôn tập thêm các câu hỏi sai nhé!"
-    }
+    },
+    "loading": "Đang tải kết quả...",
+    "time": "Thời gian",
+    "needToPass": "Cần {count} để đậu",
+    "retakeTest": "Thi lại",
+    "reviewWrong": "Ôn {count} câu sai",
+    "studyMore": "Học tiếp",
+    "home": "Trang chủ",
+    "incorrectAnswers": "Câu trả lời sai",
+    "correctAnswersReview": "Câu trả lời đúng",
+    "yourAnswer": "Câu trả lời của bạn: ",
+    "noAnswer": "(Không trả lời)",
+    "readyForTest": "Bạn đã sẵn sàng cho bài thi thật!",
+    "reviewAndTryAgain": "Hãy ôn lại các câu sai và thử lại nhé!",
+    "congratulations": "Chúc mừng! Bạn đã đậu!",
+    "notPassed": "Chưa đậu",
+    "mayChange": "Có thể thay đổi",
+    "explanation": "Giải thích:"
   },
   "test": {
+    "answerMode": "Chế độ trả lời:",
+    "textInput": "Tự nhập",
+    "multipleChoice": "Trắc nghiệm",
+    "submitTest": "Nộp bài",
+    "questionsUnanswered": "{count} câu chưa trả lời",
     "loading": "Đang tải...",
     "question": "Câu hỏi",
     "answered": "đã trả lời",
@@ -125,41 +124,77 @@
     "incorrect": "Chưa đúng",
     "previous": "Câu trước",
     "next": "Câu sau",
-    "submit": "Nộp bài",
-    "unanswered": "câu chưa trả lời",
     "mayChange": "Có thể thay đổi"
   },
   "flashcards": {
     "title": "Thẻ Ghi Nhớ",
-    "subtitle": "Học nhanh với thẻ lật",
+    "subtitle": "Học bằng thẻ ghi nhớ",
     "tapToFlip": "Nhấn để lật thẻ",
     "showQuestion": "Xem câu hỏi",
     "showAnswer": "Xem đáp án",
     "card": "Thẻ",
     "markLearned": "Đã thuộc",
     "markReview": "Cần ôn",
-    "shuffle": "Xáo thẻ",
-    "reset": "Bắt đầu lại",
+    "shuffle": "Xáo trộn",
+    "reset": "Đặt lại",
     "learned": "Đã thuộc",
     "needsReview": "Cần ôn",
-    "remaining": "Còn lại"
+    "remaining": "Còn lại",
+    "allFilter": "Tất cả",
+    "unstudied": "Chưa học",
+    "bookmarkedFilter": "Đã đánh dấu",
+    "wrong": "Câu sai",
+    "due": "Cần ôn",
+    "americanGovernment": "Chính phủ Mỹ",
+    "americanHistory": "Lịch sử Mỹ",
+    "symbolsHolidays": "Biểu tượng & Ngày lễ",
+    "noCardsMatch": "Không có thẻ nào trong bộ lọc này",
+    "viewAll": "Xem tất cả",
+    "viewedThisSession": "đã xem trong phiên",
+    "clickToFlip": "Nhấn vào thẻ hoặc nhấn Space để lật",
+    "clickToFlipCard": "Nhấn để lật thẻ",
+    "filters": "Bộ lọc",
+    "categories": "Danh mục",
+    "answer": "Đáp án",
+    "didntKnow": "Chưa thuộc",
+    "knewIt": "Đã thuộc",
+    "markDidntKnow": "Đánh dấu chưa thuộc",
+    "markKnewIt": "Đánh dấu đã thuộc",
+    "rateToContinue": "Đánh giá để tiếp tục",
+    "clickToSeeQuestion": "Nhấn để xem câu hỏi",
+    "clickToSeeAnswer": "Nhấn để xem đáp án",
+    "bookmark": "Đánh dấu",
+    "removeBookmark": "Bỏ đánh dấu",
+    "listenEnglish": "Nghe tiếng Anh",
+    "listenAnswerEnglish": "Nghe đáp án tiếng Anh",
+    "explanation": "Giải thích:",
+    "previous": "Trước",
+    "next": "Sau",
+    "previousCard": "Thẻ trước",
+    "nextCard": "Thẻ sau",
+    "shortcuts": "Phím tắt: Space (lật), ← → (điều hướng)"
   },
   "senior": {
-    "title": "Chế Độ 65/20",
-    "subtitle": "Dành cho người 65 tuổi trở lên, sống tại Mỹ 20 năm",
-    "description": "Nếu bạn từ 65 tuổi trở lên và đã sống tại Mỹ ít nhất 20 năm với tư cách thường trú nhân, bạn chỉ cần học 20 câu hỏi được đánh dấu sao (★).",
-    "eligibility": {
-      "title": "Điều kiện",
-      "age": "65 tuổi trở lên",
-      "residence": "Thường trú nhân 20 năm trở lên"
-    },
-    "testInfo": {
-      "questions": "10 câu hỏi",
-      "pass": "6 câu đúng để đậu",
-      "from": "Từ 20 câu hỏi 65/20"
-    },
-    "studyAll": "Học 20 Câu Hỏi",
-    "takeTest": "Thi Thử 65/20"
+    "program": "Chương Trình 65/20",
+    "forApplicants": "Dành cho ứng viên từ 65 tuổi trở lên và đã là thường trú nhân ít nhất 20 năm",
+    "exemption": "Ưu đãi 65/20",
+    "onlyNeedStudy": "Chỉ cần học 20 câu hỏi (thay vì 128 câu)",
+    "testRequirement": "Thi 10 câu, đúng 6 câu là đậu",
+    "nativeLanguage": "Được thi bằng tiếng mẹ đẻ",
+    "studyProgress": "Tiến độ học",
+    "trackProgress": "Theo dõi tiến trình học 20 câu hỏi 65/20",
+    "studied": "câu đã học",
+    "allStudied": "Tuyệt vời! Bạn đã học hết 20 câu hỏi. Hãy thi thử!",
+    "remaining": "câu nữa cần học",
+    "practiceTest": "Thi Thử 65/20",
+    "randomQuestions": "10 câu hỏi ngẫu nhiên từ 20 câu 65/20",
+    "startPracticeTest": "Bắt đầu thi thử",
+    "designatedQuestions": "20 Câu Hỏi Được Chỉ Định",
+    "hide": "Ẩn",
+    "view": "Xem",
+    "officialList": "Danh sách câu hỏi 65/20 chính thức",
+    "questionsNumbered": "Các câu hỏi số:",
+    "source": "Nguồn: USCIS - Những câu hỏi này được chọn từ danh sách 128 câu hỏi tiêu chuẩn."
   },
   "common": {
     "loading": "Đang tải...",
@@ -297,45 +332,210 @@
         "mistake4": "Quên rằng bạn có thể yêu cầu làm rõ",
         "mistake5": "Không xem lại đơn N-400 trước phỏng vấn"
       }
-    }
+    },
+    "standardDescription": "Câu hỏi từ tất cả 128 câu hỏi công dân",
+    "seniorDescription": "Dành cho người 65+ sống tại Mỹ 20+ năm"
   },
   "achievements": {
-    "title": "Thành Tựu",
-    "subtitle": "Mở khóa thành tựu khi bạn học tập và tiến bộ",
+    "newAchievementBanner": "Thành tựu mới!",
+    "justUnlockedOne": "Bạn vừa mở khóa {count} thành tựu mới!",
+    "justUnlockedMultiple": "Bạn vừa mở khóa {count} thành tựu mới!",
+    "levelAndXP": "Cấp Độ & Kinh Nghiệm",
+    "earnXPByUnlocking": "Kiếm XP bằng cách mở khóa thành tựu",
     "level": "Cấp",
-    "totalXP": "tổng XP",
-    "progressToNextLevel": "Tiến độ đến cấp tiếp theo",
-    "xpRemaining": "XP còn lại",
-    "maxLevel": "Cấp tối đa!",
+    "progressToNext": "Tiến độ đến cấp tiếp theo",
+    "remaining": "còn lại",
     "keepUnlocking": "Tiếp tục mở khóa thành tựu để lên cấp!",
     "statistics": "Thống Kê",
     "achievementsUnlocked": "Thành Tựu Đã Mở",
     "totalXPEarned": "Tổng XP Đã Kiếm",
-    "newAchievement": "Thành tựu mới!",
-    "justUnlocked": "Bạn vừa mở khóa {count} thành tựu mới",
-    "justUnlockedPlural": "Bạn vừa mở khóa {count} thành tựu mới",
-    "earnXP": "Kiếm XP bằng cách mở khóa thành tựu",
-    "sections": {
-      "gettingStarted": "Bước Đầu Tiên",
-      "studyStreaks": "Chuỗi Ngày Học",
-      "categoryMastery": "Thành Thạo Danh Mục",
-      "expertLevel": "Bậc Thầy",
-      "special": "Đặc Biệt"
-    },
-    "status": {
-      "unlocked": "Đã mở khóa",
-      "locked": "Đã khóa"
-    }
+    "gettingStarted": "Bước Đầu Tiên",
+    "studyStreaks": "Chuỗi Ngày Học",
+    "categoryMastery": "Thành Thạo Danh Mục",
+    "expertLevel": "Bậc Thầy",
+    "special": "Đặc Biệt",
+    "unlocked": "Đã mở khóa",
+    "locked": "Đã khóa"
   },
   "footer": {
     "disclaimer": "Ứng dụng này chỉ dành cho mục đích học tập và không liên kết với USCIS hoặc chính phủ Hoa Kỳ. Thông tin có thể thay đổi. Vui lòng xác minh thông tin mới nhất tại trang web chính thức của USCIS trước khi phỏng vấn.",
     "official": "Trang USCIS chính thức",
     "copyright": "© 2026 Công Dân Mỹ. Mọi quyền được bảo lưu.",
+    "opensNewTab": "mở trong tab mới",
     "links": {
       "about": "Về Chúng Tôi",
       "contact": "Liên Hệ",
       "privacy": "Bảo Mật",
       "terms": "Điều Khoản"
     }
+  },
+  "header": {
+    "siteName": "Công Dân Mỹ",
+    "mainNavigation": "Điều hướng chính",
+    "interviewSimulation": "Mô phỏng phỏng vấn"
+  },
+  "streak": {
+    "dayStreak": "Chuỗi ngày",
+    "days": "ngày",
+    "best": "Kỷ lục",
+    "todaysGoal": "Mục tiêu hôm nay",
+    "studied": "Đã học",
+    "tests": "Bài thi",
+    "cards": "Thẻ ôn",
+    "startStudying": "Bắt đầu học để khởi động chuỗi ngày!",
+    "oneWeek": "1 Tuần",
+    "oneMonth": "1 Tháng",
+    "hundredDays": "100 Ngày"
+  },
+  "categoryMastery": {
+    "title": "Tiến Độ Theo Danh Mục",
+    "overall": "Tổng",
+    "master": "Thành thạo",
+    "proficient": "Khá",
+    "learning": "Đang học",
+    "beginner": "Mới bắt đầu"
+  },
+  "fontSize": {
+    "title": "Cỡ Chữ",
+    "decrease": "Giảm cỡ chữ",
+    "increase": "Tăng cỡ chữ",
+    "example": "Ví dụ: Bạn có thể điều chỉnh cỡ chữ để dễ đọc hơn."
+  },
+  "dashboard": {
+    "title": "Bảng Điều Khiển",
+    "subtitle": "Theo dõi tiến độ học tập và nhận đề xuất cá nhân hóa",
+    "localStorageNotice": "Tiến độ của bạn được lưu trên thiết bị này. Nếu bạn dùng thiết bị khác, tiến độ sẽ không được đồng bộ.",
+    "questionsStudied": "Câu đã học",
+    "complete": "hoàn thành",
+    "accuracy": "Độ chính xác",
+    "correct": "đúng",
+    "streak": "Chuỗi ngày",
+    "longest": "Dài nhất",
+    "passRate": "Tỷ lệ đậu",
+    "tests": "bài thi",
+    "readinessScore": "Mức Độ Sẵn Sàng",
+    "readinessDescription": "Dự đoán khả năng vượt qua bài thi dựa trên tiến độ của bạn",
+    "score": "điểm",
+    "coverage": "Phạm vi học",
+    "consistency": "Chuỗi ngày",
+    "readyMessage": "Bạn đã sẵn sàng! Hãy thử làm bài thi thật.",
+    "almostMessage": "Gần rồi! Tập trung vào các điểm yếu.",
+    "keepGoingMessage": "Tiếp tục cố gắng! Học đều đặn mỗi ngày.",
+    "activityCalendar": "Lịch Hoạt Động (30 ngày qua)",
+    "darkerColors": "Màu đậm hơn = hoạt động nhiều hơn",
+    "less": "Ít",
+    "more": "Nhiều",
+    "currentStreak": "Chuỗi hiện tại",
+    "longestStreak": "Chuỗi dài nhất",
+    "totalDays": "Tổng ngày học",
+    "activities": "hoạt động",
+    "categoryMastery": "Tiến Độ Theo Danh Mục",
+    "masteryByCategory": "Mức độ thành thạo theo từng danh mục",
+    "studyRecommendations": "Đề Xuất Học Tập",
+    "aiSuggestions": "AI gợi ý dựa trên tiến độ của bạn",
+    "greatJob": "Tuyệt vời!",
+    "noRecommendations": "Không có đề xuất nào. Bạn đang học rất tốt!",
+    "reviewWeakAreas": "Ôn lại câu sai",
+    "reviewWeakAreasDesc": "Bạn có {count} câu cần ôn lại. Tập trung vào những câu này để cải thiện.",
+    "reviewNow": "Xem câu sai",
+    "dueFlashcards": "Flashcards cần ôn",
+    "dueFlashcardsDesc": "{count} flashcards đã đến hạn ôn tập. Ôn ngay để nhớ lâu hơn!",
+    "reviewFlashcards": "Ôn Flashcards",
+    "balanceLearning": "Cân bằng danh mục",
+    "balanceLearningDesc": "Danh mục \"{name}\" cần học thêm ({percent}%).",
+    "studyNow": "Học ngay",
+    "exploreNewContent": "Học câu mới",
+    "exploreNewContentDesc": "Còn {count} câu chưa học. Khám phá nội dung mới!",
+    "explore": "Khám phá",
+    "recentActivity": "Hoạt Động Gần Đây",
+    "studiedQuestions": "Học câu hỏi",
+    "questionsToday": "câu hôm nay",
+    "testsCompleted": "Làm bài thi",
+    "testsToday": "bài thi hôm nay",
+    "flashcardsReviewed": "Ôn flashcards",
+    "cardsToday": "thẻ hôm nay",
+    "noActivityToday": "Chưa có hoạt động hôm nay",
+    "startLearning": "Bắt đầu học",
+    "quickStats": "Thống Kê",
+    "wrongAnswers": "Câu sai",
+    "dueFlashcardsCount": "Flashcards đến hạn",
+    "totalFlashcards": "Tổng flashcards",
+    "avgEaseFactor": "Độ khó TB"
+  },
+  "share": {
+    "share": "Chia sẻ",
+    "shareOptions": "Tùy chọn chia sẻ",
+    "close": "Đóng",
+    "preview": "Xem trước:",
+    "copyLink": "Sao chép liên kết",
+    "copied": "Đã sao chép!",
+    "shareTitle": "Kết quả thi quốc tịch Mỹ",
+    "shareText": "{emoji} Tôi vừa đạt {score}/{total} ({percentage}%) trong bài thi quốc tịch Mỹ{mode}! {status}{time} Học cùng tôi tại:",
+    "emailSubject": "Kết quả thi quốc tịch Mỹ - {score}/{total}",
+    "passed": "ĐẬU!",
+    "stillWorking": "Còn phải cố gắng thêm!"
+  },
+  "print": {
+    "title": "In Tài Liệu Học",
+    "selectFormat": "Chọn kiểu in:",
+    "studySheet": "Tài liệu học",
+    "studySheetDesc": "Câu hỏi và đáp án dạng danh sách",
+    "flashcards": "Thẻ ghi nhớ",
+    "flashcardsDesc": "In thẻ để cắt và học",
+    "studyPlan": "Kế hoạch học",
+    "studyPlanDesc": "Lịch học 4 tuần với checklist",
+    "allQuestions": "Tất cả 128 câu",
+    "bookmarked": "Đã đánh dấu",
+    "needsReview": "Cần ôn tập",
+    "americanGovernment": "Chính phủ Mỹ",
+    "americanHistory": "Lịch sử Mỹ",
+    "symbolsHolidays": "Biểu tượng & Ngày lễ",
+    "showAnswers": "Hiện đáp án",
+    "questionsCount": "10 câu",
+    "questions20": "20 câu",
+    "questions50": "50 câu",
+    "all": "Tất cả",
+    "willBePrinted": "{count} câu hỏi sẽ được in",
+    "citizenshipTest2025": "Thi Quốc Tịch Mỹ 2025",
+    "flashcardsTitle": "Thẻ Ghi Nhớ - Thi Quốc Tịch Mỹ",
+    "cutAlongLines": "Cắt theo đường kẻ nét đứt",
+    "answer": "Đáp án",
+    "moreAnswers": "đáp án khác",
+    "fourWeekPlan": "Kế Hoạch Học 4 Tuần",
+    "optimizedSchedule": "Lịch học được tối ưu để chuẩn bị cho kỳ thi quốc tịch",
+    "start": "Bắt đầu:",
+    "week": "Tuần",
+    "questions": "câu",
+    "govPart1": "Chính phủ Mỹ (Phần 1)",
+    "govPart2": "Chính phủ Mỹ (Phần 2)",
+    "historyTitle": "Lịch sử Mỹ",
+    "symbolsReview": "Biểu tượng & Ôn tập",
+    "goals": "Mục tiêu:",
+    "learnDaily56": "Học 5-6 câu mỗi ngày",
+    "makeFlashcards": "Làm thẻ ghi nhớ",
+    "weeklyQuiz": "Bài kiểm tra cuối tuần",
+    "reviewWeek1": "Ôn lại tuần 1",
+    "learnDaily67": "Học 6-7 câu mỗi ngày",
+    "reviewGovernment": "Ôn lại chính phủ",
+    "learnFinal10": "Học 10 câu còn lại",
+    "fullReview": "Ôn tập tổng quát",
+    "takePracticeTests": "Làm bài thi thử",
+    "studyTips": "Mẹo Học Tập",
+    "tipStudyDaily": "Học 20-30 phút mỗi ngày",
+    "tipUseFlashcards": "Sử dụng thẻ ghi nhớ",
+    "tipWeeklyTests": "Làm bài thi thử hàng tuần",
+    "tipReviewMissed": "Ôn tập câu trả lời sai",
+    "cancel": "Hủy",
+    "printNow": "In ngay"
+  },
+  "multipleChoice": {
+    "selectAnswer": "Chọn câu trả lời:"
+  },
+  "questionCard": {
+    "correctAnswers": "Đáp án đúng:"
+  },
+  "skipLinks": {
+    "skipToMain": "Bỏ qua đến nội dung chính",
+    "skipToNav": "Bỏ qua đến điều hướng"
   }
 }

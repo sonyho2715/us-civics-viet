@@ -1,7 +1,8 @@
 'use client';
 
 import { useEffect, useState, useMemo } from 'react';
-import { Award, BookOpen, CheckCircle2 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import { Award } from 'lucide-react';
 import { useQuestions } from '@/hooks/useQuestions';
 import { useProgress } from '@/hooks/useProgress';
 import { ProgressBar } from './ProgressBar';
@@ -42,17 +43,8 @@ function getMasteryColor(level: CategoryStats['level']): string {
   }
 }
 
-function getMasteryLabel(level: CategoryStats['level'], locale: Locale): string {
-  const labels = {
-    master: { vi: 'Thành thạo', en: 'Master' },
-    proficient: { vi: 'Khá', en: 'Proficient' },
-    learning: { vi: 'Đang học', en: 'Learning' },
-    beginner: { vi: 'Mới bắt đầu', en: 'Beginner' },
-  };
-  return labels[level][locale];
-}
-
 export function CategoryMastery({ locale, compact = false }: CategoryMasteryProps) {
+  const t = useTranslations('categoryMastery');
   const { questions } = useQuestions();
   const { questionsStudied } = useProgress();
   const [mounted, setMounted] = useState(false);
@@ -130,7 +122,7 @@ export function CategoryMastery({ locale, compact = false }: CategoryMasteryProp
         <div className="flex items-center gap-2">
           <Award className="w-5 h-5 text-amber-500" />
           <h3 className="font-semibold text-gray-900 dark:text-white">
-            {locale === 'vi' ? 'Tiến Độ Theo Danh Mục' : 'Category Progress'}
+            {t('title')}
           </h3>
         </div>
         <div className="flex items-center gap-2">
@@ -143,7 +135,7 @@ export function CategoryMastery({ locale, compact = false }: CategoryMasteryProp
                   ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300'
                   : 'bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-gray-400'
           }`}>
-            {overallStats.percentage}% {locale === 'vi' ? 'Tổng' : 'Overall'}
+            {overallStats.percentage}% {t('overall')}
           </span>
         </div>
       </div>
@@ -172,7 +164,7 @@ export function CategoryMastery({ locale, compact = false }: CategoryMasteryProp
                         ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300'
                         : 'bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-gray-400'
                 }`}>
-                  {getMasteryLabel(cat.level, locale)}
+                  {t(cat.level)}
                 </span>
               </div>
             </div>

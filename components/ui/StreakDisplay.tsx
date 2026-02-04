@@ -1,16 +1,17 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Flame, Trophy, Target, Calendar } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import { Flame, Trophy, Target } from 'lucide-react';
 import { useStreakStore } from '@/stores/streakStore';
 import { ProgressBar } from './ProgressBar';
 
 interface StreakDisplayProps {
-  locale: 'vi' | 'en';
   compact?: boolean;
 }
 
-export function StreakDisplay({ locale, compact = false }: StreakDisplayProps) {
+export function StreakDisplay({ compact = false }: StreakDisplayProps) {
+  const t = useTranslations('streak');
   const {
     currentStreak,
     longestStreak,
@@ -69,10 +70,10 @@ export function StreakDisplay({ locale, compact = false }: StreakDisplayProps) {
           </div>
           <div>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              {locale === 'vi' ? 'Chuỗi ngày' : 'Day Streak'}
+              {t('dayStreak')}
             </p>
             <p className={`text-2xl font-bold ${streakColor}`}>
-              {currentStreak} {locale === 'vi' ? 'ngày' : 'days'}
+              {currentStreak} {t('days')}
             </p>
           </div>
         </div>
@@ -84,7 +85,7 @@ export function StreakDisplay({ locale, compact = false }: StreakDisplayProps) {
             <span className="text-sm font-medium">{longestStreak}</span>
           </div>
           <p className="text-xs text-gray-400 dark:text-slate-500">
-            {locale === 'vi' ? 'Kỷ lục' : 'Best'}
+            {t('best')}
           </p>
         </div>
       </div>
@@ -94,7 +95,7 @@ export function StreakDisplay({ locale, compact = false }: StreakDisplayProps) {
         <div className="flex items-center justify-between text-sm mb-1">
           <span className="text-gray-600 dark:text-gray-400 flex items-center gap-1">
             <Target className="w-4 h-4" />
-            {locale === 'vi' ? 'Mục tiêu hôm nay' : "Today's Goal"}
+            {t('todaysGoal')}
           </span>
           <span className="font-medium text-gray-900 dark:text-white">
             {todayTotal}/{dailyGoal}
@@ -115,7 +116,7 @@ export function StreakDisplay({ locale, compact = false }: StreakDisplayProps) {
               {todayProgress.questionsStudied}
             </p>
             <p className="text-gray-500 dark:text-gray-400">
-              {locale === 'vi' ? 'Đã học' : 'Studied'}
+              {t('studied')}
             </p>
           </div>
           <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-2">
@@ -123,7 +124,7 @@ export function StreakDisplay({ locale, compact = false }: StreakDisplayProps) {
               {todayProgress.testsCompleted}
             </p>
             <p className="text-gray-500 dark:text-gray-400">
-              {locale === 'vi' ? 'Bài thi' : 'Tests'}
+              {t('tests')}
             </p>
           </div>
           <div className="bg-purple-50 dark:bg-purple-900/20 rounded-lg p-2">
@@ -131,7 +132,7 @@ export function StreakDisplay({ locale, compact = false }: StreakDisplayProps) {
               {todayProgress.flashcardsReviewed}
             </p>
             <p className="text-gray-500 dark:text-gray-400">
-              {locale === 'vi' ? 'Thẻ ôn' : 'Cards'}
+              {t('cards')}
             </p>
           </div>
         </div>
@@ -140,9 +141,7 @@ export function StreakDisplay({ locale, compact = false }: StreakDisplayProps) {
       {/* Streak Status */}
       {!status.isActive && currentStreak === 0 && (
         <p className="text-center text-sm text-gray-400 dark:text-slate-500 mt-3">
-          {locale === 'vi'
-            ? 'Bắt đầu học để khởi động chuỗi ngày!'
-            : 'Start studying to begin your streak!'}
+          {t('startStudying')}
         </p>
       )}
 
@@ -151,17 +150,17 @@ export function StreakDisplay({ locale, compact = false }: StreakDisplayProps) {
         <div className="flex items-center justify-center gap-2 mt-3 pt-3 border-t border-gray-100 dark:border-slate-700">
           {currentStreak >= 7 && (
             <span className="px-2 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-xs font-medium rounded-full">
-              {locale === 'vi' ? '1 Tuần' : '1 Week'}
+              {t('oneWeek')}
             </span>
           )}
           {currentStreak >= 30 && (
             <span className="px-2 py-1 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 text-xs font-medium rounded-full">
-              {locale === 'vi' ? '1 Tháng' : '1 Month'}
+              {t('oneMonth')}
             </span>
           )}
           {currentStreak >= 100 && (
             <span className="px-2 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs font-medium rounded-full">
-              {locale === 'vi' ? '100 Ngày' : '100 Days'}
+              {t('hundredDays')}
             </span>
           )}
         </div>
