@@ -19,6 +19,33 @@
     "community": "Community"
   },
   "home": {
+    "hero": {
+      "title": "U.S. Citizenship Test Prep 2025",
+      "subtitle": "Master 128 civics questions with bilingual Vietnamese-English explanations",
+      "cta": "Start Learning Now"
+    },
+    "features": {
+      "bilingual": {
+        "title": "Bilingual Support",
+        "description": "Questions and explanations in both Vietnamese and English"
+      },
+      "practice": {
+        "title": "Realistic Practice Tests",
+        "description": "Take 20-question tests just like the real exam"
+      },
+      "senior": {
+        "title": "65/20 Program",
+        "description": "Special 20 questions for seniors 65+ who have lived in the U.S. 20+ years"
+      },
+      "mobile": {
+        "title": "Learn Anywhere",
+        "description": "Mobile-friendly interface, study anytime on any device"
+      }
+    },
+    "stats": {
+      "questions": "Official questions",
+      "passRate": "Target pass rate"
+    },
     "learningProgress": "Your Learning Progress",
     "howItWorks": {
       "title": "How It Works",
@@ -63,6 +90,19 @@
     "correctAnswers": "Correct answer(s):"
   },
   "practice": {
+    "title": "Practice Tests",
+    "subtitle": "Practice with realistic test simulations",
+    "startTest": "Start Test",
+    "standardTest": {
+      "title": "Standard Test",
+      "description": "20 random questions from 128 official questions",
+      "passRequirement": "Need 12/20 correct to pass"
+    },
+    "seniorTest": {
+      "title": "65/20 Test",
+      "description": "10 questions from the 20 senior questions",
+      "passRequirement": "Need 6/10 correct to pass"
+    },
     "testsTaken": "Tests taken",
     "passed": "Passed",
     "passRate": "Pass rate",

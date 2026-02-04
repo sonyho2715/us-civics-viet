@@ -19,6 +19,33 @@
     "community": "Cộng Đồng"
   },
   "home": {
+    "hero": {
+      "title": "Luyện Thi Quốc Tịch Mỹ 2025",
+      "subtitle": "Học 128 câu hỏi thi quốc tịch với giải thích song ngữ Việt-Anh",
+      "cta": "Bắt Đầu Học Ngay"
+    },
+    "features": {
+      "bilingual": {
+        "title": "Song Ngữ Việt-Anh",
+        "description": "Câu hỏi và giải thích bằng cả tiếng Việt và tiếng Anh"
+      },
+      "practice": {
+        "title": "Thi Thử Như Thật",
+        "description": "Làm bài thi 20 câu với thời gian như kỳ thi thật"
+      },
+      "senior": {
+        "title": "Chương Trình 65/20",
+        "description": "Riêng 20 câu hỏi cho người trên 65 tuổi và ở Mỹ trên 20 năm"
+      },
+      "mobile": {
+        "title": "Học Mọi Lúc Mọi Nơi",
+        "description": "Giao diện thân thiện với điện thoại, học bất cứ lúc nào"
+      }
+    },
+    "stats": {
+      "questions": "Câu hỏi chính thức",
+      "passRate": "Tỷ lệ đậu mục tiêu"
+    },
     "learningProgress": "Tiến Độ Học Tập",
     "howItWorks": {
       "title": "Cách Sử Dụng",
@@ -63,6 +90,19 @@
     "correctAnswers": "Đáp án đúng:"
   },
   "practice": {
+    "title": "Thi Thử",
+    "subtitle": "Luyện tập với bài thi mô phỏng như thật",
+    "startTest": "Bắt Đầu Thi",
+    "standardTest": {
+      "title": "Bài Thi Tiêu Chuẩn",
+      "description": "20 câu hỏi ngẫu nhiên từ 128 câu chính thức",
+      "passRequirement": "Cần 12/20 câu đúng để đậu"
+    },
+    "seniorTest": {
+      "title": "Bài Thi 65/20",
+      "description": "10 câu từ 20 câu dành cho người cao tuổi",
+      "passRequirement": "Cần 6/10 câu đúng để đậu"
+    },
     "testsTaken": "Bài đã thi",
     "passed": "Đã đậu",
     "passRate": "Tỷ lệ đậu",
