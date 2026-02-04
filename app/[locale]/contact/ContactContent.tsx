@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Mail, MessageSquare, Send, CheckCircle, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Mail, MessageSquare, Send, CheckCircle, ExternalLink, Loader2, AlertCircle } from 'lucide-react';
 import { Card } from '@/components/ui/Card';
 import type { Locale } from '@/types';
 
@@ -12,6 +12,8 @@ interface ContactContentProps {
 
 export function ContactContent({ locale }: ContactContentProps) {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const content = {
     vi: {
@@ -41,6 +43,12 @@ export function ContactContent({ locale }: ContactContentProps) {
         message: 'Tin nhắn của bạn đã được gửi. Chúng tôi sẽ phản hồi trong thời gian sớm nhất.',
         backButton: 'Quay lại trang chủ'
       },
+      error: {
+        title: 'Lỗi',
+        message: 'Không thể gửi tin nhắn. Vui lòng thử lại hoặc gửi email trực tiếp.',
+        retry: 'Thử lại'
+      },
+      sending: 'Đang gửi...',
       alternatives: {
         title: 'Cách Khác Để Liên Hệ',
         email: {
@@ -85,6 +93,12 @@ export function ContactContent({ locale }: ContactContentProps) {
         message: 'Your message has been sent. We will respond as soon as possible.',
         backButton: 'Back to Home'
       },
+      error: {
+        title: 'Error',
+        message: 'Unable to send message. Please try again or email us directly.',
+        retry: 'Try Again'
+      },
+      sending: 'Sending...',
       alternatives: {
         title: 'Other Ways to Contact',
         email: {
@@ -106,18 +120,39 @@ export function ContactContent({ locale }: ContactContentProps) {
 
   const t = content[locale as Locale] || content.vi;
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const subject = formData.get('subject');
-    const message = formData.get('message');
+    setLoading(true);
+    setError(null);
 
-    // Create mailto link
-    const mailtoLink = `mailto:contact@congdanmy.com?subject=${encodeURIComponent(`[${subject}] From ${name}`)}&body=${encodeURIComponent(`From: ${name}\nEmail: ${email}\n\n${message}`)}`;
-    window.location.href = mailtoLink;
-    setSubmitted(true);
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      subject: formData.get('subject'),
+      message: formData.get('message')
+    };
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || 'Failed to send message');
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      console.error('Contact form error:', err);
+      setError(err instanceof Error ? err.message : 'Failed to send message');
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -237,13 +272,34 @@ export function ContactContent({ locale }: ContactContentProps) {
                 />
               </div>
 
+              {/* Error Message */}
+              {error && (
+                <div className="flex items-start gap-3 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
+                  <AlertCircle className="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                  <div>
+                    <p className="font-medium text-red-800 dark:text-red-300">{t.error.title}</p>
+                    <p className="text-sm text-red-600 dark:text-red-400">{t.error.message}</p>
+                  </div>
+                </div>
+              )}
+
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                disabled={loading}
+                className="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 disabled:cursor-not-allowed text-white px-6 py-3 rounded-lg font-medium transition-colors"
               >
-                <Send className="w-4 h-4" aria-hidden="true" />
-                {t.form.submit}
+                {loading ? (
+                  <>
+                    <Loader2 className="w-4 h-4 animate-spin" aria-hidden="true" />
+                    {t.sending}
+                  </>
+                ) : (
+                  <>
+                    <Send className="w-4 h-4" aria-hidden="true" />
+                    {t.form.submit}
+                  </>
+                )}
               </button>
             </form>
           </Card>
@@ -263,10 +319,10 @@ export function ContactContent({ locale }: ContactContentProps) {
                   {t.alternatives.email.description}
                 </p>
                 <a
-                  href="mailto:contact@congdanmy.com"
+                  href="mailto:contact@congdan.us"
                   className="text-blue-600 dark:text-blue-400 hover:underline text-sm"
                 >
-                  contact@congdanmy.com
+                  contact@congdan.us
                 </a>
               </div>
             </div>
