@@ -108,18 +108,14 @@ function HomeContent({ locale }: { locale: string }) {
             </div>
 
             {/* Quick Stats */}
-            <div className="grid grid-cols-3 gap-4 mt-12 max-w-md mx-auto">
+            <div className="flex justify-center gap-12 mt-12">
               <div className="text-center">
                 <div className="text-3xl font-bold">128</div>
                 <div className="text-sm text-blue-200">{t('stats.questions')}</div>
               </div>
-              <div className="text-center border-x border-white/20">
+              <div className="text-center">
                 <div className="text-3xl font-bold">95%</div>
                 <div className="text-sm text-blue-200">{t('stats.passRate')}</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold">10K+</div>
-                <div className="text-sm text-blue-200">{t('stats.users')}</div>
               </div>
             </div>
           </div>
