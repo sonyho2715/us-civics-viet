@@ -16,7 +16,11 @@
     "stories": "Kinh Nghiệm Thi",
     "n400": "Hướng Dẫn N-400",
     "interview": "Mẹo Phỏng Vấn",
-    "community": "Cộng Đồng"
+    "community": "Cộng Đồng",
+    "myState": "Tiểu Bang",
+    "examDay": "Ngày Thi",
+    "n400Helper": "N-400 Hướng Dẫn",
+    "wrongAnswerDrills": "Ôn Câu Sai"
   },
   "home": {
     "hero": {
@@ -412,7 +416,8 @@
   "header": {
     "siteName": "Công Dân Mỹ",
     "mainNavigation": "Điều hướng chính",
-    "interviewSimulation": "Mô phỏng phỏng vấn"
+    "interviewSimulation": "Mô phỏng phỏng vấn",
+    "keyboardShortcuts": "Phím tắt"
   },
   "streak": {
     "dayStreak": "Chuỗi ngày",
@@ -502,6 +507,75 @@
     "totalFlashcards": "Tổng flashcards",
     "avgEaseFactor": "Độ khó TB"
   },
+  "multipleChoice": {
+    "selectAnswer": "Chọn câu trả lời:"
+  },
+  "questionCard": {
+    "correctAnswers": "Đáp án đúng:"
+  },
+  "skipLinks": {
+    "skipToMain": "Bỏ qua đến nội dung chính",
+    "skipToNav": "Bỏ qua đến điều hướng"
+  },
+  "wrongDrills": {
+    "title": "Ôn Câu Sai",
+    "subtitle": "Tập trung vào những câu bạn đã trả lời sai",
+    "totalWrong": "Tổng Câu Sai",
+    "noWrongAnswers": "Chưa có câu sai nào! Hãy làm bài thi thử trước.",
+    "drillAll": "Ôn Tất Cả Câu Sai",
+    "focusTop10": "Tập Trung 10 Câu Khó Nhất",
+    "byCategory": "Theo Danh Mục",
+    "improvement": "Bạn đã tiến bộ {count} câu!",
+    "timesWrong": "Sai {count} lần",
+    "startDrill": "Bắt Đầu Ôn",
+    "wrongCount": "{count} câu sai",
+    "drillComplete": "Hoàn Thành Ôn Tập!",
+    "keepPracticing": "Tiếp tục luyện tập để thành thạo các câu này.",
+    "backToDrills": "Về Trang Ôn Tập"
+  },
+  "difficulty": {
+    "easy": "Dễ",
+    "medium": "Trung bình",
+    "hard": "Khó",
+    "unrated": "Chưa đánh giá",
+    "title": "Độ khó",
+    "filter": "Lọc theo độ khó",
+    "sort": "Sắp xếp theo độ khó",
+    "hardest": "Khó nhất trước",
+    "easiest": "Dễ nhất trước",
+    "yourHardest": "Câu Hỏi Khó Nhất",
+    "stats": "Thống Kê Độ Khó",
+    "attempts": "lần thử"
+  },
+  "myState": {
+    "title": "Tiểu Bang Của Tôi",
+    "subtitle": "Thông tin tiểu bang cho bài thi quốc tịch của bạn",
+    "selectState": "Chọn Tiểu Bang",
+    "governor": "Thống Đốc",
+    "capital": "Thủ Phủ",
+    "senators": "Thượng Nghị Sĩ",
+    "representative": "Dân Biểu",
+    "stateQuestions": "Câu Hỏi Về Tiểu Bang",
+    "stateWebsite": "Trang Web Chính Quyền Tiểu Bang",
+    "visitWebsite": "Truy Cập",
+    "uscisOffice": "Văn Phòng USCIS Gần Nhất",
+    "noStateSelected": "Chọn tiểu bang của bạn để xem thông tin cụ thể",
+    "dynamicQuestions": "Những câu hỏi này có thể xuất hiện trong bài thi với đáp án theo tiểu bang của bạn."
+  },
+  "n400Helper": {
+    "title": "Hướng Dẫn Đơn N-400",
+    "subtitle": "Hướng dẫn từng phần để điền đơn N-400",
+    "partOf": "Phần {current} trên {total}",
+    "fieldName": "Mục",
+    "explanation": "Giải Thích",
+    "commonMistakes": "Lỗi Thường Gặp",
+    "tips": "Mẹo",
+    "example": "Ví Dụ",
+    "completed": "Đã Hoàn Thành",
+    "markComplete": "Đánh Dấu Hoàn Thành",
+    "progress": "Tiến Độ",
+    "partsCompleted": "{count} trên {total} phần đã hoàn thành"
+  },
   "share": {
     "share": "Chia sẻ",
     "shareOptions": "Tùy chọn chia sẻ",
@@ -513,7 +587,10 @@
     "shareText": "{emoji} Tôi vừa đạt {score}/{total} ({percentage}%) trong bài thi quốc tịch Mỹ{mode}! {status}{time} Học cùng tôi tại:",
     "emailSubject": "Kết quả thi quốc tịch Mỹ - {score}/{total}",
     "passed": "ĐẬU!",
-    "stillWorking": "Còn phải cố gắng thêm!"
+    "stillWorking": "Còn phải cố gắng thêm!",
+    "shareAsImage": "Chia sẻ dạng ảnh",
+    "downloadImage": "Tải ảnh",
+    "shareProgress": "Chia sẻ tiến độ"
   },
   "print": {
     "title": "In Tài Liệu Học",
@@ -527,6 +604,12 @@
     "allQuestions": "Tất cả 128 câu",
     "bookmarked": "Đã đánh dấu",
     "needsReview": "Cần ôn tập",
+    "wrongAnswers": "Câu sai",
+    "hard": "Câu khó",
+    "medium": "Câu trung bình",
+    "easy": "Câu dễ",
+    "showDifficulty": "Hiện độ khó",
+    "savePdfTip": "Mẹo: Chọn \"Save as PDF\" trong hộp thoại in để lưu dạng PDF",
     "americanGovernment": "Chính phủ Mỹ",
     "americanHistory": "Lịch sử Mỹ",
     "symbolsHolidays": "Biểu tượng & Ngày lễ",
@@ -567,15 +650,5 @@
     "tipReviewMissed": "Ôn tập câu trả lời sai",
     "cancel": "Hủy",
     "printNow": "In ngay"
-  },
-  "multipleChoice": {
-    "selectAnswer": "Chọn câu trả lời:"
-  },
-  "questionCard": {
-    "correctAnswers": "Đáp án đúng:"
-  },
-  "skipLinks": {
-    "skipToMain": "Bỏ qua đến nội dung chính",
-    "skipToNav": "Bỏ qua đến điều hướng"
   }
 }

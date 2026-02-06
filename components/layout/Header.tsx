@@ -21,10 +21,15 @@ import {
   Users,
   BarChart3,
   Award,
+  MapPin,
+  Keyboard,
+  ClipboardCheck,
+  HelpCircle,
 } from 'lucide-react';
 import { LanguageToggle } from './LanguageToggle';
 import { ThemeToggle } from './ThemeToggle';
 import { cn } from '@/lib/utils';
+import { KeyboardShortcutsModal } from '@/components/ui/KeyboardShortcutsModal';
 
 export function Header() {
   const t = useTranslations('nav');
@@ -32,6 +37,7 @@ export function Header() {
   const locale = params.locale as string;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
+  const [isShortcutsOpen, setIsShortcutsOpen] = useState(false);
   const resourcesRef = useRef<HTMLDivElement>(null);
   const resourcesButtonRef = useRef<HTMLButtonElement>(null);
   const firstResourceRef = useRef<HTMLAnchorElement>(null);
@@ -75,6 +81,8 @@ export function Header() {
     { href: `/${locale}/flashcards`, label: t('flashcards'), icon: Layers },
     { href: `/${locale}/achievements`, label: t('achievements'), icon: Award },
     { href: `/${locale}/65-20`, label: t('senior'), icon: Star },
+    { href: `/${locale}/my-state`, label: t('myState'), icon: MapPin },
+
     { href: `/${locale}/immigration`, label: t('immigration'), icon: Plane },
   ];
 
@@ -84,6 +92,9 @@ export function Header() {
     { href: `/${locale}/interview`, label: tHeader('interviewSimulation'), icon: MessageSquare },
     { href: `/${locale}/resources/stories`, label: t('stories'), icon: Trophy },
     { href: `/${locale}/resources/n400`, label: t('n400'), icon: FileText },
+    { href: `/${locale}/resources/exam-day`, label: t('examDay'), icon: ClipboardCheck },
+    { href: `/${locale}/n400-helper`, label: t('n400Helper'), icon: HelpCircle },
+    { href: `/${locale}/wrong-answers`, label: t('wrongAnswerDrills'), icon: FileQuestion },
     { href: `/${locale}/resources/interview`, label: t('interview'), icon: FileText },
     { href: `/${locale}/resources/community`, label: t('community'), icon: Users },
   ];
@@ -184,6 +195,14 @@ export function Header() {
 
           {/* Actions */}
           <div className="flex items-center gap-2">
+            <button
+              onClick={() => setIsShortcutsOpen(true)}
+              className="hidden sm:flex p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors"
+              aria-label={tHeader('keyboardShortcuts')}
+              title={tHeader('keyboardShortcuts')}
+            >
+              <Keyboard className="w-5 h-5 text-gray-500 dark:text-slate-400" />
+            </button>
             <ThemeToggle />
             <LanguageToggle />
 
@@ -247,6 +266,13 @@ export function Header() {
           </nav>
         )}
       </div>
+
+      {/* Keyboard Shortcuts Modal */}
+      <KeyboardShortcutsModal
+        isOpen={isShortcutsOpen}
+        locale={locale as 'en' | 'vi'}
+        onClose={() => setIsShortcutsOpen(false)}
+      />
     </header>
   );
 }

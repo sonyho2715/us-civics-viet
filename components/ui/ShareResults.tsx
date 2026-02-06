@@ -2,8 +2,9 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import { Share2, Copy, Check, Twitter, Facebook, Linkedin, Mail, MessageCircle, X } from 'lucide-react';
+import { Share2, Copy, Check, Twitter, Facebook, Linkedin, Mail, MessageCircle, X, ImageIcon } from 'lucide-react';
 import { Button } from './Button';
+import { ShareProgressCard } from './ShareProgressCard';
 import type { Locale } from '@/types';
 
 interface ShareResultsProps {
@@ -19,6 +20,7 @@ export function ShareResults({ locale, score, total, passed, timeSpent, mode = '
   const t = useTranslations('share');
   const [copied, setCopied] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
+  const [showShareCard, setShowShareCard] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const percentage = Math.round((score / total) * 100);
@@ -120,7 +122,19 @@ export function ShareResults({ locale, score, total, passed, timeSpent, mode = '
     setShowOptions(false);
   };
 
+  const handleShareImage = () => {
+    setShowOptions(false);
+    setShowShareCard(true);
+  };
+
   const shareOptions = [
+    {
+      id: 'image',
+      label: t('shareAsImage'),
+      icon: ImageIcon,
+      color: 'text-purple-500',
+      onClick: handleShareImage,
+    },
     {
       id: 'copy',
       label: copied ? t('copied') : t('copyLink'),
@@ -222,6 +236,19 @@ export function ShareResults({ locale, score, total, passed, timeSpent, mode = '
           <div className="absolute left-1/2 -translate-x-1/2 -bottom-2 w-4 h-4 bg-white dark:bg-slate-800 border-r border-b border-gray-200 dark:border-slate-700 rotate-45" />
         </div>
       )}
+
+      {/* Share as Image Modal */}
+      <ShareProgressCard
+        isOpen={showShareCard}
+        onClose={() => setShowShareCard(false)}
+        options={{
+          type: 'test_result',
+          score,
+          total,
+          passed,
+          locale,
+        }}
+      />
     </div>
   );
 }

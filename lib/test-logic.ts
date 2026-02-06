@@ -34,12 +34,18 @@ export function generateTest(questions: Question[], mode: TestMode): Question[] 
 }
 
 // Get pass threshold for test mode
-export function getPassThreshold(mode: TestMode): number {
+export function getPassThreshold(mode: TestMode, totalCount?: number): number {
+  if (mode === 'wrong_answers') {
+    return Math.ceil((totalCount ?? 0) * 0.6);
+  }
   return mode === 'standard' ? 12 : 6;
 }
 
 // Get total questions for test mode
-export function getTotalQuestions(mode: TestMode): number {
+export function getTotalQuestions(mode: TestMode, actualCount?: number): number {
+  if (mode === 'wrong_answers') {
+    return actualCount ?? 0;
+  }
   return mode === 'standard' ? 20 : 10;
 }
 

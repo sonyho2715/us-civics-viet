@@ -2,7 +2,7 @@
 
 export type Category = 'american_government' | 'american_history' | 'symbols_holidays';
 export type Locale = 'vi' | 'en';
-export type TestMode = 'standard' | '65_20';
+export type TestMode = 'standard' | '65_20' | 'wrong_answers';
 export type DynamicType =
   | 'president'
   | 'vice_president'

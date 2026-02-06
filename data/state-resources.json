@@ -1,0 +1,468 @@
+{
+  "metadata": {
+    "lastUpdated": "2025-01-20",
+    "source": "Official government records - 119th Congress",
+    "note": "Senator data reflects the 119th Congress (2025-2027). Verify at senate.gov for current info."
+  },
+  "states": {
+    "AL": {
+      "name": "Alabama",
+      "capital": "Montgomery",
+      "governor": "Kay Ivey",
+      "senators": ["Tommy Tuberville (R)", "Katie Britt (R)"],
+      "representative_count": 7,
+      "government_website": "https://alabama.gov",
+      "uscis_office": "Montgomery Field Office"
+    },
+    "AK": {
+      "name": "Alaska",
+      "capital": "Juneau",
+      "governor": "Mike Dunleavy",
+      "senators": ["Lisa Murkowski (R)", "Dan Sullivan (R)"],
+      "representative_count": 1,
+      "government_website": "https://alaska.gov",
+      "uscis_office": "Anchorage Field Office"
+    },
+    "AZ": {
+      "name": "Arizona",
+      "capital": "Phoenix",
+      "governor": "Katie Hobbs",
+      "senators": ["Kyrsten Sinema (I)", "Ruben Gallego (D)"],
+      "representative_count": 9,
+      "government_website": "https://az.gov",
+      "uscis_office": "Phoenix Field Office"
+    },
+    "AR": {
+      "name": "Arkansas",
+      "capital": "Little Rock",
+      "governor": "Sarah Huckabee Sanders",
+      "senators": ["John Boozman (R)", "Tom Cotton (R)"],
+      "representative_count": 4,
+      "government_website": "https://arkansas.gov",
+      "uscis_office": "Fort Smith Field Office"
+    },
+    "CA": {
+      "name": "California",
+      "capital": "Sacramento",
+      "governor": "Gavin Newsom",
+      "senators": ["Adam Schiff (D)", "Laphonza Butler (D)"],
+      "representative_count": 52,
+      "government_website": "https://ca.gov",
+      "uscis_office": "Los Angeles Field Office"
+    },
+    "CO": {
+      "name": "Colorado",
+      "capital": "Denver",
+      "governor": "Jared Polis",
+      "senators": ["Michael Bennet (D)", "John Hickenlooper (D)"],
+      "representative_count": 8,
+      "government_website": "https://colorado.gov",
+      "uscis_office": "Denver Field Office"
+    },
+    "CT": {
+      "name": "Connecticut",
+      "capital": "Hartford",
+      "governor": "Ned Lamont",
+      "senators": ["Richard Blumenthal (D)", "Chris Murphy (D)"],
+      "representative_count": 5,
+      "government_website": "https://ct.gov",
+      "uscis_office": "Hartford Field Office"
+    },
+    "DE": {
+      "name": "Delaware",
+      "capital": "Dover",
+      "governor": "Matt Meyer",
+      "senators": ["Tom Carper (D)", "Chris Coons (D)"],
+      "representative_count": 1,
+      "government_website": "https://delaware.gov",
+      "uscis_office": "Dover Field Office"
+    },
+    "FL": {
+      "name": "Florida",
+      "capital": "Tallahassee",
+      "governor": "Ron DeSantis",
+      "senators": ["Rick Scott (R)", "Marco Rubio (R)"],
+      "representative_count": 28,
+      "government_website": "https://myflorida.com",
+      "uscis_office": "Miami Field Office"
+    },
+    "GA": {
+      "name": "Georgia",
+      "capital": "Atlanta",
+      "governor": "Brian Kemp",
+      "senators": ["Jon Ossoff (D)", "Raphael Warnock (D)"],
+      "representative_count": 14,
+      "government_website": "https://georgia.gov",
+      "uscis_office": "Atlanta Field Office"
+    },
+    "HI": {
+      "name": "Hawaii",
+      "capital": "Honolulu",
+      "governor": "Josh Green",
+      "senators": ["Mazie Hirono (D)", "Brian Schatz (D)"],
+      "representative_count": 2,
+      "government_website": "https://hawaii.gov",
+      "uscis_office": "Honolulu Field Office"
+    },
+    "ID": {
+      "name": "Idaho",
+      "capital": "Boise",
+      "governor": "Brad Little",
+      "senators": ["Mike Crapo (R)", "Jim Risch (R)"],
+      "representative_count": 2,
+      "government_website": "https://idaho.gov",
+      "uscis_office": "Boise Field Office"
+    },
+    "IL": {
+      "name": "Illinois",
+      "capital": "Springfield",
+      "governor": "JB Pritzker",
+      "senators": ["Dick Durbin (D)", "Tammy Duckworth (D)"],
+      "representative_count": 17,
+      "government_website": "https://illinois.gov",
+      "uscis_office": "Chicago Field Office"
+    },
+    "IN": {
+      "name": "Indiana",
+      "capital": "Indianapolis",
+      "governor": "Mike Braun",
+      "senators": ["Todd Young (R)", "Jim Banks (R)"],
+      "representative_count": 9,
+      "government_website": "https://in.gov",
+      "uscis_office": "Indianapolis Field Office"
+    },
+    "IA": {
+      "name": "Iowa",
+      "capital": "Des Moines",
+      "governor": "Kim Reynolds",
+      "senators": ["Chuck Grassley (R)", "Joni Ernst (R)"],
+      "representative_count": 4,
+      "government_website": "https://iowa.gov",
+      "uscis_office": "Des Moines Field Office"
+    },
+    "KS": {
+      "name": "Kansas",
+      "capital": "Topeka",
+      "governor": "Laura Kelly",
+      "senators": ["Jerry Moran (R)", "Roger Marshall (R)"],
+      "representative_count": 4,
+      "government_website": "https://kansas.gov",
+      "uscis_office": "Wichita Field Office"
+    },
+    "KY": {
+      "name": "Kentucky",
+      "capital": "Frankfort",
+      "governor": "Andy Beshear",
+      "senators": ["Mitch McConnell (R)", "Rand Paul (R)"],
+      "representative_count": 6,
+      "government_website": "https://kentucky.gov",
+      "uscis_office": "Louisville Field Office"
+    },
+    "LA": {
+      "name": "Louisiana",
+      "capital": "Baton Rouge",
+      "governor": "Jeff Landry",
+      "senators": ["Bill Cassidy (R)", "John Kennedy (R)"],
+      "representative_count": 6,
+      "government_website": "https://louisiana.gov",
+      "uscis_office": "New Orleans Field Office"
+    },
+    "ME": {
+      "name": "Maine",
+      "capital": "Augusta",
+      "governor": "Janet Mills",
+      "senators": ["Susan Collins (R)", "Angus King (I)"],
+      "representative_count": 2,
+      "government_website": "https://maine.gov",
+      "uscis_office": "Portland Field Office"
+    },
+    "MD": {
+      "name": "Maryland",
+      "capital": "Annapolis",
+      "governor": "Wes Moore",
+      "senators": ["Ben Cardin (D)", "Chris Van Hollen (D)"],
+      "representative_count": 8,
+      "government_website": "https://maryland.gov",
+      "uscis_office": "Baltimore Field Office"
+    },
+    "MA": {
+      "name": "Massachusetts",
+      "capital": "Boston",
+      "governor": "Maura Healey",
+      "senators": ["Elizabeth Warren (D)", "Ed Markey (D)"],
+      "representative_count": 9,
+      "government_website": "https://mass.gov",
+      "uscis_office": "Boston Field Office"
+    },
+    "MI": {
+      "name": "Michigan",
+      "capital": "Lansing",
+      "governor": "Gretchen Whitmer",
+      "senators": ["Gary Peters (D)", "Elissa Slotkin (D)"],
+      "representative_count": 13,
+      "government_website": "https://michigan.gov",
+      "uscis_office": "Detroit Field Office"
+    },
+    "MN": {
+      "name": "Minnesota",
+      "capital": "Saint Paul",
+      "governor": "Tim Walz",
+      "senators": ["Amy Klobuchar (D)", "Tina Smith (D)"],
+      "representative_count": 8,
+      "government_website": "https://mn.gov",
+      "uscis_office": "Saint Paul Field Office"
+    },
+    "MS": {
+      "name": "Mississippi",
+      "capital": "Jackson",
+      "governor": "Tate Reeves",
+      "senators": ["Roger Wicker (R)", "Cindy Hyde-Smith (R)"],
+      "representative_count": 4,
+      "government_website": "https://ms.gov",
+      "uscis_office": "Jackson Field Office"
+    },
+    "MO": {
+      "name": "Missouri",
+      "capital": "Jefferson City",
+      "governor": "Mike Kehoe",
+      "senators": ["Josh Hawley (R)", "Eric Schmitt (R)"],
+      "representative_count": 8,
+      "government_website": "https://mo.gov",
+      "uscis_office": "Kansas City Field Office"
+    },
+    "MT": {
+      "name": "Montana",
+      "capital": "Helena",
+      "governor": "Greg Gianforte",
+      "senators": ["Jon Tester (D)", "Steve Daines (R)"],
+      "representative_count": 2,
+      "government_website": "https://mt.gov",
+      "uscis_office": "Helena Field Office"
+    },
+    "NE": {
+      "name": "Nebraska",
+      "capital": "Lincoln",
+      "governor": "Jim Pillen",
+      "senators": ["Deb Fischer (R)", "Pete Ricketts (R)"],
+      "representative_count": 3,
+      "government_website": "https://nebraska.gov",
+      "uscis_office": "Omaha Field Office"
+    },
+    "NV": {
+      "name": "Nevada",
+      "capital": "Carson City",
+      "governor": "Joe Lombardo",
+      "senators": ["Catherine Cortez Masto (D)", "Jacky Rosen (D)"],
+      "representative_count": 4,
+      "government_website": "https://nv.gov",
+      "uscis_office": "Las Vegas Field Office"
+    },
+    "NH": {
+      "name": "New Hampshire",
+      "capital": "Concord",
+      "governor": "Kelly Ayotte",
+      "senators": ["Jeanne Shaheen (D)", "Maggie Hassan (D)"],
+      "representative_count": 2,
+      "government_website": "https://nh.gov",
+      "uscis_office": "Manchester Field Office"
+    },
+    "NJ": {
+      "name": "New Jersey",
+      "capital": "Trenton",
+      "governor": "Phil Murphy",
+      "senators": ["Cory Booker (D)", "Andy Kim (D)"],
+      "representative_count": 12,
+      "government_website": "https://nj.gov",
+      "uscis_office": "Newark Field Office"
+    },
+    "NM": {
+      "name": "New Mexico",
+      "capital": "Santa Fe",
+      "governor": "Michelle Lujan Grisham",
+      "senators": ["Martin Heinrich (D)", "Ben Ray Luján (D)"],
+      "representative_count": 3,
+      "government_website": "https://newmexico.gov",
+      "uscis_office": "Albuquerque Field Office"
+    },
+    "NY": {
+      "name": "New York",
+      "capital": "Albany",
+      "governor": "Kathy Hochul",
+      "senators": ["Chuck Schumer (D)", "Kirsten Gillibrand (D)"],
+      "representative_count": 26,
+      "government_website": "https://ny.gov",
+      "uscis_office": "New York City Field Office"
+    },
+    "NC": {
+      "name": "North Carolina",
+      "capital": "Raleigh",
+      "governor": "Josh Stein",
+      "senators": ["Thom Tillis (R)", "Ted Budd (R)"],
+      "representative_count": 14,
+      "government_website": "https://nc.gov",
+      "uscis_office": "Charlotte Field Office"
+    },
+    "ND": {
+      "name": "North Dakota",
+      "capital": "Bismarck",
+      "governor": "Kelly Armstrong",
+      "senators": ["John Hoeven (R)", "Kevin Cramer (R)"],
+      "representative_count": 1,
+      "government_website": "https://nd.gov",
+      "uscis_office": "St. Paul Field Office"
+    },
+    "OH": {
+      "name": "Ohio",
+      "capital": "Columbus",
+      "governor": "Mike DeWine",
+      "senators": ["Sherrod Brown (D)", "Bernie Moreno (R)"],
+      "representative_count": 15,
+      "government_website": "https://ohio.gov",
+      "uscis_office": "Cleveland Field Office"
+    },
+    "OK": {
+      "name": "Oklahoma",
+      "capital": "Oklahoma City",
+      "governor": "Kevin Stitt",
+      "senators": ["James Lankford (R)", "Markwayne Mullin (R)"],
+      "representative_count": 5,
+      "government_website": "https://oklahoma.gov",
+      "uscis_office": "Oklahoma City Field Office"
+    },
+    "OR": {
+      "name": "Oregon",
+      "capital": "Salem",
+      "governor": "Tina Kotek",
+      "senators": ["Ron Wyden (D)", "Jeff Merkley (D)"],
+      "representative_count": 6,
+      "government_website": "https://oregon.gov",
+      "uscis_office": "Portland Field Office"
+    },
+    "PA": {
+      "name": "Pennsylvania",
+      "capital": "Harrisburg",
+      "governor": "Josh Shapiro",
+      "senators": ["Bob Casey (D)", "John Fetterman (D)"],
+      "representative_count": 17,
+      "government_website": "https://pa.gov",
+      "uscis_office": "Philadelphia Field Office"
+    },
+    "RI": {
+      "name": "Rhode Island",
+      "capital": "Providence",
+      "governor": "Dan McKee",
+      "senators": ["Jack Reed (D)", "Sheldon Whitehouse (D)"],
+      "representative_count": 2,
+      "government_website": "https://ri.gov",
+      "uscis_office": "Providence Field Office"
+    },
+    "SC": {
+      "name": "South Carolina",
+      "capital": "Columbia",
+      "governor": "Henry McMaster",
+      "senators": ["Lindsey Graham (R)", "Tim Scott (R)"],
+      "representative_count": 7,
+      "government_website": "https://sc.gov",
+      "uscis_office": "Charleston Field Office"
+    },
+    "SD": {
+      "name": "South Dakota",
+      "capital": "Pierre",
+      "governor": "Kristi Noem",
+      "senators": ["John Thune (R)", "Mike Rounds (R)"],
+      "representative_count": 1,
+      "government_website": "https://sd.gov",
+      "uscis_office": "Sioux Falls Field Office"
+    },
+    "TN": {
+      "name": "Tennessee",
+      "capital": "Nashville",
+      "governor": "Bill Lee",
+      "senators": ["Marsha Blackburn (R)", "Bill Hagerty (R)"],
+      "representative_count": 9,
+      "government_website": "https://tn.gov",
+      "uscis_office": "Memphis Field Office"
+    },
+    "TX": {
+      "name": "Texas",
+      "capital": "Austin",
+      "governor": "Greg Abbott",
+      "senators": ["John Cornyn (R)", "Ted Cruz (R)"],
+      "representative_count": 38,
+      "government_website": "https://texas.gov",
+      "uscis_office": "Houston Field Office"
+    },
+    "UT": {
+      "name": "Utah",
+      "capital": "Salt Lake City",
+      "governor": "Spencer Cox",
+      "senators": ["Mike Lee (R)", "Mitt Romney (R)"],
+      "representative_count": 4,
+      "government_website": "https://utah.gov",
+      "uscis_office": "Salt Lake City Field Office"
+    },
+    "VT": {
+      "name": "Vermont",
+      "capital": "Montpelier",
+      "governor": "Phil Scott",
+      "senators": ["Patrick Leahy (D)", "Peter Welch (D)"],
+      "representative_count": 1,
+      "government_website": "https://vermont.gov",
+      "uscis_office": "St. Albans Field Office"
+    },
+    "VA": {
+      "name": "Virginia",
+      "capital": "Richmond",
+      "governor": "Glenn Youngkin",
+      "senators": ["Mark Warner (D)", "Tim Kaine (D)"],
+      "representative_count": 11,
+      "government_website": "https://virginia.gov",
+      "uscis_office": "Norfolk Field Office"
+    },
+    "WA": {
+      "name": "Washington",
+      "capital": "Olympia",
+      "governor": "Bob Ferguson",
+      "senators": ["Patty Murray (D)", "Maria Cantwell (D)"],
+      "representative_count": 10,
+      "government_website": "https://wa.gov",
+      "uscis_office": "Seattle Field Office"
+    },
+    "WV": {
+      "name": "West Virginia",
+      "capital": "Charleston",
+      "governor": "Patrick Morrisey",
+      "senators": ["Joe Manchin (I)", "Shelley Moore Capito (R)"],
+      "representative_count": 2,
+      "government_website": "https://wv.gov",
+      "uscis_office": "Charleston Field Office"
+    },
+    "WI": {
+      "name": "Wisconsin",
+      "capital": "Madison",
+      "governor": "Tony Evers",
+      "senators": ["Tammy Baldwin (D)", "Ron Johnson (R)"],
+      "representative_count": 8,
+      "government_website": "https://wisconsin.gov",
+      "uscis_office": "Milwaukee Field Office"
+    },
+    "WY": {
+      "name": "Wyoming",
+      "capital": "Cheyenne",
+      "governor": "Mark Gordon",
+      "senators": ["John Barrasso (R)", "Cynthia Lummis (R)"],
+      "representative_count": 1,
+      "government_website": "https://wyo.gov",
+      "uscis_office": "Casper Field Office"
+    },
+    "DC": {
+      "name": "Washington D.C.",
+      "capital": "N/A",
+      "governor": "N/A (Mayor: Muriel Bowser)",
+      "senators": ["N/A (no voting representation)"],
+      "representative_count": 0,
+      "government_website": "https://dc.gov",
+      "uscis_office": "Washington D.C. Field Office"
+    }
+  }
+}

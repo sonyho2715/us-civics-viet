@@ -2,6 +2,7 @@
 
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
+import type { Question, Category } from '@/types';
 
 interface WrongAnswer {
   questionNumber: number;
@@ -17,6 +18,8 @@ interface WrongAnswerStore {
   isWrongAnswer: (questionNumber: number) => boolean;
   getWrongCount: (questionNumber: number) => number;
   clearAllWrongAnswers: () => void;
+  getWrongAnswersByCategory: (questions: Question[]) => Record<Category, WrongAnswer[]>;
+  getWorstAnswers: (limit: number) => WrongAnswer[];
 }
 
 export const useWrongAnswerStore = create<WrongAnswerStore>()(
@@ -90,6 +93,32 @@ export const useWrongAnswerStore = create<WrongAnswerStore>()(
 
       clearAllWrongAnswers: () => {
         set({ wrongAnswers: [] });
+      },
+
+      getWrongAnswersByCategory: (questions: Question[]) => {
+        const wrongAnswers = get().wrongAnswers;
+        const result: Record<Category, WrongAnswer[]> = {
+          american_government: [],
+          american_history: [],
+          symbols_holidays: [],
+        };
+
+        wrongAnswers.forEach((wa) => {
+          const question = questions.find(
+            (q) => q.question_number === wa.questionNumber
+          );
+          if (question) {
+            result[question.category].push(wa);
+          }
+        });
+
+        return result;
+      },
+
+      getWorstAnswers: (limit: number) => {
+        return [...get().wrongAnswers]
+          .sort((a, b) => b.wrongCount - a.wrongCount)
+          .slice(0, limit);
       },
     }),
     {

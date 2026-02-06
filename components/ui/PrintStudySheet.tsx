@@ -1,10 +1,13 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { Printer, X, Star, Bookmark, FileText, CreditCard, Calendar, Download } from 'lucide-react';
+import { Printer, X, Star, Bookmark, FileText, CreditCard, Calendar, Download, AlertTriangle, BarChart3 } from 'lucide-react';
 import { useQuestions } from '@/hooks/useQuestions';
 import { useBookmarkStore } from '@/stores/bookmarkStore';
 import { useProgressStore } from '@/stores/progressStore';
+import { useWrongAnswerStore } from '@/stores/wrongAnswerStore';
+import { useDifficultyStore } from '@/stores/difficultyStore';
+import { DifficultyBadge } from './DifficultyBadge';
 import { Button } from './Button';
 import { CATEGORIES } from '@/types';
 import type { Category, Locale, Question } from '@/types';
@@ -20,8 +23,11 @@ export function PrintStudySheet({ locale, onClose }: PrintStudySheetProps) {
   const { questions } = useQuestions();
   const { bookmarkedIds } = useBookmarkStore();
   const { questionsIncorrect, questionsCorrect } = useProgressStore();
-  const [filter, setFilter] = useState<'all' | 'bookmarked' | '65_20' | 'needs_review' | Category>('all');
+  const { wrongAnswers } = useWrongAnswerStore();
+  const difficultyStore = useDifficultyStore();
+  const [filter, setFilter] = useState<'all' | 'bookmarked' | '65_20' | 'needs_review' | 'wrong_answers' | 'hard' | 'medium' | 'easy' | Category>('all');
   const [showAnswers, setShowAnswers] = useState(true);
+  const [showDifficulty, setShowDifficulty] = useState(true);
   const [questionsPerPage, setQuestionsPerPage] = useState<10 | 20 | 50 | 'all'>('all');
   const [printMode, setPrintMode] = useState<PrintMode>('study-sheet');
 
@@ -33,11 +39,27 @@ export function PrintStudySheet({ locale, onClose }: PrintStudySheetProps) {
     } else if (filter === '65_20') {
       filtered = questions.filter((q) => q.is_65_20);
     } else if (filter === 'needs_review') {
-      // Questions answered incorrectly or never attempted
       filtered = questions.filter((q) =>
         questionsIncorrect.includes(q.question_number) ||
         !questionsCorrect.includes(q.question_number)
       );
+    } else if (filter === 'wrong_answers') {
+      const wrongNums = new Set(wrongAnswers.map((w) => w.questionNumber));
+      filtered = questions.filter((q) => wrongNums.has(q.question_number));
+      // Sort by wrong count (most wrong first)
+      filtered.sort((a, b) => {
+        const aWrong = wrongAnswers.find((w) => w.questionNumber === a.question_number)?.wrongCount ?? 0;
+        const bWrong = wrongAnswers.find((w) => w.questionNumber === b.question_number)?.wrongCount ?? 0;
+        return bWrong - aWrong;
+      });
+    } else if (filter === 'hard' || filter === 'medium' || filter === 'easy') {
+      const allNums = questions.map((q) => q.question_number);
+      const matchingNums = new Set(difficultyStore.getAllByDifficulty(filter, allNums));
+      filtered = questions.filter((q) => matchingNums.has(q.question_number));
+      // Sort hard first by difficulty score
+      if (filter === 'hard') {
+        filtered.sort((a, b) => difficultyStore.getDifficultyScore(b.question_number) - difficultyStore.getDifficultyScore(a.question_number));
+      }
     } else if (filter !== 'all') {
       filtered = questions.filter((q) => q.category === filter);
     }
@@ -47,17 +69,27 @@ export function PrintStudySheet({ locale, onClose }: PrintStudySheetProps) {
     }
 
     return filtered;
-  }, [questions, filter, bookmarkedIds, questionsPerPage, questionsIncorrect, questionsCorrect]);
+  }, [questions, filter, bookmarkedIds, questionsPerPage, questionsIncorrect, questionsCorrect, wrongAnswers, difficultyStore]);
 
   const handlePrint = () => {
     window.print();
   };
+
+  const wrongAnswerCount = wrongAnswers.length;
 
   const filterOptions = [
     { value: 'all', label: locale === 'vi' ? 'Tất cả 128 câu' : 'All 128 Questions' },
     { value: 'bookmarked', label: locale === 'vi' ? 'Đã đánh dấu' : 'Bookmarked', icon: Bookmark },
     { value: '65_20', label: '65/20', icon: Star },
     { value: 'needs_review', label: locale === 'vi' ? 'Cần ôn tập' : 'Needs Review', icon: Calendar },
+    ...(wrongAnswerCount > 0 ? [{
+      value: 'wrong_answers',
+      label: locale === 'vi' ? `Câu sai (${wrongAnswerCount})` : `Wrong Answers (${wrongAnswerCount})`,
+      icon: AlertTriangle,
+    }] : []),
+    { value: 'hard', label: locale === 'vi' ? 'Khó' : 'Hard', icon: BarChart3, color: 'text-red-600' },
+    { value: 'medium', label: locale === 'vi' ? 'Trung bình' : 'Medium', icon: BarChart3, color: 'text-amber-600' },
+    { value: 'easy', label: locale === 'vi' ? 'Dễ' : 'Easy', icon: BarChart3, color: 'text-green-600' },
     { value: 'american_government', label: locale === 'vi' ? 'Chính phủ Mỹ' : 'American Government' },
     { value: 'american_history', label: locale === 'vi' ? 'Lịch sử Mỹ' : 'American History' },
     { value: 'symbols_holidays', label: locale === 'vi' ? 'Biểu tượng & Ngày lễ' : 'Symbols & Holidays' },
@@ -157,15 +189,26 @@ export function PrintStudySheet({ locale, onClose }: PrintStudySheetProps) {
 
               <div className="flex flex-wrap items-center gap-4">
                 {printMode === 'study-sheet' && (
-                  <label className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
-                    <input
-                      type="checkbox"
-                      checked={showAnswers}
-                      onChange={(e) => setShowAnswers(e.target.checked)}
-                      className="rounded border-gray-300 dark:border-slate-600 text-blue-600 focus:ring-blue-500"
-                    />
-                    {locale === 'vi' ? 'Hiện đáp án' : 'Show Answers'}
-                  </label>
+                  <>
+                    <label className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+                      <input
+                        type="checkbox"
+                        checked={showAnswers}
+                        onChange={(e) => setShowAnswers(e.target.checked)}
+                        className="rounded border-gray-300 dark:border-slate-600 text-blue-600 focus:ring-blue-500"
+                      />
+                      {locale === 'vi' ? 'Hiện đáp án' : 'Show Answers'}
+                    </label>
+                    <label className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+                      <input
+                        type="checkbox"
+                        checked={showDifficulty}
+                        onChange={(e) => setShowDifficulty(e.target.checked)}
+                        className="rounded border-gray-300 dark:border-slate-600 text-blue-600 focus:ring-blue-500"
+                      />
+                      {locale === 'vi' ? 'Hiện độ khó' : 'Show Difficulty'}
+                    </label>
+                  </>
                 )}
 
                 <select
@@ -196,12 +239,23 @@ export function PrintStudySheet({ locale, onClose }: PrintStudySheetProps) {
                 <h3 className="text-lg font-bold text-center text-gray-900 dark:text-white mb-4">
                   {locale === 'vi' ? 'Thi Quốc Tịch Mỹ 2025' : 'U.S. Citizenship Test 2025'}
                 </h3>
+                {filter === 'wrong_answers' && filteredQuestions.length === 0 && (
+                  <div className="text-center py-8">
+                    <AlertTriangle className="w-8 h-8 text-gray-300 mx-auto mb-2" />
+                    <p className="text-gray-500 dark:text-gray-400">
+                      {locale === 'vi' ? 'Chưa có câu trả lời sai. Hãy làm bài kiểm tra thử!' : 'No wrong answers yet. Take a practice test!'}
+                    </p>
+                  </div>
+                )}
                 {filteredQuestions.slice(0, 5).map((question) => (
                   <QuestionPrintItem
                     key={question.id}
                     question={question}
                     locale={locale}
                     showAnswers={showAnswers}
+                    showDifficulty={showDifficulty}
+                    difficulty={difficultyStore.getDifficulty(question.question_number)}
+                    wrongCount={filter === 'wrong_answers' ? wrongAnswers.find((w) => w.questionNumber === question.question_number)?.wrongCount : undefined}
                   />
                 ))}
                 {filteredQuestions.length > 5 && (
@@ -250,14 +304,24 @@ export function PrintStudySheet({ locale, onClose }: PrintStudySheetProps) {
           </div>
 
           {/* Actions */}
-          <div className="p-4 border-t border-gray-200 dark:border-slate-700 flex justify-end gap-3">
-            <Button variant="outline" onClick={onClose}>
-              {locale === 'vi' ? 'Hủy' : 'Cancel'}
-            </Button>
-            <Button onClick={handlePrint}>
-              <Printer className="w-4 h-4 mr-2" />
-              {locale === 'vi' ? 'In ngay' : 'Print Now'}
-            </Button>
+          <div className="p-4 border-t border-gray-200 dark:border-slate-700">
+            <div className="flex items-center justify-between">
+              <p className="text-xs text-gray-400 dark:text-slate-500 flex items-center gap-1">
+                <Download className="w-3 h-3" />
+                {locale === 'vi'
+                  ? 'Mẹo: Chọn "Save as PDF" trong hộp thoại in để lưu dạng PDF'
+                  : 'Tip: Select "Save as PDF" in the print dialog to save as PDF'}
+              </p>
+              <div className="flex gap-3">
+                <Button variant="outline" onClick={onClose}>
+                  {locale === 'vi' ? 'Hủy' : 'Cancel'}
+                </Button>
+                <Button onClick={handlePrint}>
+                  <Printer className="w-4 h-4 mr-2" />
+                  {locale === 'vi' ? 'In ngay' : 'Print Now'}
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -275,7 +339,9 @@ export function PrintStudySheet({ locale, onClose }: PrintStudySheetProps) {
                 {locale === 'vi'
                   ? `${filteredQuestions.length} câu hỏi`
                   : `${filteredQuestions.length} questions`}
+                {filter !== 'all' && ` — ${filterOptions.find((f) => f.value === filter)?.label ?? ''}`}
               </p>
+              <p className="text-xs text-gray-400 mt-0.5">congdan.us</p>
             </div>
             <div className="space-y-4">
               {filteredQuestions.map((question) => (
@@ -284,8 +350,13 @@ export function PrintStudySheet({ locale, onClose }: PrintStudySheetProps) {
                   question={question}
                   locale={locale}
                   showAnswers={showAnswers}
+                  showDifficulty={showDifficulty}
+                  wrongCount={filter === 'wrong_answers' ? wrongAnswers.find((w) => w.questionNumber === question.question_number)?.wrongCount : undefined}
                 />
               ))}
+            </div>
+            <div className="mt-8 pt-4 border-t border-gray-300 text-center text-xs text-gray-400">
+              <p>congdan.us — {locale === 'vi' ? 'Ôn thi Quốc tịch Mỹ' : 'U.S. Citizenship Test Prep'}</p>
             </div>
           </>
         )}
@@ -318,30 +389,51 @@ function QuestionPrintItem({
   question,
   locale,
   showAnswers,
+  showDifficulty = false,
+  difficulty,
+  wrongCount,
 }: {
   question: Question;
   locale: Locale;
   showAnswers: boolean;
+  showDifficulty?: boolean;
+  difficulty?: 'easy' | 'medium' | 'hard' | 'unrated';
+  wrongCount?: number;
 }) {
   return (
-    <div className="py-3 border-b border-gray-200 dark:border-slate-700 print:border-gray-300">
+    <div className="py-3 border-b border-gray-200 dark:border-slate-700 print:border-gray-300 print:break-inside-avoid">
       <div className="flex items-start gap-3">
         <span className="flex-shrink-0 w-8 h-8 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-lg flex items-center justify-center text-sm font-bold print:bg-gray-100 print:text-gray-800">
           {question.question_number}
         </span>
         <div className="flex-1">
-          <p className="font-medium text-gray-900 dark:text-white print:text-black">
-            {locale === 'vi' ? question.question_vi : question.question_en}
-          </p>
+          <div className="flex items-start justify-between gap-2">
+            <p className="font-medium text-gray-900 dark:text-white print:text-black">
+              {locale === 'vi' ? question.question_vi : question.question_en}
+            </p>
+            {showDifficulty && difficulty && (
+              <div className="flex-shrink-0">
+                <DifficultyBadge difficulty={difficulty} locale={locale} />
+              </div>
+            )}
+          </div>
           <p className="text-sm text-gray-500 dark:text-gray-400 print:text-gray-600">
             {locale === 'vi' ? question.question_en : question.question_vi}
           </p>
-          {question.is_65_20 && (
-            <span className="inline-flex items-center gap-1 text-xs bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 px-2 py-0.5 rounded-full mt-1 print:bg-amber-50 print:text-amber-800">
-              <Star className="w-3 h-3" />
-              65/20
-            </span>
-          )}
+          <div className="flex flex-wrap items-center gap-2 mt-1">
+            {question.is_65_20 && (
+              <span className="inline-flex items-center gap-1 text-xs bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 px-2 py-0.5 rounded-full print:bg-amber-50 print:text-amber-800">
+                <Star className="w-3 h-3" />
+                65/20
+              </span>
+            )}
+            {wrongCount !== undefined && wrongCount > 0 && (
+              <span className="inline-flex items-center gap-1 text-xs bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 px-2 py-0.5 rounded-full print:bg-red-50 print:text-red-800">
+                <AlertTriangle className="w-3 h-3" />
+                {locale === 'vi' ? `Sai ${wrongCount} lần` : `Wrong ${wrongCount}x`}
+              </span>
+            )}
+          </div>
           {showAnswers && (
             <div className="mt-2 pl-3 border-l-2 border-green-500">
               <p className="text-sm font-medium text-green-700 dark:text-green-400 print:text-green-800">
@@ -383,68 +475,79 @@ function FlashcardPreview({ question, locale }: { question: Question; locale: Lo
   );
 }
 
-// Flashcards Print Layout (2x2 grid per page)
+// Flashcards Print Layout - 2-column fold-in-half design with page breaks every 8 cards
 function FlashcardsPrintLayout({ questions, locale }: { questions: Question[]; locale: Locale }) {
+  // Group questions into pages of 8 (4 rows x 2 columns)
+  const cardsPerPage = 8;
+  const pages: Question[][] = [];
+  for (let i = 0; i < questions.length; i += cardsPerPage) {
+    pages.push(questions.slice(i, i + cardsPerPage));
+  }
+
   return (
-    <div className="space-y-8">
-      {/* Front sides (Questions) */}
-      <div className="grid grid-cols-2 gap-0">
-        {questions.map((question) => (
-          <div
-            key={`front-${question.id}`}
-            className="border border-dashed border-gray-400 p-4 h-48 flex flex-col items-center justify-center text-center"
-          >
-            <span className="inline-block px-2 py-0.5 bg-gray-100 text-gray-700 text-xs font-bold rounded mb-2">
-              #{question.question_number}
-              {question.is_65_20 && ' ★'}
-            </span>
-            <p className="text-sm font-medium text-black leading-snug">
-              {locale === 'vi' ? question.question_vi : question.question_en}
-            </p>
-            <p className="text-xs text-gray-500 mt-2">
-              {locale === 'vi' ? question.question_en : question.question_vi}
-            </p>
+    <div>
+      {pages.map((pageQuestions, pageIdx) => (
+        <div key={pageIdx} className={pageIdx > 0 ? 'break-before-page' : ''}>
+          {/* Front sides (Questions) */}
+          <div className="grid grid-cols-2 gap-0">
+            {pageQuestions.map((question) => (
+              <div
+                key={`front-${question.id}`}
+                className="border border-dashed border-gray-400 p-4 h-48 flex flex-col items-center justify-center text-center"
+              >
+                <span className="inline-block px-2 py-0.5 bg-gray-100 text-gray-700 text-xs font-bold rounded mb-2">
+                  #{question.question_number}
+                  {question.is_65_20 && ' ★'}
+                </span>
+                <p className="text-sm font-medium text-black leading-snug">
+                  {locale === 'vi' ? question.question_vi : question.question_en}
+                </p>
+                <p className="text-xs text-gray-500 mt-2">
+                  {locale === 'vi' ? question.question_en : question.question_vi}
+                </p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
 
-      {/* Page break */}
-      <div className="break-before-page" />
+          {/* Page break between front and back */}
+          <div className="break-before-page" />
 
-      {/* Back sides (Answers) - reversed order for folding */}
-      <div className="grid grid-cols-2 gap-0">
-        {questions.map((question, idx) => {
-          // Reverse pairs for correct folding
-          const rowIdx = Math.floor(idx / 2);
-          const colIdx = idx % 2;
-          const reversedIdx = rowIdx * 2 + (1 - colIdx);
-          const displayQuestion = questions[reversedIdx] || question;
+          {/* Back sides (Answers) - columns swapped for fold-in-half */}
+          <div className="grid grid-cols-2 gap-0">
+            {pageQuestions.map((question, idx) => {
+              // Swap columns within each row for correct fold alignment
+              const rowIdx = Math.floor(idx / 2);
+              const colIdx = idx % 2;
+              const swappedIdx = rowIdx * 2 + (1 - colIdx);
+              const displayQuestion = pageQuestions[swappedIdx] || question;
 
-          return (
-            <div
-              key={`back-${displayQuestion.id}`}
-              className="border border-dashed border-gray-400 p-4 h-48 flex flex-col items-center justify-center text-center bg-green-50"
-            >
-              <span className="inline-block px-2 py-0.5 bg-green-100 text-green-700 text-xs font-bold rounded mb-2">
-                {locale === 'vi' ? 'Đáp án' : 'Answer'} #{displayQuestion.question_number}
-              </span>
-              <ul className="text-sm text-green-800 space-y-1">
-                {(locale === 'vi' ? displayQuestion.answers_vi : displayQuestion.answers_en)
-                  .slice(0, 3)
-                  .map((answer, ansIdx) => (
-                    <li key={ansIdx}>• {answer}</li>
-                  ))}
-                {(locale === 'vi' ? displayQuestion.answers_vi : displayQuestion.answers_en).length > 3 && (
-                  <li className="text-xs text-green-600">
-                    +{(locale === 'vi' ? displayQuestion.answers_vi : displayQuestion.answers_en).length - 3}{' '}
-                    {locale === 'vi' ? 'đáp án khác' : 'more'}
-                  </li>
-                )}
-              </ul>
-            </div>
-          );
-        })}
-      </div>
+              return (
+                <div
+                  key={`back-${displayQuestion.id}`}
+                  className="border border-dashed border-gray-400 p-4 h-48 flex flex-col items-center justify-center text-center bg-green-50"
+                >
+                  <span className="inline-block px-2 py-0.5 bg-green-100 text-green-700 text-xs font-bold rounded mb-2">
+                    {locale === 'vi' ? 'Đáp án' : 'Answer'} #{displayQuestion.question_number}
+                  </span>
+                  <ul className="text-sm text-green-800 space-y-1">
+                    {(locale === 'vi' ? displayQuestion.answers_vi : displayQuestion.answers_en)
+                      .slice(0, 3)
+                      .map((answer, ansIdx) => (
+                        <li key={ansIdx}>• {answer}</li>
+                      ))}
+                    {(locale === 'vi' ? displayQuestion.answers_vi : displayQuestion.answers_en).length > 3 && (
+                      <li className="text-xs text-green-600">
+                        +{(locale === 'vi' ? displayQuestion.answers_vi : displayQuestion.answers_en).length - 3}{' '}
+                        {locale === 'vi' ? 'đáp án khác' : 'more'}
+                      </li>
+                    )}
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

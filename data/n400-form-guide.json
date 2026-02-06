@@ -1,0 +1,731 @@
+{
+  "metadata": {
+    "formVersion": "12/23/23",
+    "source": "USCIS Form N-400",
+    "totalParts": 14,
+    "note_en": "This guide is for educational purposes only. It is not legal advice. Consult an immigration attorney for your specific situation.",
+    "note_vi": "Huong dan nay chi mang tinh chat giao duc. Day khong phai la tu van phap ly. Hay tham van luat su di tru cho tinh huong cu the cua ban."
+  },
+  "parts": [
+    {
+      "partNumber": 1,
+      "title_en": "Information About Your Eligibility",
+      "title_vi": "Thong Tin Ve Dieu Kien Du Tieu Chuan",
+      "description_en": "Select the basis for your naturalization eligibility. This determines which requirements apply to you.",
+      "description_vi": "Chon co so cho dieu kien nhap quoc tich cua ban. Dieu nay quyet dinh yeu cau nao ap dung cho ban.",
+      "fields": [
+        {
+          "field_name_en": "Eligibility Basis",
+          "field_name_vi": "Co So Du Tieu Chuan",
+          "explanation_en": "Most applicants select option A: 'I have been a lawful permanent resident for at least 5 years.' If you are married to a U.S. citizen, you may qualify under the 3-year rule (option B).",
+          "explanation_vi": "Hau het ung vien chon muc A: 'Toi da la thuong tru nhan hop phap it nhat 5 nam.' Neu ban ket hon voi cong dan My, ban co the du dieu kien theo quy dinh 3 nam (muc B).",
+          "common_mistakes_en": [
+            "Selecting the wrong eligibility category",
+            "Not knowing the difference between 3-year and 5-year requirement",
+            "Applying too early before meeting the residency requirement"
+          ],
+          "common_mistakes_vi": [
+            "Chon sai loai du tieu chuan",
+            "Khong biet su khac biet giua yeu cau 3 nam va 5 nam",
+            "Nop don qua som truoc khi dat yeu cau cu tru"
+          ],
+          "tips_en": "If married to a U.S. citizen for 3+ years and living together, you may qualify after only 3 years as a permanent resident. You can file up to 90 days before meeting the requirement.",
+          "tips_vi": "Neu ket hon voi cong dan My tu 3 nam tro len va song cung nhau, ban co the du dieu kien sau chi 3 nam la thuong tru nhan. Ban co the nop don truoc 90 ngay truoc khi dat yeu cau."
+        },
+        {
+          "field_name_en": "Military Service Eligibility",
+          "field_name_vi": "Du Dieu Kien Quan Su",
+          "explanation_en": "If you served in the U.S. military, special expedited naturalization rules may apply to you. Select the appropriate option if applicable.",
+          "explanation_vi": "Neu ban da phuc vu trong quan doi My, cac quy dinh nhap quoc tich nhanh dac biet co the ap dung cho ban. Chon muc phu hop neu thich hop.",
+          "common_mistakes_en": [
+            "Not knowing that military service can expedite citizenship",
+            "Missing the special provisions for wartime service"
+          ],
+          "common_mistakes_vi": [
+            "Khong biet rang phuc vu quan su co the thuc day quoc tich nhanh hon",
+            "Bo lo cac quy dinh dac biet cho phuc vu thoi chien"
+          ],
+          "tips_en": "Active duty military members may apply for citizenship even without meeting the usual residency requirements. Contact your base legal office for assistance.",
+          "tips_vi": "Quan nhan tai ngu co the xin quoc tich ngay ca khi chua dat yeu cau cu tru thong thuong. Lien he van phong phap ly cua can cu de duoc ho tro."
+        }
+      ]
+    },
+    {
+      "partNumber": 2,
+      "title_en": "Information About You (Applicant)",
+      "title_vi": "Thong Tin Ve Ban (Nguoi Nop Don)",
+      "description_en": "Your personal information including name, date of birth, Social Security Number, and contact details.",
+      "description_vi": "Thong tin ca nhan cua ban bao gom ten, ngay sinh, So An Sinh Xa Hoi va thong tin lien lac.",
+      "fields": [
+        {
+          "field_name_en": "Current Legal Name",
+          "field_name_vi": "Ten Phap Ly Hien Tai",
+          "explanation_en": "Enter your name exactly as it appears on your Permanent Resident Card (Green Card). If your name has changed, you must provide documentation.",
+          "explanation_vi": "Nhap ten cua ban chinh xac nhu tren The Thuong Tru (The Xanh). Neu ten cua ban da thay doi, ban phai cung cap giay to chung minh.",
+          "common_mistakes_en": [
+            "Name does not match the Green Card exactly",
+            "Putting Vietnamese name order (family name first) in the wrong fields",
+            "Forgetting to include middle name"
+          ],
+          "common_mistakes_vi": [
+            "Ten khong khop chinh xac voi The Xanh",
+            "Dat thu tu ten Viet Nam (ho truoc) vao sai o",
+            "Quen ghi ten dem"
+          ],
+          "tips_en": "Family Name = Last Name (Ho). Given Name = First Name (Ten). Middle Name (Ten Dem). For Vietnamese names: Nguyen (Family) Van (Middle) An (Given). If you want a name change, you can request it on this form.",
+          "tips_vi": "Family Name = Ho. Given Name = Ten goi. Middle Name = Ten dem. Voi ten Viet Nam: Nguyen (Family Name) Van (Middle Name) An (Given Name). Neu ban muon doi ten, ban co the yeu cau tren don nay."
+        },
+        {
+          "field_name_en": "Date of Birth",
+          "field_name_vi": "Ngay Sinh",
+          "explanation_en": "Enter your date of birth in MM/DD/YYYY format. This must match your official documents.",
+          "explanation_vi": "Nhap ngay sinh cua ban theo dinh dang MM/DD/YYYY (Thang/Ngay/Nam). Phai khop voi giay to chinh thuc.",
+          "common_mistakes_en": [
+            "Using DD/MM/YYYY format instead of MM/DD/YYYY",
+            "Date does not match birth certificate or passport",
+            "Lunar calendar date used instead of solar calendar date"
+          ],
+          "common_mistakes_vi": [
+            "Dung dinh dang DD/MM/YYYY thay vi MM/DD/YYYY",
+            "Ngay khong khop voi giay khai sinh hoac ho chieu",
+            "Dung ngay am lich thay vi duong lich"
+          ],
+          "tips_en": "American date format is Month/Day/Year. January 15, 1980 = 01/15/1980. Always use the solar (Western) calendar date, not the lunar calendar.",
+          "tips_vi": "Dinh dang ngay My la Thang/Ngay/Nam. Ngay 15 thang 1 nam 1980 = 01/15/1980. Luon dung ngay duong lich, khong dung am lich."
+        },
+        {
+          "field_name_en": "A-Number (Alien Registration Number)",
+          "field_name_vi": "So A (So Dang Ky Nguoi Nuoc Ngoai)",
+          "explanation_en": "Your 9-digit A-Number can be found on your Green Card. It starts with 'A' followed by 9 numbers.",
+          "explanation_vi": "So A 9 chu so cua ban co the tim thay tren The Xanh. No bat dau bang chu 'A' theo sau la 9 so.",
+          "common_mistakes_en": [
+            "Writing the wrong A-Number",
+            "Confusing A-Number with USCIS Online Account Number",
+            "Missing leading zeros"
+          ],
+          "common_mistakes_vi": [
+            "Ghi sai So A",
+            "Nham So A voi So Tai Khoan Truc Tuyen USCIS",
+            "Thieu cac so 0 o dau"
+          ],
+          "tips_en": "Find your A-Number on the front of your Green Card. It is also on any USCIS correspondence. Make sure to include all 9 digits including leading zeros.",
+          "tips_vi": "Tim So A cua ban o mat truoc cua The Xanh. No cung co tren moi thu tu USCIS. Dam bao ghi du 9 chu so ke ca so 0 o dau."
+        },
+        {
+          "field_name_en": "Social Security Number",
+          "field_name_vi": "So An Sinh Xa Hoi (SSN)",
+          "explanation_en": "Enter your 9-digit Social Security Number. This is required for the application.",
+          "explanation_vi": "Nhap So An Sinh Xa Hoi 9 chu so cua ban. Day la yeu cau bat buoc cho don.",
+          "common_mistakes_en": [
+            "Entering an incorrect SSN",
+            "Not having an SSN (you must apply for one first)"
+          ],
+          "common_mistakes_vi": [
+            "Nhap sai SSN",
+            "Chua co SSN (ban phai xin truoc)"
+          ],
+          "tips_en": "If you do not have an SSN, you should apply for one at the Social Security Administration before filing N-400. USCIS will verify your SSN.",
+          "tips_vi": "Neu ban chua co SSN, ban nen xin tai Co Quan An Sinh Xa Hoi truoc khi nop N-400. USCIS se xac minh SSN cua ban."
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "title_en": "Accommodations for Disabilities and/or Impairments",
+      "title_vi": "Ho Tro Cho Nguoi Khuyet Tat va/hoac Suy Giam",
+      "description_en": "Request special accommodations if you have a disability or impairment that requires assistance during the naturalization process.",
+      "description_vi": "Yeu cau ho tro dac biet neu ban co khuyet tat hoac suy giam can ho tro trong qua trinh nhap quoc tich.",
+      "fields": [
+        {
+          "field_name_en": "Disability Accommodations Request",
+          "field_name_vi": "Yeu Cau Ho Tro Khuyet Tat",
+          "explanation_en": "If you need accommodations such as a sign language interpreter, wheelchair access, or a modified test, indicate them here. You may also be eligible for a disability waiver (Form N-648).",
+          "explanation_vi": "Neu ban can ho tro nhu phien dich ngon ngu ky hieu, loi di xe lan, hoac bai thi duoc dieu chinh, ghi ro o day. Ban cung co the du dieu kien mien tru khuyet tat (Form N-648).",
+          "common_mistakes_en": [
+            "Not requesting accommodations when needed",
+            "Not knowing about the N-648 disability waiver for the civics/English test",
+            "Submitting N-648 without a licensed medical professional's signature"
+          ],
+          "common_mistakes_vi": [
+            "Khong yeu cau ho tro khi can thiet",
+            "Khong biet ve mien tru khuyet tat N-648 cho bai thi cong dan/tieng Anh",
+            "Nop N-648 ma khong co chu ky cua bac si co giay phep"
+          ],
+          "tips_en": "If you are over 50 years old with 20+ years as a permanent resident (50/20 rule) or over 55 with 15+ years (55/15 rule), you can take the civics test in Vietnamese. The N-648 is separate and covers medical disabilities.",
+          "tips_vi": "Neu ban tren 50 tuoi voi 20+ nam la thuong tru nhan (quy tac 50/20) hoac tren 55 tuoi voi 15+ nam (quy tac 55/15), ban co the thi cong dan bang tieng Viet. N-648 la rieng biet va danh cho khuyet tat y te."
+        },
+        {
+          "field_name_en": "50/20 and 55/15 Language Exemptions",
+          "field_name_vi": "Mien Tru Ngon Ngu 50/20 va 55/15",
+          "explanation_en": "Applicants who are 50+ with 20+ years as LPR, or 55+ with 15+ years as LPR, are exempt from the English language requirement and may take the civics test in their native language.",
+          "explanation_vi": "Ung vien tren 50 tuoi voi 20+ nam la LPR, hoac tren 55 tuoi voi 15+ nam la LPR, duoc mien yeu cau tieng Anh va co the thi cong dan bang tieng me de.",
+          "common_mistakes_en": [
+            "Not knowing you qualify for a language exemption",
+            "Confusing the 50/20 rule with the 65/20 rule (which has a simplified civics test)",
+            "Not bringing an interpreter to the interview"
+          ],
+          "common_mistakes_vi": [
+            "Khong biet ban du dieu kien mien tru ngon ngu",
+            "Nham quy tac 50/20 voi quy tac 65/20 (co bai thi cong dan don gian hon)",
+            "Khong mang phien dich den buoi phong van"
+          ],
+          "tips_en": "If you qualify for 50/20 or 55/15, you MUST bring your own interpreter to the interview. The interpreter must be fluent in both English and your language. USCIS does not provide interpreters.",
+          "tips_vi": "Neu ban du dieu kien 50/20 hoac 55/15, ban PHAI tu mang phien dich den buoi phong van. Phien dich vien phai thong thao ca tieng Anh va tieng cua ban. USCIS khong cung cap phien dich."
+        }
+      ]
+    },
+    {
+      "partNumber": 4,
+      "title_en": "Information About Your Residence",
+      "title_vi": "Thong Tin Ve Noi Cu Tru",
+      "description_en": "Your current home address and all addresses where you have lived during the last 5 years.",
+      "description_vi": "Dia chi nha hien tai va tat ca dia chi ban da song trong 5 nam qua.",
+      "fields": [
+        {
+          "field_name_en": "Current Physical Address",
+          "field_name_vi": "Dia Chi Hien Tai",
+          "explanation_en": "Enter where you actually live now. This must be a physical address, not a P.O. Box. This determines which USCIS office handles your case.",
+          "explanation_vi": "Nhap noi ban thuc su dang song. Phai la dia chi thuc, khong phai hop thu P.O. Box. Dieu nay quyet dinh van phong USCIS nao xu ly ho so cua ban.",
+          "common_mistakes_en": [
+            "Using a P.O. Box instead of physical address",
+            "Not updating address if you moved after filing",
+            "Listing a friend or relative's address instead of where you actually live"
+          ],
+          "common_mistakes_vi": [
+            "Dung P.O. Box thay vi dia chi thuc",
+            "Khong cap nhat dia chi neu ban chuyen nha sau khi nop don",
+            "Ghi dia chi cua ban be hoac nguoi than thay vi noi ban thuc su song"
+          ],
+          "tips_en": "If you move after filing, you MUST update your address with USCIS using Form AR-11 and also call USCIS to update your pending case. Your interview will be at the office closest to your home address.",
+          "tips_vi": "Neu ban chuyen nha sau khi nop don, ban PHAI cap nhat dia chi voi USCIS bang Form AR-11 va cung goi USCIS de cap nhat ho so dang xu ly. Buoi phong van se tai van phong gan nha ban nhat."
+        },
+        {
+          "field_name_en": "Address History (Last 5 Years)",
+          "field_name_vi": "Lich Su Dia Chi (5 Nam Qua)",
+          "explanation_en": "List every address where you have lived in the last 5 years, starting with the most recent. Include exact dates (month/year to month/year).",
+          "explanation_vi": "Liet ke moi dia chi ban da song trong 5 nam qua, bat dau tu gan nhat. Bao gom ngay chinh xac (thang/nam den thang/nam).",
+          "common_mistakes_en": [
+            "Leaving gaps between addresses",
+            "Not remembering exact move-in/move-out dates",
+            "Forgetting temporary addresses where you stayed more than a few weeks"
+          ],
+          "common_mistakes_vi": [
+            "De trong khoang giua cac dia chi",
+            "Khong nho ngay chinh xac chuyen den/chuyen di",
+            "Quen nhung dia chi tam thoi noi ban o hon vai tuan"
+          ],
+          "tips_en": "There should be no gaps in your address history. The dates should connect seamlessly. If you don't remember exact dates, check old mail, lease agreements, or utility bills. Keep a copy for the interview.",
+          "tips_vi": "Khong duoc co khoang trong trong lich su dia chi. Cac ngay phai noi tiep lien mach. Neu ban khong nho ngay chinh xac, kiem tra thu cu, hop dong thue nha, hoac hoa don tien nuoc/dien. Giu mot ban sao cho buoi phong van."
+        }
+      ]
+    },
+    {
+      "partNumber": 5,
+      "title_en": "Information About Your Parents",
+      "title_vi": "Thong Tin Ve Bo Me",
+      "description_en": "Information about your parents, including whether either parent is a U.S. citizen.",
+      "description_vi": "Thong tin ve bo me ban, bao gom viec co ai la cong dan My khong.",
+      "fields": [
+        {
+          "field_name_en": "Parent's Citizenship Status",
+          "field_name_vi": "Tinh Trang Quoc Tich Cua Bo Me",
+          "explanation_en": "If either of your parents is a U.S. citizen, you may already be a U.S. citizen through acquisition or derivation. This is an important legal question.",
+          "explanation_vi": "Neu bo hoac me ban la cong dan My, ban co the da la cong dan My thong qua thu dac hoac phai sinh. Day la cau hoi phap ly quan trong.",
+          "common_mistakes_en": [
+            "Not knowing that a parent's citizenship could affect your status",
+            "Not providing accurate information about deceased parents",
+            "Confusing parent's permanent resident status with citizenship"
+          ],
+          "common_mistakes_vi": [
+            "Khong biet rang quoc tich cua bo me co the anh huong den tinh trang cua ban",
+            "Khong cung cap thong tin chinh xac ve bo me da mat",
+            "Nham tinh trang thuong tru nhan cua bo me voi quoc tich"
+          ],
+          "tips_en": "If either parent became a U.S. citizen before you turned 18 and you were a permanent resident living with that parent, you may have automatically derived citizenship. Consult an attorney if this applies to you.",
+          "tips_vi": "Neu bo hoac me tro thanh cong dan My truoc khi ban 18 tuoi va ban la thuong tru nhan song voi nguoi do, ban co the da tu dong co quoc tich. Hay tham van luat su neu dieu nay ap dung cho ban."
+        },
+        {
+          "field_name_en": "Parent's Full Legal Name",
+          "field_name_vi": "Ten Day Du Cua Bo Me",
+          "explanation_en": "Provide your parents' current legal names. If they have changed their names, use their current legal names.",
+          "explanation_vi": "Cung cap ten phap ly hien tai cua bo me ban. Neu ho da doi ten, dung ten phap ly hien tai.",
+          "common_mistakes_en": [
+            "Using parents' Vietnamese names without the English transliteration used on their documents",
+            "Not knowing parent's name if adopted or estranged"
+          ],
+          "common_mistakes_vi": [
+            "Dung ten tieng Viet cua bo me ma khong co phien am tieng Anh tren giay to cua ho",
+            "Khong biet ten bo me neu duoc nhan nuoi hoac khong lien lac"
+          ],
+          "tips_en": "Use the name exactly as it appears on their most recent official document (passport, Green Card, or naturalization certificate). If a parent is deceased, use the name from their last official document.",
+          "tips_vi": "Dung ten chinh xac nhu tren giay to chinh thuc gan nhat cua ho (ho chieu, The Xanh, hoac giay chung nhan nhap quoc tich). Neu bo me da mat, dung ten tu giay to chinh thuc cuoi cung."
+        }
+      ]
+    },
+    {
+      "partNumber": 6,
+      "title_en": "Information About Your Marital History",
+      "title_vi": "Thong Tin Ve Lich Su Hon Nhan",
+      "description_en": "Your current marital status and complete marital history including all previous marriages.",
+      "description_vi": "Tinh trang hon nhan hien tai va lich su hon nhan day du bao gom tat ca cac cuoc hon nhan truoc.",
+      "fields": [
+        {
+          "field_name_en": "Current Marital Status",
+          "field_name_vi": "Tinh Trang Hon Nhan Hien Tai",
+          "explanation_en": "Select your current status: Single, Married, Divorced, Widowed, Separated, or Annulled. Be truthful and accurate.",
+          "explanation_vi": "Chon tinh trang hien tai: Doc than, Da ket hon, Da ly hon, Goa, Ly than, hoac Huy hon nhan. Hay trung thuc va chinh xac.",
+          "common_mistakes_en": [
+            "Claiming 'single' when legally still married (even if separated)",
+            "Forgetting to list a prior marriage that was annulled",
+            "Not having proper divorce documentation from Vietnam"
+          ],
+          "common_mistakes_vi": [
+            "Khai 'doc than' khi van con hon nhan hop phap (du da ly than)",
+            "Quen liet ke cuoc hon nhan truoc da bi huy",
+            "Khong co giay to ly hon hop le tu Viet Nam"
+          ],
+          "tips_en": "If you were divorced in Vietnam, make sure you have the official divorce decree translated into English by a certified translator. USCIS will verify your marital history carefully, especially if you are applying based on marriage to a U.S. citizen.",
+          "tips_vi": "Neu ban da ly hon o Viet Nam, dam bao ban co ban an ly hon chinh thuc duoc dich sang tieng Anh boi phien dich vien co chung nhan. USCIS se xac minh lich su hon nhan cua ban ky luong, dac biet neu ban nop don dua tren hon nhan voi cong dan My."
+        },
+        {
+          "field_name_en": "Spouse's Information",
+          "field_name_vi": "Thong Tin Vo/Chong",
+          "explanation_en": "If currently married, provide your spouse's full name, date of birth, citizenship, A-Number if applicable, and current address.",
+          "explanation_vi": "Neu dang ket hon, cung cap ten day du, ngay sinh, quoc tich, So A neu co, va dia chi hien tai cua vo/chong.",
+          "common_mistakes_en": [
+            "Spouse's information does not match their own USCIS records",
+            "Not listing spouse's previous marriages",
+            "Incorrect marriage date"
+          ],
+          "common_mistakes_vi": [
+            "Thong tin vo/chong khong khop voi ho so USCIS cua ho",
+            "Khong liet ke cac cuoc hon nhan truoc cua vo/chong",
+            "Sai ngay ket hon"
+          ],
+          "tips_en": "If your spouse is also applying for citizenship, make sure your applications are consistent with each other. Bring your marriage certificate to the interview.",
+          "tips_vi": "Neu vo/chong ban cung xin quoc tich, dam bao don cua hai nguoi nhat quan voi nhau. Mang giay dang ky ket hon den buoi phong van."
+        },
+        {
+          "field_name_en": "Number of Times Married",
+          "field_name_vi": "So Lan Ket Hon",
+          "explanation_en": "You must list the total number of times you have been married and provide details about each marriage, including how it ended.",
+          "explanation_vi": "Ban phai liet ke tong so lan ket hon va cung cap chi tiet ve moi cuoc hon nhan, bao gom cach no ket thuc.",
+          "common_mistakes_en": [
+            "Not disclosing all previous marriages",
+            "Not having documentation for how prior marriages ended",
+            "Inconsistent dates between N-400 and other immigration forms"
+          ],
+          "common_mistakes_vi": [
+            "Khong khai bao tat ca cac cuoc hon nhan truoc",
+            "Khong co giay to ve cach cac cuoc hon nhan truoc ket thuc",
+            "Ngay thang khong nhat quan giua N-400 va cac don di tru khac"
+          ],
+          "tips_en": "USCIS has access to your entire immigration file. Any discrepancies between your N-400 and previous applications (like your Green Card application) will be questioned. Be consistent and honest.",
+          "tips_vi": "USCIS co quyen truy cap toan bo ho so di tru cua ban. Bat ky su khac biet nao giua N-400 va cac don truoc (nhu don xin The Xanh) se bi hoi. Hay nhat quan va trung thuc."
+        }
+      ]
+    },
+    {
+      "partNumber": 7,
+      "title_en": "Information About Your Children",
+      "title_vi": "Thong Tin Ve Con Cai",
+      "description_en": "List ALL your children, regardless of age, location, or immigration status.",
+      "description_vi": "Liet ke TAT CA con cai cua ban, bat ke tuoi, dia diem, hoac tinh trang di tru.",
+      "fields": [
+        {
+          "field_name_en": "List of All Children",
+          "field_name_vi": "Danh Sach Tat Ca Con Cai",
+          "explanation_en": "You must list every child: biological, adopted, step-children, and children born outside of marriage. Include children living in the U.S. and abroad.",
+          "explanation_vi": "Ban phai liet ke moi dua con: ruot, con nuoi, con rieng, va con sinh ngoai gia thu. Bao gom con o My va o nuoc ngoai.",
+          "common_mistakes_en": [
+            "Not listing children still living in Vietnam or other countries",
+            "Forgetting to include step-children",
+            "Not listing deceased children",
+            "Not listing adult children"
+          ],
+          "common_mistakes_vi": [
+            "Khong liet ke con van con o Viet Nam hoac nuoc khac",
+            "Quen liet ke con rieng",
+            "Khong liet ke con da mat",
+            "Khong liet ke con truong thanh"
+          ],
+          "tips_en": "USCIS wants to see ALL children, not just minor children or children in the U.S. If you have children from a previous relationship in Vietnam, you MUST list them. Failing to do so can be seen as fraud.",
+          "tips_vi": "USCIS muon thay TAT CA con cai, khong chi con nho hoac con o My. Neu ban co con tu moi quan he truoc o Viet Nam, ban PHAI liet ke. Khong lam vay co the bi xem la gian lan."
+        },
+        {
+          "field_name_en": "Child's Immigration Status",
+          "field_name_vi": "Tinh Trang Di Tru Cua Con",
+          "explanation_en": "For each child, indicate their current immigration status: U.S. citizen, lawful permanent resident, or other.",
+          "explanation_vi": "Doi voi moi dua con, ghi ro tinh trang di tru hien tai: cong dan My, thuong tru nhan hop phap, hoac khac.",
+          "common_mistakes_en": [
+            "Not knowing children may automatically derive citizenship when parent naturalizes",
+            "Incorrect immigration status listed for children"
+          ],
+          "common_mistakes_vi": [
+            "Khong biet con co the tu dong co quoc tich khi bo me nhap quoc tich",
+            "Ghi sai tinh trang di tru cua con"
+          ],
+          "tips_en": "When you become a U.S. citizen, your children under 18 who are permanent residents and in your legal custody may automatically become citizens under the Child Citizenship Act. You can then apply for their U.S. passports.",
+          "tips_vi": "Khi ban tro thanh cong dan My, con duoi 18 tuoi la thuong tru nhan va trong quyen giam ho cua ban co the tu dong tro thanh cong dan theo Luat Quoc Tich Tre Em. Sau do ban co the xin ho chieu My cho con."
+        }
+      ]
+    },
+    {
+      "partNumber": 8,
+      "title_en": "Information About Your Employment",
+      "title_vi": "Thong Tin Ve Viec Lam",
+      "description_en": "Your employment history for the last 5 years, including employer names, addresses, and dates.",
+      "description_vi": "Lich su viec lam cua ban trong 5 nam qua, bao gom ten chu, dia chi, va ngay thang.",
+      "fields": [
+        {
+          "field_name_en": "Employment History (Last 5 Years)",
+          "field_name_vi": "Lich Su Viec Lam (5 Nam Qua)",
+          "explanation_en": "List all employers for the last 5 years. Include the employer's name, address, your job title, and dates of employment. Also include periods of unemployment and self-employment.",
+          "explanation_vi": "Liet ke tat ca chu su dung lao dong trong 5 nam qua. Bao gom ten chu, dia chi, chuc danh cua ban, va ngay lam viec. Cung bao gom thoi gian that nghiep va tu kinh doanh.",
+          "common_mistakes_en": [
+            "Leaving gaps in employment history without explanation",
+            "Not listing cash jobs or informal employment",
+            "Not listing self-employment (nail salon, restaurant, etc.)",
+            "Employer address is incorrect or incomplete"
+          ],
+          "common_mistakes_vi": [
+            "De trong khoang trong lich su viec lam ma khong giai thich",
+            "Khong liet ke viec lam tra tien mat hoac khong chinh thuc",
+            "Khong liet ke tu kinh doanh (tiem nail, nha hang, v.v.)",
+            "Dia chi chu sai hoac khong day du"
+          ],
+          "tips_en": "List 'Unemployed' or 'Homemaker' for any gaps. If you worked cash jobs, list them. USCIS may ask about your income and tax filing. Be prepared to explain how you supported yourself during unemployment.",
+          "tips_vi": "Ghi 'That nghiep' hoac 'Noi tro' cho bat ky khoang trong nao. Neu ban lam viec tra tien mat, hay liet ke. USCIS co the hoi ve thu nhap va khai thue cua ban. Hay san sang giai thich cach ban tu nuoi song trong thoi gian that nghiep."
+        },
+        {
+          "field_name_en": "Self-Employment Details",
+          "field_name_vi": "Chi Tiet Tu Kinh Doanh",
+          "explanation_en": "If self-employed, list your business name, type of business, and address. This is common for Vietnamese community members who own nail salons, restaurants, or other small businesses.",
+          "explanation_vi": "Neu tu kinh doanh, liet ke ten doanh nghiep, loai kinh doanh, va dia chi. Day la pho bien cho thanh vien cong dong Viet Nam so huu tiem nail, nha hang, hoac doanh nghiep nho khac.",
+          "common_mistakes_en": [
+            "Not reporting self-employment income",
+            "Business name on N-400 does not match tax records",
+            "Not mentioning business ownership"
+          ],
+          "common_mistakes_vi": [
+            "Khong khai bao thu nhap tu kinh doanh",
+            "Ten doanh nghiep tren N-400 khong khop voi ho so thue",
+            "Khong de cap viec so huu doanh nghiep"
+          ],
+          "tips_en": "Make sure your employment information is consistent with your tax returns. USCIS may request tax transcripts. If you own a business, have your business license and tax documents ready for the interview.",
+          "tips_vi": "Dam bao thong tin viec lam nhat quan voi to khai thue. USCIS co the yeu cau ban sao thue. Neu ban so huu doanh nghiep, chuan bi giay phep kinh doanh va tai lieu thue cho buoi phong van."
+        }
+      ]
+    },
+    {
+      "partNumber": 9,
+      "title_en": "Time Outside the United States",
+      "title_vi": "Thoi Gian O Ngoai Nuoc My",
+      "description_en": "All trips outside the United States during the last 5 years. This is critical for maintaining continuous residence.",
+      "description_vi": "Tat ca cac chuyen di ra ngoai nuoc My trong 5 nam qua. Dieu nay rat quan trong de duy tri cu tru lien tuc.",
+      "fields": [
+        {
+          "field_name_en": "List of All Trips Outside the U.S.",
+          "field_name_vi": "Danh Sach Tat Ca Chuyen Di Ra Ngoai My",
+          "explanation_en": "List every trip outside the United States in the last 5 years. Include the country, departure date, return date, and purpose of the trip. Even short trips to Canada or Mexico must be listed.",
+          "explanation_vi": "Liet ke moi chuyen di ra ngoai nuoc My trong 5 nam qua. Bao gom nuoc den, ngay di, ngay ve, va muc dich chuyen di. Ke ca chuyen di ngan den Canada hoac Mexico cung phai liet ke.",
+          "common_mistakes_en": [
+            "Not listing ALL trips (including short ones)",
+            "Inaccurate travel dates that don't match passport stamps",
+            "Not counting days correctly for trips to Vietnam",
+            "A single trip over 6 months can break continuous residence"
+          ],
+          "common_mistakes_vi": [
+            "Khong liet ke TAT CA cac chuyen di (bao gom ca chuyen ngan)",
+            "Ngay di khong chinh xac khong khop voi dau ho chieu",
+            "Khong dem ngay dung cho cac chuyen di Viet Nam",
+            "Mot chuyen di tren 6 thang co the pha vo cu tru lien tuc"
+          ],
+          "tips_en": "A trip of 6+ months creates a presumption that you broke continuous residence. A trip of 1+ year definitely breaks it. Keep your trips to Vietnam under 6 months. Check your passport stamps to get exact dates.",
+          "tips_vi": "Chuyen di tu 6 thang tro len tao gia dinh rang ban da pha vo cu tru lien tuc. Chuyen di tu 1 nam tro len chac chan pha vo. Giu cac chuyen di ve Viet Nam duoi 6 thang. Kiem tra dau ho chieu de co ngay chinh xac."
+        },
+        {
+          "field_name_en": "Total Days Outside the U.S.",
+          "field_name_vi": "Tong So Ngay O Ngoai My",
+          "explanation_en": "Calculate the total number of days you were outside the United States during the last 5 years. This affects your eligibility.",
+          "explanation_vi": "Tinh tong so ngay ban o ngoai nuoc My trong 5 nam qua. Dieu nay anh huong den dieu kien du tieu chuan cua ban.",
+          "common_mistakes_en": [
+            "Miscounting total days outside the U.S.",
+            "Not realizing that excessive time abroad can delay eligibility",
+            "Not counting the departure and arrival days correctly"
+          ],
+          "common_mistakes_vi": [
+            "Dem sai tong so ngay o ngoai My",
+            "Khong nhan ra rang thoi gian o nuoc ngoai qua nhieu co the lam cham du dieu kien",
+            "Khong dem dung ngay di va ngay den"
+          ],
+          "tips_en": "You must be physically present in the U.S. for at least 30 months out of the last 5 years (or 18 months out of 3 years if applying under the spouse rule). Calculate carefully and bring a trip log to the interview.",
+          "tips_vi": "Ban phai co mat tai My it nhat 30 thang trong 5 nam qua (hoac 18 thang trong 3 nam neu nop theo quy tac vo/chong). Tinh toan can than va mang nhat ky chuyen di den buoi phong van."
+        },
+        {
+          "field_name_en": "Extended Trip to Vietnam",
+          "field_name_vi": "Chuyen Di Dai Ve Viet Nam",
+          "explanation_en": "Many Vietnamese applicants travel to Vietnam for extended periods to visit family. These trips are scrutinized closely.",
+          "explanation_vi": "Nhieu ung vien Viet Nam di Viet Nam trong thoi gian dai de tham gia dinh. Nhung chuyen di nay duoc xem xet ky luong.",
+          "common_mistakes_en": [
+            "Staying in Vietnam for more than 6 months without a re-entry permit",
+            "Not being able to explain the purpose of a long trip",
+            "Multiple long trips that show you spend more time abroad than in the U.S."
+          ],
+          "common_mistakes_vi": [
+            "O Viet Nam hon 6 thang ma khong co giay phep tai nhap canh",
+            "Khong giai thich duoc muc dich chuyen di dai",
+            "Nhieu chuyen di dai cho thay ban o nuoc ngoai nhieu hon o My"
+          ],
+          "tips_en": "If you need to stay outside the U.S. for more than 6 months, apply for a Re-entry Permit (Form I-131) BEFORE you leave. Keep evidence of your ties to the U.S. (lease, job, children in school, etc.).",
+          "tips_vi": "Neu ban can o ngoai My hon 6 thang, xin Giay Phep Tai Nhap Canh (Form I-131) TRUOC khi di. Giu bang chung ve moi rang buoc voi My (hop dong thue nha, viec lam, con di hoc, v.v.)."
+        }
+      ]
+    },
+    {
+      "partNumber": 10,
+      "title_en": "Additional Information About You",
+      "title_vi": "Thong Tin Bo Sung Ve Ban",
+      "description_en": "Questions about your moral character including criminal history, tax compliance, organizational memberships, and military service. Answer all questions honestly.",
+      "description_vi": "Cau hoi ve dao duc cua ban bao gom lich su toi pham, tuan thu thue, thanh vien to chuc, va nghia vu quan su. Tra loi tat ca cau hoi mot cach trung thuc.",
+      "fields": [
+        {
+          "field_name_en": "Tax Filing Questions",
+          "field_name_vi": "Cau Hoi Ve Khai Thue",
+          "explanation_en": "You will be asked if you have filed your federal, state, and local tax returns for every year since becoming a permanent resident. You must also disclose any overdue taxes.",
+          "explanation_vi": "Ban se duoc hoi da khai thue lien bang, tieu bang, va dia phuong cho moi nam ke tu khi tro thanh thuong tru nhan chua. Ban cung phai khai bao moi khoan thue qua han.",
+          "common_mistakes_en": [
+            "Not filing taxes for all years as a permanent resident",
+            "Filing as 'single' when legally married",
+            "Not reporting income from cash businesses",
+            "Owing back taxes and not having a payment plan"
+          ],
+          "common_mistakes_vi": [
+            "Khong khai thue cho tat ca cac nam la thuong tru nhan",
+            "Khai la 'doc than' khi da ket hon hop phap",
+            "Khong khai bao thu nhap tu kinh doanh tien mat",
+            "No thue va khong co ke hoach tra"
+          ],
+          "tips_en": "File all tax returns before your interview. If you owe taxes, set up a payment plan with the IRS. Bring copies of your last 5 years of tax returns and any IRS payment plan documentation to the interview.",
+          "tips_vi": "Nop tat ca to khai thue truoc buoi phong van. Neu ban no thue, thiet lap ke hoach tra voi IRS. Mang ban sao to khai thue 5 nam qua va tai lieu ke hoach tra IRS den buoi phong van."
+        },
+        {
+          "field_name_en": "Criminal History Questions",
+          "field_name_vi": "Cau Hoi Ve Tien An",
+          "explanation_en": "You must disclose ALL arrests, citations, and charges, even if they were dismissed, expunged, or you were found not guilty. This includes traffic violations (DUI, driving without a license, etc.).",
+          "explanation_vi": "Ban phai khai bao TAT CA cac lan bi bat, bi phat, va bi truy to, ke ca khi bi bac bo, xoa an, hoac ban duoc tuyen trang. Bao gom ca vi pham giao thong (lai xe say ruou, lai xe khong bang lai, v.v.).",
+          "common_mistakes_en": [
+            "Not disclosing a DUI or traffic arrest",
+            "Thinking dismissed charges don't need to be reported",
+            "Not disclosing arrests from before becoming a permanent resident",
+            "Lying about criminal history (this alone can result in denial)"
+          ],
+          "common_mistakes_vi": [
+            "Khong khai bao DUI hoac bi bat vi pham giao thong",
+            "Nghi rang cac cao buoc bi bac bo khong can khai bao",
+            "Khong khai bao cac lan bi bat truoc khi tro thanh thuong tru nhan",
+            "Noi doi ve tien an (chi rieng dieu nay co the dan den bi tu choi)"
+          ],
+          "tips_en": "ALWAYS disclose everything. USCIS has access to FBI records. Lying on your application is a worse offense than the original charge. Bring certified court dispositions for any arrests. Consult an attorney if you have a criminal record.",
+          "tips_vi": "LUON khai bao moi thu. USCIS co quyen truy cap ho so FBI. Noi doi tren don la toi nang hon cao buoc ban dau. Mang ban an toa an co chung nhan cho moi lan bi bat. Tham van luat su neu ban co tien an."
+        },
+        {
+          "field_name_en": "Membership in Organizations",
+          "field_name_vi": "Thanh Vien Cac To Chuc",
+          "explanation_en": "You will be asked about membership in any organization, association, fund, foundation, party, club, or society. This includes political parties, community groups, and religious organizations.",
+          "explanation_vi": "Ban se duoc hoi ve thanh vien trong bat ky to chuc, hiep hoi, quy, hoi, dang, cau lac bo, hoac hoi nao. Bao gom dang chinh tri, nhom cong dong, va to chuc ton giao.",
+          "common_mistakes_en": [
+            "Not listing community organizations you belong to",
+            "Not disclosing former membership in the Communist Party",
+            "Forgetting to mention religious organization membership"
+          ],
+          "common_mistakes_vi": [
+            "Khong liet ke cac to chuc cong dong ban tham gia",
+            "Khong khai bao thanh vien cu cua Dang Cong San",
+            "Quen de cap thanh vien to chuc ton giao"
+          ],
+          "tips_en": "Former Communist Party membership CAN be an issue but is not an automatic bar if it was involuntary or ended more than 5 years ago. Be honest and consult an attorney if you were ever a member of the Communist Party in Vietnam.",
+          "tips_vi": "Thanh vien cu cua Dang Cong San CO THE la van de nhung khong tu dong bi tu choi neu la khong tu nguyen hoac da ket thuc tren 5 nam. Hay trung thuc va tham van luat su neu ban tung la dang vien Dang Cong San o Viet Nam."
+        },
+        {
+          "field_name_en": "Good Moral Character Questions",
+          "field_name_vi": "Cau Hoi Ve Dao Duc Tot",
+          "explanation_en": "Questions about whether you have ever been a habitual drunkard, sold illegal drugs, been a prostitute, smuggled people, gambled illegally, lied to obtain immigration benefits, or failed to support dependents.",
+          "explanation_vi": "Cau hoi ve viec ban co tung la nguoi nghien ruou, ban ma tuy, lam gai, buon nguoi, co bac bat hop phap, noi doi de co loi ich di tru, hoac khong chu cap cho nguoi phu thuoc.",
+          "common_mistakes_en": [
+            "Not understanding the questions due to language barrier",
+            "Answering 'Yes' to questions you don't understand",
+            "Not disclosing child support obligations"
+          ],
+          "common_mistakes_vi": [
+            "Khong hieu cau hoi do rao can ngon ngu",
+            "Tra loi 'Co' cho cau hoi ban khong hieu",
+            "Khong khai bao nghia vu cap duong con"
+          ],
+          "tips_en": "Read each question carefully. Most people will answer 'No' to these questions. If you answer 'Yes' to any, consult an immigration attorney before filing. At the interview, the officer will go through these questions again.",
+          "tips_vi": "Doc ky moi cau hoi. Hau het moi nguoi se tra loi 'Khong' cho nhung cau hoi nay. Neu ban tra loi 'Co' cho bat ky cau nao, tham van luat su di tru truoc khi nop. Tai buoi phong van, vien chuc se hoi lai nhung cau hoi nay."
+        }
+      ]
+    },
+    {
+      "partNumber": 11,
+      "title_en": "Oath of Allegiance",
+      "title_vi": "Loi Tuyen The Trung Thanh",
+      "description_en": "You must affirm your willingness to take the full Oath of Allegiance to the United States.",
+      "description_vi": "Ban phai xac nhan san sang tuyen the trung thanh hoan toan voi Hoa Ky.",
+      "fields": [
+        {
+          "field_name_en": "Willingness to Take the Oath",
+          "field_name_vi": "San Sang Tuyen The",
+          "explanation_en": "You must agree to: support the Constitution, renounce foreign allegiances, support and defend the Constitution and laws against all enemies, bear arms on behalf of the U.S. (or perform noncombatant service or civilian service).",
+          "explanation_vi": "Ban phai dong y: ung ho Hien Phap, tu bo trung thanh voi nuoc ngoai, ung ho va bao ve Hien Phap va luat phap chong lai moi ke thu, mang vu khi cho My (hoac phuc vu phi chien dau hoac phuc vu dan su).",
+          "common_mistakes_en": [
+            "Not understanding what the oath requires",
+            "Being afraid that taking the oath means losing Vietnamese citizenship",
+            "Not knowing you can request a modified oath for religious reasons"
+          ],
+          "common_mistakes_vi": [
+            "Khong hieu loi tuyen the yeu cau gi",
+            "So rang tuyen the co nghia la mat quoc tich Viet Nam",
+            "Khong biet ban co the yeu cau loi tuyen the sua doi vi ly do ton giao"
+          ],
+          "tips_en": "Vietnam does not formally recognize dual citizenship, but many Vietnamese Americans hold both passports in practice. Taking the U.S. oath does not automatically cancel your Vietnamese passport. Consult Vietnamese consulate for specifics.",
+          "tips_vi": "Viet Nam khong chinh thuc cong nhan quoc tich kep, nhung nhieu nguoi My goc Viet van giu ca hai ho chieu trong thuc te. Tuyen the My khong tu dong huy ho chieu Viet Nam. Tham van lanh su quan Viet Nam de biet cu the."
+        },
+        {
+          "field_name_en": "Bearing Arms / Military Service Commitment",
+          "field_name_vi": "Mang Vu Khi / Cam Ket Nghia Vu Quan Su",
+          "explanation_en": "You must agree to bear arms, perform noncombatant service, or perform civilian work of national importance when required by law.",
+          "explanation_vi": "Ban phai dong y mang vu khi, phuc vu phi chien dau, hoac thuc hien cong viec dan su quan trong quoc gia khi phap luat yeu cau.",
+          "common_mistakes_en": [
+            "Answering 'No' because you don't want to join the military",
+            "Not understanding that this is a hypothetical commitment",
+            "Religious objectors not knowing they can request a modified oath"
+          ],
+          "common_mistakes_vi": [
+            "Tra loi 'Khong' vi khong muon nhap ngu",
+            "Khong hieu rang day la cam ket gia dinh",
+            "Nguoi phan doi vi ton giao khong biet ho co the yeu cau loi tuyen the sua doi"
+          ],
+          "tips_en": "If your religion prohibits you from bearing arms, you can request a modified oath. You must answer 'Yes' to at least one of the three options (bear arms, noncombatant service, or civilian service). Answering 'No' to all three will result in denial.",
+          "tips_vi": "Neu ton giao cam ban mang vu khi, ban co the yeu cau loi tuyen the sua doi. Ban phai tra loi 'Co' cho it nhat mot trong ba lua chon (mang vu khi, phuc vu phi chien dau, hoac phuc vu dan su). Tra loi 'Khong' cho ca ba se bi tu choi."
+        }
+      ]
+    },
+    {
+      "partNumber": 12,
+      "title_en": "Your Signature",
+      "title_vi": "Chu Ky Cua Ban",
+      "description_en": "Sign and certify that all information in the application is true and correct.",
+      "description_vi": "Ky va xac nhan rang tat ca thong tin trong don la dung va chinh xac.",
+      "fields": [
+        {
+          "field_name_en": "Applicant's Signature",
+          "field_name_vi": "Chu Ky Cua Nguoi Nop Don",
+          "explanation_en": "You must sign the application yourself. If you cannot sign your name, you may make an 'X' mark with a witness present.",
+          "explanation_vi": "Ban phai tu ky don. Neu ban khong the ky ten, ban co the danh dau 'X' voi su hien dien cua nguoi lam chung.",
+          "common_mistakes_en": [
+            "Having someone else sign for you",
+            "Not signing all required pages",
+            "Signature does not match other documents"
+          ],
+          "common_mistakes_vi": [
+            "De nguoi khac ky thay",
+            "Khong ky tat ca cac trang yeu cau",
+            "Chu ky khong khop voi cac giay to khac"
+          ],
+          "tips_en": "Sign the way you normally sign your name. At the interview, you will sign again and the officer will compare signatures. Practice signing your name in English if your Green Card signature is in English.",
+          "tips_vi": "Ky theo cach ban thuong ky ten. Tai buoi phong van, ban se ky lai va vien chuc se so sanh chu ky. Tap ky ten bang tieng Anh neu chu ky tren The Xanh bang tieng Anh."
+        },
+        {
+          "field_name_en": "Date of Signature",
+          "field_name_vi": "Ngay Ky",
+          "explanation_en": "Enter the date you are signing the application. This must be the actual date you sign, not a past or future date.",
+          "explanation_vi": "Nhap ngay ban ky don. Phai la ngay thuc te ban ky, khong phai ngay trong qua khu hoac tuong lai.",
+          "common_mistakes_en": [
+            "Backdating the application",
+            "Not using MM/DD/YYYY format"
+          ],
+          "common_mistakes_vi": [
+            "Ghi ngay truoc ngay ky thuc te",
+            "Khong dung dinh dang MM/DD/YYYY"
+          ],
+          "tips_en": "Always use the current date when you sign. If filing online, the electronic signature date is recorded automatically.",
+          "tips_vi": "Luon dung ngay hien tai khi ky. Neu nop truc tuyen, ngay chu ky dien tu duoc ghi tu dong."
+        }
+      ]
+    },
+    {
+      "partNumber": 13,
+      "title_en": "Interpreter's Contact Information, Certification, and Signature",
+      "title_vi": "Thong Tin Lien Lac, Chung Nhan va Chu Ky Cua Phien Dich",
+      "description_en": "If someone helped you translate the application from English to your language, that person must complete this section.",
+      "description_vi": "Neu co nguoi giup ban dich don tu tieng Anh sang tieng cua ban, nguoi do phai hoan thanh phan nay.",
+      "fields": [
+        {
+          "field_name_en": "Interpreter Information",
+          "field_name_vi": "Thong Tin Phien Dich Vien",
+          "explanation_en": "If an interpreter helped you understand the application, they must provide their name, address, and sign the form. The interpreter does NOT need to be a certified translator.",
+          "explanation_vi": "Neu phien dich vien giup ban hieu don, ho phai cung cap ten, dia chi, va ky ten vao don. Phien dich vien KHONG can phai la dich gia co chung nhan.",
+          "common_mistakes_en": [
+            "Not listing the interpreter when one was used",
+            "Interpreter not signing the form",
+            "Using a minor (under 18) as an interpreter"
+          ],
+          "common_mistakes_vi": [
+            "Khong ghi ten phien dich khi co nguoi giup",
+            "Phien dich vien khong ky vao don",
+            "Dung nguoi chua du 18 tuoi lam phien dich"
+          ],
+          "tips_en": "If you used a family member or friend to help you understand the form, they should be listed here and sign. At the interview, you can bring a different interpreter if needed, but they must be over 18 and fluent in both languages.",
+          "tips_vi": "Neu ban nho nguoi than hoac ban be giup hieu don, ho nen duoc ghi ten va ky. Tai buoi phong van, ban co the mang phien dich khac neu can, nhung ho phai tren 18 tuoi va thong thao ca hai ngon ngu."
+        }
+      ]
+    },
+    {
+      "partNumber": 14,
+      "title_en": "Contact Information, Declaration, and Signature of the Person Preparing this Application",
+      "title_vi": "Thong Tin Lien Lac, Tuyen Bo va Chu Ky Cua Nguoi Chuan Bi Don",
+      "description_en": "If someone other than you prepared this application, that person must complete this section.",
+      "description_vi": "Neu nguoi khac chuan bi don nay cho ban, nguoi do phai hoan thanh phan nay.",
+      "fields": [
+        {
+          "field_name_en": "Preparer Information",
+          "field_name_vi": "Thong Tin Nguoi Chuan Bi",
+          "explanation_en": "If an attorney, accredited representative, or anyone else helped prepare your application, they must provide their information and sign. This is required even if a family member helped fill out the form.",
+          "explanation_vi": "Neu luat su, dai dien duoc cong nhan, hoac bat ky ai khac giup chuan bi don cua ban, ho phai cung cap thong tin va ky ten. Dieu nay bat buoc ke ca khi nguoi than giup dien don.",
+          "common_mistakes_en": [
+            "Not listing the preparer when someone helped fill out the form",
+            "Preparer not signing the form",
+            "Using a notario who is not authorized to practice immigration law"
+          ],
+          "common_mistakes_vi": [
+            "Khong ghi ten nguoi chuan bi khi co nguoi giup dien don",
+            "Nguoi chuan bi khong ky vao don",
+            "Dung 'notario' (cong chung vien) khong duoc phep hanh nghe luat di tru"
+          ],
+          "tips_en": "Be careful of immigration fraud. Only licensed attorneys or DOJ-accredited representatives can give legal advice. A 'notario' in the Vietnamese community is NOT the same as a lawyer. If an unlicensed person prepared your form, you are still responsible for its accuracy.",
+          "tips_vi": "Can than voi gian lan di tru. Chi luat su co giay phep hoac dai dien duoc DOJ cong nhan moi co the tu van phap ly. 'Notario' trong cong dong Viet Nam KHONG phai la luat su. Neu nguoi khong co giay phep chuan bi don cho ban, ban van chiu trach nhiem ve tinh chinh xac cua no."
+        },
+        {
+          "field_name_en": "Attorney or Accredited Representative",
+          "field_name_vi": "Luat Su hoac Dai Dien Duoc Cong Nhan",
+          "explanation_en": "If you hired an attorney, they must provide their bar number, law firm information, and USCIS online account number if applicable.",
+          "explanation_vi": "Neu ban thue luat su, ho phai cung cap so luat su doan, thong tin van phong luat, va so tai khoan truc tuyen USCIS neu co.",
+          "common_mistakes_en": [
+            "Attorney not providing their bar number",
+            "Not verifying that the attorney is actually licensed",
+            "Paying too much for form preparation services"
+          ],
+          "common_mistakes_vi": [
+            "Luat su khong cung cap so luat su doan",
+            "Khong xac minh luat su co giay phep thuc su",
+            "Tra qua nhieu cho dich vu chuan bi don"
+          ],
+          "tips_en": "You can verify an attorney's license at your state bar association website. Many community organizations offer free or low-cost help with N-400. Check with local Vietnamese community centers for referrals.",
+          "tips_vi": "Ban co the xac minh giay phep luat su tai trang web luat su doan tieu bang. Nhieu to chuc cong dong cung cap ho tro mien phi hoac chi phi thap voi N-400. Kiem tra voi cac trung tam cong dong Viet Nam dia phuong de duoc gioi thieu."
+        }
+      ]
+    }
+  ]
+}

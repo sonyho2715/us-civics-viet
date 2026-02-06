@@ -16,6 +16,7 @@ import {
   ChevronUp,
   Star,
   AlertCircle,
+  AlertTriangle,
 } from 'lucide-react';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
@@ -57,7 +58,8 @@ export default function ResultsPage() {
         });
       }
       savedWrongAnswersRef.current = true;
-    }
+
+}
   }, [result, addWrongAnswer, recordActivity]);
 
   // Redirect if no results
@@ -265,10 +267,20 @@ export default function ResultsPage() {
           {t('retakeTest')}
         </Button>
         {wrongAnswers.length > 0 && (
-          <Button variant="secondary" onClick={handleReviewWrongAnswers} className="bg-amber-500 hover:bg-amber-600 text-white border-amber-500">
-            <XCircle className="w-4 h-4 mr-2" />
-            {t('reviewWrong', { count: wrongAnswers.length })}
-          </Button>
+          <>
+            <Button variant="secondary" onClick={handleReviewWrongAnswers} className="bg-amber-500 hover:bg-amber-600 text-white border-amber-500">
+              <XCircle className="w-4 h-4 mr-2" />
+              {t('reviewWrong', { count: wrongAnswers.length })}
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() => { resetTest(); router.push(`/${locale}/wrong-answers`); }}
+              className="border-red-300 text-red-700 hover:bg-red-50 dark:border-red-700 dark:text-red-400 dark:hover:bg-red-900/20"
+            >
+              <AlertTriangle className="w-4 h-4 mr-2" />
+              {locale === 'vi' ? 'Ôn câu sai' : 'Drill Wrong Answers'}
+            </Button>
+          </>
         )}
         <Button variant="secondary" onClick={handleStudy}>
           <BookOpen className="w-4 h-4 mr-2" />

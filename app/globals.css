@@ -182,7 +182,7 @@ html {
   body {
     background: white !important;
     color: black !important;
-    font-size: 12pt;
+    font-size: 11pt;
     line-height: 1.4;
   }
 
@@ -199,11 +199,43 @@ html {
     size: letter portrait;
   }
 
-  .print-content h1 {
+  @page :first {
+    margin-top: 2cm;
+  }
+
+  /* Prevent orphaned headings and questions */
+  .print-content h1,
+  .print-content h2,
+  .print-content h3 {
+    break-after: avoid;
     page-break-after: avoid;
   }
 
   .print-content > div > div {
+    break-inside: avoid;
     page-break-inside: avoid;
+  }
+
+  /* Flashcard grid page breaks */
+  .break-before-page {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  /* Ensure links print properly */
+  a[href]:after {
+    content: none !important;
+  }
+
+  /* Remove shadows and backgrounds for cleaner print */
+  .print-content * {
+    box-shadow: none !important;
+  }
+
+  /* Dark mode overrides for print */
+  .dark .print-content * {
+    color: black !important;
+    background: white !important;
+    border-color: #d1d5db !important;
   }
 }

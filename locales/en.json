@@ -16,7 +16,11 @@
     "stories": "Success Stories",
     "n400": "N-400 Guide",
     "interview": "Interview Tips",
-    "community": "Community"
+    "community": "Community",
+    "myState": "My State",
+    "examDay": "Exam Day",
+    "n400Helper": "N-400 Helper",
+    "wrongAnswerDrills": "Wrong Answer Drills"
   },
   "home": {
     "hero": {
@@ -412,7 +416,8 @@
   "header": {
     "siteName": "U.S. Citizenship",
     "mainNavigation": "Main navigation",
-    "interviewSimulation": "Interview Simulation"
+    "interviewSimulation": "Interview Simulation",
+    "keyboardShortcuts": "Keyboard Shortcuts"
   },
   "streak": {
     "dayStreak": "Day Streak",
@@ -502,6 +507,75 @@
     "totalFlashcards": "Total Flashcards",
     "avgEaseFactor": "Avg. Ease Factor"
   },
+  "multipleChoice": {
+    "selectAnswer": "Select your answer:"
+  },
+  "questionCard": {
+    "correctAnswers": "Correct answer(s):"
+  },
+  "skipLinks": {
+    "skipToMain": "Skip to main content",
+    "skipToNav": "Skip to navigation"
+  },
+  "wrongDrills": {
+    "title": "Wrong Answer Drills",
+    "subtitle": "Focus on questions you've gotten wrong",
+    "totalWrong": "Total Wrong Answers",
+    "noWrongAnswers": "No wrong answers yet! Take a practice test first.",
+    "drillAll": "Drill All Wrong",
+    "focusTop10": "Focus Top 10",
+    "byCategory": "By Category",
+    "improvement": "You improved on {count} questions!",
+    "timesWrong": "Wrong {count} times",
+    "startDrill": "Start Drill",
+    "wrongCount": "{count} wrong",
+    "drillComplete": "Drill Complete!",
+    "keepPracticing": "Keep practicing to master these questions.",
+    "backToDrills": "Back to Drills"
+  },
+  "difficulty": {
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard",
+    "unrated": "Unrated",
+    "title": "Difficulty",
+    "filter": "Filter by Difficulty",
+    "sort": "Sort by Difficulty",
+    "hardest": "Hardest First",
+    "easiest": "Easiest First",
+    "yourHardest": "Your Hardest Questions",
+    "stats": "Difficulty Stats",
+    "attempts": "attempts"
+  },
+  "myState": {
+    "title": "My State",
+    "subtitle": "State-specific information for your citizenship test",
+    "selectState": "Select Your State",
+    "governor": "Governor",
+    "capital": "State Capital",
+    "senators": "U.S. Senators",
+    "representative": "U.S. Representative",
+    "stateQuestions": "State-Specific Questions",
+    "stateWebsite": "State Government Website",
+    "visitWebsite": "Visit Website",
+    "uscisOffice": "Nearest USCIS Office",
+    "noStateSelected": "Select your state to see specific information",
+    "dynamicQuestions": "These questions may appear on your test with answers specific to your state."
+  },
+  "n400Helper": {
+    "title": "N-400 Form Helper",
+    "subtitle": "Field-by-field guide to completing your N-400 application",
+    "partOf": "Part {current} of {total}",
+    "fieldName": "Field",
+    "explanation": "Explanation",
+    "commonMistakes": "Common Mistakes",
+    "tips": "Tips",
+    "example": "Example",
+    "completed": "Completed",
+    "markComplete": "Mark as Complete",
+    "progress": "Progress",
+    "partsCompleted": "{count} of {total} parts completed"
+  },
   "share": {
     "share": "Share",
     "shareOptions": "Share options",
@@ -513,7 +587,10 @@
     "shareText": "{emoji} I just scored {score}/{total} ({percentage}%) on the U.S. Citizenship Practice Test{mode}! {status}{time} Study with me at:",
     "emailSubject": "U.S. Citizenship Test Results - {score}/{total}",
     "passed": "PASSED!",
-    "stillWorking": "Still working on it!"
+    "stillWorking": "Still working on it!",
+    "shareAsImage": "Share as Image",
+    "downloadImage": "Download Image",
+    "shareProgress": "Share Progress"
   },
   "print": {
     "title": "Print Study Sheet",
@@ -527,6 +604,12 @@
     "allQuestions": "All 128 Questions",
     "bookmarked": "Bookmarked",
     "needsReview": "Needs Review",
+    "wrongAnswers": "Wrong Answers",
+    "hard": "Hard Questions",
+    "medium": "Medium Questions",
+    "easy": "Easy Questions",
+    "showDifficulty": "Show Difficulty",
+    "savePdfTip": "Tip: Select \"Save as PDF\" in the print dialog to save as PDF",
     "americanGovernment": "American Government",
     "americanHistory": "American History",
     "symbolsHolidays": "Symbols & Holidays",
@@ -567,15 +650,5 @@
     "tipReviewMissed": "Review missed questions",
     "cancel": "Cancel",
     "printNow": "Print Now"
-  },
-  "multipleChoice": {
-    "selectAnswer": "Select your answer:"
-  },
-  "questionCard": {
-    "correctAnswers": "Correct answer(s):"
-  },
-  "skipLinks": {
-    "skipToMain": "Skip to main content",
-    "skipToNav": "Skip to navigation"
   }
 }
