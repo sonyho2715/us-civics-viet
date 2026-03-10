@@ -39,25 +39,25 @@ const STATE_DEPENDENT_QUESTIONS = [
   {
     number: 23,
     question_en: 'Name your U.S. Representative.',
-    question_vi: 'Hay ke ten Dan bieu lien bang cua ban.',
+    question_vi: 'Hãy kể tên Dân biểu liên bang của bạn.',
     type: 'representative',
   },
   {
     number: 57,
     question_en: 'What are the two senators for your state?',
-    question_vi: 'Hai Thuong nghi si cua tieu bang ban la ai?',
+    question_vi: 'Hai Thượng nghị sĩ của tiểu bang bạn là ai?',
     type: 'state_senator',
   },
   {
     number: 61,
     question_en: 'Who is the Governor of your state now?',
-    question_vi: 'Thong doc tieu bang cua ban hien nay la ai?',
+    question_vi: 'Thống đốc tiểu bang của bạn hiện nay là ai?',
     type: 'governor',
   },
   {
     number: 62,
     question_en: 'What is the capital of your state?',
-    question_vi: 'Thu phu cua tieu bang ban la gi?',
+    question_vi: 'Thủ phủ của tiểu bang bạn là gì?',
     type: 'state_capital',
   },
 ];
@@ -89,15 +89,15 @@ export default function MyStatePage() {
 
   // Get the answer for each state-specific question
   const getQuestionAnswer = (type: string): string => {
-    if (!stateData || !resourceData) return isVietnamese ? 'Khong co du lieu' : 'No data available';
+    if (!stateData || !resourceData) return isVietnamese ? 'Không có dữ liệu' : 'No data available';
     switch (type) {
       case 'representative':
-        if (isDC) return isVietnamese ? 'DC khong co dan bieu co quyen bau' : 'DC has no voting representative';
+        if (isDC) return isVietnamese ? 'DC không có dân biểu có quyền bầu' : 'DC has no voting representative';
         return isVietnamese
-          ? `Tim dan bieu tai house.gov (${resourceData.representative_count} dan bieu)`
+          ? `Tìm dân biểu tại house.gov (${resourceData.representative_count} dân biểu)`
           : `Find your representative at house.gov (${resourceData.representative_count} representatives)`;
       case 'state_senator':
-        if (isDC) return isVietnamese ? 'DC khong co Thuong nghi si' : 'DC has no senators';
+        if (isDC) return isVietnamese ? 'DC không có Thượng nghị sĩ' : 'DC has no senators';
         return resourceData.senators.join(', ');
       case 'governor':
         return stateData.governor;
@@ -116,11 +116,11 @@ export default function MyStatePage() {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2 flex items-center gap-3">
           <MapPin className="h-8 w-8 text-blue-600 dark:text-blue-400" />
-          {isVietnamese ? 'Tieu Bang Cua Toi' : 'My State'}
+          {isVietnamese ? 'Tiểu Bang Của Tôi' : 'My State'}
         </h1>
         <p className="text-gray-600 dark:text-gray-400">
           {isVietnamese
-            ? 'Thong tin tieu bang va cau hoi thi quoc tich lien quan'
+            ? 'Thông tin tiểu bang và câu hỏi thi quốc tịch liên quan'
             : 'State information and related citizenship test questions'}
         </p>
       </div>
@@ -132,7 +132,7 @@ export default function MyStatePage() {
             htmlFor="state-select"
             className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
           >
-            {isVietnamese ? 'Chon tieu bang cua ban' : 'Select your state'}
+            {isVietnamese ? 'Chọn tiểu bang của bạn' : 'Select your state'}
           </label>
           <div className="relative max-w-md">
             <select
@@ -151,7 +151,7 @@ export default function MyStatePage() {
           </div>
           <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
             {isVietnamese
-              ? 'Tieu bang nay se duoc luu cho cac cau hoi phu thuoc vi tri'
+              ? 'Tiểu bang này sẽ được lưu cho các câu hỏi phụ thuộc vị trí'
               : 'This state will be saved for location-dependent questions'}
           </p>
         </CardContent>
@@ -164,7 +164,7 @@ export default function MyStatePage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-base">
               <User className="h-5 w-5 text-blue-600 dark:text-blue-400" />
-              {isVietnamese ? 'Thong Doc' : 'Governor'}
+              {isVietnamese ? 'Thống Đốc' : 'Governor'}
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -172,7 +172,7 @@ export default function MyStatePage() {
               {stateData?.governor || 'N/A'}
             </p>
             <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-              {isVietnamese ? `Thong doc tieu bang ${stateName}` : `Governor of ${stateName}`}
+              {isVietnamese ? `Thống đốc tiểu bang ${stateName}` : `Governor of ${stateName}`}
             </p>
           </CardContent>
         </Card>
@@ -182,7 +182,7 @@ export default function MyStatePage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-base">
               <Building2 className="h-5 w-5 text-amber-600 dark:text-amber-400" />
-              {isVietnamese ? 'Thu Phu' : 'State Capital'}
+              {isVietnamese ? 'Thủ Phủ' : 'State Capital'}
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -190,7 +190,7 @@ export default function MyStatePage() {
               {stateData?.capital || 'N/A'}
             </p>
             <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-              {isVietnamese ? `Thu phu cua ${stateName}` : `Capital of ${stateName}`}
+              {isVietnamese ? `Thủ phủ của ${stateName}` : `Capital of ${stateName}`}
             </p>
           </CardContent>
         </Card>
@@ -200,14 +200,14 @@ export default function MyStatePage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-base">
               <Landmark className="h-5 w-5 text-purple-600 dark:text-purple-400" />
-              {isVietnamese ? 'Thuong Nghi Si' : 'U.S. Senators'}
+              {isVietnamese ? 'Thượng Nghị Sĩ' : 'U.S. Senators'}
             </CardTitle>
           </CardHeader>
           <CardContent>
             {isDC ? (
               <p className="text-gray-500 dark:text-gray-400 italic">
                 {isVietnamese
-                  ? 'DC khong co dai dien bau cu tai Thuong Vien'
+                  ? 'DC không có đại diện bầu cử tại Thượng Viện'
                   : 'DC has no voting representation in the Senate'}
               </p>
             ) : (
@@ -241,21 +241,21 @@ export default function MyStatePage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-base">
               <Users className="h-5 w-5 text-green-600 dark:text-green-400" />
-              {isVietnamese ? 'Dan Bieu Lien Bang' : 'U.S. Representatives'}
+              {isVietnamese ? 'Dân Biểu Liên Bang' : 'U.S. Representatives'}
             </CardTitle>
           </CardHeader>
           <CardContent>
             {isDC ? (
               <p className="text-gray-500 dark:text-gray-400 italic">
                 {isVietnamese
-                  ? 'DC co 1 dai bieu khong co quyen bau'
+                  ? 'DC có 1 đại biểu không có quyền bầu'
                   : 'DC has 1 non-voting delegate'}
               </p>
             ) : (
               <>
                 <p className="text-xl font-semibold text-gray-900 dark:text-white">
                   {resourceData?.representative_count || 0}{' '}
-                  {isVietnamese ? 'Dan bieu' : 'Representatives'}
+                  {isVietnamese ? 'Dân biểu' : 'Representatives'}
                 </p>
                 <a
                   href="https://www.house.gov/representatives/find-your-representative"
@@ -263,7 +263,7 @@ export default function MyStatePage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 mt-2 text-sm text-blue-600 dark:text-blue-400 hover:underline"
                 >
-                  {isVietnamese ? 'Tim dan bieu cua ban tai house.gov' : 'Find your representative at house.gov'}
+                  {isVietnamese ? 'Tìm dân biểu của bạn tại house.gov' : 'Find your representative at house.gov'}
                   <ExternalLink className="h-3 w-3" />
                 </a>
               </>
@@ -276,7 +276,7 @@ export default function MyStatePage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-base">
               <Globe className="h-5 w-5 text-teal-600 dark:text-teal-400" />
-              {isVietnamese ? 'Trang Web Chinh Phu' : 'Government Website'}
+              {isVietnamese ? 'Trang Web Chính Phủ' : 'Government Website'}
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -295,7 +295,7 @@ export default function MyStatePage() {
             )}
             <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
               {isVietnamese
-                ? `Trang web chinh thuc cua ${stateName}`
+                ? `Trang web chính thức của ${stateName}`
                 : `Official website of ${stateName}`}
             </p>
           </CardContent>
@@ -306,7 +306,7 @@ export default function MyStatePage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-base">
               <FileText className="h-5 w-5 text-red-600 dark:text-red-400" />
-              {isVietnamese ? 'Van Phong USCIS' : 'USCIS Office'}
+              {isVietnamese ? 'Văn Phòng USCIS' : 'USCIS Office'}
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -319,7 +319,7 @@ export default function MyStatePage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 mt-2 text-sm text-blue-600 dark:text-blue-400 hover:underline"
             >
-              {isVietnamese ? 'Tim van phong USCIS gan ban' : 'Find USCIS offices near you'}
+              {isVietnamese ? 'Tìm văn phòng USCIS gần bạn' : 'Find USCIS offices near you'}
               <ExternalLink className="h-3 w-3" />
             </a>
           </CardContent>
@@ -332,12 +332,12 @@ export default function MyStatePage() {
           <CardTitle className="flex items-center gap-2">
             <AlertCircle className="h-5 w-5 text-amber-600 dark:text-amber-400" />
             {isVietnamese
-              ? 'Cau Hoi Phu Thuoc Tieu Bang'
+              ? 'Câu Hỏi Phụ Thuộc Tiểu Bang'
               : 'State-Specific Civics Questions'}
           </CardTitle>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
             {isVietnamese
-              ? 'Nhung cau hoi nay co cau tra loi phu thuoc vao tieu bang cua ban'
+              ? 'Những câu hỏi này có câu trả lời phụ thuộc vào tiểu bang của bạn'
               : 'These questions have answers that depend on your state'}
           </p>
         </CardHeader>
@@ -370,7 +370,7 @@ export default function MyStatePage() {
                       )}
                       <div className="mt-2 flex items-center gap-2">
                         <span className="text-sm font-medium text-green-700 dark:text-green-400">
-                          {isVietnamese ? 'Tra loi:' : 'Answer:'}
+                          {isVietnamese ? 'Trả lời:' : 'Answer:'}
                         </span>
                         <span className="text-sm text-green-800 dark:text-green-300 font-semibold">
                           {answer}
@@ -390,7 +390,7 @@ export default function MyStatePage() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Globe className="h-5 w-5 text-blue-600 dark:text-blue-400" />
-            {isVietnamese ? 'Lien Ket Huu Ich' : 'Useful Links'}
+            {isVietnamese ? 'Liên Kết Hữu Ích' : 'Useful Links'}
           </CardTitle>
         </CardHeader>
         <CardContent>
@@ -405,7 +405,7 @@ export default function MyStatePage() {
                 <Globe className="h-5 w-5 text-blue-500 flex-shrink-0" />
                 <div className="min-w-0">
                   <p className="text-sm font-medium text-gray-900 dark:text-white truncate">
-                    {isVietnamese ? `Truy cap ${stateName}.gov` : `Visit ${stateName}.gov`}
+                    {isVietnamese ? `Truy cập ${stateName}.gov` : `Visit ${stateName}.gov`}
                   </p>
                   <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
                     {resourceData.government_website}
@@ -423,7 +423,7 @@ export default function MyStatePage() {
               <Users className="h-5 w-5 text-green-500 flex-shrink-0" />
               <div className="min-w-0">
                 <p className="text-sm font-medium text-gray-900 dark:text-white truncate">
-                  {isVietnamese ? 'Tim dan bieu tai house.gov' : 'Find your representative at house.gov'}
+                  {isVietnamese ? 'Tìm dân biểu tại house.gov' : 'Find your representative at house.gov'}
                 </p>
                 <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
                   house.gov
@@ -440,7 +440,7 @@ export default function MyStatePage() {
               <Landmark className="h-5 w-5 text-purple-500 flex-shrink-0" />
               <div className="min-w-0">
                 <p className="text-sm font-medium text-gray-900 dark:text-white truncate">
-                  {isVietnamese ? 'Tim thuong nghi si tai senate.gov' : 'Find your senators at senate.gov'}
+                  {isVietnamese ? 'Tìm thượng nghị sĩ tại senate.gov' : 'Find your senators at senate.gov'}
                 </p>
                 <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
                   senate.gov
@@ -457,7 +457,7 @@ export default function MyStatePage() {
               <FileText className="h-5 w-5 text-red-500 flex-shrink-0" />
               <div className="min-w-0">
                 <p className="text-sm font-medium text-gray-900 dark:text-white truncate">
-                  {isVietnamese ? 'Tim van phong USCIS' : 'Find USCIS offices'}
+                  {isVietnamese ? 'Tìm văn phòng USCIS' : 'Find USCIS offices'}
                 </p>
                 <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
                   uscis.gov
