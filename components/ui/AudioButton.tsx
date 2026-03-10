@@ -116,6 +116,14 @@ export function BilingualAudio({
         <Volume2 className={iconSizes[size]} />
         <span>EN</span>
       </button>
+      <button
+        onClick={() => handleSpeak(textVi, 'vi')}
+        className="flex items-center gap-1 px-2 py-1 rounded text-xs font-medium bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-slate-300 hover:bg-red-100 dark:hover:bg-red-900/50 hover:text-red-700 dark:hover:text-red-300 transition-colors"
+        title="Phát âm tiếng Việt"
+      >
+        <Volume2 className={iconSizes[size]} />
+        <span>VI</span>
+      </button>
     </div>
   );
 }

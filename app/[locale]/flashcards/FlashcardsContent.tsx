@@ -498,6 +498,14 @@ function FlashcardsMain() {
                       <Volume2 className="w-3 h-3" aria-hidden="true" />
                       EN
                     </button>
+                    <button
+                      onClick={(e) => handleSpeak(e, currentCard.question_vi, 'vi')}
+                      className="flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium bg-white/80 dark:bg-slate-700/80 text-red-700 dark:text-red-300 hover:bg-white dark:hover:bg-slate-600 transition-colors shadow-sm"
+                      aria-label={t('listenVietnamese')}
+                    >
+                      <Volume2 className="w-3 h-3" aria-hidden="true" />
+                      VI
+                    </button>
                   </div>
                 )}
               </div>
@@ -547,13 +555,21 @@ function FlashcardsMain() {
                       <Volume2 className="w-3 h-3" aria-hidden="true" />
                       EN
                     </button>
+                    <button
+                      onClick={(e) => handleSpeak(e, currentCard.answers_vi.join('. '), 'vi')}
+                      className="flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium bg-white/80 dark:bg-slate-700/80 text-red-700 dark:text-red-300 hover:bg-white dark:hover:bg-slate-600 transition-colors shadow-sm"
+                      aria-label={t('listenAnswerVietnamese')}
+                    >
+                      <Volume2 className="w-3 h-3" aria-hidden="true" />
+                      VI
+                    </button>
                   </div>
                 )}
 
-                {currentCard.explanation_vi && locale === 'vi' && (
+                {(locale === 'vi' ? currentCard.explanation_vi : currentCard.explanation_en) && (
                   <p className="mt-4 text-sm text-gray-600 dark:text-gray-400 max-w-md">
                     <span className="font-medium">{t('explanation')} </span>
-                    {currentCard.explanation_vi}
+                    {locale === 'vi' ? currentCard.explanation_vi : currentCard.explanation_en}
                   </p>
                 )}
 

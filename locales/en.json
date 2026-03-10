@@ -20,7 +20,8 @@
     "myState": "My State",
     "examDay": "Exam Day",
     "n400Helper": "N-400 Helper",
-    "wrongAnswerDrills": "Wrong Answer Drills"
+    "wrongAnswerDrills": "Wrong Answer Drills",
+    "readingWriting": "Reading & Writing"
   },
   "home": {
     "hero": {
@@ -210,7 +211,9 @@
     "bookmark": "Bookmark",
     "removeBookmark": "Remove bookmark",
     "listenEnglish": "Listen in English",
+    "listenVietnamese": "Listen in Vietnamese",
     "listenAnswerEnglish": "Listen to answer in English",
+    "listenAnswerVietnamese": "Listen to answer in Vietnamese",
     "explanation": "Explanation:",
     "previous": "Previous",
     "next": "Next",

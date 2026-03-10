@@ -169,13 +169,15 @@ export function QuestionCard({
           </div>
 
           {/* Explanation */}
-          {showExplanation && question.explanation_vi && (
+          {showExplanation && (locale === 'vi' ? question.explanation_vi : question.explanation_en) && (
             <div className="mt-3 p-4 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
               <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-300 mb-2 flex items-center gap-2">
                 <AlertCircle className="w-4 h-4" />
                 {t('explanation')}
               </h4>
-              <p className="text-sm text-blue-900 dark:text-blue-200">{question.explanation_vi}</p>
+              <p className="text-sm text-blue-900 dark:text-blue-200">
+                {locale === 'vi' ? question.explanation_vi : question.explanation_en}
+              </p>
             </div>
           )}
         </div>

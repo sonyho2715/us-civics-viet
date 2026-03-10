@@ -20,7 +20,8 @@
     "myState": "Tiểu Bang",
     "examDay": "Ngày Thi",
     "n400Helper": "N-400 Hướng Dẫn",
-    "wrongAnswerDrills": "Ôn Câu Sai"
+    "wrongAnswerDrills": "Ôn Câu Sai",
+    "readingWriting": "Đọc & Viết"
   },
   "home": {
     "hero": {
@@ -210,7 +211,9 @@
     "bookmark": "Đánh dấu",
     "removeBookmark": "Bỏ đánh dấu",
     "listenEnglish": "Nghe tiếng Anh",
+    "listenVietnamese": "Nghe tiếng Việt",
     "listenAnswerEnglish": "Nghe đáp án tiếng Anh",
+    "listenAnswerVietnamese": "Nghe đáp án tiếng Việt",
     "explanation": "Giải thích:",
     "previous": "Trước",
     "next": "Sau",

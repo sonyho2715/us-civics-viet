@@ -25,6 +25,7 @@ import {
   Keyboard,
   ClipboardCheck,
   HelpCircle,
+  PenLine,
 } from 'lucide-react';
 import { LanguageToggle } from './LanguageToggle';
 import { ThemeToggle } from './ThemeToggle';
@@ -90,6 +91,7 @@ export function Header() {
 
   const resourceItems = [
     { href: `/${locale}/interview`, label: tHeader('interviewSimulation'), icon: MessageSquare },
+    { href: `/${locale}/reading-writing`, label: t('readingWriting'), icon: PenLine },
     { href: `/${locale}/resources/stories`, label: t('stories'), icon: Trophy },
     { href: `/${locale}/resources/n400`, label: t('n400'), icon: FileText },
     { href: `/${locale}/resources/exam-day`, label: t('examDay'), icon: ClipboardCheck },
