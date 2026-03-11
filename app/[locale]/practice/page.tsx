@@ -149,10 +149,9 @@ export default function PracticePage() {
               <div className="p-6 pt-0">
                 <Button
                   onClick={() => handleStartTest(option.mode, option.questionSet)}
-                  variant={option.color === 'blue' ? 'primary' : option.color === 'green' ? 'primary' : 'secondary'}
-                  className={option.color === 'green' ? 'bg-green-600 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-600' : ''}
+                  variant={option.color === 'blue' || option.color === 'green' ? 'primary' : 'secondary'}
+                  className={`group ${option.color === 'green' ? 'bg-green-600 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-600' : ''}`}
                   fullWidth
-                  className="group"
                 >
                   {t('startTest')}
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
