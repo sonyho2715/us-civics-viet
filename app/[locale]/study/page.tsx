@@ -9,6 +9,7 @@ import { CategoryNav } from '@/components/study/CategoryNav';
 import { Card } from '@/components/ui/Card';
 import { ProgressBar } from '@/components/ui/ProgressBar';
 import { PrintStudySheet } from '@/components/ui/PrintStudySheet';
+import { getAllQuestions, getAllQuestions100 } from '@/lib/questions';
 import { useQuestions, useQuestionsByCategory, useSearchQuestions } from '@/hooks/useQuestions';
 import { useProgress } from '@/hooks/useProgress';
 import { useBookmarkStore } from '@/stores/bookmarkStore';
@@ -24,9 +25,22 @@ export default function StudyPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [showBookmarkedOnly, setShowBookmarkedOnly] = useState(false);
   const [showPrintDialog, setShowPrintDialog] = useState(false);
+  const [questionSet, setQuestionSet] = useState<'128' | '100'>('128');
+  const isVi = locale === 'vi';
 
-  const { questions: allQuestions } = useQuestions();
-  const { questions: categoryQuestions } = useQuestionsByCategory(selectedCategory);
+  const { questions: allQuestions128 } = useQuestions();
+  const allQuestions100 = useMemo(() => getAllQuestions100(), []);
+  const allQuestions = questionSet === '100' ? allQuestions100 : allQuestions128;
+
+  const { questions: categoryQuestions128 } = useQuestionsByCategory(selectedCategory);
+  const categoryQuestions = useMemo(() => {
+    if (questionSet === '100') {
+      return selectedCategory
+        ? allQuestions100.filter((q) => q.category === selectedCategory)
+        : allQuestions100;
+    }
+    return categoryQuestions128;
+  }, [questionSet, selectedCategory, allQuestions100, categoryQuestions128]);
   const { results: searchResults, search, clearSearch, isSearching } = useSearchQuestions(locale);
   const { studiedCount, studyPercentage, questionsStudied } = useProgress();
   const { bookmarkedIds } = useBookmarkStore();
@@ -75,11 +89,35 @@ export default function StudyPage() {
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Header */}
-      <div className="mb-8">
+      <div className="mb-6">
         <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">
           {t('title')}
         </h1>
         <p className="text-gray-600 dark:text-slate-400">{t('subtitle')}</p>
+      </div>
+
+      {/* Question Set Toggle */}
+      <div className="mb-6 flex items-center gap-2 p-1 bg-gray-100 dark:bg-slate-700 rounded-lg w-fit">
+        <button
+          onClick={() => { setQuestionSet('128'); setSelectedCategory(null); }}
+          className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+            questionSet === '128'
+              ? 'bg-white dark:bg-slate-600 text-blue-700 dark:text-blue-300 shadow-sm'
+              : 'text-gray-600 dark:text-slate-400 hover:text-gray-800 dark:hover:text-slate-200'
+          }`}
+        >
+          {isVi ? '128 câu (2025)' : '128 Questions (2025)'}
+        </button>
+        <button
+          onClick={() => { setQuestionSet('100'); setSelectedCategory(null); }}
+          className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+            questionSet === '100'
+              ? 'bg-white dark:bg-slate-600 text-green-700 dark:text-green-300 shadow-sm'
+              : 'text-gray-600 dark:text-slate-400 hover:text-gray-800 dark:hover:text-slate-200'
+          }`}
+        >
+          {isVi ? '100 câu (Cổ điển)' : '100 Questions (Classic)'}
+        </button>
       </div>
 
       {/* Progress Card */}
@@ -88,7 +126,7 @@ export default function StudyPage() {
           <div>
             <h3 className="font-semibold text-gray-900 dark:text-white">{t('progress')}</h3>
             <p className="text-sm text-gray-600 dark:text-slate-400">
-              {t('studied')}: {studiedCount} / 128 {t('questions')}
+              {t('studied')}: {studiedCount} / {allQuestions.length} {t('questions')}
             </p>
           </div>
           <div className="w-full sm:w-48">

@@ -2,7 +2,7 @@
 
 import { useParams, useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
-import { FileQuestion, Star, Clock, CheckCircle2, ArrowRight } from 'lucide-react';
+import { FileQuestion, Star, Clock, CheckCircle2, ArrowRight, BookOpen } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { useTest } from '@/hooks/useTest';
@@ -20,14 +20,17 @@ export default function PracticePage() {
   const { showImmediateFeedback, setShowImmediateFeedback, timerEnabled, setTimerEnabled } =
     useSettingsStore();
 
-  const handleStartTest = (mode: TestMode) => {
-    initializeTest(mode);
+  const handleStartTest = (mode: TestMode, questionSet: '128' | '100' = '128') => {
+    initializeTest(mode, questionSet);
     router.push(`/${locale}/practice/test`);
   };
+
+  const isVi = locale === 'vi';
 
   const testOptions = [
     {
       mode: 'standard' as TestMode,
+      questionSet: '128' as const,
       icon: FileQuestion,
       title: t('standardTest.title'),
       description: t('standardTest.description'),
@@ -38,6 +41,7 @@ export default function PracticePage() {
     },
     {
       mode: '65_20' as TestMode,
+      questionSet: '128' as const,
       icon: Star,
       title: t('seniorTest.title'),
       description: t('seniorTest.description'),
@@ -45,6 +49,19 @@ export default function PracticePage() {
       questions: 10,
       pass: 6,
       color: 'amber',
+    },
+    {
+      mode: 'standard' as TestMode,
+      questionSet: '100' as const,
+      icon: BookOpen,
+      title: isVi ? '100 Câu Hỏi Cổ Điển' : 'Classic 100 Questions',
+      description: isVi
+        ? 'Bộ 100 câu hỏi công dân USCIS phiên bản gốc (2019). Phù hợp luyện tập toàn diện.'
+        : 'The original USCIS 100 civics questions (rev. 01/19). Great for comprehensive practice.',
+      requirement: isVi ? 'Đúng 12/20 để đậu' : '12 of 20 correct to pass',
+      questions: 20,
+      pass: 12,
+      color: 'green',
     },
   ];
 
@@ -87,14 +104,16 @@ export default function PracticePage() {
       )}
 
       {/* Test Options */}
-      <div className="grid md:grid-cols-2 gap-6 mb-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
         {testOptions.map((option) => (
           <Card
-            key={option.mode}
+            key={`${option.mode}-${option.questionSet}`}
             className={`relative overflow-hidden border-2 ${
               option.color === 'blue'
                 ? 'border-blue-200 dark:border-blue-700 hover:border-blue-400 dark:hover:border-blue-500'
-                : 'border-amber-200 dark:border-amber-700 hover:border-amber-400 dark:hover:border-amber-500'
+                : option.color === 'amber'
+                ? 'border-amber-200 dark:border-amber-700 hover:border-amber-400 dark:hover:border-amber-500'
+                : 'border-green-200 dark:border-green-700 hover:border-green-400 dark:hover:border-green-500'
             } transition-colors`}
           >
             <div className="flex flex-col h-full">
@@ -103,7 +122,9 @@ export default function PracticePage() {
                   className={`w-12 h-12 rounded-xl ${
                     option.color === 'blue'
                       ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-300'
-                      : 'bg-amber-100 dark:bg-amber-900/50 text-amber-800 dark:text-amber-300'
+                      : option.color === 'amber'
+                      ? 'bg-amber-100 dark:bg-amber-900/50 text-amber-800 dark:text-amber-300'
+                      : 'bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-300'
                   } flex items-center justify-center mb-3`}
                 >
                   <option.icon className="w-6 h-6" />
@@ -127,8 +148,9 @@ export default function PracticePage() {
 
               <div className="p-6 pt-0">
                 <Button
-                  onClick={() => handleStartTest(option.mode)}
-                  variant={option.color === 'blue' ? 'primary' : 'secondary'}
+                  onClick={() => handleStartTest(option.mode, option.questionSet)}
+                  variant={option.color === 'blue' ? 'primary' : option.color === 'green' ? 'primary' : 'secondary'}
+                  className={option.color === 'green' ? 'bg-green-600 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-600' : ''}
                   fullWidth
                   className="group"
                 >

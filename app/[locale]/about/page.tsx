@@ -62,7 +62,7 @@ const content = {
       title: 'Tại Sao Chọn Chúng Tôi?',
       reasons: [
         'Hoàn toàn miễn phí, không cần đăng ký',
-        'Cập nhật theo bộ câu hỏi mới nhất 2025 của USCIS',
+        `Cập nhật theo bộ câu hỏi mới nhất ${new Date().getFullYear()} của USCIS`,
         'Thiết kế thân thiện với điện thoại di động',
         'Hướng dẫn di trú chi tiết cho phỏng vấn thẻ xanh',
         'Không thu thập thông tin cá nhân',
@@ -116,7 +116,7 @@ const content = {
       title: 'Why Choose Us?',
       reasons: [
         'Completely free, no registration required',
-        'Updated with the latest 2025 USCIS question set',
+        `Updated with the latest ${new Date().getFullYear()} USCIS question set`,
         'Mobile-friendly design',
         'Detailed immigration guide for green card interviews',
         'No personal information collected',

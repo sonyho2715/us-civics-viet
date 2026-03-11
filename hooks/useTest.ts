@@ -3,7 +3,7 @@
 import { useCallback } from 'react';
 import { useTestStore } from '@/stores/testStore';
 import { useProgressStore } from '@/stores/progressStore';
-import { getAllQuestions } from '@/lib/questions';
+import { getAllQuestions, getAllQuestions100 } from '@/lib/questions';
 import { generateTest } from '@/lib/test-logic';
 import type { TestMode } from '@/types';
 
@@ -27,8 +27,8 @@ export function useTest() {
     useProgressStore();
 
   const initializeTest = useCallback(
-    (mode: TestMode) => {
-      const questions = getAllQuestions();
+    (mode: TestMode, questionSet: '128' | '100' = '128') => {
+      const questions = questionSet === '100' ? getAllQuestions100() : getAllQuestions();
       const testQuestions = generateTest(questions, mode);
       startTest(testQuestions, mode);
     },

@@ -87,7 +87,7 @@ function HomeContent({ locale }: { locale: string }) {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">
-              {t('hero.title')}
+              {t('hero.title', { year: new Date().getFullYear() })}
             </h1>
 
             <p className="text-lg md:text-xl text-blue-100 mb-8">

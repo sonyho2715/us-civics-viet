@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "U.S. Citizenship - Civics Test 2025",
+    "title": "U.S. Citizenship - Civics Test {year}",
     "description": "Study app for U.S. Citizenship test with 128 bilingual Vietnamese-English questions"
   },
   "nav": {
@@ -26,7 +26,7 @@
   },
   "home": {
     "hero": {
-      "title": "U.S. Citizenship Test Prep 2025",
+      "title": "U.S. Citizenship Test Prep {year}",
       "subtitle": "Master 128 civics questions with bilingual Vietnamese-English explanations",
       "cta": "Start Learning Now"
     },
@@ -408,7 +408,7 @@
   "footer": {
     "disclaimer": "This app is for educational purposes only and is not affiliated with USCIS or the U.S. government. Information may change. Please verify the latest information on the official USCIS website before your interview.",
     "official": "Official USCIS website",
-    "copyright": "© 2026 U.S. Citizenship. All rights reserved.",
+    "copyright": "© {year} U.S. Citizenship. All rights reserved.",
     "opensNewTab": "opens in new tab",
     "links": {
       "about": "About Us",
@@ -623,7 +623,7 @@
     "questions50": "50 questions",
     "all": "All",
     "willBePrinted": "{count} questions will be printed",
-    "citizenshipTest2025": "U.S. Citizenship Test 2025",
+    "citizenshipTest2025": "U.S. Citizenship Test {year}",
     "flashcardsTitle": "Flashcards - U.S. Citizenship Test",
     "cutAlongLines": "Cut along dashed lines",
     "answer": "Answer",

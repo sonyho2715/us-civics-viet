@@ -1,10 +1,16 @@
 import questionsData from '@/data/civics-questions-2025.json';
+import questionsData100 from '@/data/civics-questions-100.json';
 import type { Question, Category } from '@/types';
 import { SENIOR_65_20_QUESTIONS } from '@/types';
 
-// Get all questions
+// Get all questions (128Q - 2025 version)
 export function getAllQuestions(): Question[] {
   return questionsData.questions as Question[];
+}
+
+// Get classic 100 civics questions (rev. 01/19)
+export function getAllQuestions100(): Question[] {
+  return questionsData100.questions as Question[];
 }
 
 // Get questions by category

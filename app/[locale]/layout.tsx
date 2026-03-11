@@ -23,9 +23,10 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
 
+  const year = new Date().getFullYear();
   const titles = {
-    vi: 'Công Dân Mỹ - Thi Quốc Tịch 2025',
-    en: 'U.S. Citizenship - Civics Test 2025',
+    vi: `Công Dân Mỹ - Thi Quốc Tịch ${year}`,
+    en: `U.S. Citizenship - Civics Test ${year}`,
   };
 
   const descriptions = {

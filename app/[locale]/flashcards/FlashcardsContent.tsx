@@ -25,6 +25,7 @@ import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
 import { ProgressBar } from '@/components/ui/ProgressBar';
 import { useTextToSpeech } from '@/hooks/useTextToSpeech';
+import { getAllQuestions100 } from '@/lib/questions';
 import { useQuestions, useQuestionsByCategory } from '@/hooks/useQuestions';
 import { useProgress } from '@/hooks/useProgress';
 import { shuffleArray } from '@/lib/test-logic';
@@ -61,12 +62,16 @@ function FlashcardsMain() {
   const locale = params.locale as Locale;
   const t = useTranslations('flashcards');
 
-  const { questions: allQuestions } = useQuestions();
+  const { questions: allQuestions128 } = useQuestions();
+  const allQuestions100 = useMemo(() => getAllQuestions100(), []);
   const { markQuestionStudied, questionsStudied } = useProgress();
 
   // Check for URL mode parameter
   const urlMode = searchParams.get('mode');
   const initialMode = urlMode === 'wrong' ? 'wrong' : urlMode === 'due' ? 'due' : 'all';
+
+  const [questionSet, setQuestionSet] = useState<'128' | '100'>('128');
+  const allQuestions = questionSet === '100' ? allQuestions100 : allQuestions128;
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -275,13 +280,37 @@ function FlashcardsMain() {
   if (deck.length === 0) {
     return (
       <div className="container mx-auto px-4 py-8">
-        <div className="mb-8">
+        <div className="mb-6">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">
             {t('title')}
           </h1>
           <p className="text-gray-600 dark:text-gray-400">
             {t('subtitle')}
           </p>
+        </div>
+
+        {/* Question Set Toggle */}
+        <div className="mb-4 flex items-center gap-2 p-1 bg-gray-100 dark:bg-slate-700 rounded-lg w-fit">
+          <button
+            onClick={() => { setQuestionSet('128'); setSelectedCategory(null); setFilterMode('all'); }}
+            className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+              questionSet === '128'
+                ? 'bg-white dark:bg-slate-600 text-blue-700 dark:text-blue-300 shadow-sm'
+                : 'text-gray-600 dark:text-slate-400 hover:text-gray-800 dark:hover:text-slate-200'
+            }`}
+          >
+            {locale === 'vi' ? '128 câu (2025)' : '128Q (2025)'}
+          </button>
+          <button
+            onClick={() => { setQuestionSet('100'); setSelectedCategory(null); setFilterMode('all'); }}
+            className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+              questionSet === '100'
+                ? 'bg-white dark:bg-slate-600 text-green-700 dark:text-green-300 shadow-sm'
+                : 'text-gray-600 dark:text-slate-400 hover:text-gray-800 dark:hover:text-slate-200'
+            }`}
+          >
+            {locale === 'vi' ? '100 câu (Cổ điển)' : '100Q (Classic)'}
+          </button>
         </div>
 
         {/* Filters */}
@@ -329,13 +358,37 @@ function FlashcardsMain() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-3xl">
       {/* Header */}
-      <div className="mb-8">
+      <div className="mb-6">
         <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">
           {t('title')}
         </h1>
         <p className="text-gray-600 dark:text-gray-400">
           {t('clickToFlip')}
         </p>
+      </div>
+
+      {/* Question Set Toggle */}
+      <div className="mb-4 flex items-center gap-2 p-1 bg-gray-100 dark:bg-slate-700 rounded-lg w-fit">
+        <button
+          onClick={() => { setQuestionSet('128'); setSelectedCategory(null); setFilterMode('all'); }}
+          className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+            questionSet === '128'
+              ? 'bg-white dark:bg-slate-600 text-blue-700 dark:text-blue-300 shadow-sm'
+              : 'text-gray-600 dark:text-slate-400 hover:text-gray-800 dark:hover:text-slate-200'
+          }`}
+        >
+          {locale === 'vi' ? '128 câu (2025)' : '128Q (2025)'}
+        </button>
+        <button
+          onClick={() => { setQuestionSet('100'); setSelectedCategory(null); setFilterMode('all'); }}
+          className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+            questionSet === '100'
+              ? 'bg-white dark:bg-slate-600 text-green-700 dark:text-green-300 shadow-sm'
+              : 'text-gray-600 dark:text-slate-400 hover:text-gray-800 dark:hover:text-slate-200'
+          }`}
+        >
+          {locale === 'vi' ? '100 câu (Cổ điển)' : '100Q (Classic)'}
+        </button>
       </div>
 
       {/* Filters */}

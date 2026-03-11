@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Công Dân Mỹ - Thi Quốc Tịch 2025",
+    "title": "Công Dân Mỹ - Thi Quốc Tịch {year}",
     "description": "Ứng dụng học thi quốc tịch Mỹ với 128 câu hỏi song ngữ Việt-Anh"
   },
   "nav": {
@@ -26,7 +26,7 @@
   },
   "home": {
     "hero": {
-      "title": "Luyện Thi Quốc Tịch Mỹ 2025",
+      "title": "Luyện Thi Quốc Tịch Mỹ {year}",
       "subtitle": "Học 128 câu hỏi thi quốc tịch với giải thích song ngữ Việt-Anh",
       "cta": "Bắt Đầu Học Ngay"
     },
@@ -408,7 +408,7 @@
   "footer": {
     "disclaimer": "Ứng dụng này chỉ dành cho mục đích học tập và không liên kết với USCIS hoặc chính phủ Hoa Kỳ. Thông tin có thể thay đổi. Vui lòng xác minh thông tin mới nhất tại trang web chính thức của USCIS trước khi phỏng vấn.",
     "official": "Trang USCIS chính thức",
-    "copyright": "© 2026 Công Dân Mỹ. Mọi quyền được bảo lưu.",
+    "copyright": "© {year} Công Dân Mỹ. Mọi quyền được bảo lưu.",
     "opensNewTab": "mở trong tab mới",
     "links": {
       "about": "Về Chúng Tôi",
@@ -623,7 +623,7 @@
     "questions50": "50 câu",
     "all": "Tất cả",
     "willBePrinted": "{count} câu hỏi sẽ được in",
-    "citizenshipTest2025": "Thi Quốc Tịch Mỹ 2025",
+    "citizenshipTest2025": "Thi Quốc Tịch Mỹ {year}",
     "flashcardsTitle": "Thẻ Ghi Nhớ - Thi Quốc Tịch Mỹ",
     "cutAlongLines": "Cắt theo đường kẻ nét đứt",
     "answer": "Đáp án",
