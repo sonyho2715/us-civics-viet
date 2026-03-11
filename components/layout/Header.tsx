@@ -12,20 +12,15 @@ import {
   FileQuestion,
   Layers,
   Star,
-  Plane,
-  FolderOpen,
   ChevronDown,
-  Trophy,
-  FileText,
   MessageSquare,
-  Users,
   BarChart3,
   Award,
   MapPin,
   Keyboard,
-  ClipboardCheck,
   HelpCircle,
   PenLine,
+  MoreHorizontal,
 } from 'lucide-react';
 import { LanguageToggle } from './LanguageToggle';
 import { ThemeToggle } from './ThemeToggle';
@@ -76,29 +71,22 @@ export function Header() {
   }, [isResourcesOpen]);
 
   const navItems = [
-    { href: `/${locale}/dashboard`, label: t('dashboard'), icon: BarChart3 },
     { href: `/${locale}/study`, label: t('study'), icon: BookOpen },
     { href: `/${locale}/practice`, label: t('practice'), icon: FileQuestion },
     { href: `/${locale}/flashcards`, label: t('flashcards'), icon: Layers },
-    { href: `/${locale}/achievements`, label: t('achievements'), icon: Award },
-    { href: `/${locale}/65-20`, label: t('senior'), icon: Star },
     { href: `/${locale}/my-state`, label: t('myState'), icon: MapPin },
-
-    { href: `/${locale}/immigration`, label: t('immigration'), icon: Plane },
   ];
 
   const tHeader = useTranslations('header');
 
   const resourceItems = [
+    { href: `/${locale}/dashboard`, label: t('dashboard'), icon: BarChart3 },
+    { href: `/${locale}/65-20`, label: t('senior'), icon: Star },
+    { href: `/${locale}/achievements`, label: t('achievements'), icon: Award },
+    { href: `/${locale}/wrong-answers`, label: t('wrongAnswerDrills'), icon: FileQuestion },
     { href: `/${locale}/interview`, label: tHeader('interviewSimulation'), icon: MessageSquare },
     { href: `/${locale}/reading-writing`, label: t('readingWriting'), icon: PenLine },
-    { href: `/${locale}/resources/stories`, label: t('stories'), icon: Trophy },
-    { href: `/${locale}/resources/n400`, label: t('n400'), icon: FileText },
-    { href: `/${locale}/resources/exam-day`, label: t('examDay'), icon: ClipboardCheck },
     { href: `/${locale}/n400-helper`, label: t('n400Helper'), icon: HelpCircle },
-    { href: `/${locale}/wrong-answers`, label: t('wrongAnswerDrills'), icon: FileQuestion },
-    { href: `/${locale}/resources/interview`, label: t('interview'), icon: FileText },
-    { href: `/${locale}/resources/community`, label: t('community'), icon: Users },
   ];
 
   return (
@@ -158,8 +146,8 @@ export function Header() {
                   isResourcesOpen && 'bg-gray-100 dark:bg-slate-800'
                 )}
               >
-                <FolderOpen className="w-4 h-4" aria-hidden="true" />
-                {t('resources')}
+                <MoreHorizontal className="w-4 h-4" aria-hidden="true" />
+                {t('more')}
                 <ChevronDown className={cn('w-3 h-3 transition-transform', isResourcesOpen && 'rotate-180')} aria-hidden="true" />
               </button>
 
@@ -246,7 +234,7 @@ export function Header() {
               {/* Resources Section */}
               <div className="mt-2 pt-2 border-t border-gray-100 dark:border-slate-700">
                 <div className="px-4 py-2 text-xs font-semibold text-gray-400 dark:text-slate-500 uppercase tracking-wider">
-                  {t('resources')}
+                  {t('more')}
                 </div>
                 {resourceItems.map((item) => (
                   <Link
