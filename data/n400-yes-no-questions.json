@@ -1,0 +1,233 @@
+{
+  "metadata": {
+    "source": "N-400 Application, Part 10 (pages 6-9)",
+    "note_en": "These are the Yes/No questions from Part 10 of the N-400 form. The officer will ask these during your interview. All answers are 'No' for most applicants. Practice saying the suggested short phrases.",
+    "note_vi": "Đây là các câu hỏi Có/Không từ Phần 10 của đơn N-400. Viên chức sẽ hỏi những câu này trong buổi phỏng vấn. Hầu hết ứng viên đều trả lời 'Không'. Hãy luyện nói các cụm từ gợi ý ngắn."
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question_en": "Have you ever claimed to be a U.S. citizen?",
+      "question_vi": "Bạn có bao giờ tự xưng là công dân Hoa Kỳ không?",
+      "answer_en": "No. I never said I was a citizen.",
+      "answer_vi": "Không. Tôi chưa bao giờ nói tôi là công dân."
+    },
+    {
+      "id": 2,
+      "question_en": "Have you ever registered to vote in any election in the United States?",
+      "question_vi": "Bạn có bao giờ đăng ký bầu cử tại Hoa Kỳ không?",
+      "answer_en": "No. I never registered to vote.",
+      "answer_vi": "Không. Tôi chưa bao giờ đăng ký bầu cử."
+    },
+    {
+      "id": 3,
+      "question_en": "Have you ever voted in any election in the United States?",
+      "question_vi": "Bạn có bao giờ bỏ phiếu trong cuộc bầu cử nào tại Hoa Kỳ không?",
+      "answer_en": "No. I never voted in the U.S.",
+      "answer_vi": "Không. Tôi chưa bao giờ bỏ phiếu ở Mỹ."
+    },
+    {
+      "id": 4,
+      "question_en": "Have you ever failed to file your Federal or state taxes?",
+      "question_vi": "Bạn có bao giờ không nộp thuế liên bang hoặc tiểu bang không?",
+      "answer_en": "No. I always pay my taxes.",
+      "answer_vi": "Không. Tôi luôn luôn đóng thuế."
+    },
+    {
+      "id": 5,
+      "question_en": "Do you owe any Federal or state taxes?",
+      "question_vi": "Bạn có nợ thuế liên bang hoặc tiểu bang không?",
+      "answer_en": "No. I paid all my taxes.",
+      "answer_vi": "Không. Tôi đã trả tất cả thuế của mình."
+    },
+    {
+      "id": 6,
+      "question_en": "Since you became a resident, have you ever called yourself a non-resident on your taxes?",
+      "question_vi": "Kể từ khi trở thành thường trú nhân, bạn có bao giờ tự gọi mình là người không cư trú trên tờ khai thuế không?",
+      "answer_en": "No. Never.",
+      "answer_vi": "Không. Chưa bao giờ."
+    },
+    {
+      "id": 7,
+      "question_en": "Do you have any title of nobility in any country?",
+      "question_vi": "Bạn có danh hiệu quý tộc ở bất kỳ quốc gia nào không?",
+      "answer_en": "No. I am not a king, queen, or family of a king.",
+      "answer_vi": "Không. Tôi không phải là vua, hoàng hậu hay người thân của vua."
+    },
+    {
+      "id": 8,
+      "question_en": "Have you ever been declared legally incompetent or confined in a mental institution?",
+      "question_vi": "Bạn có bao giờ bị tuyên bố mất năng lực pháp lý hoặc bị giam giữ trong bệnh viện tâm thần không?",
+      "answer_en": "No. I don't have mental problems.",
+      "answer_vi": "Không. Tôi không có vấn đề tâm thần."
+    },
+    {
+      "id": 9,
+      "question_en": "Have you ever been a member of any organization, party, club, or society in any country?",
+      "question_vi": "Bạn có bao giờ là thành viên của bất kỳ tổ chức, đảng phái, câu lạc bộ hoặc hội nào ở bất kỳ quốc gia nào không?",
+      "answer_en": "No. I am not a member of any dangerous organization.",
+      "answer_vi": "Không. Tôi không là thành viên của tổ chức nguy hiểm nào."
+    },
+    {
+      "id": 10,
+      "question_en": "Have you ever been a member of the Communist Party?",
+      "question_vi": "Bạn có bao giờ là thành viên của Đảng Cộng Sản không?",
+      "answer_en": "No. I am not a communist.",
+      "answer_vi": "Không. Tôi không phải là cộng sản."
+    },
+    {
+      "id": 11,
+      "question_en": "Have you ever been a member of any totalitarian party?",
+      "question_vi": "Bạn có bao giờ là thành viên của đảng toàn trị nào không?",
+      "answer_en": "No. Never.",
+      "answer_vi": "Không. Chưa bao giờ."
+    },
+    {
+      "id": 12,
+      "question_en": "Have you ever been a member of a terrorist organization?",
+      "question_vi": "Bạn có bao giờ là thành viên của tổ chức khủng bố không?",
+      "answer_en": "No. I am not a terrorist.",
+      "answer_vi": "Không. Tôi không phải là khủng bố."
+    },
+    {
+      "id": 13,
+      "question_en": "Have you ever advocated the overthrow of any government by force or violence?",
+      "question_vi": "Bạn có bao giờ ủng hộ việc lật đổ bất kỳ chính phủ nào bằng vũ lực hoặc bạo lực không?",
+      "answer_en": "No. I do not like violence.",
+      "answer_vi": "Không. Tôi không thích bạo lực."
+    },
+    {
+      "id": 14,
+      "question_en": "Have you ever persecuted any person because of race, religion, national origin, or political opinion?",
+      "question_vi": "Bạn có bao giờ ngược đãi bất kỳ người nào vì chủng tộc, tôn giáo, quốc tịch hoặc quan điểm chính trị không?",
+      "answer_en": "No. I never hurt anyone.",
+      "answer_vi": "Không. Tôi chưa bao giờ làm hại ai."
+    },
+    {
+      "id": 15,
+      "question_en": "Between March 23, 1933, and May 8, 1945, did you work for the Nazi government of Germany?",
+      "question_vi": "Từ ngày 23/3/1933 đến ngày 8/5/1945, bạn có làm việc cho chính phủ Đức Quốc Xã không?",
+      "answer_en": "No. I was never a Nazi.",
+      "answer_vi": "Không. Tôi chưa bao giờ là Đức Quốc Xã."
+    },
+    {
+      "id": 16,
+      "question_en": "Have you ever committed a crime or offense for which you were not arrested?",
+      "question_vi": "Bạn có bao giờ phạm tội mà không bị bắt không?",
+      "answer_en": "No. I never break the law.",
+      "answer_vi": "Không. Tôi không bao giờ vi phạm pháp luật."
+    },
+    {
+      "id": 17,
+      "question_en": "Have you ever been arrested, cited, or detained by any officer for any reason?",
+      "question_vi": "Bạn có bao giờ bị bắt, trích phạt hoặc bị giam giữ bởi bất kỳ cảnh sát viên nào vì bất kỳ lý do gì không?",
+      "answer_en": "No. I never break the law.",
+      "answer_vi": "Không. Tôi không bao giờ vi phạm pháp luật."
+    },
+    {
+      "id": 18,
+      "question_en": "Have you ever been charged with any crime or offense?",
+      "question_vi": "Bạn có bao giờ bị buộc tội bất kỳ tội danh hoặc vi phạm nào không?",
+      "answer_en": "No. I never break the law.",
+      "answer_vi": "Không. Tôi không bao giờ vi phạm pháp luật."
+    },
+    {
+      "id": 19,
+      "question_en": "Have you ever been convicted of a crime or offense?",
+      "question_vi": "Bạn có bao giờ bị kết tội không?",
+      "answer_en": "No. I never break the law.",
+      "answer_vi": "Không. Tôi không bao giờ vi phạm pháp luật."
+    },
+    {
+      "id": 20,
+      "question_en": "Have you ever received a suspended sentence or been on probation?",
+      "question_vi": "Bạn có bao giờ bị tạm hoãn án hoặc bị quản thúc không?",
+      "answer_en": "No. I never break the law.",
+      "answer_vi": "Không. Tôi không bao giờ vi phạm pháp luật."
+    },
+    {
+      "id": 21,
+      "question_en": "Have you ever been in jail or prison?",
+      "question_vi": "Bạn có bao giờ bị giam trong tù không?",
+      "answer_en": "No. I never break the law.",
+      "answer_vi": "Không. Tôi không bao giờ vi phạm pháp luật."
+    },
+    {
+      "id": 22,
+      "question_en": "Have you ever been a habitual drunkard?",
+      "question_vi": "Bạn có bao giờ là người say xỉn thường xuyên không?",
+      "answer_en": "No. I don't drink too much alcohol.",
+      "answer_vi": "Không. Tôi không uống quá nhiều rượu."
+    },
+    {
+      "id": 23,
+      "question_en": "Have you ever been a prostitute or procured anyone for prostitution?",
+      "question_vi": "Bạn có bao giờ làm gái mại dâm hoặc môi giới mại dâm không?",
+      "answer_en": "No. I have never done this.",
+      "answer_vi": "Không. Tôi chưa bao giờ làm điều này."
+    },
+    {
+      "id": 24,
+      "question_en": "Have you ever sold illegal drugs or narcotics?",
+      "question_vi": "Bạn có bao giờ bán ma túy bất hợp pháp không?",
+      "answer_en": "No. I never sell drugs.",
+      "answer_vi": "Không. Tôi không bao giờ bán ma túy."
+    },
+    {
+      "id": 25,
+      "question_en": "Have you ever been married to more than one person at the same time?",
+      "question_vi": "Bạn có bao giờ kết hôn với nhiều hơn một người cùng một lúc không?",
+      "answer_en": "No. I have only one wife / husband.",
+      "answer_vi": "Không. Tôi chỉ có một vợ / chồng."
+    },
+    {
+      "id": 26,
+      "question_en": "Have you ever helped anyone enter the United States illegally?",
+      "question_vi": "Bạn có bao giờ giúp ai đó nhập cảnh vào Hoa Kỳ bất hợp pháp không?",
+      "answer_en": "No. I never helped anyone enter illegally.",
+      "answer_vi": "Không. Tôi chưa bao giờ giúp ai nhập cảnh trái phép."
+    },
+    {
+      "id": 27,
+      "question_en": "Have you ever gambled illegally?",
+      "question_vi": "Bạn có bao giờ đánh bạc bất hợp pháp không?",
+      "answer_en": "No. I don't gamble.",
+      "answer_vi": "Không. Tôi không đánh bạc."
+    },
+    {
+      "id": 28,
+      "question_en": "Have you ever failed to support your dependents or pay alimony?",
+      "question_vi": "Bạn có bao giờ không chu cấp cho người phụ thuộc hoặc không trả tiền cấp dưỡng không?",
+      "answer_en": "No. I always support my family.",
+      "answer_vi": "Không. Tôi luôn chu cấp cho gia đình."
+    },
+    {
+      "id": 29,
+      "question_en": "Have you ever given false information to any U.S. government official while applying for an immigration benefit or passport?",
+      "question_vi": "Bạn có bao giờ cung cấp thông tin sai cho viên chức chính phủ Mỹ khi xin phúc lợi di trú hoặc hộ chiếu không?",
+      "answer_en": "No. I don't lie.",
+      "answer_vi": "Không. Tôi không nói dối."
+    },
+    {
+      "id": 30,
+      "question_en": "Have you ever lied to any U.S. government official to gain entry into the United States?",
+      "question_vi": "Bạn có bao giờ nói dối viên chức chính phủ Mỹ để nhập cảnh vào Hoa Kỳ không?",
+      "answer_en": "No. I don't lie.",
+      "answer_vi": "Không. Tôi không nói dối."
+    },
+    {
+      "id": 31,
+      "question_en": "Have you ever been deported from the U.S.?",
+      "question_vi": "Bạn có bao giờ bị trục xuất khỏi Hoa Kỳ không?",
+      "answer_en": "No. I have never been deported.",
+      "answer_vi": "Không. Tôi chưa bao giờ bị trục xuất."
+    },
+    {
+      "id": 32,
+      "question_en": "Have you ever been ordered deported from the U.S.?",
+      "question_vi": "Bạn có bao giờ bị ra lệnh trục xuất khỏi Hoa Kỳ không?",
+      "answer_en": "No. I have never been deported.",
+      "answer_vi": "Không. Tôi chưa bao giờ bị trục xuất."
+    }
+  ]
+}

@@ -1,6 +1,5 @@
-import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
-import { InterviewContent } from './InterviewContent';
+import { InterviewTabs } from './InterviewTabs';
 import type { Locale } from '@/types';
 import type { Metadata } from 'next';
 
@@ -25,5 +24,5 @@ export default async function InterviewPage({ params }: InterviewPageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  return <InterviewContent locale={locale as Locale} />;
+  return <InterviewTabs locale={locale as Locale} />;
 }
