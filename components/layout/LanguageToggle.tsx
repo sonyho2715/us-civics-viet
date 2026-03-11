@@ -27,8 +27,7 @@ export function LanguageToggle() {
         )}
         aria-label="Switch to Vietnamese"
       >
-        <span className="mr-1">🇻🇳</span>
-        <span className="hidden sm:inline">VI</span>
+        VI
       </button>
       <button
         onClick={() => switchLocale('en')}
