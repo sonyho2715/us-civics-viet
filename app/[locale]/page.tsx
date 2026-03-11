@@ -215,6 +215,29 @@ function HomeContent({ locale }: { locale: string }) {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-16 bg-white dark:bg-slate-900 transition-colors">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 dark:text-white mb-3">
+            {locale === 'vi' ? 'Video Hướng Dẫn' : 'Study Video'}
+          </h2>
+          <p className="text-center text-gray-600 dark:text-slate-400 mb-8">
+            {locale === 'vi'
+              ? 'Xem video hướng dẫn để chuẩn bị tốt hơn cho bài thi quốc tịch'
+              : 'Watch this guide to better prepare for your citizenship test'}
+          </p>
+          <div className="relative w-full rounded-xl overflow-hidden shadow-lg" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/dhXYgE8B_mE"
+              title="U.S. Citizenship Civics Test Study Guide"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-amber-500">
         <div className="container mx-auto px-4 text-center">
