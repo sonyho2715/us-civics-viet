@@ -30,9 +30,6 @@ export function useServiceWorker() {
     window.addEventListener('online', handleOnline);
     window.addEventListener('offline', handleOffline);
 
-    // Set initial offline state
-    setState((s) => ({ ...s, isOffline: !navigator.onLine }));
-
     // Register service worker
     const registerSW = async () => {
       try {
